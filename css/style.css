@@ -1,0 +1,123 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px; /* Reduz o padding em telas pequenas */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Melhor para scroll em celulares */
+  min-height: 100vh;
+  background: #f4f4f9;
+}
+#quiz-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  max-width: 500px; /* No PC não fica gigante, no celular ocupa a largura */
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+#exit-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  width: auto; /* Para não ocupar a largura toda como os outros botões */
+  margin: 0;
+}
+
+#exit-btn:hover {
+  background: #cc0000;
+}
+
+#question-counter {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #666;
+}
+
+.hidden {
+  display: none;
+}
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #e2e2e2;
+}
+#star-rating {
+  font-size: 2rem;
+  color: #f1c40f;
+  margin: 15px 0;
+}
+
+#next-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.1s;
+}
+
+#next-btn:active {
+    transform: scale(0.98);
+}
+
+/* Garante que o feedback tenha um respiro visual */
+#feedback {
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* --- Imagens Responsivas --- */
+#quiz-image {
+    width: 100%;
+    height: auto; /* Mantém a proporção da foto do livro */
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* --- Media Query para Smartphones --- */
+@media (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+
+    button {
+        padding: 15px 10px; /* Botões maiores para facilitar o toque (touch) */
+        font-size: 1rem;
+    }
+
+    #quiz-container {
+        padding: 15px;
+        border-radius: 0; /* Opcional: remove bordas arredondadas no celular */
+        box-shadow: none; /* Deixa o visual mais limpo em telas pequenas */
+    }
+
+    #exit-btn {
+        width: 100%; /* No celular o botão sair pode ser mais largo para clicar melhor */
+        padding: 12px;
+    }
+}

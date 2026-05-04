@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="quiz-container">
+      <!-- Tela Inicial -->
+      <section id="home-screen">
+        <h1>Escolha uma Matéria</h1>
+        <div class="category-list">
+          <button onclick="startQuiz('historia')">História</button>
+          <button onclick="startQuiz('geografia')">Geografia</button>
+          <button onclick="startQuiz('ciencias')">Ciências</button>
+        </div>
+      </section>
+
+      <!-- Tela de Questões -->
+      <section id="quiz-screen" class="hidden">
+        <div
+          id="question-counter"
+          style="text-align: right; font-weight: bold; color: #666"
+        ></div>
+        <h2 id="question-text">Pergunta aqui?</h2>
+        <div id="options-container"></div>
+        <p id="feedback"></p>
+        <div id="next-container" class="hidden" style="margin-bottom: 20px">
+          <button
+            id="next-btn"
+            onclick="goToNextQuestion()"
+            style="background-color: #28a745; color: white; border: none"
+          >
+            Avançar
+          </button>
+        </div>
+        <div
+          class="quiz-footer"
+          style="
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+          "
+        >
+          <button id="exit-btn" onclick="confirmExit()">Sair do Quiz</button>
+        </div>
+      </section>
+
+      <!-- Tela de Resultado -->
+      <section id="result-screen" class="hidden">
+        <h2>Resultado Final</h2>
+        <p id="score-text"></p>
+        <div id="star-rating"></div>
+        <button onclick="location.reload()">Reiniciar</button>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

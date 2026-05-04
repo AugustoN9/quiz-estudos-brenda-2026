@@ -1,0 +1,193 @@
+{
+  "geografia": [
+    {
+      "pergunta": "Qual povo influenciou a língua portuguesa e a religião Católica no Brasil?",
+      "alternativas": ["Portugueses", "Holandeses", "Franceses", "Espanhóis"],
+      "correta": 0
+    },
+    {
+      "pergunta": "A maior parte das comunidades quilombolas está localizada em que região do Brasil?",
+      "alternativas": ["Sul", "Norte", "Nordeste", "Centro-Oeste"],
+      "correta": 2,
+      "imagem": "images/comunidades_quilombolas.jpeg"
+    },
+    {
+      "pergunta": "O que é taxa de natalidade?",
+      "alternativas": [
+        "Número de pessoas que morrem em um ano",
+        "Quantidade de pessoas que nascem em um grupo de mil habitantes no período de um ano",
+        "A diferença entre quem entra e sai do país",
+        "O total de habitantes de uma cidade"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "O que é taxa de mortalidade?",
+      "alternativas": [
+        "Quantidade de pessoas que morrem em cada grupo de mil habitantes no período de um ano",
+        "Número de nascimentos mensais",
+        "Aumento da população urbana",
+        "Quantidade de imigrantes"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "No século 18, o que impulsionou uma ocupação mais efetiva do interior do Brasil?",
+      "alternativas": [
+        "A exploração do Pau-brasil",
+        "A cultura do Café",
+        "A pecuária e a mineração de ouro e diamantes",
+        "A construção de Brasília"
+      ],
+      "correta": 2,
+      "imagem": "images/mineracao_sec18.jpeg"
+    },
+    {
+      "pergunta": "O que é densidade demográfica?",
+      "alternativas": [
+        "O número total de habitantes de um país",
+        "A divisão entre o número de habitantes e a medida da área onde vivem",
+        "O crescimento natural da população",
+        "A quantidade de pessoas que vivem no campo"
+      ],
+      "correta": 1,
+      "imagem": "images/densidade.jpeg"
+    },
+    {
+      "pergunta": "O que define a 'População Absoluta'?",
+      "alternativas": [
+        "A quantidade total de habitantes de um lugar",
+        "O número de pessoas por km²",
+        "Apenas as pessoas que nasceram na cidade",
+        "O total de imigrantes"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "Qual a diferença entre migração interna e migração externa?",
+      "alternativas": [
+        "Interna ocorre no mesmo país; externa é o deslocamento para outros países",
+        "Interna é para fora do país; externa é entre cidades",
+        "Não há diferença entre elas",
+        "Ambas tratam apenas de mudanças entre estados brasileiros"
+      ],
+      "correta": 0,
+      "imagem": "images/migracoes-internas-1980-2010.jpeg"
+    },
+    {
+      "pergunta": "Como se chama o movimento de pessoas que saem de seus países para viver no Brasil?",
+      "alternativas": [
+        "Migração interna",
+        "Imigração (externa)",
+        "Densidade demográfica",
+        "Êxodo rural"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Segundo o gráfico de 1940-2015, em que período a população urbana superou a rural no Brasil?",
+      "alternativas": [
+        "Entre 1940 e 1960",
+        "Entre 1960 e 1980",
+        "Após o ano 2000",
+        "Sempre foi maior"
+      ],
+      "correta": 1,
+      "imagem": "images/grafico_urbana_rural.jpeg"
+    },
+    {
+      "pergunta": "O que são as 'Drogas do Sertão', exploradas no período colonial?",
+      "alternativas": [
+        "Remédios modernos",
+        "Ouro e Prata",
+        "Produtos nativos como cacau, cravo e guaraná",
+        "Cana-de-açúcar"
+      ],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual fator contribuiu para a redução da mortalidade no século 20?",
+      "alternativas": [
+        "Aumento do trabalho escravo",
+        "Descoberta de novos medicamentos e vacinas",
+        "Redução do saneamento básico",
+        "Diminuição das cidades"
+      ],
+      "correta": 1,
+      "imagem": "images/saneamento.jpeg"
+    },
+    {
+      "pergunta": "O crescimento natural da população é a diferença entre:",
+      "alternativas": [
+        "Migração e Imigração",
+        "População urbana e rural",
+        "Taxa de natalidade e taxa de mortalidade",
+        "Área total e número de habitantes"
+      ],
+      "correta": 2,
+      "imagem": "images/grafico_crescimento.jpeg"
+    },
+    {
+      "pergunta": "A construção de qual cidade estimulou o povoamento do interior do Brasil na metade do século 20?",
+      "alternativas": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      "correta": 2
+    },
+    {
+      "pergunta": "O que o 'Saneamento Básico' proporciona à população?",
+      "alternativas": [
+        "Melhores condições de higiene e saúde",
+        "Aumento da natalidade",
+        "Mais migrações externas",
+        "Aumento da área do território"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "No século 17, por que a porção litorânea foi a mais povoada?",
+      "alternativas": [
+        "Por causa da mineração",
+        "Pela exploração do pau-brasil e cultivo da cana-de-açúcar",
+        "Pela construção de Brasília",
+        "Pela indústria automobilística"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "O que acontece quando uma pessoa participa de um 'movimento de retorno'?",
+      "alternativas": [
+        "A quantidade total de pessoas no país diminui",
+        "As pessoas saem do Brasil para morar em outro país",
+        "As pessoas voltam a morar na sua região de origem (onde nasceram)",
+        "A população das cidades fica menor que a do campo"
+      ],
+      "correta": 2,
+      "imagem": "images/migracoes-internas-1980-2010.jpeg"
+    },
+    {
+      "pergunta": "Um local com muitos habitantes por quilômetro quadrado é considerado:",
+      "alternativas": [
+        "Pouco povoado",
+        "Muito povoado (alta densidade)",
+        "Um quilombo",
+        "Uma área rural"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual região brasileira recebeu fluxos intensos do Nordeste na metade do século 20?",
+      "alternativas": ["Norte", "Sul", "Sudeste", "Centro-Oeste"],
+      "correta": 2,
+      "imagem": "images/regioes.jpeg"
+    },
+    {
+      "pergunta": "O 'Crescimento Natural' da população é calculado fazendo a diferença entre quais taxas?",
+      "alternativas": [
+        "A quantidade de pessoas que mudam de cidade e as que ficam",
+        "O número de pessoas que moram na cidade e as que moram no campo",
+        "A taxa de natalidade (quem nasce) e a taxa de mortalidade (quem morre)",
+        "A quantidade de brasileiros e a quantidade de estrangeiros"
+      ],
+      "correta": 2
+    }
+  ]
+}
