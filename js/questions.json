@@ -427,5 +427,157 @@
       "correta": 1,
       "imagem": "images/piramides.png"
     }
+  ],
+  "ciencias": [
+    {
+      "pergunta": "Qual é o nome dado à mistura onde não conseguimos distinguir seus componentes a olho nu, como a água com sal totalmente dissolvido?",
+      "alternativas": ["Mistura heterogênea", "Mistura homogênea", "Mistura densa", "Mistura pura"],
+      "correta": 1
+    },
+    {
+      "pergunta": "A água e o óleo, quando colocados no mesmo copo, não se misturam completamente e formam duas camadas visíveis. Esse é um exemplo de:",
+      "alternativas": ["Substância pura", "Mistura homogênea", "Mistura heterogênea", "Mistura gasosa"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual é o principal processo físico usado para separar o sal da água do mar em uma salina?",
+      "alternativas": ["Filtração", "Evaporação", "Decantação", "Destilação"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Para separar a areia da água, qual método é o mais adequado?",
+      "alternativas": ["Filtração", "Catação", "Evaporação", "Magnetismo"],
+      "correta": 0
+    },
+    {
+      "pergunta": "Quando um prego de ferro fica exposto à umidade e enferruja, ocorreu uma mudança na sua composição. Esse processo é um exemplo de:",
+      "alternativas": ["Transformação física", "Transformação química", "Mudança de estado", "Fusão"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual das seguintes situações representa apenas uma transformação física da matéria, onde a substância continua sendo a mesma?",
+      "alternativas": ["Amassar um papel", "Queimar uma vela", "Cozinhar um ovo", "Azedar o leite"],
+      "correta": 0
+    },
+    {
+      "pergunta": "O oxigênio que respiramos é essencial para a produção de energia no nosso corpo. Em qual sistema ele entra na corrente sanguínea?",
+      "alternativas": ["Sistema Digestório", "Sistema Respiratório", "Sistema Nervoso", "Sistema Excretor"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual é o principal órgão do sistema circulatório, responsável por bombear o sangue para todo o corpo?",
+      "alternativas": ["Pulmão", "Estômago", "Coração", "Cérebro"],
+      "correta": 2
+    },
+    {
+      "pergunta": "No sistema digestório, onde ocorre a maior parte da absorção de nutrientes dos alimentos?",
+      "alternativas": ["No estômago", "No intestino grosso", "No intestino delgado", "Na boca"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Para manter o corpo saudável e o sistema circulatório funcionando bem, qual hábito é MAIS recomendado?",
+      "alternativas": ["Comer doces todos os dias", "Ficar sentado jogando videogame", "Praticar atividades físicas regularmente", "Dormir pouco"],
+      "correta": 2
+    },
+    {
+      "pergunta": "O movimento da Terra que leva cerca de 24 horas para ser completado e é responsável pela sucessão dos dias e das noites é chamado de:",
+      "alternativas": ["Translação", "Rotação", "Revolução", "Órbita"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Quando observamos o céu à noite, vemos grupos de estrelas que parecem formar desenhos. Esses grupos são chamados de:",
+      "alternativas": ["Galáxias", "Sistemas Solares", "Constelações", "Cometas"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual material é conhecido por ser um bom condutor de eletricidade, sendo usado em fios elétricos?",
+      "alternativas": ["Plástico", "Madeira", "Cobre (metal)", "Borracha"],
+      "correta": 2
+    },
+    {
+      "pergunta": "A capacidade de alguns materiais, como o ímã, de atrair certos metais é chamada de:",
+      "alternativas": ["Eletricidade", "Gravidade", "Magnetismo", "Elasticidade"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual gás é liberado pelas plantas durante a fotossíntese e é vital para a respiração da maioria dos seres vivos?",
+      "alternativas": ["Gás carbônico", "Nitrogênio", "Oxigênio", "Hidrogênio"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Ao preparar um suco em pó, o pó se dissolve completamente na água. O pó é o soluto e a água é o:",
+      "alternativas": ["Solvente", "Mistura homogênea", "Decantador", "Filtro"],
+      "correta": 0
+    },
+    {
+      "pergunta": "Qual é o nome da mudança de estado físico quando a água líquida se transforma em vapor ao ser aquecida?",
+      "alternativas": ["Fusão", "Solidificação", "Vaporização (ou Ebulição)", "Condensação"],
+      "correta": 2
+    },
+    {
+      "pergunta": "O suco gástrico, que ajuda a quebrar os alimentos, é produzido em qual órgão do sistema digestório?",
+      "alternativas": ["Esôfago", "Fígado", "Estômago", "Intestino delgado"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Os vasos sanguíneos que levam o sangue do coração para o restante do corpo são chamados de:",
+      "alternativas": ["Veias", "Artérias", "Capilares", "Nervos"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual das seguintes constelações é muito conhecida no hemisfério Sul e tem o formato de uma cruz?",
+      "alternativas": ["Orion", "Ursa Maior", "Cruzeiro do Sul", "Escorpião"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Um material que se quebra facilmente quando sofre um impacto, como o vidro, é considerado:",
+      "alternativas": ["Frágil", "Malaável", "Dúctil", "Elástico"],
+      "correta": 0
+    },
+    {
+      "pergunta": "Qual é a principal função dos glóbulos vermelhos no sangue?",
+      "alternativas": ["Combater infecções", "Ajudar na coagulação", "Transportar oxigênio", "Produzir energia"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Na boca, começa a digestão química de qual tipo de nutriente, graças à ação da saliva?",
+      "alternativas": ["Proteínas", "Gorduras", "Amido (carboidrato)", "Vitaminas"],
+      "correta": 2
+    },
+    {
+      "pergunta": "A separação de misturas é importante para obter água potável. Qual etapa remove as partículas sólidas maiores flutuantes?",
+      "alternativas": ["Filtração", "Cloração", "Fluoretação", "Decantação"],
+      "correta": 0
+    },
+    {
+      "pergunta": "Se colocarmos gelo em um copo com água, o gelo flutua. Isso acontece porque o gelo é:",
+      "alternativas": ["Mais denso que a água líquida", "Menos denso que a água líquida", "Mais quente que a água líquida", "Solúvel na água líquida"],
+      "correta": 1
+    },
+    {
+      "pergunta": "A queima de combustíveis fósseis, como a gasolina, libera gás carbônico na atmosfera. Esse é um exemplo de:",
+      "alternativas": ["Transformação física", "Transformação química", "Fusão nuclear", "Evaporação"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Durante a respiração, qual é o gás que eliminamos do corpo como produto residual?",
+      "alternativas": ["Oxigênio", "Nitrogênio", "Gás carbônico", "Hidrogênio"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual hábito contribui para a saúde do sistema digestório?",
+      "alternativas": ["Comer muito rápido", "Beber pouca água", "Mastigar bem os alimentos", "Comer alimentos muito gordurosos"],
+      "correta": 2
+    },
+    {
+      "pergunta": "O tempo que a Terra leva para dar uma volta completa ao redor do Sol define a duração de:",
+      "alternativas": ["Um dia", "Um mês", "Um ano", "Uma semana"],
+      "correta": 2
+    },
+    {
+      "pergunta": "A bússola é um instrumento de orientação que funciona devido a qual propriedade física da Terra?",
+      "alternativas": ["Eletricidade", "Magnetismo terrestre", "Gravidade", "Rotação"],
+      "correta": 1
+    }
   ]
 }
