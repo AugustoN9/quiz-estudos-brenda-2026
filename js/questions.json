@@ -189,5 +189,243 @@
       ],
       "correta": 2
     }
+  ],
+  "historia": [
+    {
+      "pergunta": "De que maneira os rios eram importantes para as primeiras sociedades?",
+      "alternativas": [
+        "Para diversão e prática de esportes náuticos",
+        "Para o desenvolvimento da agricultura e consumo de água",
+        "Apenas para separar um país do outro",
+        "Eram usados apenas para despejar lixo"
+      ],
+      "correta": 1,
+      "imagem": "images/importancia_rios.png"
+    },
+    {
+      "pergunta": "De que trata a Pré-História?",
+      "alternativas": [
+        "O período após a invenção da internet",
+        "O período da história humana antes da invenção da escrita",
+        "A história das grandes cidades modernas",
+        "O tempo em que os robôs dominavam a Terra"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Quais os principais períodos da Pré-História?",
+      "alternativas": [
+        "Idade Antiga, Média e Moderna",
+        "Paleolítico, Neolítico e Idade dos Metais",
+        "Primeiro, Segundo e Terceiro ano",
+        "Manhã, Tarde e Noite"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual característica NÃO pertence ao período Paleolítico?",
+      "alternativas": [
+        "Uso do fogo",
+        "Pinturas nas cavernas (rupestres)",
+        "Vida em cidades com prédios (sedentarismo)",
+        "Uso de ferramentas de pedra lascada"
+      ],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual característica NÃO faz parte do período Neolítico?",
+      "alternativas": [
+        "Início da agricultura",
+        "Domesticação de animais",
+        "Vida nômade (mudar de lugar o tempo todo)",
+        "Uso de pedras polidas para ferramentas"
+      ],
+      "correta": 2
+    },
+    {
+      "pergunta": "Como podemos definir o período Mesolítico?",
+      "alternativas": [
+        "O tempo atual em que vivemos",
+        "Um período de transição entre o Paleolítico e o Neolítico",
+        "A época em que os dinossauros sumiram",
+        "O período em que as pirâmides foram feitas"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual foi o principal acontecimento do Mesolítico?",
+      "alternativas": [
+        "O domínio do fogo",
+        "Mudanças climáticas que facilitaram o início da agricultura",
+        "A invenção do avião",
+        "A descoberta da eletricidade"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "O que foi o processo de sedentarização?",
+      "alternativas": [
+        "Quando os humanos passaram a morar em um lugar fixo",
+        "Quando as pessoas decidiram viajar pelo mundo sem parar",
+        "O início das grandes navegações pelo mar",
+        "O momento em que os humanos aprenderam a correr"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "Quais foram os impactos ambientais da sedentarização?",
+      "alternativas": [
+        "Nenhuma mudança ocorreu na natureza",
+        "Desmatamento e mudança no curso de rios para as plantações",
+        "A natureza ficou exatamente igual como era antes",
+        "O clima parou de mudar"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "O que é um 'Estado' e como ele é formado?",
+      "alternativas": [
+        "É apenas um grupo de amigos que brincam juntos",
+        "É a organização política de um povo em um território com governo próprio",
+        "É o nome dado a qualquer cidade pequena",
+        "É uma reunião de pessoas apenas para festas"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "De que se trata a chamada 'Antiguidade'?",
+      "alternativas": [
+        "O período que começa após a invenção da escrita",
+        "O período antes dos seres humanos existirem",
+        "A época em que os carros foram inventados",
+        "O tempo futuro que ainda vai acontecer"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "No Brasil, o governo é dividido em 3 poderes. Quais são eles?",
+      "alternativas": [
+        "Rei, Rainha e Príncipe",
+        "Executivo, Legislativo e Judiciário",
+        "Policial, Bombeiro e Médico",
+        "Pai, Mãe e Filhos"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Onde ficava localizada a Mesopotâmia?",
+      "alternativas": [
+        "Na América do Sul",
+        "Entre os rios Tigre e Eufrates",
+        "No meio da Floresta Amazônica",
+        "Na Antártida"
+      ],
+      "correta": 1,
+      "imagem": "images/mesopotamia.png"
+    },
+    {
+      "pergunta": "O que era o Código de Hamurabi?",
+      "alternativas": [
+        "Um livro de receitas antigas",
+        "Um dos primeiros conjuntos de leis escritas da história",
+        "Um mapa para encontrar tesouros",
+        "Um tipo de dança da Mesopotâmia"
+      ],
+      "correta": 1,
+      "imagem": "images/hamurabi.png"
+    },
+    {
+      "pergunta": "Qual foi o rio fundamental para a formação da civilização egípcia?",
+      "alternativas": ["Rio Amazonas", "Rio Nilo", "Rio Tigre", "Rio Eufrates"],
+      "correta": 1,
+      "imagem": "images/civilizacao_egipcia.png"
+    },
+    {
+      "pergunta": "Como era chamado o governante do Egito antigo?",
+      "alternativas": ["Imperador", "Rei", "Faraó", "Presidente"],
+      "correta": 2,
+      "imagem": "images/piramides.png"
+    },
+    {
+      "pergunta": "Onde se formou o Reino de Cuxe?",
+      "alternativas": [
+        "Na região da Núbia (onde hoje fica o Sudão)",
+        "No norte da Europa",
+        "Na China antiga",
+        "No litoral do Brasil"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "No Reino de Cuxe, qual era a responsabilidade das 'Candaces'?",
+      "alternativas": [
+        "Apenas cuidar da limpeza dos templos",
+        "Governar o reino como rainhas e liderar o povo",
+        "Trabalhar apenas nas cozinhas reais",
+        "Eram crianças que estudavam música"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Por que a navegação era tão importante para a civilização fenícia?",
+      "alternativas": [
+        "Para passeios de férias em família",
+        "Para o comércio de produtos com outros povos pelo Mar Mediterrâneo",
+        "Para fugir dos dinossauros",
+        "Porque eles não sabiam andar na terra"
+      ],
+      "correta": 1,
+      "imagem": "images/navegacao_fenicia.png"
+    },
+    {
+      "pergunta": "Na Grécia Antiga, o que era a 'Democracia' iniciada em Atenas?",
+      "alternativas": [
+        "Um governo onde ninguém mandava",
+        "Onde os cidadãos participavam das decisões do governo em assembleias",
+        "Um governo onde apenas uma pessoa mandava sozinha",
+        "Onde os animais podiam votar"
+      ],
+      "correta": 1,
+      "imagem": "images/atenas.png"
+    },
+    {
+      "pergunta": "Como se chamava a assembleia onde os cidadãos de Atenas votavam as leis?",
+      "alternativas": ["Senado", "Ekklesia", "Câmara", "Prefeitura"],
+      "correta": 1,
+      "imagem": "images/atenas.png"
+    },
+    {
+      "pergunta": "Sobre Roma Antiga, qual foi a sequência das formas de governo?",
+      "alternativas": [
+        "Sempre foi uma democracia moderna",
+        "Monarquia, depois República e, por fim, Império",
+        "Começou como Império e virou Vila",
+        "Sempre foi governada por presidentes"
+      ],
+      "correta": 1,
+      "imagem": "images/roma.png"
+    },
+    {
+      "pergunta": "Como era dividida a sociedade na Roma Antiga?",
+      "alternativas": [
+        "Todos tinham exatamente o mesmo dinheiro",
+        "De maneira desigual, entre pessoas com privilégios e outras com poucos direitos",
+        "Não existiam pessoas pobres em Roma",
+        "Todos eram considerados deuses imortais"
+      ],
+      "correta": 1,
+      "imagem": "images/roma.png"
+    },
+    {
+      "pergunta": "O que eram as pirâmides egípcias?",
+      "alternativas": [
+        "Prédios de apartamentos",
+        "Túmulos para os faraós guardarem seu espírito após a morte",
+        "Parques de diversão",
+        "Fábricas de papel"
+      ],
+      "correta": 1,
+      "imagem": "images/piramides.png"
+    }
   ]
 }

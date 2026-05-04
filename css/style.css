@@ -1,22 +1,35 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  padding: 10px; /* Reduz o padding em telas pequenas */
+  padding: 0; 
   display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Melhor para scroll em celulares */
+  flex-direction: column;
+  /* Centraliza horizontalmente */
+  align-items: center; 
+  /* Centraliza verticalmente se o conteúdo for menor que a tela */
+  justify-content: flex-start; 
   min-height: 100vh;
   background: #f4f4f9;
 }
+
 #quiz-container {
   background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 90%; /* Ocupa 90% da largura em telas pequenas */
+  max-width: 500px; /* Não ultrapassa 500px em telas grandes */
   text-align: center;
-  max-width: 500px; /* No PC não fica gigante, no celular ocupa a largura */
-    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+  box-sizing: border-box;
+  margin: 40px auto; /* Margem automática nas laterais centraliza o bloco */
+  flex: 1 0 auto;
+}
+
+#quiz-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; /* Centraliza e dá margem apenas embaixo */
 }
 
 .quiz-header {
@@ -71,53 +84,88 @@ button:hover {
 }
 
 #next-btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.1s;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s;
 }
 
 #next-btn:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 /* Garante que o feedback tenha um respiro visual */
 #feedback {
-    font-weight: bold;
-    margin: 15px 0;
-    font-size: 1.1rem;
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 1.1rem;
 }
 
 /* --- Imagens Responsivas --- */
 #quiz-image {
-    width: 100%;
-    height: auto; /* Mantém a proporção da foto do livro */
-    object-fit: contain;
-    margin-bottom: 15px;
+  width: 100%;
+  height: auto; /* Mantém a proporção da foto do livro */
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.footer-content p {
+  margin: 5px 0; /* Espaçamento pequeno entre os parágrafos */
+  opacity: 0.8; /* Texto ligeiramente transparente para ficar mais discreto */
+  text-align: center;
 }
 
 /* --- Media Query para Smartphones --- */
 @media (max-width: 480px) {
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1.2rem; }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
 
-    button {
-        padding: 15px 10px; /* Botões maiores para facilitar o toque (touch) */
-        font-size: 1rem;
-    }
+  button {
+    padding: 15px 10px; /* Botões maiores para facilitar o toque (touch) */
+    font-size: 1rem;
+  }
 
-    #quiz-container {
-        padding: 15px;
-        border-radius: 0; /* Opcional: remove bordas arredondadas no celular */
-        box-shadow: none; /* Deixa o visual mais limpo em telas pequenas */
-    }
+  #quiz-container {
+    padding: 15px;
+    border-radius: 0; /* Opcional: remove bordas arredondadas no celular */
+    box-shadow: none; /* Deixa o visual mais limpo em telas pequenas */
+    margin: 10px auto;
+  }
 
-    #exit-btn {
-        width: 100%; /* No celular o botão sair pode ser mais largo para clicar melhor */
-        padding: 12px;
-    }
+  footer {
+    padding: 15px 5px;
+    font-size: 0.8rem; /* Fonte menor ainda em celulares */
+  }
+
+  #exit-btn {
+    width: 100%; /* No celular o botão sair pode ser mais largo para clicar melhor */
+    padding: 12px;
+  }
+
+  #quiz-screen img {
+    /* Adiciona um pequeno "recuo negativo" para a imagem tocar quase as bordas */
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+    max-width: calc(100% + 20px);
+    border-radius: 0; /* Opcional: remove bordas arredondadas no celular */
+  }
 }
