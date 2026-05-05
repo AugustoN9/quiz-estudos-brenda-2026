@@ -61,6 +61,16 @@ body {
   color: #666;
 }
 
+#question-text {
+    font-size: 1.1rem;
+    line-height: 1.5; /* Dá mais espaço entre as linhas do texto */
+    text-align: left; /* Textos de interpretação ficam melhores alinhados à esquerda */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff; /* Dá um destaque de "caixa de texto" */
+    margin-bottom: 20px;
+}
+
 .hidden {
   display: none;
 }
