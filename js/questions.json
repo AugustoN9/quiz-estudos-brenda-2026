@@ -579,5 +579,120 @@
       "alternativas": ["Eletricidade", "Magnetismo terrestre", "Gravidade", "Rotação"],
       "correta": 1
     }
+  ],
+  "portugues": [
+    { "pergunta": "Qual o adjetivo na frase: 'A pequena Brenda estuda muito'?", "alternativas": ["Brenda", "Pequena", "Estuda", "Muito"], "correta": 1 },
+    { "pergunta": "Qual o antônimo de 'rápido'?", "alternativas": ["Veloz", "Lento", "Apressado", "Esperto"], "correta": 1 },
+    { "pergunta": "Qual palavra está escrita corretamente com 'H'?", "alternativas": ["Onesto", "Oje", "Higiene", "Umano"], "correta": 2 },
+    { "pergunta": "O coletivo de 'lobos' é:", "alternativas": ["Cardume", "Matilha", "Alcateia", "Enxame"], "correta": 2 },
+    { "pergunta": "Qual frase está no futuro?", "alternativas": ["Eu li o livro.", "Eu leio o livro.", "Eu lerei o livro.", "Eu estou lendo."], "correta": 2 },
+    { "pergunta": "Qual destas palavras é uma proparoxítona?", "alternativas": ["Café", "Escola", "Lâmpada", "Cajá"], "correta": 2 },
+    { "pergunta": "O sinal usado para indicar uma pergunta é:", "alternativas": ["Exclamação", "Ponto final", "Interrogação", "Vírgula"], "correta": 2 },
+    { "pergunta": "Substantivo derivado de 'flor':", "alternativas": ["Folha", "Floricultura", "Planta", "Jardim"], "correta": 1 },
+    { "pergunta": "Complete: 'Eles ___ à escola ontem'.", "alternativas": ["Foram", "Vão", "Irão", "Vai"], "correta": 0 },
+    { "pergunta": "Qual palavra é um substantivo abstrato?", "alternativas": ["Mesa", "Lápis", "Amizade", "Pedra"], "correta": 2 },
+    { "pergunta": "Qual o sinônimo de 'alegre'?", "alternativas": ["Triste", "Contente", "Bravo", "Cansado"], "correta": 1 },
+    { "pergunta": "A palavra 'açúcar' deve ser escrita com:", "alternativas": ["S", "SS", "Ç", "XC"], "correta": 2 },
+    { "pergunta": "Na frase 'Brenda é muito inteligente', a palavra 'Brenda' é um:", "alternativas": ["Substantivo comum", "Substantivo próprio", "Verbo", "Adjetivo"], "correta": 1 },
+    { "pergunta": "Qual o plural de 'caracol'?", "alternativas": ["Caracols", "Caracóis", "Caracoles", "Caracoises"], "correta": 1 },
+    { "pergunta": "O ponto de exclamação (!) expressa:", "alternativas": ["Uma dúvida", "Uma afirmação simples", "Uma emoção ou surpresa", "Uma pausa curta"], "correta": 2 },
+    { "pergunta": "Qual destas palavras é um monossílabo tônico?", "alternativas": ["Pé", "Casa", "Escola", "Menina"], "correta": 0 },
+    { "pergunta": "O feminino de 'leão' é:", "alternativas": ["Leoa", "Leonina", "Leandrinha", "Leona"], "correta": 0 },
+    { "pergunta": "A palavra 'computador' é:", "alternativas": ["Oxítona", "Paroxítona", "Proparoxítona", "Monossílabo"], "correta": 1 },
+    { "pergunta": "Qual o aumentativo de 'casa'?", "alternativas": ["Casinha", "Casarão", "Casebre", "Casona"], "correta": 1 },
+    { "pergunta": "Qual destas palavras indica uma ação (verbo)?", "alternativas": ["Bonito", "Cachorro", "Pular", "Cadeira"], "correta": 2 },
+    { "pergunta": "Onde se usa a vírgula?", "alternativas": ["Para terminar uma frase", "Para separar itens em uma lista", "Para gritar", "Para fazer uma pergunta"], "correta": 1 },
+    { "pergunta": "Qual palavra está no grau diminutivo?", "alternativas": ["Sapato", "Sapatão", "Sapatinho", "Sapataria"], "correta": 2 },
+    { "pergunta": "A separação silábica correta de 'pássaro' é:", "alternativas": ["pá-ssaro", "pás-sa-ro", "pás-sar-o", "páss-a-ro"], "correta": 1 },
+    { "pergunta": "Qual o pronome pessoal na frase 'Nós estudamos hoje'?", "alternativas": ["Nós", "Estudamos", "Hoje", "Hoje"], "correta": 0 },
+    { "pergunta": "Qual o coletivo de 'estrelas'?", "alternativas": ["Nuvem", "Constelação", "Enxame", "Banda"], "correta": 1 },
+    { "pergunta": "A palavra 'fácil' é acentuada por ser uma:", "alternativas": ["Oxítona", "Paroxítona terminada em L", "Proparoxítona", "Monossílabo"], "correta": 1 },
+    { "pergunta": "Qual o plural de 'pão'?", "alternativas": ["Pãos", "Pães", "Pões", "Paizinhos"], "correta": 1 },
+    { "pergunta": "Na frase 'O livro é novo', o artigo é:", "alternativas": ["O", "Livro", "É", "Novo"], "correta": 0 },
+    { "pergunta": "O que indica o travessão (—)?", "alternativas": ["O fim da história", "O início de uma fala", "Uma pergunta", "Uma surpresa"], "correta": 1 },
+    { "pergunta": "Qual o sinônimo de 'caminhar'?", "alternativas": ["Correr", "Andar", "Sentar", "Dormir"], "correta": 1 },
+    {
+    "pergunta": "Texto: 'A raposa e a cegonha mantinham boas relações. Um dia, a raposa convidou a cegonha para jantar e serviu sopa num prato raso. A cegonha, com seu bico longo, não conseguiu comer nada.' O que causou o problema da cegonha?",
+    "alternativas": ["Ela não estava com fome", "O prato era inadequado para o bico dela", "A sopa estava muito quente", "A raposa comeu tudo antes"],
+    "correta": 1
+  },
+  {
+    "pergunta": "Texto: 'Aviso Escolar: Na próxima sexta-feira, não haverá aula devido à reunião de professores. Voltaremos ao normal na segunda-feira.' Quando os alunos devem voltar à escola?",
+    "alternativas": ["Na sexta-feira", "No sábado", "Na segunda-feira", "Amanhã"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'O lobo resolveu se disfarçar de ovelha para entrar no pasto sem ser percebido. Ele colocou uma pele de carneiro e misturou-se ao rebanho.' Qual era a intenção do lobo?",
+    "alternativas": ["Fazer amizade com as ovelhas", "Enganar o rebanho para caçar", "Aprender a comer grama", "Proteger as ovelhas"],
+    "correta": 1
+  },
+  {
+    "pergunta": "Texto: 'O sistema solar é formado por oito planetas que giram ao redor do Sol. A Terra é o terceiro planeta a partir do Sol e o único conhecido com vida.' Segundo o texto, o que torna a Terra especial?",
+    "alternativas": ["Ser o maior planeta", "Ser o primeiro planeta", "Ter vida conhecida", "Estar longe do Sol"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'Anúncio: Vende-se bicicleta azul, aro 24, pouco usada. Tratar com Paulo no telefone 9999-9999.' O que está sendo vendido?",
+    "alternativas": ["Um telefone", "Um carro azul", "Uma bicicleta", "Um aro de pneu"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'A Mata Atlântica é uma das florestas mais ricas em biodiversidade do mundo. Infelizmente, restam apenas pequenas partes da floresta original.' Qual é a notícia triste que o texto traz?",
+    "alternativas": ["A floresta é muito rica", "A floresta fica no mundo todo", "Restam poucas partes da floresta original", "A floresta é feita de árvores"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'Marcos estava tão ansioso para o jogo que esqueceu as chuteiras em casa. Quando chegou ao campo, percebeu que teria que jogar de tênis.' Por que Marcos esqueceu as chuteiras?",
+    "alternativas": ["Porque ele não queria jogar", "Por causa da sua ansiedade para o jogo", "Porque as chuteiras estavam estragadas", "Porque ele preferia jogar de tênis"],
+    "correta": 1
+  },
+  {
+    "pergunta": "Texto: 'As formigas trabalham duro durante todo o verão guardando comida. Quando o inverno chega, elas têm alimento suficiente para sobreviver no formigueiro.' Por que as formigas guardam comida no verão?",
+    "alternativas": ["Para dar para a cigarra", "Para não ter que trabalhar no inverno", "Para brincar na neve", "Porque no verão a comida é ruim"],
+    "correta": 1
+  },
+  {
+    "pergunta": "Texto: 'Receita de Suco: Bata no liquidificador duas fatias de abacaxi com um copo de água e açúcar a gosto. Coe e sirva gelado.' Qual é a primeira coisa a fazer na receita?",
+    "alternativas": ["Coar o suco", "Servir gelado", "Bater os ingredientes no liquidificador", "Colocar o açúcar"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'A baleia-azul é o maior animal que já viveu na Terra. Ela pode chegar a 30 metros de comprimento, o que equivale a três ônibus enfileirados.' O texto compara a baleia a ônibus para mostrar:",
+    "alternativas": ["Que ela é rápida", "O quanto ela é comprida/grande", "Que ela vive no asfalto", "Que ela carrega passageiros"],
+    "correta": 1
+  }
+  ],
+  "matematica": [
+    { "pergunta": "Quanto é 1.500 ÷ 5?", "alternativas": ["200", "250", "300", "350"], "correta": 2 },
+    { "pergunta": "Perímetro de um quadrado com lado de 7 cm:", "alternativas": ["14 cm", "21 cm", "28 cm", "49 cm"], "correta": 2 },
+    { "pergunta": "Resultado de 12,5 + 3,4:", "alternativas": ["15,9", "15,5", "16,0", "12,9"], "correta": 0 },
+    { "pergunta": "O número 'em cima' na fração chama-se:", "alternativas": ["Denominador", "Numerador", "Divisor", "Resto"], "correta": 1 },
+    { "pergunta": "Brenda tem 4 pacotes com 6 doces e deu 5 para a mãe. Restam:", "alternativas": ["24", "19", "20", "10"], "correta": 1 },
+    { "pergunta": "Valor do algarismo 8 no número 3.842:", "alternativas": ["8", "80", "800", "8.000"], "correta": 2 },
+    { "pergunta": "Quanto é 50% de 200 reais?", "alternativas": ["50", "100", "150", "20"], "correta": 1 },
+    { "pergunta": "Um ângulo de 90 graus é um ângulo:", "alternativas": ["Agudo", "Obtuso", "Reto", "Raso"], "correta": 2 },
+    { "pergunta": "Resultado de 250 x 4:", "alternativas": ["800", "900", "1.000", "1.200"], "correta": 2 },
+    { "pergunta": "Triângulo com todos os lados iguais:", "alternativas": ["Escaleno", "Isósceles", "Equilátero", "Retângulo"], "correta": 2 },
+    { "pergunta": "Quanto é 3/4 de 20?", "alternativas": ["5", "10", "15", "18"], "correta": 2 },
+    { "pergunta": "Qual o sucessor de 9.999?", "alternativas": ["10.000", "9.000", "9.998", "11.000"], "correta": 0 },
+    { "pergunta": "Um polígono de 5 lados chama-se:", "alternativas": ["Quadrado", "Pentágono", "Hexágono", "Octógono"], "correta": 1 },
+    { "pergunta": "Resultado de 1.000 - 355:", "alternativas": ["655", "645", "745", "545"], "correta": 1 },
+    { "pergunta": "Quantos minutos há em 3 horas?", "alternativas": ["120", "150", "180", "200"], "correta": 2 },
+    { "pergunta": "Qual número é par?", "alternativas": ["135", "247", "358", "461"], "correta": 2 },
+    { "pergunta": "Quanto é a metade de 700?", "alternativas": ["300", "350", "400", "450"], "correta": 1 },
+    { "pergunta": "Se um quilo tem 1.000g, quanto tem meio quilo?", "alternativas": ["100g", "250g", "500g", "750g"], "correta": 2 },
+    { "pergunta": "Qual o dobro de 150?", "alternativas": ["200", "250", "300", "450"], "correta": 2 },
+    { "pergunta": "Resultado de 0,5 + 0,5:", "alternativas": ["0,10", "1,0", "0,55", "5,0"], "correta": 1 },
+    { "pergunta": "Quantos segundos tem 1 minuto?", "alternativas": ["30", "60", "90", "100"], "correta": 1 },
+    { "pergunta": "Qual o triplo de 25?", "alternativas": ["50", "60", "75", "100"], "correta": 2 },
+    { "pergunta": "Um século tem quantos anos?", "alternativas": ["10", "50", "100", "1.000"], "correta": 2 },
+    { "pergunta": "Resultado de 81 ÷ 9:", "alternativas": ["7", "8", "9", "10"], "correta": 2 },
+    { "pergunta": "Qual o antecessor de 500?", "alternativas": ["400", "490", "499", "501"], "correta": 2 },
+    { "pergunta": "O que indica o denominador em uma fração?", "alternativas": ["Partes tomadas", "Total de partes", "O resultado", "A soma"], "correta": 1 },
+    { "pergunta": "Quantos lados tem um hexágono?", "alternativas": ["4", "5", "6", "8"], "correta": 2 },
+    { "pergunta": "Se uma caneta custa R$ 2,50, quanto custam 4 canetas?", "alternativas": ["R$ 8,00", "R$ 9,00", "R$ 10,00", "R$ 12,00"], "correta": 2 },
+    { "pergunta": "Quanto é 10 x 100?", "alternativas": ["100", "1.000", "10.000", "110"], "correta": 1 },
+    { "pergunta": "Qual forma tem 3 lados e 3 ângulos?", "alternativas": ["Quadrado", "Círculo", "Triângulo", "Retângulo"], "correta": 2 }
   ]
+
 }
