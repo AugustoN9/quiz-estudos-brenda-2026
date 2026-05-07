@@ -693,6 +693,88 @@
     { "pergunta": "Se uma caneta custa R$ 2,50, quanto custam 4 canetas?", "alternativas": ["R$ 8,00", "R$ 9,00", "R$ 10,00", "R$ 12,00"], "correta": 2 },
     { "pergunta": "Quanto é 10 x 100?", "alternativas": ["100", "1.000", "10.000", "110"], "correta": 1 },
     { "pergunta": "Qual forma tem 3 lados e 3 ângulos?", "alternativas": ["Quadrado", "Círculo", "Triângulo", "Retângulo"], "correta": 2 }
+  ],
+  "arredondamento": [
+    {
+      "pergunta": "Para arredondar um número, se o algarismo à direita da ordem escolhida for 5 ou maior, o que devemos fazer?",
+      "alternativas": ["Arredondar para menos", "Manter o número igual", "Arredondar para mais", "Excluir o algarismo"],
+      "correta": 2,
+      "explicacao": "Segundo a regra, se o algarismo for 5 ou maior, arredondamos para mais."
+    },
+    {
+      "pergunta": "O número 636.303 está mais próximo de qual dezena de milhar?",
+      "alternativas": ["630.000", "640.000", "600.000", "650.000"],
+      "correta": 1,
+      "explicacao": "Como 636.303 passou da metade (635.000), ele está mais perto de 640.000."
+    },
+    {
+      "pergunta": "Arredonde o número 548 para a dezena mais próxima:",
+      "alternativas": ["500", "540", "550", "560"],
+      "correta": 2,
+      "explicacao": "O algarismo da unidade é 8 (maior que 5), então arredondamos para a dezena superior: 550."
+    },
+    {
+      "pergunta": "O número 512.548 está mais perto de 500.000 ou de 600.000?",
+      "alternativas": ["500.000", "600.000", "550.000", "510.000"],
+      "correta": 0,
+      "explicacao": "Como o algarismo na dezena de milhar é 1 (menor que 5), ele está mais perto de 500.000."
+    },
+    {
+      "pergunta": "Arredonde a população indígena de 1.693.535 para a unidade de milhar mais próxima:",
+      "alternativas": ["1.690.000", "1.693.000", "1.694.000", "1.700.000"],
+      "correta": 2,
+      "explicacao": "O algarismo das centenas é 5, então arredondamos a unidade de milhar para cima: 1.694.000."
+    },
+    {
+      "pergunta": "Qual o arredondamento de 799 para a dezena mais próxima?",
+      "alternativas": ["700", "790", "800", "810"],
+      "correta": 2,
+      "explicacao": "O algarismo da unidade é 9, o que faz a dezena 9 pular para a próxima centena: 800."
+    },
+    {
+      "pergunta": "O número 636.303 arredondado para a unidade de milhar mais próxima é:",
+      "alternativas": ["636.000", "637.000", "630.000", "640.000"],
+      "correta": 0,
+      "explicacao": "O algarismo das centenas é 3 (menor que 5), então mantemos a unidade de milhar e zeramos o resto: 636.000."
+    },
+    {
+      "pergunta": "Arredonde 1.235.478 para a centena de milhar mais próxima:",
+      "alternativas": ["1.000.000", "1.200.000", "1.300.000", "1.230.000"],
+      "correta": 1,
+      "explicacao": "O algarismo à direita (dezena de milhar) é 3, logo arredondamos para baixo: 1.200.000."
+    },
+    {
+      "pergunta": "O número 550.003 está mais próximo de 500.000 ou 600.000?",
+      "alternativas": ["500.000", "600.000", "550.000", "560.000"],
+      "correta": 1,
+      "explicacao": "O algarismo da dezena de milhar é 5, então arredondamos para a centena de milhar superior: 600.000."
+    },
+    {
+      "pergunta": "Arredonde 636.303 para a centena mais próxima:",
+      "alternativas": ["636.000", "636.300", "636.400", "637.000"],
+      "correta": 1,
+      "explicacao": "O algarismo da dezena é 0, então mantemos a centena: 636.300."
+    },
+    { "pergunta": "Arredonde 124.785 para a dezena mais próxima:", "alternativas": ["124.700", "124.780", "124.790", "124.800"], "correta": 2 },
+    { "pergunta": "Arredonde 487.321 para a dezena mais próxima:", "alternativas": ["487.300", "487.320", "487.330", "480.000"], "correta": 1 },
+    { "pergunta": "O número 599.999 está mais perto de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "590.000", "599.000"], "correta": 1 },
+    { "pergunta": "Arredonde 9.493 para a dezena mais próxima:", "alternativas": ["9.400", "9.490", "9.500", "9.000"], "correta": 1 },
+    { "pergunta": "Arredonde 1.235.478 para a dezena de milhar mais próxima:", "alternativas": ["1.230.000", "1.240.000", "1.200.000", "1.235.000"], "correta": 1 },
+    { "pergunta": "O número 505.417 está mais próximo de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "505.000", "510.000"], "correta": 0 },
+    { "pergunta": "Arredonde 636.303 para a unidade de milhar:", "alternativas": ["636.000", "637.000", "630.000", "640.000"], "correta": 0 },
+    { "pergunta": "Arredonde 1.235.478 para a unidade de milhar mais próxima:", "alternativas": ["1.230.000", "1.235.000", "1.236.000", "1.240.000"], "correta": 1 },
+    { "pergunta": "O número 549.999 está mais perto de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "550.000", "540.000"], "correta": 0 },
+    { "pergunta": "Arredonde 99.458 para a dezena mais próxima:", "alternativas": ["99.400", "99.450", "99.460", "100.000"], "correta": 2 },
+    { "pergunta": "Arredonde 1.235.478 para a centena mais próxima:", "alternativas": ["1.235.400", "1.235.500", "1.235.000", "1.236.000"], "correta": 1 },
+    { "pergunta": "O número 615.298 está mais perto de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "610.000", "620.000"], "correta": 1 },
+    { "pergunta": "Arredonde 1.235.478 para a dezena mais próxima:", "alternativas": ["1.235.470", "1.235.480", "1.235.400", "1.235.500"], "correta": 1 },
+    { "pergunta": "O número 539.798 está mais próximo de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "540.000", "530.000"], "correta": 0 },
+    { "pergunta": "Se um número termina em 5 na ordem à direita, o arredondamento é para:", "alternativas": ["Baixo", "Cima (mais)", "Manter o número", "Excluir o 5"], "correta": 1 },
+    { "pergunta": "O número 636.303 está entre quais unidades de milhar?", "alternativas": ["630.000 e 640.000", "636.000 e 637.000", "600.000 e 700.000", "636.300 e 636.400"], "correta": 1 },
+    { "pergunta": "Arredonde 555.048 para a centena de milhar mais próxima:", "alternativas": ["500.000", "600.000", "550.000", "560.000"], "correta": 1 },
+    { "pergunta": "O número 636.303 está mais próximo de 636.300 ou 636.400?", "alternativas": ["636.300", "636.400", "636.000", "637.000"], "correta": 0 },
+    { "pergunta": "Arredonde 124.785 para a unidade de milhar mais próxima:", "alternativas": ["124.000", "125.000", "120.000", "130.000"], "correta": 1 },
+    { "pergunta": "Para arredondar para a dezena, olhamos para o algarismo da:", "alternativas": ["Centena", "Dezena de milhar", "Unidade", "Dezena"], "correta": 2 }
   ]
 
 }
