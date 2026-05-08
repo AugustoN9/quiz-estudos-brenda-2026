@@ -580,6 +580,311 @@
       "correta": 1
     }
   ],
+  "ciencias2": [
+    {
+    "pergunta": "Qual processo libera energia dos nutrientes nos seres humanos?",
+    "alternativas": [
+      "Respiração celular",
+      "Digestão",
+      "Excreção",
+      "Circulação"
+    ],
+    "correta": 0
+  },
+  {
+    "pergunta": "A quebra dos alimentos em partículas menores para absorção é chamada:",
+    "alternativas": [
+      "Respiração",
+      "Digestão",
+      "Ingestão",
+      "Excreção"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Onde se inicia a digestão química do amido?",
+    "alternativas": [
+      "Estômago",
+      "Boca",
+      "Intestino delgado",
+      "Esôfago"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Qual órgão conduz o alimento da faringe ao estômago?",
+    "alternativas": [
+      "Laringe",
+      "Traqueia",
+      "Esôfago",
+      "Brônquio"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "A enzima pepsina atua principalmente na digestão de:",
+    "alternativas": [
+      "Lipídios",
+      "Carboidratos",
+      "Proteínas",
+      "Vitaminas"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "O suco gástrico é produzido por qual órgão?",
+    "alternativas": [
+      "Fígado",
+      "Pâncreas",
+      "Estômago",
+      "Vesícula biliar"
+    ],
+    "correta": 2,
+     "imagem": "images/estomago.png"
+  },
+  {
+    "pergunta": "Quais glândulas são anexas ao sistema digestório?",
+    "alternativas": [
+      "Tireoide e Hipófise",
+      "Fígado e Pâncreas",
+      "Suprarrenais e Ovários",
+      "Paratireoides e Timo"
+    ],
+    "correta": 1,
+     "imagem": "images/figado-estomago.png"
+  },
+  {
+    "pergunta": "A bile, importante na emulsificação de gorduras, é produzida por:",
+    "alternativas": [
+      "Vesícula biliar",
+      "Estômago",
+      "Pâncreas",
+      "Fígado"
+    ],
+    "correta": 3,
+    "imagem": "images/figado-estomago.png"
+  },
+  {
+    "pergunta": "Onde ocorre a maior parte da absorção de nutrientes?",
+    "alternativas": [
+      "Intestino grosso",
+      "Intestino delgado",
+      "Estômago",
+      "Boca"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Qual secreção contém enzimas para digerir proteínas, gorduras e carboidratos?",
+    "alternativas": [
+      "Bile",
+      "Suco gástrico",
+      "Suco pancreático",
+      "Saliva"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "O quilo é formado em qual local?",
+    "alternativas": [
+      "Estômago",
+      "Boca",
+      "Intestino delgado",
+      "Intestino grosso"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "As vilosidades intestinais são dobras que aumentam a superfície de:",
+    "alternativas": [
+      "Digestão",
+      "Excreção",
+      "Absorção",
+      "Ingestão"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Nutrientes absorvidos caem diretamente em qual sistema?",
+    "alternativas": [
+      "Respiratório",
+      "Nervoso",
+      "Cardiovascular",
+      "Linfático"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Qual função principal do intestino grosso?",
+    "alternativas": [
+      "Digerir proteínas",
+      "Absorver água e sais",
+      "Produzir bile",
+      "Formar o quilo"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "A microbiota intestinal é composta principalmente por:",
+    "alternativas": [
+      "Enzimas",
+      "Ácidos",
+      "Bactérias",
+      "Vírus"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Qual a principal função do sistema respiratório?",
+    "alternativas": [
+      "Digerir alimentos",
+      "Transportar nutrientes",
+      "Realizar trocas gasosas",
+      "Bombear sangue"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Os alvéolos pulmonares são locais onde ocorre:",
+    "alternativas": [
+      "A digestão",
+      "A hematose",
+      "A circulação",
+      "A excreção"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Qual gás é essencial para a respiração celular?",
+    "alternativas": [
+      "Nitrogênio",
+      "Hidrogênio",
+      "Oxigênio",
+      "Gás carbônico"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Qual caminho correto do ar na inspiração?",
+    "alternativas": [
+      "Nariz > Faringe > Laringe > Traqueia > Brônquios > Pulmões",
+      "Nariz > Faringe > Laringe > Traqueia > Brônquios > Alvéolos",
+      "Nariz > Laringe > Faringe > Traqueia > Brônquios > Pulmões",
+      "Nariz > Faringe > Traqueia > Laringe > Brônquios > Pulmões"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "A faringe é um órgão comum a quais sistemas?",
+    "alternativas": [
+      "Respiratório e Circulatório",
+      "Digestório e Respiratório",
+      "Digestório e Circulatório",
+      "Respiratório e Excretor"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Qual estrutura impede a entrada de alimento na traqueia?",
+    "alternativas": [
+      "Faringe",
+      "Epiglote",
+      "Laringe",
+      "Brônquio"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "A laringe abriga qual estrutura importante?",
+    "alternativas": [
+      "Alvéolos pulmonares",
+      "Pregas vocais",
+      "Anéis cartilaginosos",
+      "Cílios"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Os brônquios se ramificam em tubos menores chamados:",
+    "alternativas": [
+      "Traqueias",
+      "Brônquios secundários",
+      "Bronquíolos",
+      "Alvéolos"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Como é transportada a maior parte do gás carbônico no sangue?",
+    "alternativas": [
+      "Combinado com hemoglobina",
+      "Dissolvido no plasma como íon bicarbonato",
+      "Dissolvido nas hemácias",
+      "Combinado com nutrientes"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "O oxigênio é transportado no sangue principalmente ligado a:",
+    "alternativas": [
+      "Plasma",
+      "Leucócitos",
+      "Hemoglobina",
+      "Plaquetas"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "O principal músculo responsável pela respiração é:",
+    "alternativas": [
+      "Intercostal externo",
+      "Abdominal anterior",
+      "Diafragma",
+      "Peitoral maior"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "O que ocorre durante a expiração em condições normais?",
+    "alternativas": [
+      "Relaxamento do diafragma e músculos intercostais",
+      "Contração do diafragma e músculos intercostais",
+      "Relaxamento apenas do diafragma",
+      "Contração apenas dos músculos intercostais"
+    ],
+    "correta": 0
+  },
+  {
+    "pergunta": "Qual gás em alta concentração no sangue estimula a respiração?",
+    "alternativas": [
+      "Oxigênio",
+      "Nitrogênio",
+      "Monóxido de carbono",
+      "Gás carbônico"
+    ],
+    "correta": 3
+  },
+  {
+    "pergunta": "O controle nervoso da respiração ocorre principalmente no:",
+    "alternativas": [
+      "Cérebro anterior",
+      "Cerebelo",
+      "Bulbo raquidiano",
+      "Hipotálamo"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Qual fator pode aumentar a frequência respiratória?",
+    "alternativas": [
+      "Descanso excessivo",
+      "Atividade física intensa",
+      "Concentração de nitrogênio no ar",
+      "Concentração de nutrientes no sangue"
+    ],
+    "correta": 1
+  }
+  ],
   "portugues": [
     { "pergunta": "Qual o adjetivo na frase: 'A pequena Brenda estuda muito'?", "alternativas": ["Brenda", "Pequena", "Estuda", "Muito"], "correta": 1 },
     { "pergunta": "Qual o antônimo de 'rápido'?", "alternativas": ["Veloz", "Lento", "Apressado", "Esperto"], "correta": 1 },
