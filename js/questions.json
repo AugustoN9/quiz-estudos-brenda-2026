@@ -1987,6 +1987,18 @@
               "images/parlendas/parlendas_versao_digital_page-0013.jpg",
               "images/parlendas/parlendas_versao_digital_page-0014.jpg"
             ]
+          },
+          "lendas_brasileiras": {
+            "titulo": "Lendas Brasileiras (Leitura)",
+            "tipo": "leitura",
+            "paginas": [
+              "images/lendas/anhanga.png",
+              "images/lendas/saci.png",
+              "images/lendas/curupira.png",
+              "images/lendas/iara.png",
+              "images/lendas/boto.png",
+              "images/lendas/mula_sem_cabeca.png"
+            ]
           }
         }
       },
