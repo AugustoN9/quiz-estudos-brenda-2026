@@ -1,0 +1,1085 @@
+{
+  "geografia": [
+    {
+      "pergunta": "Qual povo influenciou a língua portuguesa e a religião Católica no Brasil?",
+      "alternativas": ["Portugueses", "Holandeses", "Franceses", "Espanhóis"],
+      "correta": 0
+    },
+    {
+      "pergunta": "A maior parte das comunidades quilombolas está localizada em que região do Brasil?",
+      "alternativas": ["Sul", "Norte", "Nordeste", "Centro-Oeste"],
+      "correta": 2,
+      "imagem": "images/comunidades_quilombolas.jpeg"
+    },
+    {
+      "pergunta": "O que é taxa de natalidade?",
+      "alternativas": [
+        "Número de pessoas que morrem em um ano",
+        "Quantidade de pessoas que nascem em um grupo de mil habitantes no período de um ano",
+        "A diferença entre quem entra e sai do país",
+        "O total de habitantes de uma cidade"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "O que é taxa de mortalidade?",
+      "alternativas": [
+        "Quantidade de pessoas que morrem em cada grupo de mil habitantes no período de um ano",
+        "Número de nascimentos mensais",
+        "Aumento da população urbana",
+        "Quantidade de imigrantes"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "No século 18, o que impulsionou uma ocupação mais efetiva do interior do Brasil?",
+      "alternativas": [
+        "A exploração do Pau-brasil",
+        "A cultura do Café",
+        "A pecuária e a mineração de ouro e diamantes",
+        "A construção de Brasília"
+      ],
+      "correta": 2,
+      "imagem": "images/mineracao_sec18.jpeg"
+    },
+    {
+      "pergunta": "O que é densidade demográfica?",
+      "alternativas": [
+        "O número total de habitantes de um país",
+        "A divisão entre o número de habitantes e a medida da área onde vivem",
+        "O crescimento natural da população",
+        "A quantidade de pessoas que vivem no campo"
+      ],
+      "correta": 1,
+      "imagem": "images/densidade.jpeg"
+    },
+    {
+      "pergunta": "O que define a 'População Absoluta'?",
+      "alternativas": [
+        "A quantidade total de habitantes de um lugar",
+        "O número de pessoas por km²",
+        "Apenas as pessoas que nasceram na cidade",
+        "O total de imigrantes"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "Qual a diferença entre migração interna e migração externa?",
+      "alternativas": [
+        "Interna ocorre no mesmo país; externa é o deslocamento para outros países",
+        "Interna é para fora do país; externa é entre cidades",
+        "Não há diferença entre elas",
+        "Ambas tratam apenas de mudanças entre estados brasileiros"
+      ],
+      "correta": 0,
+      "imagem": "images/migracoes-internas-1980-2010.jpeg"
+    },
+    {
+      "pergunta": "Como se chama o movimento de pessoas que saem de seus países para viver no Brasil?",
+      "alternativas": [
+        "Migração interna",
+        "Imigração (externa)",
+        "Densidade demográfica",
+        "Êxodo rural"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Segundo o gráfico de 1940-2015, em que período a população urbana superou a rural no Brasil?",
+      "alternativas": [
+        "Entre 1940 e 1960",
+        "Entre 1960 e 1980",
+        "Após o ano 2000",
+        "Sempre foi maior"
+      ],
+      "correta": 1,
+      "imagem": "images/grafico_urbana_rural.jpeg"
+    },
+    {
+      "pergunta": "O que são as 'Drogas do Sertão', exploradas no período colonial?",
+      "alternativas": [
+        "Remédios modernos",
+        "Ouro e Prata",
+        "Produtos nativos como cacau, cravo e guaraná",
+        "Cana-de-açúcar"
+      ],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual fator contribuiu para a redução da mortalidade no século 20?",
+      "alternativas": [
+        "Aumento do trabalho escravo",
+        "Descoberta de novos medicamentos e vacinas",
+        "Redução do saneamento básico",
+        "Diminuição das cidades"
+      ],
+      "correta": 1,
+      "imagem": "images/saneamento.jpeg"
+    },
+    {
+      "pergunta": "O crescimento natural da população é a diferença entre:",
+      "alternativas": [
+        "Migração e Imigração",
+        "População urbana e rural",
+        "Taxa de natalidade e taxa de mortalidade",
+        "Área total e número de habitantes"
+      ],
+      "correta": 2,
+      "imagem": "images/grafico_crescimento.jpeg"
+    },
+    {
+      "pergunta": "A construção de qual cidade estimulou o povoamento do interior do Brasil na metade do século 20?",
+      "alternativas": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      "correta": 2
+    },
+    {
+      "pergunta": "O que o 'Saneamento Básico' proporciona à população?",
+      "alternativas": [
+        "Melhores condições de higiene e saúde",
+        "Aumento da natalidade",
+        "Mais migrações externas",
+        "Aumento da área do território"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "No século 17, por que a porção litorânea foi a mais povoada?",
+      "alternativas": [
+        "Por causa da mineração",
+        "Pela exploração do pau-brasil e cultivo da cana-de-açúcar",
+        "Pela construção de Brasília",
+        "Pela indústria automobilística"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "O que acontece quando uma pessoa participa de um 'movimento de retorno'?",
+      "alternativas": [
+        "A quantidade total de pessoas no país diminui",
+        "As pessoas saem do Brasil para morar em outro país",
+        "As pessoas voltam a morar na sua região de origem (onde nasceram)",
+        "A população das cidades fica menor que a do campo"
+      ],
+      "correta": 2,
+      "imagem": "images/migracoes-internas-1980-2010.jpeg"
+    },
+    {
+      "pergunta": "Um local com muitos habitantes por quilômetro quadrado é considerado:",
+      "alternativas": [
+        "Pouco povoado",
+        "Muito povoado (alta densidade)",
+        "Um quilombo",
+        "Uma área rural"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual região brasileira recebeu fluxos intensos do Nordeste na metade do século 20?",
+      "alternativas": ["Norte", "Sul", "Sudeste", "Centro-Oeste"],
+      "correta": 2,
+      "imagem": "images/regioes.jpeg"
+    },
+    {
+      "pergunta": "O 'Crescimento Natural' da população é calculado fazendo a diferença entre quais taxas?",
+      "alternativas": [
+        "A quantidade de pessoas que mudam de cidade e as que ficam",
+        "O número de pessoas que moram na cidade e as que moram no campo",
+        "A taxa de natalidade (quem nasce) e a taxa de mortalidade (quem morre)",
+        "A quantidade de brasileiros e a quantidade de estrangeiros"
+      ],
+      "correta": 2
+    }
+  ],
+  "historia": [
+    {
+      "pergunta": "De que maneira os rios eram importantes para as primeiras sociedades?",
+      "alternativas": [
+        "Para diversão e prática de esportes náuticos",
+        "Para o desenvolvimento da agricultura e consumo de água",
+        "Apenas para separar um país do outro",
+        "Eram usados apenas para despejar lixo"
+      ],
+      "correta": 1,
+      "imagem": "images/importancia_rios.png"
+    },
+    {
+      "pergunta": "De que trata a Pré-História?",
+      "alternativas": [
+        "O período após a invenção da internet",
+        "O período da história humana antes da invenção da escrita",
+        "A história das grandes cidades modernas",
+        "O tempo em que os robôs dominavam a Terra"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Quais os principais períodos da Pré-História?",
+      "alternativas": [
+        "Idade Antiga, Média e Moderna",
+        "Paleolítico, Neolítico e Idade dos Metais",
+        "Primeiro, Segundo e Terceiro ano",
+        "Manhã, Tarde e Noite"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual característica NÃO pertence ao período Paleolítico?",
+      "alternativas": [
+        "Uso do fogo",
+        "Pinturas nas cavernas (rupestres)",
+        "Vida em cidades com prédios (sedentarismo)",
+        "Uso de ferramentas de pedra lascada"
+      ],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual característica NÃO faz parte do período Neolítico?",
+      "alternativas": [
+        "Início da agricultura",
+        "Domesticação de animais",
+        "Vida nômade (mudar de lugar o tempo todo)",
+        "Uso de pedras polidas para ferramentas"
+      ],
+      "correta": 2
+    },
+    {
+      "pergunta": "Como podemos definir o período Mesolítico?",
+      "alternativas": [
+        "O tempo atual em que vivemos",
+        "Um período de transição entre o Paleolítico e o Neolítico",
+        "A época em que os dinossauros sumiram",
+        "O período em que as pirâmides foram feitas"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual foi o principal acontecimento do Mesolítico?",
+      "alternativas": [
+        "O domínio do fogo",
+        "Mudanças climáticas que facilitaram o início da agricultura",
+        "A invenção do avião",
+        "A descoberta da eletricidade"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "O que foi o processo de sedentarização?",
+      "alternativas": [
+        "Quando os humanos passaram a morar em um lugar fixo",
+        "Quando as pessoas decidiram viajar pelo mundo sem parar",
+        "O início das grandes navegações pelo mar",
+        "O momento em que os humanos aprenderam a correr"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "Quais foram os impactos ambientais da sedentarização?",
+      "alternativas": [
+        "Nenhuma mudança ocorreu na natureza",
+        "Desmatamento e mudança no curso de rios para as plantações",
+        "A natureza ficou exatamente igual como era antes",
+        "O clima parou de mudar"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "O que é um 'Estado' e como ele é formado?",
+      "alternativas": [
+        "É apenas um grupo de amigos que brincam juntos",
+        "É a organização política de um povo em um território com governo próprio",
+        "É o nome dado a qualquer cidade pequena",
+        "É uma reunião de pessoas apenas para festas"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "De que se trata a chamada 'Antiguidade'?",
+      "alternativas": [
+        "O período que começa após a invenção da escrita",
+        "O período antes dos seres humanos existirem",
+        "A época em que os carros foram inventados",
+        "O tempo futuro que ainda vai acontecer"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "No Brasil, o governo é dividido em 3 poderes. Quais são eles?",
+      "alternativas": [
+        "Rei, Rainha e Príncipe",
+        "Executivo, Legislativo e Judiciário",
+        "Policial, Bombeiro e Médico",
+        "Pai, Mãe e Filhos"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Onde ficava localizada a Mesopotâmia?",
+      "alternativas": [
+        "Na América do Sul",
+        "Entre os rios Tigre e Eufrates",
+        "No meio da Floresta Amazônica",
+        "Na Antártida"
+      ],
+      "correta": 1,
+      "imagem": "images/mesopotamia.png"
+    },
+    {
+      "pergunta": "O que era o Código de Hamurabi?",
+      "alternativas": [
+        "Um livro de receitas antigas",
+        "Um dos primeiros conjuntos de leis escritas da história",
+        "Um mapa para encontrar tesouros",
+        "Um tipo de dança da Mesopotâmia"
+      ],
+      "correta": 1,
+      "imagem": "images/hamurabi.png"
+    },
+    {
+      "pergunta": "Qual foi o rio fundamental para a formação da civilização egípcia?",
+      "alternativas": ["Rio Amazonas", "Rio Nilo", "Rio Tigre", "Rio Eufrates"],
+      "correta": 1,
+      "imagem": "images/civilizacao_egipcia.png"
+    },
+    {
+      "pergunta": "Como era chamado o governante do Egito antigo?",
+      "alternativas": ["Imperador", "Rei", "Faraó", "Presidente"],
+      "correta": 2,
+      "imagem": "images/piramides.png"
+    },
+    {
+      "pergunta": "Onde se formou o Reino de Cuxe?",
+      "alternativas": [
+        "Na região da Núbia (onde hoje fica o Sudão)",
+        "No norte da Europa",
+        "Na China antiga",
+        "No litoral do Brasil"
+      ],
+      "correta": 0
+    },
+    {
+      "pergunta": "No Reino de Cuxe, qual era a responsabilidade das 'Candaces'?",
+      "alternativas": [
+        "Apenas cuidar da limpeza dos templos",
+        "Governar o reino como rainhas e liderar o povo",
+        "Trabalhar apenas nas cozinhas reais",
+        "Eram crianças que estudavam música"
+      ],
+      "correta": 1
+    },
+    {
+      "pergunta": "Por que a navegação era tão importante para a civilização fenícia?",
+      "alternativas": [
+        "Para passeios de férias em família",
+        "Para o comércio de produtos com outros povos pelo Mar Mediterrâneo",
+        "Para fugir dos dinossauros",
+        "Porque eles não sabiam andar na terra"
+      ],
+      "correta": 1,
+      "imagem": "images/navegacao_fenicia.png"
+    },
+    {
+      "pergunta": "Na Grécia Antiga, o que era a 'Democracia' iniciada em Atenas?",
+      "alternativas": [
+        "Um governo onde ninguém mandava",
+        "Onde os cidadãos participavam das decisões do governo em assembleias",
+        "Um governo onde apenas uma pessoa mandava sozinha",
+        "Onde os animais podiam votar"
+      ],
+      "correta": 1,
+      "imagem": "images/atenas.png"
+    },
+    {
+      "pergunta": "Como se chamava a assembleia onde os cidadãos de Atenas votavam as leis?",
+      "alternativas": ["Senado", "Ekklesia", "Câmara", "Prefeitura"],
+      "correta": 1,
+      "imagem": "images/atenas.png"
+    },
+    {
+      "pergunta": "Sobre Roma Antiga, qual foi a sequência das formas de governo?",
+      "alternativas": [
+        "Sempre foi uma democracia moderna",
+        "Monarquia, depois República e, por fim, Império",
+        "Começou como Império e virou Vila",
+        "Sempre foi governada por presidentes"
+      ],
+      "correta": 1,
+      "imagem": "images/roma.png"
+    },
+    {
+      "pergunta": "Como era dividida a sociedade na Roma Antiga?",
+      "alternativas": [
+        "Todos tinham exatamente o mesmo dinheiro",
+        "De maneira desigual, entre pessoas com privilégios e outras com poucos direitos",
+        "Não existiam pessoas pobres em Roma",
+        "Todos eram considerados deuses imortais"
+      ],
+      "correta": 1,
+      "imagem": "images/roma.png"
+    },
+    {
+      "pergunta": "O que eram as pirâmides egípcias?",
+      "alternativas": [
+        "Prédios de apartamentos",
+        "Túmulos para os faraós guardarem seu espírito após a morte",
+        "Parques de diversão",
+        "Fábricas de papel"
+      ],
+      "correta": 1,
+      "imagem": "images/piramides.png"
+    }
+  ],
+  "ciencias": [
+    {
+      "pergunta": "Qual é o nome dado à mistura onde não conseguimos distinguir seus componentes a olho nu, como a água com sal totalmente dissolvido?",
+      "alternativas": ["Mistura heterogênea", "Mistura homogênea", "Mistura densa", "Mistura pura"],
+      "correta": 1
+    },
+    {
+      "pergunta": "A água e o óleo, quando colocados no mesmo copo, não se misturam completamente e formam duas camadas visíveis. Esse é um exemplo de:",
+      "alternativas": ["Substância pura", "Mistura homogênea", "Mistura heterogênea", "Mistura gasosa"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual é o principal processo físico usado para separar o sal da água do mar em uma salina?",
+      "alternativas": ["Filtração", "Evaporação", "Decantação", "Destilação"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Para separar a areia da água, qual método é o mais adequado?",
+      "alternativas": ["Filtração", "Catação", "Evaporação", "Magnetismo"],
+      "correta": 0
+    },
+    {
+      "pergunta": "Quando um prego de ferro fica exposto à umidade e enferruja, ocorreu uma mudança na sua composição. Esse processo é um exemplo de:",
+      "alternativas": ["Transformação física", "Transformação química", "Mudança de estado", "Fusão"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual das seguintes situações representa apenas uma transformação física da matéria, onde a substância continua sendo a mesma?",
+      "alternativas": ["Amassar um papel", "Queimar uma vela", "Cozinhar um ovo", "Azedar o leite"],
+      "correta": 0
+    },
+    {
+      "pergunta": "O oxigênio que respiramos é essencial para a produção de energia no nosso corpo. Em qual sistema ele entra na corrente sanguínea?",
+      "alternativas": ["Sistema Digestório", "Sistema Respiratório", "Sistema Nervoso", "Sistema Excretor"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual é o principal órgão do sistema circulatório, responsável por bombear o sangue para todo o corpo?",
+      "alternativas": ["Pulmão", "Estômago", "Coração", "Cérebro"],
+      "correta": 2
+    },
+    {
+      "pergunta": "No sistema digestório, onde ocorre a maior parte da absorção de nutrientes dos alimentos?",
+      "alternativas": ["No estômago", "No intestino grosso", "No intestino delgado", "Na boca"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Para manter o corpo saudável e o sistema circulatório funcionando bem, qual hábito é MAIS recomendado?",
+      "alternativas": ["Comer doces todos os dias", "Ficar sentado jogando videogame", "Praticar atividades físicas regularmente", "Dormir pouco"],
+      "correta": 2
+    },
+    {
+      "pergunta": "O movimento da Terra que leva cerca de 24 horas para ser completado e é responsável pela sucessão dos dias e das noites é chamado de:",
+      "alternativas": ["Translação", "Rotação", "Revolução", "Órbita"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Quando observamos o céu à noite, vemos grupos de estrelas que parecem formar desenhos. Esses grupos são chamados de:",
+      "alternativas": ["Galáxias", "Sistemas Solares", "Constelações", "Cometas"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual material é conhecido por ser um bom condutor de eletricidade, sendo usado em fios elétricos?",
+      "alternativas": ["Plástico", "Madeira", "Cobre (metal)", "Borracha"],
+      "correta": 2
+    },
+    {
+      "pergunta": "A capacidade de alguns materiais, como o ímã, de atrair certos metais é chamada de:",
+      "alternativas": ["Eletricidade", "Gravidade", "Magnetismo", "Elasticidade"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual gás é liberado pelas plantas durante a fotossíntese e é vital para a respiração da maioria dos seres vivos?",
+      "alternativas": ["Gás carbônico", "Nitrogênio", "Oxigênio", "Hidrogênio"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Ao preparar um suco em pó, o pó se dissolve completamente na água. O pó é o soluto e a água é o:",
+      "alternativas": ["Solvente", "Mistura homogênea", "Decantador", "Filtro"],
+      "correta": 0
+    },
+    {
+      "pergunta": "Qual é o nome da mudança de estado físico quando a água líquida se transforma em vapor ao ser aquecida?",
+      "alternativas": ["Fusão", "Solidificação", "Vaporização (ou Ebulição)", "Condensação"],
+      "correta": 2
+    },
+    {
+      "pergunta": "O suco gástrico, que ajuda a quebrar os alimentos, é produzido em qual órgão do sistema digestório?",
+      "alternativas": ["Esôfago", "Fígado", "Estômago", "Intestino delgado"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Os vasos sanguíneos que levam o sangue do coração para o restante do corpo são chamados de:",
+      "alternativas": ["Veias", "Artérias", "Capilares", "Nervos"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Qual das seguintes constelações é muito conhecida no hemisfério Sul e tem o formato de uma cruz?",
+      "alternativas": ["Orion", "Ursa Maior", "Cruzeiro do Sul", "Escorpião"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Um material que se quebra facilmente quando sofre um impacto, como o vidro, é considerado:",
+      "alternativas": ["Frágil", "Malaável", "Dúctil", "Elástico"],
+      "correta": 0
+    },
+    {
+      "pergunta": "Qual é a principal função dos glóbulos vermelhos no sangue?",
+      "alternativas": ["Combater infecções", "Ajudar na coagulação", "Transportar oxigênio", "Produzir energia"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Na boca, começa a digestão química de qual tipo de nutriente, graças à ação da saliva?",
+      "alternativas": ["Proteínas", "Gorduras", "Amido (carboidrato)", "Vitaminas"],
+      "correta": 2
+    },
+    {
+      "pergunta": "A separação de misturas é importante para obter água potável. Qual etapa remove as partículas sólidas maiores flutuantes?",
+      "alternativas": ["Filtração", "Cloração", "Fluoretação", "Decantação"],
+      "correta": 0
+    },
+    {
+      "pergunta": "Se colocarmos gelo em um copo com água, o gelo flutua. Isso acontece porque o gelo é:",
+      "alternativas": ["Mais denso que a água líquida", "Menos denso que a água líquida", "Mais quente que a água líquida", "Solúvel na água líquida"],
+      "correta": 1
+    },
+    {
+      "pergunta": "A queima de combustíveis fósseis, como a gasolina, libera gás carbônico na atmosfera. Esse é um exemplo de:",
+      "alternativas": ["Transformação física", "Transformação química", "Fusão nuclear", "Evaporação"],
+      "correta": 1
+    },
+    {
+      "pergunta": "Durante a respiração, qual é o gás que eliminamos do corpo como produto residual?",
+      "alternativas": ["Oxigênio", "Nitrogênio", "Gás carbônico", "Hidrogênio"],
+      "correta": 2
+    },
+    {
+      "pergunta": "Qual hábito contribui para a saúde do sistema digestório?",
+      "alternativas": ["Comer muito rápido", "Beber pouca água", "Mastigar bem os alimentos", "Comer alimentos muito gordurosos"],
+      "correta": 2
+    },
+    {
+      "pergunta": "O tempo que a Terra leva para dar uma volta completa ao redor do Sol define a duração de:",
+      "alternativas": ["Um dia", "Um mês", "Um ano", "Uma semana"],
+      "correta": 2
+    },
+    {
+      "pergunta": "A bússola é um instrumento de orientação que funciona devido a qual propriedade física da Terra?",
+      "alternativas": ["Eletricidade", "Magnetismo terrestre", "Gravidade", "Rotação"],
+      "correta": 1
+    }
+  ],
+  "ciencias2": [
+    {
+    "pergunta": "Qual processo libera energia dos nutrientes nos seres humanos?",
+    "alternativas": [
+      "Respiração celular",
+      "Digestão",
+      "Excreção",
+      "Circulação"
+    ],
+    "correta": 0
+  },
+  {
+    "pergunta": "A quebra dos alimentos em partículas menores para absorção é chamada:",
+    "alternativas": [
+      "Respiração",
+      "Digestão",
+      "Ingestão",
+      "Excreção"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Onde se inicia a digestão química do amido?",
+    "alternativas": [
+      "Estômago",
+      "Boca",
+      "Intestino delgado",
+      "Esôfago"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Qual órgão conduz o alimento da faringe ao estômago?",
+    "alternativas": [
+      "Laringe",
+      "Traqueia",
+      "Esôfago",
+      "Brônquio"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "A enzima pepsina atua principalmente na digestão de:",
+    "alternativas": [
+      "Lipídios",
+      "Carboidratos",
+      "Proteínas",
+      "Vitaminas"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "O suco gástrico é produzido por qual órgão?",
+    "alternativas": [
+      "Fígado",
+      "Pâncreas",
+      "Estômago",
+      "Vesícula biliar"
+    ],
+    "correta": 2,
+     "imagem": "images/estomago.png"
+  },
+  {
+    "pergunta": "Quais glândulas são anexas ao sistema digestório?",
+    "alternativas": [
+      "Tireoide e Hipófise",
+      "Fígado e Pâncreas",
+      "Suprarrenais e Ovários",
+      "Paratireoides e Timo"
+    ],
+    "correta": 1,
+     "imagem": "images/figado-estomago.png"
+  },
+  {
+    "pergunta": "A bile, importante na emulsificação de gorduras, é produzida por:",
+    "alternativas": [
+      "Vesícula biliar",
+      "Estômago",
+      "Pâncreas",
+      "Fígado"
+    ],
+    "correta": 3,
+    "imagem": "images/figado-estomago.png"
+  },
+  {
+    "pergunta": "Onde ocorre a maior parte da absorção de nutrientes?",
+    "alternativas": [
+      "Intestino grosso",
+      "Intestino delgado",
+      "Estômago",
+      "Boca"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Qual secreção contém enzimas para digerir proteínas, gorduras e carboidratos?",
+    "alternativas": [
+      "Bile",
+      "Suco gástrico",
+      "Suco pancreático",
+      "Saliva"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "O quilo é formado em qual local?",
+    "alternativas": [
+      "Estômago",
+      "Boca",
+      "Intestino delgado",
+      "Intestino grosso"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "As vilosidades intestinais são dobras que aumentam a superfície de:",
+    "alternativas": [
+      "Digestão",
+      "Excreção",
+      "Absorção",
+      "Ingestão"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Nutrientes absorvidos caem diretamente em qual sistema?",
+    "alternativas": [
+      "Respiratório",
+      "Nervoso",
+      "Cardiovascular",
+      "Linfático"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Qual função principal do intestino grosso?",
+    "alternativas": [
+      "Digerir proteínas",
+      "Absorver água e sais",
+      "Produzir bile",
+      "Formar o quilo"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "A microbiota intestinal é composta principalmente por:",
+    "alternativas": [
+      "Enzimas",
+      "Ácidos",
+      "Bactérias",
+      "Vírus"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Qual a principal função do sistema respiratório?",
+    "alternativas": [
+      "Digerir alimentos",
+      "Transportar nutrientes",
+      "Realizar trocas gasosas",
+      "Bombear sangue"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Os alvéolos pulmonares são locais onde ocorre:",
+    "alternativas": [
+      "A digestão",
+      "A hematose",
+      "A circulação",
+      "A excreção"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Qual gás é essencial para a respiração celular?",
+    "alternativas": [
+      "Nitrogênio",
+      "Hidrogênio",
+      "Oxigênio",
+      "Gás carbônico"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Qual caminho correto do ar na inspiração?",
+    "alternativas": [
+      "Nariz > Faringe > Laringe > Traqueia > Brônquios > Pulmões",
+      "Nariz > Faringe > Laringe > Traqueia > Brônquios > Alvéolos",
+      "Nariz > Laringe > Faringe > Traqueia > Brônquios > Pulmões",
+      "Nariz > Faringe > Traqueia > Laringe > Brônquios > Pulmões"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "A faringe é um órgão comum a quais sistemas?",
+    "alternativas": [
+      "Respiratório e Circulatório",
+      "Digestório e Respiratório",
+      "Digestório e Circulatório",
+      "Respiratório e Excretor"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Qual estrutura impede a entrada de alimento na traqueia?",
+    "alternativas": [
+      "Faringe",
+      "Epiglote",
+      "Laringe",
+      "Brônquio"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "A laringe abriga qual estrutura importante?",
+    "alternativas": [
+      "Alvéolos pulmonares",
+      "Pregas vocais",
+      "Anéis cartilaginosos",
+      "Cílios"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "Os brônquios se ramificam em tubos menores chamados:",
+    "alternativas": [
+      "Traqueias",
+      "Brônquios secundários",
+      "Bronquíolos",
+      "Alvéolos"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Como é transportada a maior parte do gás carbônico no sangue?",
+    "alternativas": [
+      "Combinado com hemoglobina",
+      "Dissolvido no plasma como íon bicarbonato",
+      "Dissolvido nas hemácias",
+      "Combinado com nutrientes"
+    ],
+    "correta": 1
+  },
+  {
+    "pergunta": "O oxigênio é transportado no sangue principalmente ligado a:",
+    "alternativas": [
+      "Plasma",
+      "Leucócitos",
+      "Hemoglobina",
+      "Plaquetas"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "O principal músculo responsável pela respiração é:",
+    "alternativas": [
+      "Intercostal externo",
+      "Abdominal anterior",
+      "Diafragma",
+      "Peitoral maior"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "O que ocorre durante a expiração em condições normais?",
+    "alternativas": [
+      "Relaxamento do diafragma e músculos intercostais",
+      "Contração do diafragma e músculos intercostais",
+      "Relaxamento apenas do diafragma",
+      "Contração apenas dos músculos intercostais"
+    ],
+    "correta": 0
+  },
+  {
+    "pergunta": "Qual gás em alta concentração no sangue estimula a respiração?",
+    "alternativas": [
+      "Oxigênio",
+      "Nitrogênio",
+      "Monóxido de carbono",
+      "Gás carbônico"
+    ],
+    "correta": 3
+  },
+  {
+    "pergunta": "O controle nervoso da respiração ocorre principalmente no:",
+    "alternativas": [
+      "Cérebro anterior",
+      "Cerebelo",
+      "Bulbo raquidiano",
+      "Hipotálamo"
+    ],
+    "correta": 2
+  },
+  {
+    "pergunta": "Qual fator pode aumentar a frequência respiratória?",
+    "alternativas": [
+      "Descanso excessivo",
+      "Atividade física intensa",
+      "Concentração de nitrogênio no ar",
+      "Concentração de nutrientes no sangue"
+    ],
+    "correta": 1
+  }
+  ],
+  "portugues": [
+    { "pergunta": "Qual o adjetivo na frase: 'A pequena Brenda estuda muito'?", "alternativas": ["Brenda", "Pequena", "Estuda", "Muito"], "correta": 1 },
+    { "pergunta": "Qual o antônimo de 'rápido'?", "alternativas": ["Veloz", "Lento", "Apressado", "Esperto"], "correta": 1 },
+    { "pergunta": "Qual palavra está escrita corretamente com 'H'?", "alternativas": ["Onesto", "Oje", "Higiene", "Umano"], "correta": 2 },
+    { "pergunta": "O coletivo de 'lobos' é:", "alternativas": ["Cardume", "Matilha", "Alcateia", "Enxame"], "correta": 2 },
+    { "pergunta": "Qual frase está no futuro?", "alternativas": ["Eu li o livro.", "Eu leio o livro.", "Eu lerei o livro.", "Eu estou lendo."], "correta": 2 },
+    { "pergunta": "Qual destas palavras é uma proparoxítona?", "alternativas": ["Café", "Escola", "Lâmpada", "Cajá"], "correta": 2 },
+    { "pergunta": "O sinal usado para indicar uma pergunta é:", "alternativas": ["Exclamação", "Ponto final", "Interrogação", "Vírgula"], "correta": 2 },
+    { "pergunta": "Substantivo derivado de 'flor':", "alternativas": ["Folha", "Floricultura", "Planta", "Jardim"], "correta": 1 },
+    { "pergunta": "Complete: 'Eles ___ à escola ontem'.", "alternativas": ["Foram", "Vão", "Irão", "Vai"], "correta": 0 },
+    { "pergunta": "Qual palavra é um substantivo abstrato?", "alternativas": ["Mesa", "Lápis", "Amizade", "Pedra"], "correta": 2 },
+    { "pergunta": "Qual o sinônimo de 'alegre'?", "alternativas": ["Triste", "Contente", "Bravo", "Cansado"], "correta": 1 },
+    { "pergunta": "A palavra 'açúcar' deve ser escrita com:", "alternativas": ["S", "SS", "Ç", "XC"], "correta": 2 },
+    { "pergunta": "Na frase 'Brenda é muito inteligente', a palavra 'Brenda' é um:", "alternativas": ["Substantivo comum", "Substantivo próprio", "Verbo", "Adjetivo"], "correta": 1 },
+    { "pergunta": "Qual o plural de 'caracol'?", "alternativas": ["Caracols", "Caracóis", "Caracoles", "Caracoises"], "correta": 1 },
+    { "pergunta": "O ponto de exclamação (!) expressa:", "alternativas": ["Uma dúvida", "Uma afirmação simples", "Uma emoção ou surpresa", "Uma pausa curta"], "correta": 2 },
+    { "pergunta": "Qual destas palavras é um monossílabo tônico?", "alternativas": ["Pé", "Casa", "Escola", "Menina"], "correta": 0 },
+    { "pergunta": "O feminino de 'leão' é:", "alternativas": ["Leoa", "Leonina", "Leandrinha", "Leona"], "correta": 0 },
+    { "pergunta": "A palavra 'computador' é:", "alternativas": ["Oxítona", "Paroxítona", "Proparoxítona", "Monossílabo"], "correta": 1 },
+    { "pergunta": "Qual o aumentativo de 'casa'?", "alternativas": ["Casinha", "Casarão", "Casebre", "Casona"], "correta": 1 },
+    { "pergunta": "Qual destas palavras indica uma ação (verbo)?", "alternativas": ["Bonito", "Cachorro", "Pular", "Cadeira"], "correta": 2 },
+    { "pergunta": "Onde se usa a vírgula?", "alternativas": ["Para terminar uma frase", "Para separar itens em uma lista", "Para gritar", "Para fazer uma pergunta"], "correta": 1 },
+    { "pergunta": "Qual palavra está no grau diminutivo?", "alternativas": ["Sapato", "Sapatão", "Sapatinho", "Sapataria"], "correta": 2 },
+    { "pergunta": "A separação silábica correta de 'pássaro' é:", "alternativas": ["pá-ssaro", "pás-sa-ro", "pás-sar-o", "páss-a-ro"], "correta": 1 },
+    { "pergunta": "Qual o pronome pessoal na frase 'Nós estudamos hoje'?", "alternativas": ["Nós", "Estudamos", "Hoje", "Hoje"], "correta": 0 },
+    { "pergunta": "Qual o coletivo de 'estrelas'?", "alternativas": ["Nuvem", "Constelação", "Enxame", "Banda"], "correta": 1 },
+    { "pergunta": "A palavra 'fácil' é acentuada por ser uma:", "alternativas": ["Oxítona", "Paroxítona terminada em L", "Proparoxítona", "Monossílabo"], "correta": 1 },
+    { "pergunta": "Qual o plural de 'pão'?", "alternativas": ["Pãos", "Pães", "Pões", "Paizinhos"], "correta": 1 },
+    { "pergunta": "Na frase 'O livro é novo', o artigo é:", "alternativas": ["O", "Livro", "É", "Novo"], "correta": 0 },
+    { "pergunta": "O que indica o travessão (—)?", "alternativas": ["O fim da história", "O início de uma fala", "Uma pergunta", "Uma surpresa"], "correta": 1 },
+    { "pergunta": "Qual o sinônimo de 'caminhar'?", "alternativas": ["Correr", "Andar", "Sentar", "Dormir"], "correta": 1 },
+    {
+    "pergunta": "Texto: 'A raposa e a cegonha mantinham boas relações. Um dia, a raposa convidou a cegonha para jantar e serviu sopa num prato raso. A cegonha, com seu bico longo, não conseguiu comer nada.' O que causou o problema da cegonha?",
+    "alternativas": ["Ela não estava com fome", "O prato era inadequado para o bico dela", "A sopa estava muito quente", "A raposa comeu tudo antes"],
+    "correta": 1
+  },
+  {
+    "pergunta": "Texto: 'Aviso Escolar: Na próxima sexta-feira, não haverá aula devido à reunião de professores. Voltaremos ao normal na segunda-feira.' Quando os alunos devem voltar à escola?",
+    "alternativas": ["Na sexta-feira", "No sábado", "Na segunda-feira", "Amanhã"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'O lobo resolveu se disfarçar de ovelha para entrar no pasto sem ser percebido. Ele colocou uma pele de carneiro e misturou-se ao rebanho.' Qual era a intenção do lobo?",
+    "alternativas": ["Fazer amizade com as ovelhas", "Enganar o rebanho para caçar", "Aprender a comer grama", "Proteger as ovelhas"],
+    "correta": 1
+  },
+  {
+    "pergunta": "Texto: 'O sistema solar é formado por oito planetas que giram ao redor do Sol. A Terra é o terceiro planeta a partir do Sol e o único conhecido com vida.' Segundo o texto, o que torna a Terra especial?",
+    "alternativas": ["Ser o maior planeta", "Ser o primeiro planeta", "Ter vida conhecida", "Estar longe do Sol"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'Anúncio: Vende-se bicicleta azul, aro 24, pouco usada. Tratar com Paulo no telefone 9999-9999.' O que está sendo vendido?",
+    "alternativas": ["Um telefone", "Um carro azul", "Uma bicicleta", "Um aro de pneu"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'A Mata Atlântica é uma das florestas mais ricas em biodiversidade do mundo. Infelizmente, restam apenas pequenas partes da floresta original.' Qual é a notícia triste que o texto traz?",
+    "alternativas": ["A floresta é muito rica", "A floresta fica no mundo todo", "Restam poucas partes da floresta original", "A floresta é feita de árvores"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'Marcos estava tão ansioso para o jogo que esqueceu as chuteiras em casa. Quando chegou ao campo, percebeu que teria que jogar de tênis.' Por que Marcos esqueceu as chuteiras?",
+    "alternativas": ["Porque ele não queria jogar", "Por causa da sua ansiedade para o jogo", "Porque as chuteiras estavam estragadas", "Porque ele preferia jogar de tênis"],
+    "correta": 1
+  },
+  {
+    "pergunta": "Texto: 'As formigas trabalham duro durante todo o verão guardando comida. Quando o inverno chega, elas têm alimento suficiente para sobreviver no formigueiro.' Por que as formigas guardam comida no verão?",
+    "alternativas": ["Para dar para a cigarra", "Para não ter que trabalhar no inverno", "Para brincar na neve", "Porque no verão a comida é ruim"],
+    "correta": 1
+  },
+  {
+    "pergunta": "Texto: 'Receita de Suco: Bata no liquidificador duas fatias de abacaxi com um copo de água e açúcar a gosto. Coe e sirva gelado.' Qual é a primeira coisa a fazer na receita?",
+    "alternativas": ["Coar o suco", "Servir gelado", "Bater os ingredientes no liquidificador", "Colocar o açúcar"],
+    "correta": 2
+  },
+  {
+    "pergunta": "Texto: 'A baleia-azul é o maior animal que já viveu na Terra. Ela pode chegar a 30 metros de comprimento, o que equivale a três ônibus enfileirados.' O texto compara a baleia a ônibus para mostrar:",
+    "alternativas": ["Que ela é rápida", "O quanto ela é comprida/grande", "Que ela vive no asfalto", "Que ela carrega passageiros"],
+    "correta": 1
+  }
+  ],
+  "matematica": [
+    { "pergunta": "Quanto é 1.500 ÷ 5?", "alternativas": ["200", "250", "300", "350"], "correta": 2 },
+    { "pergunta": "Perímetro de um quadrado com lado de 7 cm:", "alternativas": ["14 cm", "21 cm", "28 cm", "49 cm"], "correta": 2 },
+    { "pergunta": "Resultado de 12,5 + 3,4:", "alternativas": ["15,9", "15,5", "16,0", "12,9"], "correta": 0 },
+    { "pergunta": "O número 'em cima' na fração chama-se:", "alternativas": ["Denominador", "Numerador", "Divisor", "Resto"], "correta": 1 },
+    { "pergunta": "Brenda tem 4 pacotes com 6 doces e deu 5 para a mãe. Restam:", "alternativas": ["24", "19", "20", "10"], "correta": 1 },
+    { "pergunta": "Valor do algarismo 8 no número 3.842:", "alternativas": ["8", "80", "800", "8.000"], "correta": 2 },
+    { "pergunta": "Quanto é 50% de 200 reais?", "alternativas": ["50", "100", "150", "20"], "correta": 1 },
+    { "pergunta": "Um ângulo de 90 graus é um ângulo:", "alternativas": ["Agudo", "Obtuso", "Reto", "Raso"], "correta": 2 },
+    { "pergunta": "Resultado de 250 x 4:", "alternativas": ["800", "900", "1.000", "1.200"], "correta": 2 },
+    { "pergunta": "Triângulo com todos os lados iguais:", "alternativas": ["Escaleno", "Isósceles", "Equilátero", "Retângulo"], "correta": 2 },
+    { "pergunta": "Quanto é 3/4 de 20?", "alternativas": ["5", "10", "15", "18"], "correta": 2 },
+    { "pergunta": "Qual o sucessor de 9.999?", "alternativas": ["10.000", "9.000", "9.998", "11.000"], "correta": 0 },
+    { "pergunta": "Um polígono de 5 lados chama-se:", "alternativas": ["Quadrado", "Pentágono", "Hexágono", "Octógono"], "correta": 1 },
+    { "pergunta": "Resultado de 1.000 - 355:", "alternativas": ["655", "645", "745", "545"], "correta": 1 },
+    { "pergunta": "Quantos minutos há em 3 horas?", "alternativas": ["120", "150", "180", "200"], "correta": 2 },
+    { "pergunta": "Qual número é par?", "alternativas": ["135", "247", "358", "461"], "correta": 2 },
+    { "pergunta": "Quanto é a metade de 700?", "alternativas": ["300", "350", "400", "450"], "correta": 1 },
+    { "pergunta": "Se um quilo tem 1.000g, quanto tem meio quilo?", "alternativas": ["100g", "250g", "500g", "750g"], "correta": 2 },
+    { "pergunta": "Qual o dobro de 150?", "alternativas": ["200", "250", "300", "450"], "correta": 2 },
+    { "pergunta": "Resultado de 0,5 + 0,5:", "alternativas": ["0,10", "1,0", "0,55", "5,0"], "correta": 1 },
+    { "pergunta": "Quantos segundos tem 1 minuto?", "alternativas": ["30", "60", "90", "100"], "correta": 1 },
+    { "pergunta": "Qual o triplo de 25?", "alternativas": ["50", "60", "75", "100"], "correta": 2 },
+    { "pergunta": "Um século tem quantos anos?", "alternativas": ["10", "50", "100", "1.000"], "correta": 2 },
+    { "pergunta": "Resultado de 81 ÷ 9:", "alternativas": ["7", "8", "9", "10"], "correta": 2 },
+    { "pergunta": "Qual o antecessor de 500?", "alternativas": ["400", "490", "499", "501"], "correta": 2 },
+    { "pergunta": "O que indica o denominador em uma fração?", "alternativas": ["Partes tomadas", "Total de partes", "O resultado", "A soma"], "correta": 1 },
+    { "pergunta": "Quantos lados tem um hexágono?", "alternativas": ["4", "5", "6", "8"], "correta": 2 },
+    { "pergunta": "Se uma caneta custa R$ 2,50, quanto custam 4 canetas?", "alternativas": ["R$ 8,00", "R$ 9,00", "R$ 10,00", "R$ 12,00"], "correta": 2 },
+    { "pergunta": "Quanto é 10 x 100?", "alternativas": ["100", "1.000", "10.000", "110"], "correta": 1 },
+    { "pergunta": "Qual forma tem 3 lados e 3 ângulos?", "alternativas": ["Quadrado", "Círculo", "Triângulo", "Retângulo"], "correta": 2 }
+  ],
+  "arredondamento": [
+    {
+      "pergunta": "Para arredondar um número, se o algarismo à direita da ordem escolhida for 5 ou maior, o que devemos fazer?",
+      "alternativas": ["Arredondar para menos", "Manter o número igual", "Arredondar para mais", "Excluir o algarismo"],
+      "correta": 2,
+      "explicacao": "Segundo a regra, se o algarismo for 5 ou maior, arredondamos para mais."
+    },
+    {
+      "pergunta": "O número 636.303 está mais próximo de qual dezena de milhar?",
+      "alternativas": ["630.000", "640.000", "600.000", "650.000"],
+      "correta": 1,
+      "explicacao": "Como 636.303 passou da metade (635.000), ele está mais perto de 640.000."
+    },
+    {
+      "pergunta": "Arredonde o número 548 para a dezena mais próxima:",
+      "alternativas": ["500", "540", "550", "560"],
+      "correta": 2,
+      "explicacao": "O algarismo da unidade é 8 (maior que 5), então arredondamos para a dezena superior: 550."
+    },
+    {
+      "pergunta": "O número 512.548 está mais perto de 500.000 ou de 600.000?",
+      "alternativas": ["500.000", "600.000", "550.000", "510.000"],
+      "correta": 0,
+      "explicacao": "Como o algarismo na dezena de milhar é 1 (menor que 5), ele está mais perto de 500.000."
+    },
+    {
+      "pergunta": "Arredonde a população indígena de 1.693.535 para a unidade de milhar mais próxima:",
+      "alternativas": ["1.690.000", "1.693.000", "1.694.000", "1.700.000"],
+      "correta": 2,
+      "explicacao": "O algarismo das centenas é 5, então arredondamos a unidade de milhar para cima: 1.694.000."
+    },
+    {
+      "pergunta": "Qual o arredondamento de 799 para a dezena mais próxima?",
+      "alternativas": ["700", "790", "800", "810"],
+      "correta": 2,
+      "explicacao": "O algarismo da unidade é 9, o que faz a dezena 9 pular para a próxima centena: 800."
+    },
+    {
+      "pergunta": "O número 636.303 arredondado para a unidade de milhar mais próxima é:",
+      "alternativas": ["636.000", "637.000", "630.000", "640.000"],
+      "correta": 0,
+      "explicacao": "O algarismo das centenas é 3 (menor que 5), então mantemos a unidade de milhar e zeramos o resto: 636.000."
+    },
+    {
+      "pergunta": "Arredonde 1.235.478 para a centena de milhar mais próxima:",
+      "alternativas": ["1.000.000", "1.200.000", "1.300.000", "1.230.000"],
+      "correta": 1,
+      "explicacao": "O algarismo à direita (dezena de milhar) é 3, logo arredondamos para baixo: 1.200.000."
+    },
+    {
+      "pergunta": "O número 550.003 está mais próximo de 500.000 ou 600.000?",
+      "alternativas": ["500.000", "600.000", "550.000", "560.000"],
+      "correta": 1,
+      "explicacao": "O algarismo da dezena de milhar é 5, então arredondamos para a centena de milhar superior: 600.000."
+    },
+    {
+      "pergunta": "Arredonde 636.303 para a centena mais próxima:",
+      "alternativas": ["636.000", "636.300", "636.400", "637.000"],
+      "correta": 1,
+      "explicacao": "O algarismo da dezena é 0, então mantemos a centena: 636.300."
+    },
+    { "pergunta": "Arredonde 124.785 para a dezena mais próxima:", "alternativas": ["124.700", "124.780", "124.790", "124.800"], "correta": 2 },
+    { "pergunta": "Arredonde 487.321 para a dezena mais próxima:", "alternativas": ["487.300", "487.320", "487.330", "480.000"], "correta": 1 },
+    { "pergunta": "O número 599.999 está mais perto de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "590.000", "599.000"], "correta": 1 },
+    { "pergunta": "Arredonde 9.493 para a dezena mais próxima:", "alternativas": ["9.400", "9.490", "9.500", "9.000"], "correta": 1 },
+    { "pergunta": "Arredonde 1.235.478 para a dezena de milhar mais próxima:", "alternativas": ["1.230.000", "1.240.000", "1.200.000", "1.235.000"], "correta": 1 },
+    { "pergunta": "O número 505.417 está mais próximo de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "505.000", "510.000"], "correta": 0 },
+    { "pergunta": "Arredonde 636.303 para a unidade de milhar:", "alternativas": ["636.000", "637.000", "630.000", "640.000"], "correta": 0 },
+    { "pergunta": "Arredonde 1.235.478 para a unidade de milhar mais próxima:", "alternativas": ["1.230.000", "1.235.000", "1.236.000", "1.240.000"], "correta": 1 },
+    { "pergunta": "O número 549.999 está mais perto de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "550.000", "540.000"], "correta": 0 },
+    { "pergunta": "Arredonde 99.458 para a dezena mais próxima:", "alternativas": ["99.400", "99.450", "99.460", "100.000"], "correta": 2 },
+    { "pergunta": "Arredonde 1.235.478 para a centena mais próxima:", "alternativas": ["1.235.400", "1.235.500", "1.235.000", "1.236.000"], "correta": 1 },
+    { "pergunta": "O número 615.298 está mais perto de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "610.000", "620.000"], "correta": 1 },
+    { "pergunta": "Arredonde 1.235.478 para a dezena mais próxima:", "alternativas": ["1.235.470", "1.235.480", "1.235.400", "1.235.500"], "correta": 1 },
+    { "pergunta": "O número 539.798 está mais próximo de 500.000 ou 600.000?", "alternativas": ["500.000", "600.000", "540.000", "530.000"], "correta": 0 },
+    { "pergunta": "Se um número termina em 5 na ordem à direita, o arredondamento é para:", "alternativas": ["Baixo", "Cima (mais)", "Manter o número", "Excluir o 5"], "correta": 1 },
+    { "pergunta": "O número 636.303 está entre quais unidades de milhar?", "alternativas": ["630.000 e 640.000", "636.000 e 637.000", "600.000 e 700.000", "636.300 e 636.400"], "correta": 1 },
+    { "pergunta": "Arredonde 555.048 para a centena de milhar mais próxima:", "alternativas": ["500.000", "600.000", "550.000", "560.000"], "correta": 1 },
+    { "pergunta": "O número 636.303 está mais próximo de 636.300 ou 636.400?", "alternativas": ["636.300", "636.400", "636.000", "637.000"], "correta": 0 },
+    { "pergunta": "Arredonde 124.785 para a unidade de milhar mais próxima:", "alternativas": ["124.000", "125.000", "120.000", "130.000"], "correta": 1 },
+    { "pergunta": "Para arredondar para a dezena, olhamos para o algarismo da:", "alternativas": ["Centena", "Dezena de milhar", "Unidade", "Dezena"], "correta": 2 }
+  ]
+
+}

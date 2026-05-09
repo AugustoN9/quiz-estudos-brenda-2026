@@ -3,71 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Interativo</title>
+    <title>Quiz Educativo - Brenda</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   </head>
   <body>
     <div id="quiz-container">
-      <!-- Tela Inicial -->
       <section id="home-screen">
-        <img src="./images/logoAppQuizBrenda.png" alt="" srcset="" />
-        <h1>Escolha uma Matéria</h1>
-        <p>Escolha a matéria para estudar!</p>
-        <div class="category-list">
-          <button onclick="startQuiz('historia')">História</button>
-          <button onclick="startQuiz('geografia')">Geografia</button>
-          <button onclick="startQuiz('ciencias')">Ciências</button>
-          <button onclick="startQuiz('ciencias2')">Ciências Dige/Resp</button>
-          <button onclick="startQuiz('portugues')">Português</button>
-          <button onclick="startQuiz('matematica')">Matematica</button> 
-          <button onclick="startQuiz('arredondamento')">Matematica Arredonda</button>
-        </div>
-      </section>
+        <header class="menu-header">
+          <img src="./images/logoQuiz.png" alt="Logo Quiz" id="logo-main" />
+        </header>
 
-      <!-- Tela de Questões -->
-      <section id="quiz-screen" class="hidden">
+        <h1 id="menu-title">Escolha uma Matéria</h1>
+        <p id="menu-subtitle">Selecione a área para estudar!</p>
+
+        <div id="dynamic-menu" class="category-list"></div>
+
         <div
-          id="question-counter"
-          style="text-align: right; font-weight: bold; color: #666"
-        ></div>
-        <h2 id="question-text">Pergunta aqui?</h2>
-        <div id="options-container"></div>
-        <p id="feedback"></p>
-        <div id="next-container" class="hidden" style="margin-bottom: 20px">
-          <button
-            id="next-btn"
-            onclick="goToNextQuestion()"
-            style="background-color: #28a745; color: white; border: none"
-          >
-            Avançar
-          </button>
-        </div>
-        <div
-          class="quiz-footer"
+          id="menu-back-container"
           style="
             margin-top: 20px;
-            border-top: 1px solid #eee;
             padding-top: 15px;
+            border-top: 1px solid #eee;
           "
         >
-          <button id="exit-btn" onclick="confirmExit()">Sair do Quiz</button>
+          <button
+            id="back-menu-btn"
+            class="hidden"
+            onclick="goBackMenu()"
+            style="background-color: #6c757d; color: white"
+          >
+            ← Voltar
+          </button>
         </div>
       </section>
 
-      <!-- Tela de Resultado -->
+      <section id="quiz-screen" class="hidden">
+        <div class="quiz-header">
+          <div id="question-counter"></div>
+        </div>
+
+        <h2 id="question-text">Carregando pergunta...</h2>
+
+        <div id="options-container"></div>
+
+        <p id="feedback"></p>
+
+        <div id="next-container" class="hidden">
+          <button id="next-btn" onclick="goToNextQuestion()">Avançar →</button>
+        </div>
+
+        <div class="quiz-footer">
+          <button
+            id="back-to-topics-btn"
+            class="btn-secondary"
+            onclick="confirmBackToMenu()"
+          >
+            ← Voltar aos Tópicos
+          </button>
+          <button id="exit-quiz-btn" class="btn-danger" onclick="confirmExit()">
+            Sair e Ver Resultado
+          </button>
+        </div>
+      </section>
+
+      <section id="reading-screen" class="hidden">
+        <div id="reading-container" style="width: 100%; text-align: center">
+          <img
+            id="reading-image"
+            src=""
+            alt="Página de Leitura"
+            style="
+              width: 100%;
+              border-radius: 8px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            "
+          />
+        </div>
+
+        <div
+          class="reading-controls"
+          style="
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+          "
+        >
+          <button id="prev-page" onclick="changePage(-1)" style="flex: 1">
+            Anterior
+          </button>
+          <button id="next-page" onclick="changePage(1)" style="flex: 1">
+            Próximo
+          </button>
+        </div>
+
+        <button
+          onclick="location.reload()"
+          style="margin-top: 20px; background-color: #dc3545; color: white"
+        >
+          Sair da Leitura
+        </button>
+      </section>
+
       <section id="result-screen" class="hidden">
         <h2>Resultado Final</h2>
         <p id="score-text"></p>
         <div id="star-rating"></div>
-        <button onclick="location.reload()">Reiniciar</button>
+        <button class="btn-restart" onclick="location.reload()">
+          Reiniciar Tudo
+        </button>
       </section>
     </div>
 
     <footer>
-      <div class="footer-content">Desenvolvido por @AugustoN9</div>
+      <div class="footer-content">
+        <p>Desenvolvido para o aprendizado de Brenda</p>
+        <p>© 2026 - Sistema de Quiz Interativo</p>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

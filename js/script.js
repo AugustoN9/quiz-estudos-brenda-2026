@@ -1,18 +1,135 @@
-let questions = {};
+let questionsData = {};
 let currentQuestions = [];
 let currentIndex = 0;
 let score = 0;
 
+// Variáveis para o Modo Leitura
+let currentReadingPages = [];
+let currentPageIndex = 0;
+
+// Histórico de navegação para permitir a função "Voltar"
+let navigationStack = [];
+
 // Carregar dados do JSON
 fetch('js/questions.json')
     .then(response => response.json())
-    .then(data => { questions = data; });
+    .then(data => { 
+        questionsData = data; 
+        showMainMenu(); // Inicia no menu principal após carregar
+    })
+    .catch(err => console.error("Erro ao carregar perguntas:", err));
 
-function startQuiz(category) {
-    if (!questions[category]) return alert("Categoria não encontrada!");
+// --- 1. GESTÃO DE MENUS DINÂMICOS ---
+
+function showMainMenu() {
+    navigationStack = [];
+    updateMenuDisplay("Escolha uma Matéria", "Selecione a matéria para estudar!", false);
     
-    // Filtra e embaralha as questões da categoria
-    currentQuestions = [...questions[category]].sort(() => Math.random() - 0.5);
+    const categories = Object.keys(questionsData);
+    renderButtons(categories, (cat) => showSubjects(cat), questionsData, 'titulo');
+}
+
+function showSubjects(category) {
+    navigationStack.push({ type: 'main' });
+    const categoryData = questionsData[category];
+    
+    updateMenuDisplay(categoryData.titulo, "Escolha uma unidade específica:", true);
+    
+    const subjects = Object.keys(categoryData.materias);
+    renderButtons(subjects, (sub) => showSubtopics(category, sub), categoryData.materias, 'titulo');
+}
+
+function showSubtopics(category, subject) {
+    navigationStack.push({ type: 'subject', category: category });
+    const subjectData = questionsData[category].materias[subject];
+    
+    updateMenuDisplay(subjectData.titulo, "Escolha o tópico para começar:", true);
+    
+    const subtopics = Object.keys(subjectData.subtopicos);
+    
+    renderButtons(subtopics, (stopicKey) => {
+        const subtopicObj = subjectData.subtopicos[stopicKey];
+        
+        // Verifica se o subtópico é do tipo LEITURA ou QUIZ
+        if (subtopicObj.tipo === "leitura") {
+            startReading(subtopicObj.paginas);
+        } else {
+            startQuiz(subtopicObj.questoes); 
+        }
+    }, subjectData.subtopicos, 'titulo');
+}
+
+function renderButtons(keys, callback, dataSource = null, labelKey = null) {
+    const container = document.getElementById('dynamic-menu');
+    container.innerHTML = "";
+
+    keys.forEach(key => {
+        const btn = document.createElement('button');
+        btn.innerText = (dataSource && dataSource[key] && dataSource[key][labelKey]) 
+                        ? dataSource[key][labelKey] 
+                        : key.toUpperCase();
+        btn.onclick = () => callback(key);
+        container.appendChild(btn);
+    });
+}
+
+function updateMenuDisplay(title, subtitle, showBack) {
+    document.getElementById('menu-title').innerText = title;
+    document.getElementById('menu-subtitle').innerText = subtitle;
+    const backBtn = document.getElementById('back-menu-btn');
+    if (showBack) backBtn.classList.remove('hidden');
+    else backBtn.classList.add('hidden');
+}
+
+function goBackMenu() {
+    const lastState = navigationStack.pop();
+    if (!lastState) return;
+
+    if (lastState.type === 'main') {
+        showMainMenu();
+    } else if (lastState.type === 'subject') {
+        showSubjects(lastState.category);
+    }
+}
+
+// --- 2. MODO LEITURA (NOVO) ---
+
+function startReading(paginas) {
+    currentReadingPages = paginas;
+    currentPageIndex = 0;
+
+    document.getElementById('home-screen').classList.add('hidden');
+    document.getElementById('reading-screen').classList.remove('hidden');
+    
+    updateReadingPage();
+}
+
+function updateReadingPage() {
+    const imgElement = document.getElementById('reading-image');
+    imgElement.src = currentReadingPages[currentPageIndex];
+    
+    // Controle dos botões
+    document.getElementById('prev-page').disabled = (currentPageIndex === 0);
+    document.getElementById('next-page').innerText = 
+        (currentPageIndex === currentReadingPages.length - 1) ? "Finalizar" : "Próximo";
+}
+
+function changePage(direction) {
+    currentPageIndex += direction;
+
+    if (currentPageIndex >= currentReadingPages.length) {
+        confirmBackToMenu(); // Volta para o menu ao finalizar
+        return;
+    }
+    
+    updateReadingPage();
+    window.scrollTo(0, 0); // Facilita a leitura voltando ao topo
+}
+
+// --- 3. LÓGICA DO QUIZ ---
+
+function startQuiz(questionsList) {
+    currentQuestions = [...questionsList].sort(() => Math.random() - 0.5);
     currentIndex = 0;
     score = 0;
 
@@ -26,28 +143,19 @@ function showQuestion() {
     const feedback = document.getElementById('feedback');
     const container = document.getElementById('options-container');
     const quizScreen = document.getElementById('quiz-screen');
-    const counter = document.getElementById('question-counter'); // Elemento para ( 1 / 20 )
+    const counter = document.getElementById('question-counter');
 
-    // 1. Atualiza o contador no topo (Ex: 1 / 20)
     if (counter) {
         counter.innerText = `${currentIndex + 1} / ${currentQuestions.length}`;
     }
     
-    // 2. Limpa o feedback anterior
     feedback.innerText = "";
-    
-    // 3. Atualiza o texto da pergunta
     document.getElementById('question-text').innerText = q.pergunta;
 
-    // --- LÓGICA DE IMAGEM ---
     let imgElement = document.getElementById('quiz-image');
     if (!imgElement) {
         imgElement = document.createElement('img');
         imgElement.id = 'quiz-image';
-        imgElement.style.maxWidth = '100%';
-        imgElement.style.borderRadius = '8px';
-        imgElement.style.marginBottom = '15px';
-        // Insere a imagem antes das opções
         quizScreen.insertBefore(imgElement, container);
     }
 
@@ -58,45 +166,16 @@ function showQuestion() {
         imgElement.style.display = 'none';
     }
 
-    // --- LÓGICA DAS ALTERNATIVAS ---
     container.innerHTML = "";
-
-    // Mapeia o texto ao índice original para não perder a resposta correta após o sorteio
-    let choices = q.alternativas.map((text, index) => {
-        return { text: text, index: index };
-    });
-
-    // Embaralha a ordem das alternativas
+    let choices = q.alternativas.map((text, index) => ({ text, index }));
     choices.sort(() => Math.random() - 0.5);
 
-    // Cria os botões das alternativas
     choices.forEach(choice => {
         const btn = document.createElement('button');
         btn.innerText = choice.text;
-        
-        // Compara o índice original (choice.index) com o correto do JSON (q.correta)
         btn.onclick = () => checkAnswer(choice.index, q.correta);
         container.appendChild(btn);
     });
-
-    // --- LÓGICA DO BOTÃO SAIR (RODAPÉ) ---
-    // Verifica se o rodapé já existe, senão cria para centralizar o botão
-    let footer = document.querySelector('.quiz-footer');
-    if (!footer) {
-        footer = document.createElement('div');
-        footer.className = 'quiz-footer';
-        footer.style.marginTop = '20px';
-        footer.style.display = 'flex';
-        footer.style.justifyContent = 'center';
-        
-        const exitBtn = document.createElement('button');
-        exitBtn.id = 'exit-btn';
-        exitBtn.innerText = 'Sair do Quiz';
-        exitBtn.onclick = () => confirmExit(); // Certifique-se de ter essa função definida
-        
-        footer.appendChild(exitBtn);
-        quizScreen.appendChild(footer);
-    }
 }
 
 function checkAnswer(selected, correct) {
@@ -104,39 +183,28 @@ function checkAnswer(selected, correct) {
     const nextContainer = document.getElementById('next-container');
     const optionsButtons = document.querySelectorAll('#options-container button');
 
-    // Desabilita os botões de opção para o usuário não clicar várias vezes
     optionsButtons.forEach(btn => btn.disabled = true);
 
     if (selected === correct) {
         score++;
         feedback.innerText = "Parabéns você acertou!";
         feedback.style.color = "green";
-
-        // --- EFEITO DUOLINGO (CONFETE) ---
         confetti({
             particleCount: 150,
             spread: 70,
             origin: { y: 0.6 },
-            colors: ['#22cc11', '#55ff44', '#ffffff'] // Cores puxadas para o verde de sucesso
+            colors: ['#22cc11', '#55ff44', '#ffffff']
         });
-
     } else {
         feedback.innerText = "Estude mais e tente novamente!";
         feedback.style.color = "red";
     }
-
-    // Em vez de usar o setTimeout automático, mostramos o botão de avançar
     nextContainer.classList.remove('hidden');
 }
 
 function goToNextQuestion() {
-    const nextContainer = document.getElementById('next-container');
-    
-    // Esconde o botão de avançar para a próxima pergunta
-    nextContainer.classList.add('hidden');
-    
+    document.getElementById('next-container').classList.add('hidden');
     currentIndex++;
-    
     if (currentIndex < currentQuestions.length) {
         showQuestion();
     } else {
@@ -150,48 +218,41 @@ function showResult() {
 
     const total = currentQuestions.length;
     const percent = (score / total) * 100;
-    
     document.getElementById('score-text').innerText = `Você acertou ${score} de ${total}!`;
 
     const starsContainer = document.getElementById('star-rating');
     let stars = "";
     const starCount = Math.floor(percent / 20);
-    
-    for (let i = 0; i < 5; i++) {
-        stars += i < starCount ? "★" : "☆";
-    }
+    for (let i = 0; i < 5; i++) stars += i < starCount ? "★" : "☆";
     starsContainer.innerText = stars;
 
-    // Chuva de confete extra se acertar tudo (100%)
     if (percent === 100) {
-        var duration = 3 * 1000;
-        var end = Date.now() + duration;
-
+        const end = Date.now() + 3000;
         (function frame() {
-            confetti({
-                particleCount: 3,
-                angle: 60,
-                spread: 55,
-                origin: { x: 0 },
-                colors: ['#ffd700', '#ffffff'] // Ouro e Branco para a vitória
-            });
-            confetti({
-                particleCount: 3,
-                angle: 120,
-                spread: 55,
-                origin: { x: 1 },
-                colors: ['#ffd700', '#ffffff']
-            });
-
-            if (Date.now() < end) {
-                requestAnimationFrame(frame);
-            }
+            confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#ffd700', '#ffffff'] });
+            confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#ffd700', '#ffffff'] });
+            if (Date.now() < end) requestAnimationFrame(frame);
         }());
     }
 }
 
+function confirmBackToMenu() {
+    // Esconde todas as telas de jogo/leitura e volta para a principal
+    document.getElementById('quiz-screen').classList.add('hidden');
+    document.getElementById('reading-screen').classList.add('hidden');
+    document.getElementById('home-screen').classList.remove('hidden');
+    
+    // Reseta estados
+    currentQuestions = [];
+    currentReadingPages = [];
+    currentIndex = 0;
+    score = 0;
+    document.getElementById('feedback').innerText = "";
+    document.getElementById('next-container').classList.add('hidden');
+}
+
 function confirmExit() {
-    if (confirm("Deseja mesmo sair? Seu progresso atual será mostrado no ranking.")) {
-        showResult(); // Leva para a tela de pontuação final
+    if (confirm("Deseja mesmo encerrar? Seu progresso atual será mostrado no resultado final.")) {
+        showResult();
     }
 }
