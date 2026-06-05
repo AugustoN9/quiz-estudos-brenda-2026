@@ -3004,7 +3004,7 @@
                 "correta": 1
               },
               {
-                "pergunta": "Qual era a principal característica dos povos nômades?",
+                "pergunta": "Qual era a principal characteristic dos povos nômades?",
                 "alternativas": [
                   "Moravam em prédios",
                   "Não tinham habitação fixa e mudavam de lugar para buscar alimento",
@@ -3184,672 +3184,477 @@
                 "correta": 1
               }
             ]
+          },
+          "cidadania_direitos_humanos": {
+            "titulo": "Cidadania e Direitos Humanos",
+            "questoes": [
+              {
+                "pergunta": "O conceito de cidadania está ligado ao sentimento de pertencimento de uma pessoa a uma sociedade. O que significa ser cidadão no Brasil atualmente?",
+                "alternativas": [
+                  "Ter apenas deveres e obrigações com o governo.",
+                  "Fazer parte de um grande grupo de pessoas com direitos e deveres garantidos.",
+                  "Poder fazer o que quiser sem seguir nenhuma lei.",
+                  "Votar para escolher governantes, mas não ter direito à saúde ou educação."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "A Constituição brasileira garante diversos direitos para o bem-estar da sociedade. Qual das alternativas apresenta apenas direitos garantidos por ela?",
+                "alternativas": [
+                  "Acesso à educação, saúde gratuita, segurança e direito ao voto.",
+                  "Ter um carro novo, viajar para fora do país e não pagar impostos.",
+                  "Poder desrespeitar os direitos das outras pessoas e danificar a natureza.",
+                  "Garantia de emprego em qualquer empresa sem precisar estudar."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Além de direitos, os cidadãos também possuem deveres fundamentais. Qual das alternativas indica um dever de todo cidadão no Brasil?",
+                "alternativas": [
+                  "Escolher o próprio salário e o horário de trabalho.",
+                  "Estudar apenas as matérias que achar divertidas.",
+                  "Cumprir as leis e respeitar os direitos das outras pessoas.",
+                  "Criar as próprias regras de trânsito na sua rua."
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "A noção de cidadania mudou ao longo do tempo e varia conforme a época e o lugar. Como funcionava a democracia direta na Grécia antiga, especificamente em Atenas?",
+                "alternativas": [
+                  "Todos os moradores da cidade, sem exceção, podiam votar e decidir.",
+                  "Apenas o rei tomava as decisões sozinho na praça pública.",
+                  "Os cidadãos podiam participar diretamente da assembleia do povo para debater e votar as decisões.",
+                  "As decisões eram tomadas por meio de sorteio eletrônico entre as crianças."
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Apesar de valiosa, a democracia ateniense tinha limites severos sobre quem era considerado cidadão. Quais grupos eram totalmente excluídos desse sistema?",
+                "alternativas": [
+                  "Os homens com mais de 18 anos filhos de pais atenienses.",
+                  "As mulheres, as pessoas escravizadas e os estrangeiros.",
+                  "Os soldados do exército e os filósofos mais velhos.",
+                  "Os proprietários de grandes terras e os comerciantes locais."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "A palavra 'Democracia' tem origem no idioma grego antigo. Qual é o significado literal dessa palavra?",
+                "alternativas": [
+                  "Poder do povo.",
+                  "Regra do rei.",
+                  "Direito de poucos.",
+                  "Sociedade sem leis."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Em 1789, a França passava por grandes transformações durante a Revolução Francesa. Qual documento histórico importante foi elaborado nesse momento?",
+                "alternativas": [
+                  "A primeira Constituição do Brasil.",
+                  "A Declaração Universal dos Direitos Humanos.",
+                  "A Declaração dos Direitos do Homem e do Cidadão.",
+                  "O Código de Leis da Mesopotâmia."
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "A Declaração de 1789 na França trouxe um avanço ao defender a liberdade de expressão e religiosa. Qual ideia central estava presente nesse documento?",
+                "alternativas": [
+                  "O governo pertence ao rei e o povo deve apenas obedecer.",
+                  "O governo pertence ao povo e todos os homens livres têm direito à igualdade perante a lei.",
+                  "As mulheres deveriam ter o direito de votar e participar da política.",
+                  "Todas as pessoas escravizadas deveriam ser libertadas imediatamente."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Entre os anos de 1939 e 1945, o mundo enfrentou a Segunda Guerra Mundial. Qual foi uma das terríveis consequências estimadas desse conflito armado?",
+                "alternativas": [
+                  "A criação imediata de computadores e celulares para a população.",
+                  "A morte de cerca de 60 milhões de pessoas durante a guerra.",
+                  "O fim de todas as formas de discriminação na Europa.",
+                  "A união pacífica de todos os países do mundo sem uso de armas."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Em 1948, buscando a recuperação dos traumas da Segunda Guerra Mundial, qual importante documento internacional foi aprovado pela Organização das Nações Unidas?",
+                "alternativas": [
+                  "A Declaração dos Direitos do Homem e do Cidadão.",
+                  "A Declaração Universal dos Direitos Humanos.",
+                  "A primeira linha de leis da Grécia antiga.",
+                  "O Tratado de Paz dos Povos Indígenas."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "A Declaração Universal dos Direitos Humanos de 1948 foi criada com um objetivo nobre. Qual era a sua principal missão?",
+                "alternativas": [
+                  "Garantir direitos básicos a toda a humanidade, como o direito à vida, à liberdade e à dignidade.",
+                  "Organizar a economia e o comércio de produtos entre as grandes fábricas.",
+                  "Permitir que os países vitoriosos da guerra controlassem os países menores.",
+                  "Criar regras exclusivas para os cidadãos que vivessem na França e no Brasil."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "A Organização das Nações Unidas (ONU) foi criada logo após o fim da Segunda Guerra Mundial em 1945. Por que os países sentiram a necessidade de fundá-la?",
+                "alternativas": [
+                  "Para incentivar a criação de novos exércitos poderosos.",
+                  "Para encontrar modos pacíficos de resolver problemas internacionais e impedir novos grandes conflitos.",
+                  "Para obrigar todas as nações do mundo a falarem o mesmo idioma.",
+                  "Para controlar o comércio de alimentos e proibir a agricultura."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Na sua fundação, em 1945, a ONU contava com 51 países-membros. Atualmente, esse número cresceu significativamente. Quantos países fazem parte da organização hoje?",
+                "alternativas": [
+                  "100 países-membros.",
+                  "51 países-membros.",
+                  "193 países-membros.",
+                  "350 países-membros."
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "De acordo com os artigos da Declaração Universal dos Direitos Humanos, o Artigo 4 estabelece uma proibição absoluta. O que diz esse artigo?",
+                "alternativas": [
+                  "Ninguém será submetido a tortura ou castigo cruel.",
+                  "Todo ser humano tem direito à vida, à liberdade e à segurança.",
+                  "Ninguém será mantido em escravidão ou servidão, sendo proibidos o tráfico de escravos.",
+                  "Todos os cidadãos devem votar obrigatoriamente a partir dos 18 anos."
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "O Artigo 5 da Declaração Universal dos Direitos Humanos protege a integridade física e mental das pessoas. O que é proibido expressamente por ele?",
+                "alternativas": [
+                  "A liberdade de expressão e de pensamento.",
+                  "A tortura e o tratamento ou castigo cruel, desumano ou degradante.",
+                  "O direito de viajar livremente entre os países.",
+                  "A prática de esportes e atividades físicas sem autorização."
+                ],
+                "correta": 1
+              }
+            ]
+          },
+          "grandes_navegacoes_encontro_povos": {
+            "titulo": "Grandes Navegações e Encontro de Povos",
+            "questoes": [
+              {
+                "pergunta": "No ano de 1500, as caravelas portuguesas chegaram às terras que hoje formam o Brasil. Quem já habitava esse território muito antes da chegada dos europeus?",
+                "alternativas": [
+                  "Os imigrantes italianos e alemães.",
+                  "Diversos povos indígenas com suas próprias culturas e costumes.",
+                  "Os soldados vindos da Grécia antiga e de Roma.",
+                  "Os grandes reis e burocratas franceses."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Nas décadas seguintes à chegada de 1500, a relação dos colonizadores portugueses com os povos nativos foi marcada por forte exploração. O que os portugueses fizeram com muitos desses nativos?",
+                "alternativas": [
+                  "Convidaram-nos para governar Portugal em conjunto.",
+                  "Ajudaram a proteger e demarcar todas as suas terras sagradas.",
+                  "Passaram a escravizar muitos deles para trabalhar na colônia.",
+                  "Forneceram moradias gratuitas e salários justos nas cidades."
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Durante o período colonial, os portugueses trouxeram à força milhões de pessoas de outro continente para trabalhar no Brasil. De onde vinham essas pessoas e em qual condição trabalhavam?",
+                "alternativas": [
+                  "Vinham da Europa na condição de imigrantes assalariados.",
+                  "Vinham da Ásia na condição de comerciantes de tecidos.",
+                  "Vinham da África na condição de escravizados.",
+                  "Vinham da América do Norte na condição de soldados de defesa."
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Tanto os povos indígenas quanto os afro-brasileiros não aceitaram a dominação colonial de forma passiva ao longo dos anos. O que eles fizeram diante da exploração portuguesa?",
+                "alternativas": [
+                  "Decidiram abandonar o Brasil e migrar para outros países.",
+                  "Resistiram de várias maneiras contra a opressão e a escravidão.",
+                  "Aceitaram trabalhar sem reclamar em troca de roupas e alimentos.",
+                  "Apoiaram os portugueses na escravização de novos povos."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Na atualidade, qual é uma das principais lutas dos povos originários no Brasil sobre os seus territórios?",
+                "alternativas": [
+                  "A proibição do uso de qualquer tipo de tecnologia em suas aldeias.",
+                  "A garantia do direito à terra, respeito à sua cultura e combate à invasão de suas terras.",
+                  "O desejo de transformar todas as suas florestas em grandes indústrias.",
+                  "A obrigação de que todos os indígenas se mudem para as grandes cidades."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "No século 15, os europeus consumiam produtos trazidos das Índias chamados de especiarias (como pimenta, canela e cravo). Por que esses produtos geravam grandes lucros aos comerciantes?",
+                "alternativas": [
+                  "Porque eram fáceis de encontrar em qualquer quintal da Europa.",
+                  "Porque eram raros, muito desejados e serviam como condimentos e tratamentos de saúde.",
+                  "Porque os europeus usavam as especiarias para construir navios resistentes.",
+                  "Porque eram produtos baratos e distribuídos de graça pelos reis."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Até o século 15, os oceanos eram pouco explorados pelos europeus, que conheciam apenas partes da Europa, África e Ásia. O que causava o grande medo de navegar em alto-mar naquela época?",
+                "alternativas": [
+                  "A falta de praias para os navios estacionarem.",
+                  "O medo do desconhecido e a crença de que os oceanos estavam cheios de monstros marinhos.",
+                  "A certeza de que encontrariam dragões voadores no céu.",
+                  "O fato de as águas do oceano serem totalmente congeladas."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Para buscar novas rotas comerciais com o Oriente e navegar de forma mais segura, os povos ibéricos organizaram grandes viagens. Quem eram os povos ibéricos?",
+                "alternativas": [
+                  "Pessoas que nasceram na França e na Inglaterra.",
+                  "Pessoas que nasceram em Portugal e na Espanha.",
+                  "Os povos indígenas que já habitavam as terras do Brasil.",
+                  "Os antigos filósofos que viviam na Grécia antiga."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Durante as Grandes Navegações, uma tecnologia naval muito importante auxiliava os navegadores a saber exatamente em qual direção estavam navegando. Que instrumento era esse?",
+                "alternativas": [
+                  "O astrolábio.",
+                  "A bússola.",
+                  "O mapa mundi.",
+                  "A luneta espacial."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "As caravelas e as naus foram embarcações revolucionárias no século 15. Qual era a principal característica dessas embarcações?",
+                "alternativas": [
+                  "Eram movidas a motor de popa e feitas de ferro pesado.",
+                  "Eram embarcações a vela, muito resistentes e impulsionadas pelo vento.",
+                  "Eram barcos pequenos que dependiam apenas do uso de remos.",
+                  "Eram submarinos usados para explorar o fundo do mar."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Os mapas foram fundamentais para o sucesso das Grandes Navegações. Como eles eram aprimorados ao longo do tempo?",
+                "alternativas": [
+                  "Os navegadores compravam os mapas prontos de comerciantes da China.",
+                  "Eram aprimorados a cada viagem, por meio da observação dos novos territórios.",
+                  "Os reis inventavam os desenhos das terras sem sair de seus castelos.",
+                  "Eram copiados de livros antigos da Grécia que já tinham todas as respostas."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Que instrumento naval ajudava a identificar a localização das embarcações em alto-mar por meio da medição da posição do Sol ou de outras estrelas?",
+                "alternativas": [
+                  "A bússola.",
+                  "O astrolábio.",
+                  "O mapa.",
+                  "A caravela."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Ao longo do século 15, os navegantes espanhóis e portugueses traçaram rotas diferentes para tentar chegar às Índias. Qual era a estratégia dos navegantes espanhóis como Cristóvão Colombo?",
+                "alternativas": [
+                  "Navegar sempre em direção ao leste, contornando o continente africano.",
+                  "Navegar em direção ao oeste, acreditando que dariam a volta no planeta.",
+                  "Viajar por terra cruzando todo o continente da Ásia a pé.",
+                  "Esperar o inverno para caminhar sobre o gelo do Oceano Atlântico."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Diferente dos espanhóis, os portugueses conseguiram chegar às Índias traçando uma rota famosa no final do século 15. Como foi o caminho feito por eles?",
+                "alternativas": [
+                  "Eles voaram em balões empurrados por fortes ventos.",
+                  "Eles navegaram contornando todo o continente africano.",
+                  "Eles cavaram um canal ligando o Mar Mediterrâneo ao Oriente.",
+                  "Eles atravessaram o Oceano Pacífico em linha reta."
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "No século 15, Portugal e Espanha assinaram o Tratado de Tordesilhas (1494) para dividir as futuras terras encontradas. Como funcionava essa divisão por meio da linha imaginária?",
+                "alternativas": [
+                  "As terras a oeste da linha pertenceriam à Espanha, e as terras a leste pertenceriam a Portugal.",
+                  "Todas as terras encontradas pertenceriam apenas à Igreja Católica.",
+                  "O norte pertenceria à Espanha e o sul ficaria com os navegadores portugueses.",
+                  "Os territórios seriam divididos igualmente entre todos os países da Europa."
+                ],
+                "correta": 0
+              }
+            ]
           }
         }
-      },
-      "primeiros_estados": {
-        "titulo": "Os primeiros Estados",
+      }
+    }
+  },
+  "historia_2": {
+    "titulo": "História 2 (Lacunas)",
+    "materias": {
+      "capitulo_4_lacunas": {
+        "titulo": "Capítulo 4: Cidadania e Direitos",
         "subtopicos": {
-          "formacao_primeiros_estados": {
-            "titulo": "A formação dos primeiros Estados",
+          "completar_cap4": {
+            "titulo": "Desafio de Completar - Cap 4",
             "questoes": [
               {
-                "pergunta": "O que é um Estado na Antiguidade?",
+                "pergunta": "Atualmente, o conceito de cidadania está ligado ao ______ de uma pessoa a uma ______.",
                 "alternativas": [
-                  "Um grupo de turistas",
-                  "Uma organização política com governo, leis e território",
-                  "Uma casa de família",
-                  "Uma festa popular"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem geralmente exercia o poder supremo nos primeiros Estados?",
-                "alternativas": [
-                  "O povo através de voto",
-                  "Líderes que podiam ser reis, imperadores ou chefes religiosos",
-                  "As crianças",
-                  "Ninguém mandava"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual era uma das funções do governo nos primeiros Estados?",
-                "alternativas": [
-                  "Organizar a defesa e cobrar tributos (impostos)",
-                  "Assistir televisão",
-                  "Brincar na praça",
-                  "Dormir o dia todo"
+                  "pertencimento / sociedade",
+                  "dever / empresa",
+                  "voto / escola",
+                  "orgulho / família"
                 ],
                 "correta": 0
               },
               {
-                "pergunta": "Para que serviam as leis criadas pelos primeiros Estados?",
+                "pergunta": "Como cidadã em nosso país, uma pessoa tem diversos ______ garantidos pela ______.",
                 "alternativas": [
-                  "Para enfeitar os templos",
-                  "Para organizar a convivência e manter a ordem",
-                  "Para confundir as pessoas",
-                  "Não existiam leis"
+                  "deveres / natureza",
+                  "direitos / Constituição",
+                  "salários / prefeitura",
+                  "votos / Europa"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "A invenção da escrita foi fundamental para o Estado para:",
+                "pergunta": "A Constituição garante o acesso à ______ e à ______ gratuita, além da segurança e do salário justo.",
                 "alternativas": [
-                  "Escrever poemas de amor",
-                  "Registrar impostos, leis e bens do governo",
-                  "Desenhar animais",
-                  "Mandar cartas para o futuro"
+                  "televisão / internet",
+                  "viagem / moradia",
+                  "educação / saúde",
+                  "alimentação / tecnologia"
                 ],
-                "correta": 1
+                "correta": 2
               },
               {
-                "pergunta": "O que são tributos ou impostos?",
+                "pergunta": "Porém, um cidadão também tem ______, como cumprir as ______ e respeitar os outros.",
                 "alternativas": [
-                  "Presentes voluntários",
-                  "Pagamentos feitos pela população para manter o Estado",
-                  "Brinquedos antigos",
-                  "Tipos de sementes"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Muitos líderes antigos diziam que seu poder vinha dos:",
-                "alternativas": ["Cientistas", "Deuses", "Animais", "Vizinhos"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os funcionários que ajudavam o rei a administrar o Estado eram chamados de:",
-                "alternativas": [
-                  "Operários",
-                  "Burocratas ou Escribas",
-                  "Nômades",
-                  "Caçadores"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A centralização do poder significa que:",
-                "alternativas": [
-                  "Todos mandavam",
-                  "As decisões importantes ficavam nas mãos de um único líder ou grupo",
-                  "As cidades eram independentes",
-                  "Não havia líder"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os primeiros Estados surgiram em regiões chamadas de:",
-                "alternativas": [
-                  "Crescente Fértil",
-                  "Círculo Polar",
-                  "Floresta Tropical",
-                  "Deserto de Gelo"
-                ],
-                "correta": 0
-              }
-            ]
-          },
-          "mesopotamia": {
-            "titulo": "Mesopotâmia",
-            "questoes": [
-              {
-                "pergunta": "O que significa a palavra 'Mesopotâmia'?",
-                "alternativas": [
-                  "Terra de areia",
-                  "Terra entre rios",
-                  "Terra de ouro",
-                  "Terra de montanhas"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quais os dois rios que banhavam a Mesopotâmia?",
-                "alternativas": [
-                  "Nilo e Amazonas",
-                  "Tigre e Eufrates",
-                  "Ganges e Amarelo",
-                  "Reno e Danúbio"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual povo mesopotâmico inventou a escrita cuneiforme?",
-                "alternativas": ["Egípcios", "Sumérios", "Gregos", "Romanos"],
-                "correta": 1
-              },
-              {
-                "pergunta": "O que eram os Zigurates?",
-                "alternativas": [
-                  "Barcos de guerra",
-                  "Templos religiosos em formato de pirâmide em degraus",
-                  "Casas de camponeses",
-                  "Tipos de ferramentas"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem foi o rei famoso pela criação de um dos primeiros códigos de leis escritas?",
-                "alternativas": [
-                  "Tutancâmon",
-                  "Hamurabi",
-                  "Alexandre, o Grande",
-                  "Júlio César"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual era a base da economia mesopotâmica?",
-                "alternativas": [
-                  "Indústria",
-                  "Agricultura e comércio",
-                  "Turismo",
-                  "Pesca oceânica"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A escrita cuneiforme era feita em:",
-                "alternativas": [
-                  "Papel",
-                  "Placas de argila úmida",
-                  "Telas de pano",
-                  "Paredes de metal"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os Jardins Suspensos foram uma obra famosa de qual cidade mesopotâmica?",
-                "alternativas": ["Ur", "Babilônia", "Nínive", "Lagash"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Na Mesopotâmia, as cidades eram independentes umas das outras. Como eram chamadas?",
-                "alternativas": [
-                  "Cidades-Dormitório",
-                  "Cidades-Estado",
-                  "Impérios",
-                  "Aldeias"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual povo mesopotâmico era conhecido por ser muito guerreiro e usar armas de ferro?",
-                "alternativas": ["Assírios", "Fenícios", "Hebreus", "Persas"],
-                "correta": 0
-              }
-            ]
-          },
-          "estado_egipcio_antiguidade": {
-            "titulo": "O Estado egípcio na Antiguidade",
-            "questoes": [
-              {
-                "pergunta": "O Egito Antigo se desenvolveu às margens de qual rio?",
-                "alternativas": [
-                  "Rio Amazonas",
-                  "Rio Nilo",
-                  "Rio Tigre",
-                  "Rio Eufrates"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Como era chamado o governante máximo do Egito, considerado um deus vivo?",
-                "alternativas": ["Imperador", "Faraó", "Presidente", "Czar"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Para que serviam as pirâmides egípcias?",
-                "alternativas": [
-                  "Para moradia do povo",
-                  "Como túmulos para os faraós",
-                  "Como depósitos de grãos",
-                  "Como bibliotecas"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual o nome da escrita sagrada dos egípcios, baseada em símbolos e desenhos?",
-                "alternativas": [
-                  "Cuneiforme",
-                  "Hieróglifos",
-                  "Alfabeto",
-                  "Braille"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os egípcios preservavam os corpos dos mortos através da:",
-                "alternativas": [
-                  "Congelação",
-                  "Mumificação",
-                  "Incineração",
-                  "Cremação"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual era a função dos escribas no Egito?",
-                "alternativas": [
-                  "Lutar nas guerras",
-                  "Ler e escrever documentos e impostos",
-                  "Cuidar das plantações",
-                  "Fazer as pirâmides"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Egito era dividido em dois reinos antes da unificação. Quais eram?",
-                "alternativas": [
-                  "Norte e Sul",
-                  "Alto e Baixo Egito",
-                  "Leste e Oeste",
-                  "Novo e Velho Egito"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem foi uma das rainhas-faraós mais famosas do Egito?",
-                "alternativas": [
-                  "Cleópatra",
-                  "Hatshepsut",
-                  "Isabel",
-                  "Vitória"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Rio Nilo era importante porque suas cheias deixavam a terra:",
-                "alternativas": [
-                  "Alagada para sempre",
-                  "Fértil para a plantação",
-                  "Seca",
-                  "Cheia de pedras"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A sociedade egípcia era organizada como uma:",
-                "alternativas": [
-                  "Linha reta",
-                  "Pirâmide social (com poucas pessoas no topo e muitas na base)",
-                  "Círculo",
-                  "Quadrado"
-                ],
-                "correta": 1
-              }
-            ]
-          },
-          "reino_de_cuxe": {
-            "titulo": "O Reino de Cuxe",
-            "questoes": [
-              {
-                "pergunta": "O Reino de Cuxe ficava localizado ao sul do Egito, em uma região chamada:",
-                "alternativas": ["Núbia", "Sahara", "África do Sul", "Magrebe"],
-                "correta": 0
-              },
-              {
-                "pergunta": "As cidades de Napata e Méroe foram capitais de qual reino?",
-                "alternativas": ["Egito", "Cuxe", "Roma", "Grécia"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Como eram chamadas as rainhas-mães poderosas do Reino de Cuxe?",
-                "alternativas": [
-                  "Faraós",
-                  "Candaces",
-                  "Matriarcas",
-                  "Patriarcas"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Reino de Cuxe chegou a conquistar o Egito. Como ficaram conhecidos esses faraós?",
-                "alternativas": [
-                  "Faraós Brancos",
-                  "Faraós Negros",
-                  "Faraós de Ouro",
-                  "Faraós Nômades"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Méroe era um importante centro de produção de qual metal?",
-                "alternativas": ["Ouro", "Ferro", "Prata", "Cobre"],
-                "correta": 1
-              },
-              {
-                "pergunta": "As pirâmides de Cuxe eram diferentes das egípcias por serem:",
-                "alternativas": [
-                  "Maiores",
-                  "Menores e mais íngremes",
-                  "Arredondadas",
-                  "Feitas de madeira"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A escrita meroítica era baseada em:",
-                "alternativas": [
-                  "Números",
-                  "Sinais que ainda não foram totalmente decifrados",
-                  "Hieróglifos egípcios apenas",
-                  "Latim"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual era a base da economia de Cuxe?",
-                "alternativas": [
-                  "Comércio, agricultura e pecuária",
-                  "Apenas pirataria",
-                  "Indústria de tecidos",
-                  "Venda de gelo"
+                  "deveres / leis",
+                  "direitos / regras",
+                  "votos / escolhas",
+                  "salários / ordens"
                 ],
                 "correta": 0
               },
               {
-                "pergunta": "O Rio Nilo também era fundamental para o Reino de Cuxe?",
+                "pergunta": "Entre os deveres dos cidadãos no Brasil está o de cumprir as leis e o de ______ os ______ das outras pessoas.",
                 "alternativas": [
-                  "Sim",
-                  "Não, eles viviam no deserto sem água",
-                  "Apenas para diversão",
-                  "Eles usavam o Rio Amazonas"
+                  "mudar / salários",
+                  "escrever / votos",
+                  "respeitar / direitos",
+                  "proibir / deveres"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "A noção de cidadania varia de acordo com a ______ e o ______.",
+                "alternativas": [
+                  "lei / governo",
+                  "época / lugar",
+                  "idade / voto",
+                  "França / Brasil"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Em Atenas, eram considerados cidadãos apenas uma ______ da população, como os homens com mais de ______ anos.",
+                "alternativas": [
+                  "maioria / 21",
+                  "minoria / 18",
+                  "metade / 16",
+                  "classe / 50"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Na democracia ateniense, as ______ , as pessoas escravizadas e os ______ eram excluídos desse sistema.",
+                "alternativas": [
+                  "mulheres / estrangeiros",
+                  "crianças / soldados",
+                  "famílias / reis",
+                  "meninas / filósofos"
                 ],
                 "correta": 0
               },
               {
-                "pergunta": "O Reino de Cuxe era famoso por seus habilidosos:",
+                "pergunta": "Democracia, em grego, quer dizer ______ do ______.",
                 "alternativas": [
-                  "Navegadores",
-                  "Arqueiros",
-                  "Cozinheiros",
-                  "Escritores"
-                ],
-                "correta": 1
-              }
-            ]
-          },
-          "civilizacao_fenicia": {
-            "titulo": "A civilização fenícia",
-            "questoes": [
-              {
-                "pergunta": "Os fenícios viviam em uma estreita faixa de terra entre as montanhas e o mar, onde hoje é o:",
-                "alternativas": ["Brasil", "Líbano", "Egito", "Iraque"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual era a principal atividade econômica dos fenícios?",
-                "alternativas": [
-                  "Agricultura",
-                  "Comércio marítimo",
-                  "Criação de gado",
-                  "Mineração de ouro"
+                  "regra / rei",
+                  "poder / povo",
+                  "direito / cidadão",
+                  "voto / soldado"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Os fenícios são famosos por terem inventado:",
+                "pergunta": "A democracia ateniense era ______: todos os cidadãos podiam participar da ______ do povo (Eclésia).",
                 "alternativas": [
-                  "O fogo",
-                  "O alfabeto fonético (com letras para sons)",
-                  "A bússola",
-                  "O papel de seda"
+                  "indireta / escola",
+                  "restrita / praça",
+                  "direta / assembleia",
+                  "moderna / votação"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Um dos marcos que impactaram a cidadania foi a Declaração dos Direitos do ______ e do ______ em 1789 na França.",
+                "alternativas": [
+                  "Cidadão / Mundo",
+                  "Trabalhador / Rei",
+                  "Homem / Cidadão",
+                  "Soldado / Povo"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Nessa declaração francesa, estava presente a ideia de que o governo pertence ao ______ e todos os homens livres têm direito à ______.",
+                "alternativas": [
+                  "rei / liberdade",
+                  "povo / igualdade perante a lei",
+                  "exército / segurança",
+                  "Estado / riqueza"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Qual era o produto de luxo muito valorizado produzido pelos fenícios?",
+                "pergunta": "Em 1948, a Organização das Nações Unidas aprovou a ______ Universal dos ______ Humanos.",
                 "alternativas": [
-                  "Seda chinesa",
-                  "Púrpura (corante extraído de um molusco)",
-                  "Vinho de palma",
-                  "Azeite de dendê"
+                  "Constituição / Direitos",
+                  "Declaração / Direitos",
+                  "Lei / Deveres",
+                  "Revolução / Povos"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Como era a organização política da Fenícia?",
+                "pergunta": "Esse documento de 1948 foi criado com o objetivo de garantir direitos básicos a toda a humanidade, combatendo todas as formas de ______.",
                 "alternativas": [
-                  "Um grande império unido",
-                  "Cidades-Estado independentes",
-                  "Um reino nômade",
-                  "Uma democracia moderna"
+                  "organização",
+                  "discriminação",
+                  "educação",
+                  "comunicação"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Cartago foi uma colônia muito famosa fundada por qual povo?",
-                "alternativas": ["Gregos", "Fenícios", "Romanos", "Egípcios"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os fenícios eram excelentes construtores de:",
+                "pergunta": "Em 1945, após o fim da Segunda Guerra Mundial, alguns países sentiram a necessidade de encontrar modos ______ para a resolução de problemas ______.",
                 "alternativas": [
-                  "Pirâmides",
-                  "Navios",
-                  "Aviões",
-                  "Estradas de ferro"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A madeira de qual árvore era usada pelos fenícios para construir navios?",
-                "alternativas": [
-                  "Ipê",
-                  "Cedro do Líbano",
-                  "Pau-brasil",
-                  "Eucalipto"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Por que o alfabeto fenício foi revolucionário?",
-                "alternativas": [
-                  "Era muito colorido",
-                  "Tinha poucos sinais e era fácil de aprender para o comércio",
-                  "Tinha milhares de desenhos",
-                  "Só podia ser lido por reis"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Onde os fenícios navegavam principalmente para fazer comércio?",
-                "alternativas": [
-                  "Rio Nilo",
-                  "Mar Mediterrâneo",
-                  "Oceano Pacífico",
-                  "Mar Morto"
-                ],
-                "correta": 1
-              }
-            ]
-          },
-          "cidades_estado_grecia_antiga": {
-            "titulo": "As cidades-Estado na Grécia antiga",
-            "questoes": [
-              {
-                "pergunta": "Como os gregos chamavam suas cidades-Estado?",
-                "alternativas": ["Ágoras", "Pólis", "Zigurates", "Nomos"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual cidade-Estado grega é conhecida por ser o berço da democracia?",
-                "alternativas": ["Esparta", "Atenas", "Tebas", "Corinto"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Esparta era uma cidade-Estado voltada principalmente para a:",
-                "alternativas": [
-                  "Filosofia",
-                  "Educação militar e guerra",
-                  "Pintura",
-                  "Navegação comercial"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O que era a 'Ágora' nas cidades gregas?",
-                "alternativas": [
-                  "Um templo fechado",
-                  "Uma praça pública para reuniões e comércio",
-                  "Um estádio de futebol",
-                  "A casa do rei"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Na democracia de Atenas, quem era considerado cidadão?",
-                "alternativas": [
-                  "Todos os moradores",
-                  "Homens livres, filhos de pais atenienses e maiores de idade",
-                  "Apenas as mulheres",
-                  "Apenas os estrangeiros"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A Grécia antiga não era um país unido, mas as cidades compartilhavam a mesma:",
-                "alternativas": [
-                  "Moeda apenas",
-                  "Língua e religião",
-                  "Comida apenas",
-                  "Cor de bandeira"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Onde ficavam os principais templos das cidades gregas, geralmente em um lugar alto?",
-                "alternativas": ["Acrópole", "Estádio", "Teatro", "Porto"],
-                "correta": 0
-              },
-              {
-                "pergunta": "Quem eram os 'Ilotas' em Esparta?",
-                "alternativas": [
-                  "Reis",
-                  "Servos ou escravos do Estado",
-                  "Comerciantes ricos",
-                  "Sacerdotes"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A educação em Atenas valorizava tanto o corpo quanto a:",
-                "alternativas": [
-                  "Cozinha",
-                  "Mente (filosofia, artes, política)",
-                  "Caça",
-                  "Mineração"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "As Olimpíadas surgiram na Grécia antiga para homenagear os:",
-                "alternativas": [
-                  "Atletas",
-                  "Deuses (especialmente Zeus)",
-                  "Reis de Esparta",
-                  "Estrangeiros"
-                ],
-                "correta": 1
-              }
-            ]
-          },
-          "organizacao_social_roma_antiga": {
-            "titulo": "Organização social na Roma antiga",
-            "questoes": [
-              {
-                "pergunta": "Quais eram os dois principais grupos sociais de cidadãos em Roma?",
-                "alternativas": [
-                  "Reis e Rainhas",
-                  "Patrícios e Plebeus",
-                  "Escravos e Senadores",
-                  "Nômades e Sedentários"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem eram os Patrícios?",
-                "alternativas": [
-                  "Estrangeiros pobres",
-                  "Grandes proprietários de terras e nobres com poder político",
-                  "Pequenos comerciantes",
-                  "Escravos libertos"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem eram os Plebeus?",
-                "alternativas": [
-                  "Os donos de Roma",
-                  "A maioria da população (comerciantes, artesãos, camponeses)",
-                  "Apenas soldados",
-                  "Governantes estrangeiros"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Na Roma antiga, quem não tinha direitos e era considerado propriedade de alguém?",
-                "alternativas": [
-                  "Patrícios",
-                  "Escravos",
-                  "Plebeus",
-                  "Senadores"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Como se chamava a assembleia de anciãos que aconselhava os governantes?",
-                "alternativas": ["Câmara", "Senado", "Tribunal", "Prefeitura"],
-                "correta": 1
-              },
-              {
-                "pergunta": "O que foi a 'Luta de Ordens' em Roma?",
-                "alternativas": [
-                  "Uma guerra contra o Egito",
-                  "A disputa dos plebeus por mais direitos políticos",
-                  "Um torneio de gladiadores",
-                  "Uma briga entre deuses"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem era o chefe supremo da família romana?",
-                "alternativas": [
-                  "Mãe",
-                  "Pater Familias (Pai)",
-                  "O filho mais velho",
-                  "O imperador"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os plebeus conquistaram o direito de ter representantes chamados:",
-                "alternativas": [
-                  "Reis",
-                  "Tribunos da Plebe",
-                  "Generais",
-                  "Escribas"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "As primeiras leis escritas de Roma ficaram conhecidas como:",
-                "alternativas": [
-                  "Lei de Hamurabi",
-                  "Lei das Doze Tábuas",
-                  "Constituição",
-                  "Código de Ética"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Império Romano substituiu qual forma de governo anterior?",
-                "alternativas": [
-                  "Anarquia",
-                  "República",
-                  "Nômades",
-                  "Democracia Direta"
+                  "rápidos / locais",
+                  "pacíficos / internacionais",
+                  "violentos / mundiais",
+                  "diretos / internos"
                 ],
                 "correta": 1
               }
@@ -3857,645 +3662,160 @@
           }
         }
       },
-      "religioes_antiguidade": {
-        "titulo": "Religiões na Antiguidade",
+      "capitulo_5_lacunas": {
+        "titulo": "Capítulo 5: Navegações e Encontros",
         "subtopicos": {
-          "religiosidade_mesopotamia": {
-            "titulo": "Religiosidade na Mesopotâmia",
+          "completar_cap5": {
+            "titulo": "Desafio de Completar - Cap 5",
             "questoes": [
               {
-                "pergunta": "A religião na Mesopotâmia era politeísta. O que isso significa?",
+                "pergunta": "Em 1500, os portugueses desembarcaram nas terras que foram chamadas de Brasil e encontraram os povos ______ que viviam aqui.",
                 "alternativas": [
-                  "Acreditavam em um só Deus",
-                  "Acreditavam em vários deuses",
-                  "Não acreditavam em deuses",
-                  "Acreditavam apenas no Sol"
+                  "africanos",
+                  "indígenas",
+                  "europeus",
+                  "ibéricos"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Os deuses mesopotâmicos tinham características e sentimentos:",
+                "pergunta": "Ao longo dos anos, tanto indígenas como afro-brasileiros ______ de várias maneiras à ______ portuguesa.",
                 "alternativas": [
-                  "De animais apenas",
-                  "Humanos",
-                  "De robôs",
-                  "Inexistentes"
+                  "ajudaram / colonização",
+                  "resistiram / exploração",
+                  "aceitaram / escravidão",
+                  "fugiram / cultura"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Onde eram realizados os principais cultos aos deuses na Mesopotâmia?",
+                "pergunta": "No século 15, diversos produtos trazidos das Índias, chamados de ______, eram muito consumidos na Europa.",
                 "alternativas": [
-                  "Nas praças",
-                  "Nos Zigurates",
-                  "Em barcos",
-                  "Nas casas"
+                  "condimentos",
+                  "especiarias",
+                  "remédios",
+                  "metais"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Anu, Enlil e Enki eram deuses de qual região?",
-                "alternativas": ["Egito", "Mesopotâmia", "Grécia", "Roma"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os mesopotâmicos acreditavam que os deuses controlavam a:",
+                "pergunta": "Trazer as especiarias e comercializá-las na Europa gerava grandes ______ para os ______.",
                 "alternativas": [
-                  "Internet",
-                  "Natureza (chuva, ventos, rios)",
-                  "Televisão",
-                  "Eletricidade"
+                  "impostos / reis",
+                  "lucros / comerciantes",
+                  "problemas / marinheiros",
+                  "conflitos / povos"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Como os mesopotâmicos tentavam agradar os deuses?",
+                "pergunta": "Vindas de terras distantes, as especiarias serviam como ______ e tinham o poder de tratar a ______.",
                 "alternativas": [
-                  "Com festas e oferendas/sacrifícios",
-                  "Ignorando-os",
-                  "Viajando",
-                  "Escrevendo cartas"
-                ],
-                "correta": 0
-              },
-              {
-                "pergunta": "O rei na Mesopotâmia era visto como um:",
-                "alternativas": [
-                  "Inimigo dos deuses",
-                  "Representante dos deuses na Terra",
-                  "Deus ele mesmo",
-                  "Cientista"
+                  "alimentos / fome",
+                  "condimentos / saúde",
+                  "remédios / dor",
+                  "presentes / riqueza"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "A mitologia mesopotâmica explicava o surgimento do:",
+                "pergunta": "Para buscar as rotas comerciais marítimas, diversas ______ navais foram desenvolvidas ou ______.",
                 "alternativas": [
-                  "Carro",
-                  "Mundo e dos seres humanos",
-                  "Computador",
-                  "Avião"
+                  "embarcações / vendidas",
+                  "tecnologias / aperfeiçoadas",
+                  "caravelas / destruídas",
+                  "bússolas / perdidas"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Os templos (Zigurates) também serviam para:",
+                "pergunta": "A ______ auxiliava os navegadores a saber em que ______ navegavam.",
                 "alternativas": [
-                  "Observação astronômica e estoque de grãos",
-                  "Moradia do povo",
-                  "Lutar guerras",
-                  "Natação"
-                ],
-                "correta": 0
-              },
-              {
-                "pergunta": "O 'Poema de Gilgamesh' trata de temas como a busca pela:",
-                "alternativas": [
-                  "Riqueza",
-                  "Imortalidade",
-                  "Nova cidade",
-                  "Comida"
-                ],
-                "correta": 1
-              }
-            ]
-          },
-          "regioes_tradicionais_africanas": {
-            "titulo": "Regiões tradicionais africanas",
-            "questoes": [
-              {
-                "pergunta": "Muitas religiões tradicionais africanas acreditam em um Criador e também no culto aos:",
-                "alternativas": [
-                  "Animais de estimação",
-                  "Ancestrais (antepassados)",
-                  "Objetos de plástico",
-                  "Carros"
+                  "caravela / velocidade",
+                  "bússola / direção",
+                  "estrela / rota",
+                  "nau / profundidade"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "O que é o 'Animismo' em algumas crenças africanas?",
+                "pergunta": "As caravelas e naus eram embarcações ______, impulsionadas pelo ______.",
                 "alternativas": [
-                  "Acreditar que só humanos têm alma",
-                  "Acreditar que elementos da natureza (árvores, rios) têm espíritos",
-                  "Gostar de desenhos animados",
-                  "Não acreditar em nada"
+                  "rápidas / motor",
+                  "resistentes / vento",
+                  "pequenas / remo",
+                  "leves / mar"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Os contadores de histórias e guardiões da memória na África são chamados de:",
+                "pergunta": "Os mapas eram ______ a cada viagem, por meio da ______ dos novos territórios.",
                 "alternativas": [
-                  "Bibliotecários",
-                  "Griots",
-                  "Escribas",
-                  "Sacerdotes"
+                  "desenhados / conquista",
+                  "aprimorados / observação",
+                  "vendidos / exploração",
+                  "escondidos / perda"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Qual a importância das máscaras em rituais africanos?",
+                "pergunta": "O ______ ajudava a identificar a localização das embarcações por meio da medição da posição do ______.",
                 "alternativas": [
-                  "Apenas disfarce",
-                  "Representar divindades ou espíritos em cerimônias",
-                  "Proteção contra o frio",
-                  "Uso em festas de aniversário"
+                  "mapa / mar",
+                  "astrolábio / Sol",
+                  "marinheiro / vento",
+                  "rei / país"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Muitas religiões africanas utilizam elementos da natureza, como a:",
+                "pergunta": "Ao longo do século 15, os povos ______ realizaram grandes expedições ______.",
                 "alternativas": [
-                  "Eletricidade",
-                  "Terra, água e plantas medicinais",
-                  "Gasolina",
-                  "Energia nuclear"
+                  "franceses / terrestres",
+                  "ibéricos / oceânicas",
+                  "indígenas / internas",
+                  "gregos / militares"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "A transmissão do conhecimento nessas religiões é feita principalmente de forma:",
+                "pergunta": "Os navegantes ______ acreditavam que, navegando sempre em direção ao oeste, dariam a volta no planeta.",
                 "alternativas": [
-                  "Escrita em livros",
-                  "Oral (falada de geração para geração)",
-                  "Pela internet",
-                  "Por sinais de fumaça"
+                  "portugueses",
+                  "espanhóis",
+                  "franceses",
+                  "africanos"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "Os rituais africanos costumam envolver muita música e:",
-                "alternativas": ["Silêncio", "Dança", "Leitura", "Escrita"],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Oráculo é usado em algumas religiões para:",
+                "pergunta": "Os portugueses chegaram antes às Índias contornando o ______ ______.",
                 "alternativas": [
-                  "Jogar videogame",
-                  "Consultar a vontade divina ou o futuro",
-                  "Cozinhar",
-                  "Limpar a casa"
+                  "continente americano",
+                  "continente africano",
+                  "oceano pacífico",
+                  "mar mediterrâneo"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "O respeito aos mais velhos é importante porque eles são:",
+                "pergunta": "Para evitar disputas de futuros territórios, em 1494, os monarcas assinaram o ______ de ______.",
                 "alternativas": [
-                  "Mais altos",
-                  "Os guardiões da sabedoria e tradição",
-                  "Mais rápidos",
-                  "Estrangeiros"
+                  "Acordo / Madri",
+                  "Tratado / Tordesilhas",
+                  "Código / Hamurabi",
+                  "Edito / Milão"
                 ],
                 "correta": 1
               },
               {
-                "pergunta": "O Reino de Benin era famoso por suas esculturas de:",
+                "pergunta": "O Tratado estabelecia uma linha imaginária: as terras a oeste pertenceriam à ______ e as terras a leste a ______.",
                 "alternativas": [
-                  "Plástico",
-                  "Bronze e Marfim usadas em rituais",
-                  "Vidro",
-                  "Papel"
+                  "França / Inglaterra",
+                  "Espanha / Portugal",
+                  "Europa / Índia",
+                  "África / Ásia"
                 ],
-                "correta": 1
-              }
-            ]
-          },
-          "religiosidade_egito_antigo": {
-            "titulo": "Religiosidade no Egito antigo",
-            "questoes": [
-              {
-                "pergunta": "Os egípcios acreditavam na vida após a morte?",
-                "alternativas": [
-                  "Não",
-                  "Sim, por isso mumificavam os corpos",
-                  "Apenas para os animais",
-                  "Só os pobres acreditavam"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem era o principal deus egípcio, o deus Sol?",
-                "alternativas": [
-                  "Anúbis",
-                  "Rá (ou Amon-Rá)",
-                  "Osíris",
-                  "Hórus"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Anúbis era o deus com cabeça de chacal responsável por:",
-                "alternativas": [
-                  "Plantações",
-                  "Mumificação e julgamento dos mortos",
-                  "Guerra",
-                  "Música"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual deus egípcio julgava as almas no 'Tribunal de Osíris'?",
-                "alternativas": ["Tutancâmon", "Osíris", "Seth", "Bastet"],
-                "correta": 1
-              },
-              {
-                "pergunta": "A religião egípcia era monoteísta ou politeísta?",
-                "alternativas": [
-                  "Monoteísta",
-                  "Politeísta",
-                  "Ateísta",
-                  "Nenhum"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os animais eram sagrados para os egípcios? Dê um exemplo.",
-                "alternativas": [
-                  "Não",
-                  "Sim, o gato",
-                  "Apenas os peixes",
-                  "Só os cavalos"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O que era o 'Livro dos Mortos'?",
-                "alternativas": [
-                  "Um livro de terror",
-                  "Um guia com orações e instruções para a vida após a morte",
-                  "Um diário do faraó",
-                  "Um livro de receitas"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A deusa Ísis representava a:",
-                "alternativas": [
-                  "Guerra",
-                  "Maternidade e magia",
-                  "Escrita",
-                  "Fome"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O coração do morto era pesado contra uma pena de qual deusa?",
-                "alternativas": [
-                  "Cleópatra",
-                  "Maat (deusa da justiça)",
-                  "Bastet",
-                  "Nut"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os templos egípcios eram considerados a morada dos:",
-                "alternativas": [
-                  "Camponeses",
-                  "Deuses",
-                  "Estrangeiros",
-                  "Soldados"
-                ],
-                "correta": 1
-              }
-            ]
-          },
-          "religiosidade_grecia_antiga": {
-            "titulo": "Religiosidade na Grécia antiga",
-            "questoes": [
-              {
-                "pergunta": "Onde os principais deuses gregos moravam?",
-                "alternativas": [
-                  "No fundo do mar",
-                  "No Monte Olimpo",
-                  "Em Atenas apenas",
-                  "Na Lua"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem era o deus dos deuses, o senhor do raio?",
-                "alternativas": ["Poseidon", "Zeus", "Hades", "Apolo"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual a característica marcante dos deuses gregos?",
-                "alternativas": [
-                  "Eram invisíveis",
-                  "Tinham forma, sentimentos e defeitos humanos",
-                  "Eram robôs",
-                  "Eram apenas animais"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Poseidon era o deus dos:",
-                "alternativas": [
-                  "Trovões",
-                  "Mares e terremotos",
-                  "Mortos",
-                  "Sonhos"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem era a deusa da sabedoria e protetora de Atenas?",
-                "alternativas": ["Afrodite", "Atena", "Hera", "Artemis"],
-                "correta": 1
-              },
-              {
-                "pergunta": "O que eram os Mitos na Grécia?",
-                "alternativas": [
-                  "Histórias falsas",
-                  "Narrativas para explicar o mundo e a ação dos deuses",
-                  "Notícias de jornal",
-                  "Leis escritas"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Oráculo de Delfos servia para:",
-                "alternativas": [
-                  "Praticar esportes",
-                  "Consultar as previsões dos deuses através da pitonisa",
-                  "Comprar escravos",
-                  "Morar"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Hades era o deus do:",
-                "alternativas": [
-                  "Sol",
-                  "Mundo inferior (dos mortos)",
-                  "Amor",
-                  "Vinho"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Afrodite era a deusa do:",
-                "alternativas": [
-                  "Conhecimento",
-                  "Amor e beleza",
-                  "Trabalho",
-                  "Fogo"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "As festas religiosas gregas incluíam teatro e competições:",
-                "alternativas": [
-                  "De culinária",
-                  "Esportivas (como as Olimpíadas)",
-                  "De sono",
-                  "De silêncio"
-                ],
-                "correta": 1
-              }
-            ]
-          },
-          "religiosidade_roma_antiguidade": {
-            "titulo": "Religiosidade em Roma na Antiguidade",
-            "questoes": [
-              {
-                "pergunta": "A religião romana inicial foi muito influenciada por qual povo?",
-                "alternativas": ["Egípcios", "Gregos", "Chineses", "Astecas"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem era o deus supremo dos romanos, equivalente a Zeus?",
-                "alternativas": ["Marte", "Júpiter", "Netuno", "Plutão"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Marte era o deus romano da:",
-                "alternativas": ["Paz", "Guerra", "Agricultura", "Música"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Vênus era a deusa romana equivalente a:",
-                "alternativas": ["Atena", "Afrodite", "Hera", "Artemis"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os romanos cultuavam deuses domésticos que protegiam a família, chamados:",
-                "alternativas": [
-                  "Titãs",
-                  "Lares e Penates",
-                  "Cíclopes",
-                  "Centauros"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O 'Pontífice Máximo' era o chefe de qual área em Roma?",
-                "alternativas": ["Exército", "Religião", "Cozinha", "Teatro"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Muitos imperadores romanos passaram a ser cultuados como:",
-                "alternativas": ["Inimigos", "Deuses", "Plebeus", "Escravos"],
-                "correta": 1
-              },
-              {
-                "pergunta": "O que era o 'Panteão' em Roma?",
-                "alternativas": [
-                  "Um mercado",
-                  "Um templo dedicado a todos os deuses",
-                  "Um estádio",
-                  "Uma prisão"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A religião oficial romana servia para manter a unidade e a:",
-                "alternativas": [
-                  "Desordem",
-                  "Paz dos deuses (Pax Deorum)",
-                  "Fome",
-                  "Guerra civil"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Netuno era o deus romano dos:",
-                "alternativas": ["Céus", "Mares", "Mortos", "Campos"],
-                "correta": 1
-              }
-            ]
-          },
-          "judaismo": {
-            "titulo": "Judaísmo",
-            "questoes": [
-              {
-                "pergunta": "O Judaísmo é uma das primeiras religiões monoteístas. O que isso significa?",
-                "alternativas": [
-                  "Crer em vários deuses",
-                  "Crer em um único Deus",
-                  "Não acreditar em nada",
-                  "Crer apenas na natureza"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual o nome do livro sagrado do Judaísmo?",
-                "alternativas": ["Bíblia", "Torá", "Alcorão", "Vedas"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem é considerado o patriarca que iniciou a aliança com Deus?",
-                "alternativas": ["Noé", "Abraão", "Moisés", "Davi"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Quem liderou a saída dos hebreus do Egito (Êxodo) e recebeu os Dez Mandamentos?",
-                "alternativas": ["Salomão", "Moisés", "Abraão", "Davi"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Como se chama o templo de oração dos judeus?",
-                "alternativas": ["Igreja", "Sinagoga", "Mesquita", "Pagode"],
-                "correta": 1
-              },
-              {
-                "pergunta": "O que são os Dez Mandamentos?",
-                "alternativas": [
-                  "Dez poemas",
-                  "Dez leis fundamentais entregues a Moisés",
-                  "Dez nomes de reis",
-                  "Dez cidades sagradas"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Shabat é o dia de descanso semanal para os judeus. Qual é o dia?",
-                "alternativas": [
-                  "Domingo",
-                  "Sábado",
-                  "Sexta-feira",
-                  "Segunda-feira"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Jerusalém é considerada uma cidade sagrada para o Judaísmo?",
-                "alternativas": [
-                  "Não",
-                  "Sim",
-                  "Apenas no passado",
-                  "Só para os nômades"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual o símbolo famoso do Judaísmo, uma estrela de seis pontas?",
-                "alternativas": [
-                  "Estrela de Belém",
-                  "Estrela de Davi",
-                  "Cruzeiro do Sul",
-                  "Lua Crescente"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Os profetas no Judaísmo tinham a função de:",
-                "alternativas": [
-                  "Serem reis",
-                  "Transmitir as mensagens de Deus ao povo",
-                  "Vender mercadorias",
-                  "Lutar guerras"
-                ],
-                "correta": 1
-              }
-            ]
-          },
-          "cristianismo": {
-            "titulo": "Cristianismo",
-            "questoes": [
-              {
-                "pergunta": "O Cristianismo surgiu a partir dos ensinamentos de quem?",
-                "alternativas": ["Moisés", "Jesus Cristo", "Maomé", "Buda"],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual o livro sagrado dos cristãos?",
-                "alternativas": [
-                  "Torá",
-                  "Bíblia",
-                  "Alcorão",
-                  "Livro dos Mortos"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Cristianismo é uma religião monoteísta ou politeísta?",
-                "alternativas": [
-                  "Politeísta",
-                  "Monoteísta",
-                  "Animista",
-                  "Ateísta"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Onde Jesus Cristo nasceu e viveu (região)?",
-                "alternativas": [
-                  "Roma",
-                  "Palestina (na época sob domínio romano)",
-                  "Egito",
-                  "Grécia"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Como eram chamados os principais seguidores escolhidos por Jesus?",
-                "alternativas": [
-                  "Senadores",
-                  "Apóstolos",
-                  "Escribas",
-                  "Faraós"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "No início, os cristãos em Roma foram:",
-                "alternativas": [
-                  "Reis",
-                  "Perseguidos",
-                  "Sempre aceitos",
-                  "Nômades"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "Qual imperador romano deu liberdade de culto aos cristãos pelo Edito de Milão?",
-                "alternativas": [
-                  "Nero",
-                  "Constantino",
-                  "Júlio César",
-                  "Augusto"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "O que significa 'evangelizar'?",
-                "alternativas": [
-                  "Escrever livros",
-                  "Pregar e divulgar a mensagem de Jesus",
-                  "Mudar de país",
-                  "Construir prédios"
-                ],
-                "correta": 1
-              },
-              {
-                "pergunta": "A Bíblia cristã é dividida em Antigo e Novo:",
-                "alternativas": ["Livro", "Testamento", "Capítulo", "Poema"],
-                "correta": 1
-              },
-              {
-                "pergunta": "O Cristianismo prega o amor ao próximo e o:",
-                "alternativas": ["Ódio", "Perdão", "Orgulho", "Egoísmo"],
                 "correta": 1
               }
             ]
