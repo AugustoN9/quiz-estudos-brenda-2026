@@ -1434,7 +1434,10 @@
               { "pergunta": "Qual é o perímetro de um retângulo cuja base é 11 cm e a altura é 5 cm?", "alternativas": ["16 cm", "32 cm", "55 cm", "40 cm"], "correta": 1 },
               { "pergunta": "Para colocar rodapé em um quarto retangular de 4 m por 3 m, descontando uma porta de 1 m, serão necessários quantos metros de rodapé?", "alternativas": ["14 m", "13 m", "12 m", "11 m"], "correta": 1 },
               { "pergunta": "A área de um quadrado é de 49 m². Quanto mede cada um dos seus lados?", "alternativas": ["6 m", "7 m", "8 m", "14 m"], "correta": 1 },
-              { "pergunta": "Dois retângulos com mesma área sempre têm o mesmo perímetro?", "alternativas": ["Sim, sempre", "Não necessariamente", "Apenas se forem quadrados", "Sim, se a base for par"], "correta": 1 }
+              { "pergunta": "Dois retângulos com mesma área sempre têm o mesmo perímetro?", "alternativas": ["Sim, sempre", "Não necessariamente", "Apenas se forem quadrados", "Sim, se a base for par"], "correta": 1 },
+              { "pergunta": "Observe a FIGURA A. Qual é a medida do seu perímetro total?", "alternativas": ["12 cm", "14 cm", "15 cm", "16 cm"], "imagem": "images/geometria/figura_a_degrau.png",  "correta": 1},
+              { "pergunta": "Qual é a área da FIGURA A em centímetros quadrados?", "alternativas": ["10 cm²", "11 cm²", "12 cm²", "13 cm²"], "imagem": "images/geometria/figura_a_degrau.png", "correta": 1},
+              { "pergunta": "Na FIGURA A, quanto mede o segmento horizontal superior que não possui cota indicada?", "alternativas": ["1,5 cm", "2 cm", "2,5 cm", "3 cm"], "imagem": "images/geometria/figura_a_degrau.png", "correta": 1}
             ]
           },
           "nivel_4": {
@@ -1654,7 +1657,12 @@
               { "pergunta": "Calcule a soma de volumes: 1,5 L + 350 ml + 0,65 L =", "alternativas": ["2,4 L", "2,5 L", "2,6 L", "2,8 L"], "correta": 1 },
               { "pergunta": "Um caminhão-pipa transporta 15 m³ de água. Em litros, essa carga equivale a:", "alternativas": ["1.500 L", "15.000 L", "150.000 L", "150 L"], "correta": 1 },
               { "pergunta": "Em um balde com 8 litros de água colocou-se um vazamento constante de 200 ml por minuto. Em quantos minutos ele esvaziará?", "alternativas": ["30 min", "40 min", "50 min", "60 min"], "correta": 1 },
-              { "pergunta": "Qual é a diferença de volume entre um cubo de aresta 5 cm e outro de aresta 4 cm?", "alternativas": ["1 cm³", "25 cm³", "61 cm³", "50 cm³"], "correta": 2 }
+              { "pergunta": "Qual é a diferença de volume entre um cubo de aresta 5 cm e outro de aresta 4 cm?", "alternativas": ["1 cm³", "25 cm³", "61 cm³", "50 cm³"], "correta": 2 },
+              { "pergunta": "Observe a FIGURA B. Qual é a medida do vão vertical interno entre os dois braços da figura?", "alternativas": ["0,5 cm", "1 cm", "1,5 cm", "2 cm"], "imagem": "images/geometria/figura_b_rebaixo.png", "correta": 1},
+              { "pergunta": "Qual é o perímetro total da FIGURA B percorrendo todo o seu contorno externo e interno?", "alternativas": ["22 cm", "24 cm", "25 cm", "26 cm"], "imagem": "images/geometria/figura_b_rebaixo.png", "correta": 2},
+              { "pergunta": "Calculando a área total da FIGURA B por decomposição em retângulos, obtemos:", "alternativas": ["17 cm²", "18 cm²", "18,5 cm²", "19,5 cm²"], "imagem": "images/geometria/figura_b_rebaixo.png", "correta": 2},
+              { "pergunta": "Comparando as duas figuras, qual é a diferença entre a área da FIGURA B (18,5 cm²) e da FIGURA A (11 cm²)?", "alternativas": ["6,5 cm²", "7 cm²", "7,5 cm²", "8,5 cm²"], "correta": 2},
+              { "pergunta": "A soma dos perímetros da FIGURA A (14 cm) e da FIGURA B (25 cm) é:", "alternativas": ["37 cm", "38 cm", "39 cm", "40 cm"], "correta": 2}
             ]
           }
         }
