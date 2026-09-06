@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradVerde" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9ccc65" />
+      <stop offset="100%" stop-color="#558b2f" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo transparente/branco -->
+  <rect width="460" height="260" fill="#ffffff" rx="8"/>
+
+  <!-- Retângulo principal proporcional a 15 x 8,4 (largura 320px, altura 179px) -->
+  <rect x="35" y="30" width="320" height="179" 
+        fill="url(#gradVerde)" stroke="#c2185b" stroke-width="3.5" rx="4"/>
+
+  <!-- Medida da Base (15 m) -->
+  <text x="195" y="235" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#b71c1c" text-anchor="middle">15 m</text>
+
+  <!-- Medida da Altura (8,4 m) -->
+  <text x="375" y="127" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#b71c1c" dominant-baseline="middle">8,4 m</text>
+</svg>

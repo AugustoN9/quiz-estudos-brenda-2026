@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradAzul" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4fc3f7" />
+      <stop offset="100%" stop-color="#0288d1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="380" height="300" fill="#ffffff" rx="8"/>
+
+  <!-- Quadrado perfeito (200px x 200px) -->
+  <rect x="35" y="30" width="200" height="200" 
+        fill="url(#gradAzul)" stroke="#c2185b" stroke-width="3.5" rx="4"/>
+
+  <!-- Medida da Base (18,95 m) -->
+  <text x="135" y="258" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#b71c1c" text-anchor="middle">18,95 m</text>
+
+  <!-- Medida do Lado (18,95 m) -->
+  <text x="250" y="138" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#b71c1c" dominant-baseline="middle">18,95 m</text>
+</svg>

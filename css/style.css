@@ -139,6 +139,30 @@ footer {
   text-align: center;
 }
 
+/* Garante posicionamento relativo no botão */
+.menu-card-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 16px;
+}
+
+/* Selo NOVO azul claro com texto em negrito */
+.badge-novo {
+  position: absolute;
+  right: 18px;
+  background-color: #9cc2e5;
+  color: #0b1d3a;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  padding: 3px 12px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
 /* --- Media Query para Smartphones --- */
 @media (max-width: 480px) {
   h1 {

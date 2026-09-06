@@ -759,6 +759,7 @@
       },
       "numeros_decimais": {
         "titulo": "Números decimais",
+        "novo": true,
         "subtopicos": {
           "nivel_1": {
             "titulo": "Nível 1: Frações Decimais, Leitura e Ordens",
@@ -1323,6 +1324,337 @@
                 "alternativas": ["0,25", "2,5", "0,025", "1,0"],
                 "correta": 0
               }
+            ]
+          }
+        }
+      },
+      "medidas": {
+        "titulo": "Grandezas e Medidas",
+        "novo": true,
+        "subtopicos": {
+          "nivel_1": {
+            "titulo": "Nível 1: Unidades de Comprimento e Conversões Básicas",
+            "questoes": [
+              { "pergunta": "Qual é a principal unidade de medida de comprimento do Sistema Internacional?", "alternativas": ["Litro", "Grama", "Metro", "Segundo"], "correta": 2 },
+              { "pergunta": "Quantos centímetros há em 1 metro?", "alternativas": ["10 cm", "100 cm", "1.000 cm", "50 cm"], "correta": 1 },
+              { "pergunta": "Quantos milímetros equivalem a 1 centímetro?", "alternativas": ["10 mm", "100 mm", "1.000 mm", "5 mm"], "correta": 0 },
+              { "pergunta": "Quantos metros formam exatamente 1 quilômetro (km)?", "alternativas": ["100 m", "500 m", "1.000 m", "10.000 m"], "correta": 2 },
+              { "pergunta": "Uma régua escolar comum de 30 cm tem quantos milímetros de comprimento?", "alternativas": ["30 mm", "300 mm", "3.000 mm", "3 mm"], "correta": 1 },
+              { "pergunta": "Qual instrumento é mais adequado para medir a espessura da ponta de uma lapiseira?", "alternativas": ["Fita métrica", "Odômetro", "Régua em milímetros", "Passômetro"], "correta": 2 },
+              { "pergunta": "A distância entre duas cidades é usualmente medida em:", "alternativas": ["Centímetros", "Quilômetros", "Milímetros", "Metros"], "correta": 1 },
+              { "pergunta": "Ao converter 2,5 metros em centímetros, obtemos:", "alternativas": ["25 cm", "250 cm", "2.500 cm", "0,25 cm"], "correta": 1 },
+              { "pergunta": "Uma pista de atletismo tem 400 metros de extensão. Em 2 voltas completas, quantos metros são percorridos?", "alternativas": ["600 m", "800 m", "1.000 m", "400 m"], "correta": 1 },
+              { "pergunta": "Quantos centímetros restam para completar 1 metro a partir de 65 cm?", "alternativas": ["25 cm", "35 cm", "45 cm", "55 cm"], "correta": 1 },
+              { "pergunta": "Meio quilômetro equivale a:", "alternativas": ["250 m", "500 m", "750 m", "100 m"], "correta": 1 },
+              { "pergunta": "A altura de uma porta é de 2,10 metros. Essa medida em centímetros é:", "alternativas": ["21 cm", "210 cm", "2.100 cm", "2.010 cm"], "correta": 1 },
+              { "pergunta": "Quantos milímetros correspondem a 5 centímetros?", "alternativas": ["5 mm", "50 mm", "500 mm", "0,5 mm"], "correta": 1 },
+              { "pergunta": "A largura de um livro mede 18 cm. Em milímetros, isso equivale a:", "alternativas": ["1,8 mm", "180 mm", "1.800 mm", "0,18 mm"], "correta": 1 },
+              { "pergunta": "Qual unidade é a mais adequada para expressar o comprimento de uma formiga?", "alternativas": ["Quilômetro", "Metro", "Centímetro", "Milímetro"], "correta": 3 },
+              { "pergunta": "Três metros e meio correspondem a:", "alternativas": ["305 cm", "350 cm", "3.500 cm", "35 cm"], "correta": 1 },
+              { "pergunta": "Convertendo 4.000 metros em quilômetros, temos:", "alternativas": ["4 km", "40 km", "400 km", "0,4 km"], "correta": 0 },
+              { "pergunta": "Um cabo tem 120 cm. Isso é equivalente a:", "alternativas": ["1,02 m", "1,2 m", "12 m", "0,12 m"], "correta": 1 },
+              { "pergunta": "Qual é o símbolo correto do milímetro?", "alternativas": ["ml", "cm", "mm", "mi"], "correta": 2 },
+              { "pergunta": "Quantos centímetros há em 7 metros e 20 centímetros?", "alternativas": ["72 cm", "702 cm", "720 cm", "7.200 cm"], "correta": 2 },
+              { "pergunta": "Uma fita métrica tem 1,5 m. Em milímetros, ela mede:", "alternativas": ["150 mm", "1.500 mm", "15.000 mm", "15 mm"], "correta": 1 },
+              { "pergunta": "A distância de 800 cm corresponde a quantos metros?", "alternativas": ["8 m", "80 m", "0,8 m", "800 m"], "correta": 0 },
+              { "pergunta": "Qual é a metade de 1 metro?", "alternativas": ["10 cm", "25 cm", "50 cm", "100 cm"], "correta": 2 },
+              { "pergunta": "Ao converter 0,8 km em metros, encontramos:", "alternativas": ["8 m", "80 m", "800 m", "8.000 m"], "correta": 2 },
+              { "pergunta": "Um barbante mede 90 mm. Em centímetros, sua medida é:", "alternativas": ["0,9 cm", "9 cm", "90 cm", "900 cm"], "correta": 1 },
+              { "pergunta": "Quantos metros faltam para 750 metros se tornarem 1 km?", "alternativas": ["150 m", "250 m", "350 m", "50 m"], "correta": 1 },
+              { "pergunta": "Uma mesa mede 140 centímetros de comprimento. Em metros, isso corresponde a:", "alternativas": ["14 m", "1,4 m", "0,14 m", "1,04 m"], "correta": 1 },
+              { "pergunta": "Para medir a largura da sala de aula, a unidade mais usual é:", "alternativas": ["Milímetro", "Quilômetro", "Metro", "Milha"], "correta": 2 },
+              { "pergunta": "Qual medida é menor: 1 metro ou 98 centímetros?", "alternativas": ["1 metro", "98 centímetros", "São iguais", "Depende da régua"], "correta": 1 },
+              { "pergunta": "Dez pedaços de corda de 10 cm cada um formam juntos:", "alternativas": ["10 metros", "1 metro", "100 metros", "50 cm"], "correta": 1 }
+            ]
+          },
+          "nivel_2": {
+            "titulo": "Nível 2: Operações e Problemas com Comprimentos",
+            "questoes": [
+              { "pergunta": "Uma corda de 3,5 m foi emendada a outra de 2,3 m. Qual é o comprimento total?", "alternativas": ["5,5 m", "5,8 m", "6,0 m", "5,2 m"], "correta": 1 },
+              { "pergunta": "De uma ripa de 2 metros, cortou-se um pedaço de 65 cm. Qual o comprimento restante?", "alternativas": ["1,35 m", "1,45 m", "1,55 m", "1,65 m"], "correta": 0 },
+              { "pergunta": "Um atleta correu 1,8 km pela manhã e 2.400 m à tarde. Quantos metros ele correu no total?", "alternativas": ["3.800 m", "4.200 m", "4.400 m", "4.000 m"], "correta": 1 },
+              { "pergunta": "Marcos precisa de 4 pedaços de fita de 75 cm cada. Quantos metros de fita ele deve comprar?", "alternativas": ["2,5 m", "3,0 m", "3,5 m", "4,0 m"], "correta": 1 },
+              { "pergunta": "Calcule: 15 km - 8.500 m =", "alternativas": ["6,5 km", "7,5 km", "6.000 m", "7.000 m"], "correta": 0 },
+              { "pergunta": "Um tecido tinha 5 m de comprimento. Foram vendidos 1,8 m e depois 1,45 m. Quanto sobrou?", "alternativas": ["1,65 m", "1,75 m", "2,25 m", "1,85 m"], "correta": 1 },
+              { "pergunta": "Um ciclista dá 5 voltas em uma pista circular de 600 m. Quantos quilômetros ele percorreu?", "alternativas": ["2,5 km", "3,0 km", "3,5 km", "4,0 km"], "correta": 1 },
+              { "pergunta": "Some: 4 m + 35 cm + 20 mm. O total em centímetros é:", "alternativas": ["435 cm", "437 cm", "455 cm", "470 cm"], "correta": 1 },
+              { "pergunta": "A diferença entre 2,4 km e 1.950 m é de:", "alternativas": ["450 m", "350 m", "550 m", "500 m"], "correta": 0 },
+              { "pergunta": "Uma costureira comprou 10 metros de elástico e cortou tiras de 20 cm. Quantas tiras ela obteve?", "alternativas": ["20", "50", "100", "200"], "correta": 1 },
+              { "pergunta": "Se um passo médio mede 0,75 m, quantos metros uma pessoa percorre ao dar 100 passos?", "alternativas": ["7,5 m", "75 m", "750 m", "0,75 m"], "correta": 1 },
+              { "pergunta": "Um rolo continha 50 m de fio telefônico. Foram utilizados 32,8 m. Quantos metros restaram?", "alternativas": ["17,2 m", "18,2 m", "16,8 m", "17,8 m"], "correta": 0 },
+              { "pergunta": "Um muro tem 12,5 m de extensão. Já foram rebocados 8 m e 30 cm. Quantos metros faltam rebocar?", "alternativas": ["4,2 m", "4,5 m", "4,1 m", "3,8 m"], "correta": 0 },
+              { "pergunta": "Três tábuas medem 1,25 m, 0,85 m e 2,10 m. Enfileiradas ponta a ponta, somam:", "alternativas": ["4,10 m", "4,20 m", "4,30 m", "3,95 m"], "correta": 1 },
+              { "pergunta": "Calcule a subtração de medidas: 80 cm - 45 mm =", "alternativas": ["75,5 cm", "35 cm", "74,5 cm", "76,5 cm"], "correta": 0 },
+              { "pergunta": "Uma cerca de 1,2 km precisa de estacas colocadas a cada 100 metros. Sem contar a inicial, quantas estacas serão usadas?", "alternativas": ["10", "12", "15", "20"], "correta": 1 },
+              { "pergunta": "Uma haste de 3 metros foi dividida em 6 partes iguais. Qual o comprimento de cada parte em centímetros?", "alternativas": ["40 cm", "50 cm", "60 cm", "45 cm"], "correta": 1 },
+              { "pergunta": "Calcule: 4,75 km + 250 m =", "alternativas": ["4,95 km", "5,0 km", "5,25 km", "4,80 km"], "correta": 1 },
+              { "pergunta": "Uma formiga andou 48 cm em linha reta e depois voltou 150 mm. A que distância ela ficou do ponto de partida?", "alternativas": ["33 cm", "33 mm", "46,5 cm", "330 cm"], "correta": 0 },
+              { "pergunta": "Um carretel de linha tem 200 m. Para fazer pipas são usados 25 m por pipa. Quantas pipas são abastecidas?", "alternativas": ["6", "8", "10", "12"], "correta": 1 },
+              { "pergunta": "Converta e subtraia: 3 m - 120 cm =", "alternativas": ["1,8 m", "2,2 m", "1,2 m", "2,8 m"], "correta": 0 },
+              { "pergunta": "Um barbante foi cortado em 5 pedaços de 40 cm e 2 pedaços de 1,5 m. Qual era seu tamanho total?", "alternativas": ["4 m", "5 m", "6 m", "3,5 m"], "correta": 1 },
+              { "pergunta": "Para completar uma maratona de 42 km, um atleta já percorreu 38.500 m. Quanto falta?", "alternativas": ["3,5 km", "4,5 km", "3.000 m", "4.000 m"], "correta": 0 },
+              { "pergunta": "Uma régua de 50 cm quebrou-se em dois pedaços. Um pedaço tem 285 mm. Quanto mede o outro em centímetros?", "alternativas": ["21,5 cm", "22,5 cm", "20,5 cm", "215 cm"], "correta": 0 },
+              { "pergunta": "Uma estrada de 18 km teve 6.200 m asfaltados. Quantos metros ainda faltam asfaltar?", "alternativas": ["11.800 m", "12.200 m", "11.200 m", "12.800 m"], "correta": 0 },
+              { "pergunta": "Quatro barras de metal medem 0,35 m cada. O comprimento total das barras juntas é:", "alternativas": ["1,2 m", "1,4 m", "1,45 m", "1,5 m"], "correta": 1 },
+              { "pergunta": "Some: 1,6 m + 85 cm =", "alternativas": ["2,35 m", "2,45 m", "2,55 m", "1,95 m"], "correta": 1 },
+              { "pergunta": "Qual valor somado a 670 mm resulta em exatamente 1 metro?", "alternativas": ["33 mm", "330 mm", "33 cm", "230 mm"], "correta": 1 },
+              { "pergunta": "Uma pista de corrida tem 2,5 km. Uma pessoa deu 3 voltas completas. Quantos metros ela correu?", "alternativas": ["6.500 m", "7.500 m", "8.000 m", "7.000 m"], "correta": 1 },
+              { "pergunta": "Um rolo de arame tem 150 m. Gastou-se a terça parte. Quantos metros ainda restam?", "alternativas": ["50 m", "100 m", "75 m", "120 m"], "correta": 1 }
+            ]
+          },
+          "nivel_3": {
+            "titulo": "Nível 3: Perímetro e Introdução à Área",
+            "questoes": [
+              { "pergunta": "O que é o perímetro de uma figura plana?", "alternativas": ["A medida da sua superfície interna", "A soma das medidas de todos os seus lados", "O espaço tridimensional que ela ocupa", "A multiplicação de todos os seus vértices"], "correta": 1 },
+              { "pergunta": "Qual é o perímetro de um quadrado cujos lados medem 6 cm?", "alternativas": ["12 cm", "24 cm", "36 cm", "18 cm"], "correta": 1 },
+              { "pergunta": "Um campo de futebol tem 100 m de comprimento por 70 m de largura. Qual é o perímetro desse campo?", "alternativas": ["170 m", "340 m", "7.000 m", "270 m"], "imagem": "images/geometria/campo_futebol.png", "correta": 1 },
+              { "pergunta": "Qual é a área de um quadrado com lado de 5 metros?", "alternativas": ["20 m²", "25 m²", "10 m²", "50 m²"], "correta": 1 },
+              { "pergunta": "Calcule a área de um retângulo de base 10 cm e altura 4 cm:", "alternativas": ["14 cm²", "28 cm²", "40 cm²", "80 cm²"], "correta": 2 },
+              { "pergunta": "Observe a figura: qual é o perímetro do terreno retangular com base de 15 m e altura de 8,4 m?", "alternativas": ["23,4 m", "46,8 m", "126 m", "45,8 m"], "imagem": "images/geometria/terreno_15x84.svg", "correta": 1 },
+              { "pergunta": "Qual é a área do retângulo que mede 15 m de base por 8,4 m de altura?", "alternativas": ["46,8 m²", "126 m²", "120 m²", "135 m²"], "imagem": "images/geometria/terreno_15x84.svg", "correta": 1 },
+              { "pergunta": "Observe o retângulo cinza: qual é o seu perímetro sabendo que a base mede 24 m e a altura mede 12,5 m?", "alternativas": ["36,5 m", "73 m", "300 m", "72 m"], "imagem": "images/geometria/terreno_24x125.svg", "correta": 1 },
+              { "pergunta": "Qual é a área do terreno retangular com base de 24 m e altura de 12,5 m?", "alternativas": ["73 m²", "300 m²", "280 m²", "320 m²"], "imagem": "images/geometria/terreno_24x125.svg", "correta": 1 },
+              { "pergunta": "Se um triângulo equilátero tem perímetro de 27 cm, quanto mede cada um dos seus lados?", "alternativas": ["7 cm", "8 cm", "9 cm", "10 cm"], "correta": 2 },
+              { "pergunta": "Uma sala quadrada tem lados medindo 4,2 m. Qual é o perímetro dessa sala?", "alternativas": ["8,4 m", "16,8 m", "17,64 m", "12,6 m"], "correta": 1 },
+              { "pergunta": "Quantos metros de arame são necessários para cercar com 3 voltas um terreno quadrado de 12 metros de lado?", "alternativas": ["48 m", "96 m", "144 m", "120 m"], "correta": 2 },
+              { "pergunta": "A área de uma folha retangular de 20 cm por 30 cm é de:", "alternativas": ["50 cm²", "100 cm²", "600 cm²", "500 cm²"], "correta": 2 },
+              { "pergunta": "Qual a unidade padrão mais usada para indicar a área de apartamentos e casas?", "alternativas": ["Metro (m)", "Metro cúbico (m³)", "Metro quadrado (m²)", "Centímetro (cm)"], "correta": 2 },
+              { "pergunta": "Um retângulo tem 18 cm de perímetro. Se a sua base mede 6 cm, quanto mede sua altura?", "alternativas": ["3 cm", "6 cm", "12 cm", "4 cm"], "correta": 0 },
+              { "pergunta": "Calcule o perímetro de um losango com lado de 8,5 cm:", "alternativas": ["17 cm", "34 cm", "28 cm", "42 cm"], "correta": 1 },
+              { "pergunta": "Uma piscina retangular mede 8 m de comprimento por 4 m de largura. Qual é a sua área?", "alternativas": ["24 m²", "32 m²", "64 m²", "16 m²"], "correta": 1 },
+              { "pergunta": "Se dobrarmos a medida dos lados de um quadrado de 3 cm, qual será o novo perímetro?", "alternativas": ["12 cm", "18 cm", "24 cm", "36 cm"], "correta": 2 },
+              { "pergunta": "Um tapete retangular tem 2,5 m de comprimento e 1,5 m de largura. Seu perímetro é de:", "alternativas": ["4 m", "8 m", "3,75 m", "6 m"], "correta": 1 },
+              { "pergunta": "Qual é a área do tapete retangular de 2,5 m por 1,5 m?", "alternativas": ["3,75 m²", "4 m²", "8 m²", "5 m²"], "correta": 0 },
+              { "pergunta": "Quantos azulejos quadrados de 1 m² cabem no piso de uma sala com 24 m² de área?", "alternativas": ["12", "24", "48", "6"], "correta": 1 },
+              { "pergunta": "O perímetro de um pentágono regular com lados de 7 cm é:", "alternativas": ["28 cm", "35 cm", "42 cm", "49 cm"], "correta": 1 },
+              { "pergunta": "Uma toalha de mesa quadrada tem perímetro de 4,8 m. Qual é a medida do lado dessa toalha?", "alternativas": ["1,2 m", "1,4 m", "1,6 m", "2,4 m"], "correta": 0 },
+              { "pergunta": "Calcule a área do campo de futebol que possui 100 m de comprimento por 70 m de largura:", "alternativas": ["340 m²", "700 m²", "7.000 m²", "14.000 m²"], "imagem": "images/geometria/campo_futebol.png", "correta": 2 },
+              { "pergunta": "Qual figura geométrica plana tem a área calculada pela fórmula Base × Altura?", "alternativas": ["Círculo", "Retângulo", "Triângulo", "Trapézio"], "correta": 1 },
+              { "pergunta": "Um jardim tem a forma de um triângulo com lados de 5 m, 7 m e 9 m. Seu perímetro é:", "alternativas": ["21 m", "22 m", "35 m", "18 m"], "correta": 0 },
+              { "pergunta": "Qual é o perímetro de um retângulo cuja base é 11 cm e a altura é 5 cm?", "alternativas": ["16 cm", "32 cm", "55 cm", "40 cm"], "correta": 1 },
+              { "pergunta": "Para colocar rodapé em um quarto retangular de 4 m por 3 m, descontando uma porta de 1 m, serão necessários quantos metros de rodapé?", "alternativas": ["14 m", "13 m", "12 m", "11 m"], "correta": 1 },
+              { "pergunta": "A área de um quadrado é de 49 m². Quanto mede cada um dos seus lados?", "alternativas": ["6 m", "7 m", "8 m", "14 m"], "correta": 1 },
+              { "pergunta": "Dois retângulos com mesma área sempre têm o mesmo perímetro?", "alternativas": ["Sim, sempre", "Não necessariamente", "Apenas se forem quadrados", "Sim, se a base for par"], "correta": 1 }
+            ]
+          },
+          "nivel_4": {
+            "titulo": "Nível 4: Áreas e Perímetros na Malha 20x20",
+            "questoes": [
+              {
+                "pergunta": "Observando a malha com quadrículas de 1 cm x 1 cm, qual é a área da FIGURA B (verde clara)?",
+                "alternativas": ["20 cm²", "25 cm²", "30 cm²", "16 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o perímetro do contorno da FIGURA B (quadrado 5 cm x 5 cm)?",
+                "alternativas": ["20 cm", "25 cm", "15 cm", "10 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 0
+              },
+              {
+                "pergunta": "Contando os quadradinhos de 1 cm², qual é a área total da FIGURA A (azul clara)?",
+                "alternativas": ["20 cm²", "22 cm²", "24 cm²", "26 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual é a medida do perímetro da FIGURA A (azul clara)?",
+                "alternativas": ["20 cm", "22 cm", "24 cm", "26 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "A FIGURA D (roxa) é um retângulo medindo 9 cm por 4 cm. Qual é a sua área?",
+                "alternativas": ["26 cm²", "32 cm²", "36 cm²", "40 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual é o perímetro da FIGURA D (retângulo roxo de 9 cm x 4 cm)?",
+                "alternativas": ["26 cm", "36 cm", "22 cm", "18 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 0
+              },
+              {
+                "pergunta": "A FIGURA C (amarela) tem uma base de 15 quadradinhos e uma torre de 4 quadradinhos. Qual é sua área?",
+                "alternativas": ["17 cm²", "18 cm²", "19 cm²", "20 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual é o perímetro de todo o contorno externo da FIGURA C (amarela)?",
+                "alternativas": ["18 cm", "20 cm", "22 cm", "24 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a área da FIGURA E (cinza)?",
+                "alternativas": ["15 cm²", "16 cm²", "17 cm²", "19 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Calculando o perímetro com os degraus da FIGURA E (cinza), encontramos:",
+                "alternativas": ["24 cm", "26 cm", "28 cm", "30 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "A FIGURA F (laranja) é um grande quadrado de 7 cm x 7 cm. Qual é a sua área?",
+                "alternativas": ["42 cm²", "45 cm²", "49 cm²", "56 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual é o perímetro da FIGURA F (quadrado de lado 7 cm)?",
+                "alternativas": ["21 cm", "28 cm", "35 cm", "49 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "A FIGURA G (verde escura) possui um recorte interno. Qual é a sua área total?",
+                "alternativas": ["36 cm²", "38 cm²", "40 cm²", "42 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Ao medir todo o contorno da FIGURA G (incluindo o espaço interno), qual é o perímetro total?",
+                "alternativas": ["28 cm", "32 cm", "36 cm", "40 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual figura desenhada na malha possui a MAIOR área?",
+                "alternativas": ["Figura D", "Figura G", "Figura F", "Figura B"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual figura desenhada na malha possui a MENOR área?",
+                "alternativas": ["Figura A", "Figura C", "Figura E", "Figura B"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Quais figuras possuem exatamente o mesmo valor de perímetro (20 cm)?",
+                "alternativas": ["A e B", "B e C", "C e E", "D e G"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Quais figuras possuem o mesmo perímetro equivalente a 26 cm?",
+                "alternativas": ["D e E", "A e C", "F e G", "B e D"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual é a diferença entre a área da FIGURA F (49 cm²) e a área da FIGURA G (40 cm²)?",
+                "alternativas": ["7 cm²", "8 cm²", "9 cm²", "10 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Juntando as áreas da FIGURA A (24 cm²) e da FIGURA B (25 cm²), obtemos:",
+                "alternativas": ["48 cm²", "49 cm²", "50 cm²", "51 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual figura possui perímetro com valor numérico MENOR que a sua área?",
+                "alternativas": ["Figura B (Perímetro 20 cm, Área 25 cm²)", "Figura E (Perímetro 26 cm, Área 17 cm²)", "Figura C (Perímetro 20 cm, Área 19 cm²)", "Figura G (Perímetro 36 cm, Área 40 cm²)"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 0
+              },
+              {
+                "pergunta": "A FIGURA D precisaria de mais quantos quadradinhos para ter a mesma área da FIGURA F (49 cm²)?",
+                "alternativas": ["11", "12", "13", "14"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "O recorte interno em branco na FIGURA G ocupa quantos quadradinhos de 1 cm²?",
+                "alternativas": ["6 cm²", "8 cm²", "10 cm²", "12 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Se duplicássemos a área da FIGURA C (19 cm²), qual seria o novo valor?",
+                "alternativas": ["36 cm²", "38 cm²", "40 cm²", "42 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "A soma dos perímetros dos dois quadrados perfeitos (B e F) é:",
+                "alternativas": ["45 cm", "48 cm", "50 cm", "52 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "A malha inteira possui 20 colunas e 20 linhas. Qual é a área total dessa malha?",
+                "alternativas": ["200 cm²", "300 cm²", "400 cm²", "500 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Somando as áreas de B (25 cm²) e D (36 cm²), temos:",
+                "alternativas": ["60 cm²", "61 cm²", "62 cm²", "59 cm²"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Quantos centímetros de fita seriam gastos para contornar exatamente as figuras A e C juntas?",
+                "alternativas": ["40 cm", "42 cm", "44 cm", "46 cm"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Colocando as áreas de C (19 cm²), A (24 cm²) e D (36 cm²) em ordem crescente:",
+                "alternativas": ["C < A < D", "A < C < D", "D < A < C", "C < D < A"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 0
+              },
+              {
+                "pergunta": "A área da FIGURA E (17 cm²) é um número par ou ímpar?",
+                "alternativas": ["Par", "Ímpar", "Fracionário", "Negativo"],
+                "imagem": "images/geometria/malha_20x20_figuras.png",
+                "correta": 1
+              }
+            ]
+          },
+          "nivel_5": {
+            "titulo": "Nível 5: Medidas de Volume, Capacidade e Desafios de Área",
+            "questoes": [
+              { "pergunta": "Qual é a unidade padrão de medida de capacidade?", "alternativas": ["Metro", "Quilograma", "Litro", "Metro quadrado"], "correta": 2 },
+              { "pergunta": "Quantos mililitros (ml) equivalem a 1 litro (L)?", "alternativas": ["10 ml", "100 ml", "1.000 ml", "10.000 ml"], "correta": 2 },
+              { "pergunta": "Um cubo mágico com 1 cm de aresta tem qual volume?", "alternativas": ["1 cm", "1 cm²", "1 cm³", "3 cm³"], "correta": 2 },
+              { "pergunta": "Um bloco retangular tem 5 cm de comprimento, 4 cm de largura e 3 cm de altura. Qual é o seu volume?", "alternativas": ["12 cm³", "60 cm³", "30 cm³", "45 cm³"], "correta": 1 },
+              { "pergunta": "Quantos litros de água cabem em um reservatório com volume de 1 metro cúbico (1 m³)?", "alternativas": ["100 litros", "500 litros", "1.000 litros", "10.000 litros"], "correta": 2 },
+              { "pergunta": "Uma garrafa de refrigerante contém 2 litros. Quantos copos cheios de 250 ml podemos servir com ela?", "alternativas": ["4 copos", "6 copos", "8 copos", "10 copos"], "correta": 2 },
+              { "pergunta": "Quantos mililitros correspondem a 3,5 litros de suco?", "alternativas": ["350 ml", "3.500 ml", "35.000 ml", "35 ml"], "correta": 1 },
+              { "pergunta": "Um aquário com formato de paralelepípedo mede 40 cm de comprimento, 20 cm de largura e 30 cm de altura. Seu volume é de:", "alternativas": ["2.400 cm³", "24.000 cm³", "12.000 cm³", "90 cm³"], "correta": 1 },
+              { "pergunta": "Sabendo que 1.000 cm³ equivalem a 1 litro, qual a capacidade do aquário de 24.000 cm³?", "alternativas": ["2,4 litros", "24 litros", "240 litros", "0,24 litros"], "correta": 1 },
+              { "pergunta": "Qual é o volume de um cubo com aresta de 4 cm?", "alternativas": ["16 cm³", "48 cm³", "64 cm³", "12 cm³"], "correta": 2 },
+              { "pergunta": "Uma caixa d'água cúbica tem 2 metros de aresta em cada dimensão. Qual é o seu volume?", "alternativas": ["4 m³", "6 m³", "8 m³", "12 m³"], "correta": 2 },
+              { "pergunta": "Quantos litros de água cabem na caixa d'água de 8 m³?", "alternativas": ["800 litros", "8.000 litros", "80.000 litros", "4.000 litros"], "correta": 1 },
+              { "pergunta": "Em uma embalagem de xarope cabem 150 ml. Tomando 3 doses de 10 ml por dia, a embalagem dura:", "alternativas": ["5 dias", "10 dias", "15 dias", "20 dias"], "correta": 0 },
+              { "pergunta": "Uma piscina mede 10 m de comprimento, 5 m de largura e 2 m de profundidade. Qual o seu volume em m³?", "alternativas": ["50 m³", "100 m³", "150 m³", "200 m³"], "correta": 1 },
+              { "pergunta": "Qual a capacidade total em litros da piscina de 100 m³?", "alternativas": ["10.000 litros", "50.000 litros", "100.000 litros", "1.000.000 de litros"], "correta": 2 },
+              { "pergunta": "Quantos cubinhos de 1 cm³ são necessários para empilhar um bloco de dimensões 2 cm x 3 cm x 5 cm?", "alternativas": ["10 cubinhos", "25 cubinhos", "30 cubinhos", "15 cubinhos"], "correta": 2 },
+              { "pergunta": "Uma garrafa tem 750 ml de azeite. Quantos litros isso representa em número decimal?", "alternativas": ["7,5 L", "0,75 L", "0,075 L", "75 L"], "correta": 1 },
+              { "pergunta": "Um terreno retangular tem área de 450 m². Se o seu comprimento é de 30 metros, qual é a sua largura?", "alternativas": ["12 m", "15 m", "18 m", "20 m"], "correta": 1 },
+              { "pergunta": "O piso de uma garagem mede 6 m por 4 m. Quantas lajotas de 0,5 m² serão necessárias para pavimentar todo o piso?", "alternativas": ["24 lajotas", "36 lajotas", "48 lajotas", "50 lajotas"], "correta": 2 },
+              { "pergunta": "Um recipiente graduado tinha 300 ml de água. Ao mergulhar uma pedra, o nível subiu para 480 ml. Qual o volume da pedra?", "alternativas": ["180 cm³", "780 cm³", "280 cm³", "150 cm³"], "correta": 0 },
+              { "pergunta": "Qual é a área total das 6 faces de um cubo com aresta de 3 cm?", "alternativas": ["9 cm²", "27 cm²", "54 cm²", "36 cm²"], "correta": 2 },
+              { "pergunta": "Se 1 litro de tinta cobre 10 m² de parede, quantos litros serão necessários para pintar um muro de 25 m por 2 m?", "alternativas": ["4 litros", "5 litros", "6 litros", "7 litros"], "correta": 1 },
+              { "pergunta": "Uma lanchonete vendeu 8 jarras de suco de 1,5 litro cada. Quantos litros de suco foram vendidos ao todo?", "alternativas": ["10 L", "11 L", "12 L", "14 L"], "correta": 2 },
+              { "pergunta": "Quantos copos de 200 ml podem ser cheios com essa quantidade de 12 litros?", "alternativas": ["40 copos", "50 copos", "60 copos", "70 copos"], "correta": 2 },
+              { "pergunta": "O volume de um paralelepípedo com base de 16 m² e altura de 2,5 m é:", "alternativas": ["32 m³", "36 m³", "40 m³", "45 m³"], "correta": 2 },
+              { "pergunta": "Uma caixa cúbica tem volume de 27 cm³. Quanto mede a sua aresta?", "alternativas": ["2 cm", "3 cm", "4 cm", "9 cm"], "correta": 1 },
+              { "pergunta": "Calcule a soma de volumes: 1,5 L + 350 ml + 0,65 L =", "alternativas": ["2,4 L", "2,5 L", "2,6 L", "2,8 L"], "correta": 1 },
+              { "pergunta": "Um caminhão-pipa transporta 15 m³ de água. Em litros, essa carga equivale a:", "alternativas": ["1.500 L", "15.000 L", "150.000 L", "150 L"], "correta": 1 },
+              { "pergunta": "Em um balde com 8 litros de água colocou-se um vazamento constante de 200 ml por minuto. Em quantos minutos ele esvaziará?", "alternativas": ["30 min", "40 min", "50 min", "60 min"], "correta": 1 },
+              { "pergunta": "Qual é a diferença de volume entre um cubo de aresta 5 cm e outro de aresta 4 cm?", "alternativas": ["1 cm³", "25 cm³", "61 cm³", "50 cm³"], "correta": 2 }
             ]
           }
         }

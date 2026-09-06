@@ -64,10 +64,20 @@ function renderButtons(keys, callback, dataSource = null, labelKey = null) {
     container.innerHTML = "";
 
     keys.forEach(key => {
+        const item = dataSource ? dataSource[key] : null;
         const btn = document.createElement('button');
-        btn.innerText = (dataSource && dataSource[key] && dataSource[key][labelKey]) 
-                        ? dataSource[key][labelKey] 
-                        : key.toUpperCase();
+        btn.className = 'menu-card-btn';
+
+        const label = (item && item[labelKey]) ? item[labelKey] : key.toUpperCase();
+        
+        // Verifica se o item possui a flag "novo"
+        const badgeHtml = (item && item.novo) ? '<span class="badge-novo">NOVO</span>' : '';
+
+        btn.innerHTML = `
+            <span class="btn-text">${label}</span>
+            ${badgeHtml}
+        `;
+
         btn.onclick = () => callback(key);
         container.appendChild(btn);
     });
