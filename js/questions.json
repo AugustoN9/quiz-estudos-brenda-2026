@@ -756,6 +756,576 @@
             ]
           }
         }
+      },
+      "numeros_decimais": {
+        "titulo": "Números decimais",
+        "subtopicos": {
+          "nivel_1": {
+            "titulo": "Nível 1: Frações Decimais, Leitura e Ordens",
+            "questoes": [
+              {
+                "pergunta": "Como representamos a fração 1/10 na forma de número decimal?",
+                "alternativas": ["0,01", "0,1", "1,0", "0,001"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A fração decimal 3/10 equivale a:",
+                "alternativas": ["0,03", "0,3", "3,0", "0,003"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a representação decimal da fração 7/100?",
+                "alternativas": ["0,7", "0,07", "7,0", "0,007"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A fração 25/100 escrita na forma decimal é:",
+                "alternativas": ["2,5", "0,25", "0,025", "25,0"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Como se escreve a fração 9/1000 em número decimal?",
+                "alternativas": ["0,9", "0,09", "0,009", "0,0009"],
+                "correta": 2
+              },
+              {
+                "pergunta": "O número decimal 0,147 corresponde a qual fração decimal?",
+                "alternativas": ["147/10", "147/100", "147/1000", "147/1"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Como se lê o número decimal 0,6 por extenso?",
+                "alternativas": ["Seis inteiros", "Seis décimos", "Seis centésimos", "Seis milésimos"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A escrita por extenso do número 2,45 é:",
+                "alternativas": [
+                  "Dois inteiros e quarenta e cinco décimos",
+                  "Dois inteiros e quarenta e cinco centésimos",
+                  "Vinte e quatro inteiros e cinco décimos",
+                  "Dois inteiros e quarenta e cinco milésimos"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Como se escreve por extenso o número decimal 0,008?",
+                "alternativas": ["Oito décimos", "Oito centésimos", "Oito milésimos", "Oitenta inteiros"],
+                "correta": 2
+              },
+              {
+                "pergunta": "No número decimal 5,834, qual algarismo está na ordem dos milésimos?",
+                "alternativas": ["5", "8", "3", "4"],
+                "correta": 3
+              },
+              {
+                "pergunta": "No número 12,385, qual algarismo ocupa a ordem dos centésimos?",
+                "alternativas": ["1", "2", "3", "8"],
+                "correta": 3
+              },
+              {
+                "pergunta": "Qual é a fração decimal correspondente ao número 0,8?",
+                "alternativas": ["8/10", "8/100", "8/1000", "80/10"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Como escrevemos 'quinze inteiros e três décimos' em algarismos?",
+                "alternativas": ["15,03", "15,3", "1,53", "15,003"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual alternativa apresenta o número 'cinco inteiros e doze milésimos'?",
+                "alternativas": ["5,12", "5,012", "5,120", "0,512"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A fração mista 1 e 4/10 na forma decimal é:",
+                "alternativas": ["0,14", "1,4", "14,0", "1,04"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Em um milésimo cabem quantas partes iguais de um décimo?",
+                "alternativas": ["10", "100", "1/100", "1/10"],
+                "correta": 2
+              },
+              {
+                "pergunta": "O número 0,05 deve ser lido como:",
+                "alternativas": ["Cinco décimos", "Cinco centésimos", "Cinco milésimos", "Cinquenta centésimos"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A fração 350/1000 simplificada em decimal é:",
+                "alternativas": ["3,5", "0,35", "0,035", "35,0"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual o valor posicional do algarismo 7 no número 0,72?",
+                "alternativas": ["7 unidades", "7 décimos (0,7)", "7 centésimos (0,07)", "7 milésimos (0,007)"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Como escrevemos a fração 12/10 na forma decimal?",
+                "alternativas": ["0,12", "1,2", "12,0", "0,012"],
+                "correta": 1
+              }
+            ]
+          },
+          "nivel_2": {
+            "titulo": "Nível 2: Decomposição, Equivalência e Comparação",
+            "questoes": [
+              {
+                "pergunta": "Qual é a decomposição correta do número decimal 17,493?",
+                "alternativas": [
+                  "10 + 7 + 0,4 + 0,9 + 0,3",
+                  "10 + 7 + 0,4 + 0,09 + 0,003",
+                  "17 + 4 + 9 + 3",
+                  "10 + 7 + 0,49 + 0,003"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "A composição 4 + 0,3 + 0,08 forma qual número?",
+                "alternativas": ["4,38", "4,038", "43,8", "4,83"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual sinal torna a sentença verdadeira: 0,6 ___ 0,60?",
+                "alternativas": [">", "<", "=", "≠"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Como 3 < 8, qual das relações abaixo está correta?",
+                "alternativas": ["3,5 > 8,3", "3,5 < 8,3", "3,5 = 8,3", "8,3 < 3,5"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Se 69 < X < 70, qual valor X pode assumir?",
+                "alternativas": ["68,9", "69,4", "70,1", "71,0"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual número está compreendido entre 5 e 6 na reta numérica?",
+                "alternativas": ["4,9", "5,4", "6,1", "6,7"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual dos números abaixo é o maior: 0,49 ou 0,5?",
+                "alternativas": ["0,49", "0,5", "São iguais", "0,05"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual sentença é verdadeira ao comparar os decimais?",
+                "alternativas": ["2,08 > 2,8", "1,500 = 1,5", "0,09 > 0,1", "3,45 < 3,4"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Decompondo o número 8,205 encontramos:",
+                "alternativas": [
+                  "8 + 0,2 + 0,05",
+                  "8 + 0,2 + 0,005",
+                  "8 + 0,02 + 0,005",
+                  "80 + 2 + 0,5"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual número é estritamente menor que 4,1?",
+                "alternativas": ["4,15", "4,10", "4,09", "4,2"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Coloque em ordem crescente os números: 0,32; 0,305; 0,4.",
+                "alternativas": [
+                  "0,4 ; 0,32 ; 0,305",
+                  "0,305 ; 0,32 ; 0,4",
+                  "0,32 ; 0,305 ; 0,4",
+                  "0,305 ; 0,4 ; 0,32"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Se 12 < X < 13, qual alternativa preenche o valor de X?",
+                "alternativas": ["11,9", "12,75", "13,2", "13,01"],
+                "correta": 1
+              },
+              {
+                "pergunta": "O número 0,7 é equivalente a:",
+                "alternativas": ["0,07", "0,007", "0,700", "7,0"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual número é estritamente maior que 9,89?",
+                "alternativas": ["9,8", "9,889", "9,9", "9,09"],
+                "correta": 2
+              },
+              {
+                "pergunta": "A decomposição 20 + 3 + 0,04 corresponde a:",
+                "alternativas": ["23,4", "23,04", "203,4", "2,34"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Entre quais números inteiros consecutivos fica o decimal 8,63?",
+                "alternativas": ["7 e 8", "8 e 9", "9 e 10", "86 e 87"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual afirmação está correta sobre 0,2 e 0,195?",
+                "alternativas": [
+                  "0,195 é maior porque tem mais algarismos",
+                  "0,2 é maior porque tem 2 décimos contra 1 décimo de 0,195",
+                  "Eles são números iguais",
+                  "0,2 é menor que 0,1"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "O número 15,06 é igual a:",
+                "alternativas": ["15,6", "15,60", "15,060", "15,006"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Se 0 < X < 1, qual das opções é válida para X?",
+                "alternativas": ["1,2", "0,05", "1,0", "-0,5"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Ao comparar 5,6 e 5,59, podemos afirmar que:",
+                "alternativas": ["5,6 < 5,59", "5,6 = 5,59", "5,6 > 5,59", "5,59 > 5,60"],
+                "correta": 2
+              }
+            ]
+          },
+          "nivel_3": {
+            "titulo": "Nível 3: Adição, Subtração e Frações Mistas",
+            "questoes": [
+              {
+                "pergunta": "Para efetuar 3,5 + 1,28 com precisão, podemos completar com zeros ficando:",
+                "alternativas": ["3,05 + 1,28", "3,50 + 1,28", "35 + 128", "0,35 + 1,28"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual o resultado de 3,5 + 1,28?",
+                "alternativas": ["4,33", "4,78", "4,68", "5,28"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Resolva completando as ordens vazias com zero: 8,4 - 2,15 =",
+                "alternativas": ["6,25", "6,35", "6,15", "5,25"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Quanto é 5 - 1,4?",
+                "alternativas": ["4,6", "3,6", "3,4", "4,4"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Resolva a soma de fração com decimal: 1/10 + 0,5 =",
+                "alternativas": ["0,51", "0,6", "1,5", "0,15"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto dá a expressão 3/100 + 0,2?",
+                "alternativas": ["0,5", "0,23", "0,05", "0,203"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o valor de 0,75 + 1/4 (lembrando que 1/4 = 0,25)?",
+                "alternativas": ["0,80", "1,0", "0,95", "1,25"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule: 12,38 + 4,7 =",
+                "alternativas": ["16,08", "17,08", "17,45", "16,45"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Resultado de 10 - 4,63:",
+                "alternativas": ["5,37", "6,37", "5,47", "6,47"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Quanto é 2/10 + 0,35?",
+                "alternativas": ["0,37", "0,55", "0,235", "2,35"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule a soma: 0,125 + 0,375 =",
+                "alternativas": ["0,400", "0,5", "0,55", "0,45"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o resultado de 15,2 - 9,85?",
+                "alternativas": ["5,35", "6,35", "5,45", "6,45"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Calcule: 4/10 + 0,6 =",
+                "alternativas": ["1,0", "0,46", "0,10", "4,6"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Quanto é 7,002 + 1,98?",
+                "alternativas": ["8,982", "8,99", "8,000", "9,002"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Resolva a subtração: 6,1 - 3,08 =",
+                "alternativas": ["3,02", "3,12", "2,92", "3,98"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual o valor da soma 0,04 + 5/100?",
+                "alternativas": ["0,09", "0,9", "0,45", "0,009"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Quanto é 20,5 - 8,75?",
+                "alternativas": ["11,75", "12,25", "11,25", "12,75"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Calcule: 1,8 + 0,25 + 0,05 =",
+                "alternativas": ["2,0", "2,1", "2,15", "1,98"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a diferença entre 4 inteiros e 25 milésimos (4 - 0,025)?",
+                "alternativas": ["3,75", "3,975", "3,075", "3,925"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto dá 5/10 + 50/100?",
+                "alternativas": ["0,55", "1,0", "0,100", "5,5"],
+                "correta": 1
+              }
+            ]
+          },
+          "nivel_4": {
+            "titulo": "Nível 4: Aplicações no Cotidiano e Medidas",
+            "questoes": [
+              {
+                "pergunta": "Em uma prova olímpica de salto em distância, as marcas foram: Pedro = 8,24 m; Lucas = 8,3 m; João = 8,19 m. Quem conquistou a medalha de ouro?",
+                "alternativas": ["Pedro", "Lucas", "João", "Houve empate"],
+                "correta": 1
+              },
+              {
+                "pergunta": "No salto em altura, quatro atletas atingiram: 2,31 m; 2,35 m; 2,29 m; 2,33 m. Qual foi a altura do salto vencedor?",
+                "alternativas": ["2,31 m", "2,33 m", "2,35 m", "2,29 m"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Andréia tem 1,39 m de altura e seu irmão tem 1,52 m. Qual é a diferença de altura entre os dois?",
+                "alternativas": ["0,13 m", "0,23 m", "0,17 m", "0,19 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Bruna mede 1,45 m e Carla mede 1,405 m. Quem é mais alta e por qual diferença?",
+                "alternativas": [
+                  "Carla é mais alta por 0,045 m",
+                  "Bruna é mais alta por 0,045 m",
+                  "Bruna é mais alta por 0,45 m",
+                  "Elas têm a mesma altura"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "As temperaturas registradas no ano foram: Verão = 34,8 °C; Outono = 21,5 °C; Inverno = 8,2 °C; Primavera = 26,4 °C. Qual foi a maior e a menor temperatura, respectivamente?",
+                "alternativas": [
+                  "34,8 °C e 8,2 °C",
+                  "34,8 °C e 21,5 °C",
+                  "26,4 °C e 8,2 °C",
+                  "21,5 °C e 8,2 °C"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Em um dia de inverno, a temperatura variou de 12,4 °C para 23,1 °C. De quanto foi a elevação térmica?",
+                "alternativas": ["10,5 °C", "10,7 °C", "11,3 °C", "11,7 °C"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma garrafa contém 1,5 litro de suco. Quantos mililitros (ml) isso representa?",
+                "alternativas": ["150 ml", "1.500 ml", "15.000 ml", "15 ml"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma receita pede 250 ml de leite. Em litros, essa quantidade corresponde a:",
+                "alternativas": ["2,5 L", "0,25 L", "0,025 L", "25 L"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma melancia pesa 3,45 kg. Quantos gramas ela tem?",
+                "alternativas": ["345 g", "3.450 g", "34.500 g", "34,5 g"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um comprimido tem 500 mg. Em gramas (g), essa massa equivale a:",
+                "alternativas": ["5 g", "0,5 g", "0,05 g", "0,005 g"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Felipe pagou um lanche de R$ 14,35 com uma nota de R$ 20,00. Qual foi o seu troco?",
+                "alternativas": ["R$ 6,35", "R$ 5,65", "R$ 5,75", "R$ 6,65"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Marina comprou um livro por R$ 32,80 e uma caneta por R$ 4,75. Quanto gastou ao todo?",
+                "alternativas": ["R$ 37,55", "R$ 36,55", "R$ 37,45", "R$ 36,95"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Em uma jarra havia 2,0 litros de água. Após beber 0,65 litro, quanto sobrou?",
+                "alternativas": ["1,45 L", "1,35 L", "1,25 L", "1,55 L"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um pacote tem 0,75 kg de farinha e outro tem 1,5 kg. Juntos, os pacotes pesam:",
+                "alternativas": ["1,80 kg", "2,25 kg", "2,15 kg", "1,90 kg"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual atleta saltou mais longe: Gabriel com 7,08 m ou Rodrigo com 7,8 m?",
+                "alternativas": [
+                  "Gabriel, por 0,72 m",
+                  "Rodrigo, por 0,72 m",
+                  "Gabriel, por 0,02 m",
+                  "Rodrigo, por 0,02 m"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "No início da manhã a temperatura era 14,6 °C e ao meio-dia chegou a 28,9 °C. Qual foi a variação?",
+                "alternativas": ["14,3 °C", "13,7 °C", "14,5 °C", "13,9 °C"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Transformando 1,75 metro para centímetros, temos:",
+                "alternativas": ["17,5 cm", "175 cm", "1.750 cm", "0,175 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Comprei três itens no mercado: R$ 3,50; R$ 8,25 e R$ 1,75. Qual foi o total da compra?",
+                "alternativas": ["R$ 13,00", "R$ 13,50", "R$ 14,00", "R$ 13,75"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um pote de iogurte tem 170 ml. Quantos litros há nesse pote?",
+                "alternativas": ["1,7 L", "0,17 L", "0,017 L", "17 L"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A massa de um objeto é de 2,05 kg. Em gramas, isso corresponde a:",
+                "alternativas": ["205 g", "2.050 g", "20.500 g", "250 g"],
+                "correta": 1
+              }
+            ]
+          },
+          "nivel_5": {
+            "titulo": "Nível 5: Multiplicação, Divisão e Potências de 10",
+            "questoes": [
+              {
+                "pergunta": "Ao multiplicar 4,72 por 10, o resultado é:",
+                "alternativas": ["0,472", "47,2", "472", "4.720"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto é 0,65 x 100?",
+                "alternativas": ["6,5", "65", "650", "0,065"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Multiplicando 3,8 por 1000, obtemos:",
+                "alternativas": ["380", "3.800", "38.000", "38"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Ao dividir 58 por 10, o resultado decimal é:",
+                "alternativas": ["580", "5,8", "0,58", "0,058"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto é 345 ÷ 100?",
+                "alternativas": ["34,5", "3,45", "0,345", "3.450"],
+                "correta": 1
+              },
+              {
+                "pergunta": "O resultado da divisão 12 ÷ 1000 é:",
+                "alternativas": ["1,2", "0,12", "0,012", "0,0012"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Calcule a multiplicação de decimal por inteiro: 2,5 x 4 =",
+                "alternativas": ["8,5", "10,0", "9,0", "10,5"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto é 0,3 x 0,2?",
+                "alternativas": ["0,6", "0,06", "0,006", "6,0"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule o produto: 1,5 x 1,5 =",
+                "alternativas": ["2,25", "2,5", "3,0", "2,15"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Ao dividir 7 por 2, obtemos o quociente decimal:",
+                "alternativas": ["3", "3,5", "4", "3,2"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o quociente da divisão 9 ÷ 4?",
+                "alternativas": ["2,1", "2,25", "2,5", "2,15"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto é 1 ÷ 4 na forma decimal?",
+                "alternativas": ["0,4", "0,25", "0,14", "0,5"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Dividindo 15 por 6, o resultado é:",
+                "alternativas": ["2,3", "2,5", "2,6", "2,4"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto é 4,8 ÷ 2?",
+                "alternativas": ["2,4", "2,8", "2,2", "2,6"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Uma barra de chocolate de 7,5 cm foi repartida em 3 pedaços iguais. Quanto mede cada pedaço?",
+                "alternativas": ["2,3 cm", "2,5 cm", "2,4 cm", "2,15 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule: 0,08 x 100 =",
+                "alternativas": ["0,8", "8", "80", "800"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto é 5,6 ÷ 100?",
+                "alternativas": ["0,56", "0,056", "0,0056", "56"],
+                "correta": 1
+              },
+              {
+                "pergunta": "O resultado de 1,2 x 5 é:",
+                "alternativas": ["5,2", "6,0", "6,5", "5,8"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Se 3 cadernos custam R$ 22,50, qual é o valor de cada caderno?",
+                "alternativas": ["R$ 7,15", "R$ 7,50", "R$ 7,25", "R$ 7,80"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quanto é 0,5 x 0,5?",
+                "alternativas": ["0,25", "2,5", "0,025", "1,0"],
+                "correta": 0
+              }
+            ]
+          }
+        }
       }
     }
   },
