@@ -796,7 +796,12 @@
               },
               {
                 "pergunta": "Como se lê o número decimal 0,6 por extenso?",
-                "alternativas": ["Seis inteiros", "Seis décimos", "Seis centésimos", "Seis milésimos"],
+                "alternativas": [
+                  "Seis inteiros",
+                  "Seis décimos",
+                  "Seis centésimos",
+                  "Seis milésimos"
+                ],
                 "correta": 1
               },
               {
@@ -811,7 +816,12 @@
               },
               {
                 "pergunta": "Como se escreve por extenso o número decimal 0,008?",
-                "alternativas": ["Oito décimos", "Oito centésimos", "Oito milésimos", "Oitenta inteiros"],
+                "alternativas": [
+                  "Oito décimos",
+                  "Oito centésimos",
+                  "Oito milésimos",
+                  "Oitenta inteiros"
+                ],
                 "correta": 2
               },
               {
@@ -851,7 +861,12 @@
               },
               {
                 "pergunta": "O número 0,05 deve ser lido como:",
-                "alternativas": ["Cinco décimos", "Cinco centésimos", "Cinco milésimos", "Cinquenta centésimos"],
+                "alternativas": [
+                  "Cinco décimos",
+                  "Cinco centésimos",
+                  "Cinco milésimos",
+                  "Cinquenta centésimos"
+                ],
                 "correta": 1
               },
               {
@@ -861,7 +876,12 @@
               },
               {
                 "pergunta": "Qual o valor posicional do algarismo 7 no número 0,72?",
-                "alternativas": ["7 unidades", "7 décimos (0,7)", "7 centésimos (0,07)", "7 milésimos (0,007)"],
+                "alternativas": [
+                  "7 unidades",
+                  "7 décimos (0,7)",
+                  "7 centésimos (0,07)",
+                  "7 milésimos (0,007)"
+                ],
                 "correta": 1
               },
               {
@@ -896,7 +916,12 @@
               },
               {
                 "pergunta": "Como 3 < 8, qual das relações abaixo está correta?",
-                "alternativas": ["3,5 > 8,3", "3,5 < 8,3", "3,5 = 8,3", "8,3 < 3,5"],
+                "alternativas": [
+                  "3,5 > 8,3",
+                  "3,5 < 8,3",
+                  "3,5 = 8,3",
+                  "8,3 < 3,5"
+                ],
                 "correta": 1
               },
               {
@@ -916,7 +941,12 @@
               },
               {
                 "pergunta": "Qual sentença é verdadeira ao comparar os decimais?",
-                "alternativas": ["2,08 > 2,8", "1,500 = 1,5", "0,09 > 0,1", "3,45 < 3,4"],
+                "alternativas": [
+                  "2,08 > 2,8",
+                  "1,500 = 1,5",
+                  "0,09 > 0,1",
+                  "3,45 < 3,4"
+                ],
                 "correta": 1
               },
               {
@@ -991,7 +1021,12 @@
               },
               {
                 "pergunta": "Ao comparar 5,6 e 5,59, podemos afirmar que:",
-                "alternativas": ["5,6 < 5,59", "5,6 = 5,59", "5,6 > 5,59", "5,59 > 5,60"],
+                "alternativas": [
+                  "5,6 < 5,59",
+                  "5,6 = 5,59",
+                  "5,6 > 5,59",
+                  "5,59 > 5,60"
+                ],
                 "correta": 2
               }
             ]
@@ -1001,7 +1036,12 @@
             "questoes": [
               {
                 "pergunta": "Para efetuar 3,5 + 1,28 com precisão, podemos completar com zeros ficando:",
-                "alternativas": ["3,05 + 1,28", "3,50 + 1,28", "35 + 128", "0,35 + 1,28"],
+                "alternativas": [
+                  "3,05 + 1,28",
+                  "3,50 + 1,28",
+                  "35 + 128",
+                  "0,35 + 1,28"
+                ],
                 "correta": 1
               },
               {
@@ -1171,7 +1211,12 @@
               },
               {
                 "pergunta": "Marina comprou um livro por R$ 32,80 e uma caneta por R$ 4,75. Quanto gastou ao todo?",
-                "alternativas": ["R$ 37,55", "R$ 36,55", "R$ 37,45", "R$ 36,95"],
+                "alternativas": [
+                  "R$ 37,55",
+                  "R$ 36,55",
+                  "R$ 37,45",
+                  "R$ 36,95"
+                ],
                 "correta": 0
               },
               {
@@ -1206,7 +1251,12 @@
               },
               {
                 "pergunta": "Comprei três itens no mercado: R$ 3,50; R$ 8,25 e R$ 1,75. Qual foi o total da compra?",
-                "alternativas": ["R$ 13,00", "R$ 13,50", "R$ 14,00", "R$ 13,75"],
+                "alternativas": [
+                  "R$ 13,00",
+                  "R$ 13,50",
+                  "R$ 14,00",
+                  "R$ 13,75"
+                ],
                 "correta": 1
               },
               {
@@ -1335,109 +1385,535 @@
           "nivel_1": {
             "titulo": "Nível 1: Unidades de Comprimento e Conversões Básicas",
             "questoes": [
-              { "pergunta": "Qual é a principal unidade de medida de comprimento do Sistema Internacional?", "alternativas": ["Litro", "Grama", "Metro", "Segundo"], "correta": 2 },
-              { "pergunta": "Quantos centímetros há em 1 metro?", "alternativas": ["10 cm", "100 cm", "1.000 cm", "50 cm"], "correta": 1 },
-              { "pergunta": "Quantos milímetros equivalem a 1 centímetro?", "alternativas": ["10 mm", "100 mm", "1.000 mm", "5 mm"], "correta": 0 },
-              { "pergunta": "Quantos metros formam exatamente 1 quilômetro (km)?", "alternativas": ["100 m", "500 m", "1.000 m", "10.000 m"], "correta": 2 },
-              { "pergunta": "Uma régua escolar comum de 30 cm tem quantos milímetros de comprimento?", "alternativas": ["30 mm", "300 mm", "3.000 mm", "3 mm"], "correta": 1 },
-              { "pergunta": "Qual instrumento é mais adequado para medir a espessura da ponta de uma lapiseira?", "alternativas": ["Fita métrica", "Odômetro", "Régua em milímetros", "Passômetro"], "correta": 2 },
-              { "pergunta": "A distância entre duas cidades é usualmente medida em:", "alternativas": ["Centímetros", "Quilômetros", "Milímetros", "Metros"], "correta": 1 },
-              { "pergunta": "Ao converter 2,5 metros em centímetros, obtemos:", "alternativas": ["25 cm", "250 cm", "2.500 cm", "0,25 cm"], "correta": 1 },
-              { "pergunta": "Uma pista de atletismo tem 400 metros de extensão. Em 2 voltas completas, quantos metros são percorridos?", "alternativas": ["600 m", "800 m", "1.000 m", "400 m"], "correta": 1 },
-              { "pergunta": "Quantos centímetros restam para completar 1 metro a partir de 65 cm?", "alternativas": ["25 cm", "35 cm", "45 cm", "55 cm"], "correta": 1 },
-              { "pergunta": "Meio quilômetro equivale a:", "alternativas": ["250 m", "500 m", "750 m", "100 m"], "correta": 1 },
-              { "pergunta": "A altura de uma porta é de 2,10 metros. Essa medida em centímetros é:", "alternativas": ["21 cm", "210 cm", "2.100 cm", "2.010 cm"], "correta": 1 },
-              { "pergunta": "Quantos milímetros correspondem a 5 centímetros?", "alternativas": ["5 mm", "50 mm", "500 mm", "0,5 mm"], "correta": 1 },
-              { "pergunta": "A largura de um livro mede 18 cm. Em milímetros, isso equivale a:", "alternativas": ["1,8 mm", "180 mm", "1.800 mm", "0,18 mm"], "correta": 1 },
-              { "pergunta": "Qual unidade é a mais adequada para expressar o comprimento de uma formiga?", "alternativas": ["Quilômetro", "Metro", "Centímetro", "Milímetro"], "correta": 3 },
-              { "pergunta": "Três metros e meio correspondem a:", "alternativas": ["305 cm", "350 cm", "3.500 cm", "35 cm"], "correta": 1 },
-              { "pergunta": "Convertendo 4.000 metros em quilômetros, temos:", "alternativas": ["4 km", "40 km", "400 km", "0,4 km"], "correta": 0 },
-              { "pergunta": "Um cabo tem 120 cm. Isso é equivalente a:", "alternativas": ["1,02 m", "1,2 m", "12 m", "0,12 m"], "correta": 1 },
-              { "pergunta": "Qual é o símbolo correto do milímetro?", "alternativas": ["ml", "cm", "mm", "mi"], "correta": 2 },
-              { "pergunta": "Quantos centímetros há em 7 metros e 20 centímetros?", "alternativas": ["72 cm", "702 cm", "720 cm", "7.200 cm"], "correta": 2 },
-              { "pergunta": "Uma fita métrica tem 1,5 m. Em milímetros, ela mede:", "alternativas": ["150 mm", "1.500 mm", "15.000 mm", "15 mm"], "correta": 1 },
-              { "pergunta": "A distância de 800 cm corresponde a quantos metros?", "alternativas": ["8 m", "80 m", "0,8 m", "800 m"], "correta": 0 },
-              { "pergunta": "Qual é a metade de 1 metro?", "alternativas": ["10 cm", "25 cm", "50 cm", "100 cm"], "correta": 2 },
-              { "pergunta": "Ao converter 0,8 km em metros, encontramos:", "alternativas": ["8 m", "80 m", "800 m", "8.000 m"], "correta": 2 },
-              { "pergunta": "Um barbante mede 90 mm. Em centímetros, sua medida é:", "alternativas": ["0,9 cm", "9 cm", "90 cm", "900 cm"], "correta": 1 },
-              { "pergunta": "Quantos metros faltam para 750 metros se tornarem 1 km?", "alternativas": ["150 m", "250 m", "350 m", "50 m"], "correta": 1 },
-              { "pergunta": "Uma mesa mede 140 centímetros de comprimento. Em metros, isso corresponde a:", "alternativas": ["14 m", "1,4 m", "0,14 m", "1,04 m"], "correta": 1 },
-              { "pergunta": "Para medir a largura da sala de aula, a unidade mais usual é:", "alternativas": ["Milímetro", "Quilômetro", "Metro", "Milha"], "correta": 2 },
-              { "pergunta": "Qual medida é menor: 1 metro ou 98 centímetros?", "alternativas": ["1 metro", "98 centímetros", "São iguais", "Depende da régua"], "correta": 1 },
-              { "pergunta": "Dez pedaços de corda de 10 cm cada um formam juntos:", "alternativas": ["10 metros", "1 metro", "100 metros", "50 cm"], "correta": 1 }
+              {
+                "pergunta": "Qual é a principal unidade de medida de comprimento do Sistema Internacional?",
+                "alternativas": ["Litro", "Grama", "Metro", "Segundo"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Quantos centímetros há em 1 metro?",
+                "alternativas": ["10 cm", "100 cm", "1.000 cm", "50 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quantos milímetros equivalem a 1 centímetro?",
+                "alternativas": ["10 mm", "100 mm", "1.000 mm", "5 mm"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Quantos metros formam exatamente 1 quilômetro (km)?",
+                "alternativas": ["100 m", "500 m", "1.000 m", "10.000 m"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Uma régua escolar comum de 30 cm tem quantos milímetros de comprimento?",
+                "alternativas": ["30 mm", "300 mm", "3.000 mm", "3 mm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual instrumento é mais adequado para medir a espessura da ponta de uma lapiseira?",
+                "alternativas": [
+                  "Fita métrica",
+                  "Odômetro",
+                  "Régua em milímetros",
+                  "Passômetro"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "A distância entre duas cidades é usualmente medida em:",
+                "alternativas": [
+                  "Centímetros",
+                  "Quilômetros",
+                  "Milímetros",
+                  "Metros"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Ao converter 2,5 metros em centímetros, obtemos:",
+                "alternativas": ["25 cm", "250 cm", "2.500 cm", "0,25 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma pista de atletismo tem 400 metros de extensão. Em 2 voltas completas, quantos metros são percorridos?",
+                "alternativas": ["600 m", "800 m", "1.000 m", "400 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quantos centímetros restam para completar 1 metro a partir de 65 cm?",
+                "alternativas": ["25 cm", "35 cm", "45 cm", "55 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Meio quilômetro equivale a:",
+                "alternativas": ["250 m", "500 m", "750 m", "100 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A altura de uma porta é de 2,10 metros. Essa medida em centímetros é:",
+                "alternativas": ["21 cm", "210 cm", "2.100 cm", "2.010 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quantos milímetros correspondem a 5 centímetros?",
+                "alternativas": ["5 mm", "50 mm", "500 mm", "0,5 mm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A largura de um livro mede 18 cm. Em milímetros, isso equivale a:",
+                "alternativas": ["1,8 mm", "180 mm", "1.800 mm", "0,18 mm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual unidade é a mais adequada para expressar o comprimento de uma formiga?",
+                "alternativas": [
+                  "Quilômetro",
+                  "Metro",
+                  "Centímetro",
+                  "Milímetro"
+                ],
+                "correta": 3
+              },
+              {
+                "pergunta": "Três metros e meio correspondem a:",
+                "alternativas": ["305 cm", "350 cm", "3.500 cm", "35 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Convertendo 4.000 metros em quilômetros, temos:",
+                "alternativas": ["4 km", "40 km", "400 km", "0,4 km"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Um cabo tem 120 cm. Isso é equivalente a:",
+                "alternativas": ["1,02 m", "1,2 m", "12 m", "0,12 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o símbolo correto do milímetro?",
+                "alternativas": ["ml", "cm", "mm", "mi"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Quantos centímetros há em 7 metros e 20 centímetros?",
+                "alternativas": ["72 cm", "702 cm", "720 cm", "7.200 cm"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Uma fita métrica tem 1,5 m. Em milímetros, ela mede:",
+                "alternativas": ["150 mm", "1.500 mm", "15.000 mm", "15 mm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A distância de 800 cm corresponde a quantos metros?",
+                "alternativas": ["8 m", "80 m", "0,8 m", "800 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual é a metade de 1 metro?",
+                "alternativas": ["10 cm", "25 cm", "50 cm", "100 cm"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Ao converter 0,8 km em metros, encontramos:",
+                "alternativas": ["8 m", "80 m", "800 m", "8.000 m"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Um barbante mede 90 mm. Em centímetros, sua medida é:",
+                "alternativas": ["0,9 cm", "9 cm", "90 cm", "900 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quantos metros faltam para 750 metros se tornarem 1 km?",
+                "alternativas": ["150 m", "250 m", "350 m", "50 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma mesa mede 140 centímetros de comprimento. Em metros, isso corresponde a:",
+                "alternativas": ["14 m", "1,4 m", "0,14 m", "1,04 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Para medir a largura da sala de aula, a unidade mais usual é:",
+                "alternativas": ["Milímetro", "Quilômetro", "Metro", "Milha"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual medida é menor: 1 metro ou 98 centímetros?",
+                "alternativas": [
+                  "1 metro",
+                  "98 centímetros",
+                  "São iguais",
+                  "Depende da régua"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Dez pedaços de corda de 10 cm cada um formam juntos:",
+                "alternativas": ["10 metros", "1 metro", "100 metros", "50 cm"],
+                "correta": 1
+              }
             ]
           },
           "nivel_2": {
             "titulo": "Nível 2: Operações e Problemas com Comprimentos",
             "questoes": [
-              { "pergunta": "Uma corda de 3,5 m foi emendada a outra de 2,3 m. Qual é o comprimento total?", "alternativas": ["5,5 m", "5,8 m", "6,0 m", "5,2 m"], "correta": 1 },
-              { "pergunta": "De uma ripa de 2 metros, cortou-se um pedaço de 65 cm. Qual o comprimento restante?", "alternativas": ["1,35 m", "1,45 m", "1,55 m", "1,65 m"], "correta": 0 },
-              { "pergunta": "Um atleta correu 1,8 km pela manhã e 2.400 m à tarde. Quantos metros ele correu no total?", "alternativas": ["3.800 m", "4.200 m", "4.400 m", "4.000 m"], "correta": 1 },
-              { "pergunta": "Marcos precisa de 4 pedaços de fita de 75 cm cada. Quantos metros de fita ele deve comprar?", "alternativas": ["2,5 m", "3,0 m", "3,5 m", "4,0 m"], "correta": 1 },
-              { "pergunta": "Calcule: 15 km - 8.500 m =", "alternativas": ["6,5 km", "7,5 km", "6.000 m", "7.000 m"], "correta": 0 },
-              { "pergunta": "Um tecido tinha 5 m de comprimento. Foram vendidos 1,8 m e depois 1,45 m. Quanto sobrou?", "alternativas": ["1,65 m", "1,75 m", "2,25 m", "1,85 m"], "correta": 1 },
-              { "pergunta": "Um ciclista dá 5 voltas em uma pista circular de 600 m. Quantos quilômetros ele percorreu?", "alternativas": ["2,5 km", "3,0 km", "3,5 km", "4,0 km"], "correta": 1 },
-              { "pergunta": "Some: 4 m + 35 cm + 20 mm. O total em centímetros é:", "alternativas": ["435 cm", "437 cm", "455 cm", "470 cm"], "correta": 1 },
-              { "pergunta": "A diferença entre 2,4 km e 1.950 m é de:", "alternativas": ["450 m", "350 m", "550 m", "500 m"], "correta": 0 },
-              { "pergunta": "Uma costureira comprou 10 metros de elástico e cortou tiras de 20 cm. Quantas tiras ela obteve?", "alternativas": ["20", "50", "100", "200"], "correta": 1 },
-              { "pergunta": "Se um passo médio mede 0,75 m, quantos metros uma pessoa percorre ao dar 100 passos?", "alternativas": ["7,5 m", "75 m", "750 m", "0,75 m"], "correta": 1 },
-              { "pergunta": "Um rolo continha 50 m de fio telefônico. Foram utilizados 32,8 m. Quantos metros restaram?", "alternativas": ["17,2 m", "18,2 m", "16,8 m", "17,8 m"], "correta": 0 },
-              { "pergunta": "Um muro tem 12,5 m de extensão. Já foram rebocados 8 m e 30 cm. Quantos metros faltam rebocar?", "alternativas": ["4,2 m", "4,5 m", "4,1 m", "3,8 m"], "correta": 0 },
-              { "pergunta": "Três tábuas medem 1,25 m, 0,85 m e 2,10 m. Enfileiradas ponta a ponta, somam:", "alternativas": ["4,10 m", "4,20 m", "4,30 m", "3,95 m"], "correta": 1 },
-              { "pergunta": "Calcule a subtração de medidas: 80 cm - 45 mm =", "alternativas": ["75,5 cm", "35 cm", "74,5 cm", "76,5 cm"], "correta": 0 },
-              { "pergunta": "Uma cerca de 1,2 km precisa de estacas colocadas a cada 100 metros. Sem contar a inicial, quantas estacas serão usadas?", "alternativas": ["10", "12", "15", "20"], "correta": 1 },
-              { "pergunta": "Uma haste de 3 metros foi dividida em 6 partes iguais. Qual o comprimento de cada parte em centímetros?", "alternativas": ["40 cm", "50 cm", "60 cm", "45 cm"], "correta": 1 },
-              { "pergunta": "Calcule: 4,75 km + 250 m =", "alternativas": ["4,95 km", "5,0 km", "5,25 km", "4,80 km"], "correta": 1 },
-              { "pergunta": "Uma formiga andou 48 cm em linha reta e depois voltou 150 mm. A que distância ela ficou do ponto de partida?", "alternativas": ["33 cm", "33 mm", "46,5 cm", "330 cm"], "correta": 0 },
-              { "pergunta": "Um carretel de linha tem 200 m. Para fazer pipas são usados 25 m por pipa. Quantas pipas são abastecidas?", "alternativas": ["6", "8", "10", "12"], "correta": 1 },
-              { "pergunta": "Converta e subtraia: 3 m - 120 cm =", "alternativas": ["1,8 m", "2,2 m", "1,2 m", "2,8 m"], "correta": 0 },
-              { "pergunta": "Um barbante foi cortado em 5 pedaços de 40 cm e 2 pedaços de 1,5 m. Qual era seu tamanho total?", "alternativas": ["4 m", "5 m", "6 m", "3,5 m"], "correta": 1 },
-              { "pergunta": "Para completar uma maratona de 42 km, um atleta já percorreu 38.500 m. Quanto falta?", "alternativas": ["3,5 km", "4,5 km", "3.000 m", "4.000 m"], "correta": 0 },
-              { "pergunta": "Uma régua de 50 cm quebrou-se em dois pedaços. Um pedaço tem 285 mm. Quanto mede o outro em centímetros?", "alternativas": ["21,5 cm", "22,5 cm", "20,5 cm", "215 cm"], "correta": 0 },
-              { "pergunta": "Uma estrada de 18 km teve 6.200 m asfaltados. Quantos metros ainda faltam asfaltar?", "alternativas": ["11.800 m", "12.200 m", "11.200 m", "12.800 m"], "correta": 0 },
-              { "pergunta": "Quatro barras de metal medem 0,35 m cada. O comprimento total das barras juntas é:", "alternativas": ["1,2 m", "1,4 m", "1,45 m", "1,5 m"], "correta": 1 },
-              { "pergunta": "Some: 1,6 m + 85 cm =", "alternativas": ["2,35 m", "2,45 m", "2,55 m", "1,95 m"], "correta": 1 },
-              { "pergunta": "Qual valor somado a 670 mm resulta em exatamente 1 metro?", "alternativas": ["33 mm", "330 mm", "33 cm", "230 mm"], "correta": 1 },
-              { "pergunta": "Uma pista de corrida tem 2,5 km. Uma pessoa deu 3 voltas completas. Quantos metros ela correu?", "alternativas": ["6.500 m", "7.500 m", "8.000 m", "7.000 m"], "correta": 1 },
-              { "pergunta": "Um rolo de arame tem 150 m. Gastou-se a terça parte. Quantos metros ainda restam?", "alternativas": ["50 m", "100 m", "75 m", "120 m"], "correta": 1 }
+              {
+                "pergunta": "Uma corda de 3,5 m foi emendada a outra de 2,3 m. Qual é o comprimento total?",
+                "alternativas": ["5,5 m", "5,8 m", "6,0 m", "5,2 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "De uma ripa de 2 metros, cortou-se um pedaço de 65 cm. Qual o comprimento restante?",
+                "alternativas": ["1,35 m", "1,45 m", "1,55 m", "1,65 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Um atleta correu 1,8 km pela manhã e 2.400 m à tarde. Quantos metros ele correu no total?",
+                "alternativas": ["3.800 m", "4.200 m", "4.400 m", "4.000 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Marcos precisa de 4 pedaços de fita de 75 cm cada. Quantos metros de fita ele deve comprar?",
+                "alternativas": ["2,5 m", "3,0 m", "3,5 m", "4,0 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule: 15 km - 8.500 m =",
+                "alternativas": ["6,5 km", "7,5 km", "6.000 m", "7.000 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Um tecido tinha 5 m de comprimento. Foram vendidos 1,8 m e depois 1,45 m. Quanto sobrou?",
+                "alternativas": ["1,65 m", "1,75 m", "2,25 m", "1,85 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um ciclista dá 5 voltas em uma pista circular de 600 m. Quantos quilômetros ele percorreu?",
+                "alternativas": ["2,5 km", "3,0 km", "3,5 km", "4,0 km"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Some: 4 m + 35 cm + 20 mm. O total em centímetros é:",
+                "alternativas": ["435 cm", "437 cm", "455 cm", "470 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A diferença entre 2,4 km e 1.950 m é de:",
+                "alternativas": ["450 m", "350 m", "550 m", "500 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Uma costureira comprou 10 metros de elástico e cortou tiras de 20 cm. Quantas tiras ela obteve?",
+                "alternativas": ["20", "50", "100", "200"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Se um passo médio mede 0,75 m, quantos metros uma pessoa percorre ao dar 100 passos?",
+                "alternativas": ["7,5 m", "75 m", "750 m", "0,75 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um rolo continha 50 m de fio telefônico. Foram utilizados 32,8 m. Quantos metros restaram?",
+                "alternativas": ["17,2 m", "18,2 m", "16,8 m", "17,8 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Um muro tem 12,5 m de extensão. Já foram rebocados 8 m e 30 cm. Quantos metros faltam rebocar?",
+                "alternativas": ["4,2 m", "4,5 m", "4,1 m", "3,8 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Três tábuas medem 1,25 m, 0,85 m e 2,10 m. Enfileiradas ponta a ponta, somam:",
+                "alternativas": ["4,10 m", "4,20 m", "4,30 m", "3,95 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule a subtração de medidas: 80 cm - 45 mm =",
+                "alternativas": ["75,5 cm", "35 cm", "74,5 cm", "76,5 cm"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Uma cerca de 1,2 km precisa de estacas colocadas a cada 100 metros. Sem contar a inicial, quantas estacas serão usadas?",
+                "alternativas": ["10", "12", "15", "20"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma haste de 3 metros foi dividida em 6 partes iguais. Qual o comprimento de cada parte em centímetros?",
+                "alternativas": ["40 cm", "50 cm", "60 cm", "45 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule: 4,75 km + 250 m =",
+                "alternativas": ["4,95 km", "5,0 km", "5,25 km", "4,80 km"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma formiga andou 48 cm em linha reta e depois voltou 150 mm. A que distância ela ficou do ponto de partida?",
+                "alternativas": ["33 cm", "33 mm", "46,5 cm", "330 cm"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Um carretel de linha tem 200 m. Para fazer pipas são usados 25 m por pipa. Quantas pipas são abastecidas?",
+                "alternativas": ["6", "8", "10", "12"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Converta e subtraia: 3 m - 120 cm =",
+                "alternativas": ["1,8 m", "2,2 m", "1,2 m", "2,8 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Um barbante foi cortado em 5 pedaços de 40 cm e 2 pedaços de 1,5 m. Qual era seu tamanho total?",
+                "alternativas": ["4 m", "5 m", "6 m", "3,5 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Para completar uma maratona de 42 km, um atleta já percorreu 38.500 m. Quanto falta?",
+                "alternativas": ["3,5 km", "4,5 km", "3.000 m", "4.000 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Uma régua de 50 cm quebrou-se em dois pedaços. Um pedaço tem 285 mm. Quanto mede o outro em centímetros?",
+                "alternativas": ["21,5 cm", "22,5 cm", "20,5 cm", "215 cm"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Uma estrada de 18 km teve 6.200 m asfaltados. Quantos metros ainda faltam asfaltar?",
+                "alternativas": [
+                  "11.800 m",
+                  "12.200 m",
+                  "11.200 m",
+                  "12.800 m"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Quatro barras de metal medem 0,35 m cada. O comprimento total das barras juntas é:",
+                "alternativas": ["1,2 m", "1,4 m", "1,45 m", "1,5 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Some: 1,6 m + 85 cm =",
+                "alternativas": ["2,35 m", "2,45 m", "2,55 m", "1,95 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual valor somado a 670 mm resulta em exatamente 1 metro?",
+                "alternativas": ["33 mm", "330 mm", "33 cm", "230 mm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma pista de corrida tem 2,5 km. Uma pessoa deu 3 voltas completas. Quantos metros ela correu?",
+                "alternativas": ["6.500 m", "7.500 m", "8.000 m", "7.000 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um rolo de arame tem 150 m. Gastou-se a terça parte. Quantos metros ainda restam?",
+                "alternativas": ["50 m", "100 m", "75 m", "120 m"],
+                "correta": 1
+              }
             ]
           },
           "nivel_3": {
             "titulo": "Nível 3: Perímetro e Introdução à Área",
             "questoes": [
-              { "pergunta": "O que é o perímetro de uma figura plana?", "alternativas": ["A medida da sua superfície interna", "A soma das medidas de todos os seus lados", "O espaço tridimensional que ela ocupa", "A multiplicação de todos os seus vértices"], "correta": 1 },
-              { "pergunta": "Qual é o perímetro de um quadrado cujos lados medem 6 cm?", "alternativas": ["12 cm", "24 cm", "36 cm", "18 cm"], "correta": 1 },
-              { "pergunta": "Um campo de futebol tem 100 m de comprimento por 70 m de largura. Qual é o perímetro desse campo?", "alternativas": ["170 m", "340 m", "7.000 m", "270 m"], "imagem": "images/geometria/campo_futebol.png", "correta": 1 },
-              { "pergunta": "Qual é a área de um quadrado com lado de 5 metros?", "alternativas": ["20 m²", "25 m²", "10 m²", "50 m²"], "correta": 1 },
-              { "pergunta": "Calcule a área de um retângulo de base 10 cm e altura 4 cm:", "alternativas": ["14 cm²", "28 cm²", "40 cm²", "80 cm²"], "correta": 2 },
-              { "pergunta": "Observe a figura: qual é o perímetro do terreno retangular com base de 15 m e altura de 8,4 m?", "alternativas": ["23,4 m", "46,8 m", "126 m", "45,8 m"], "imagem": "images/geometria/terreno_15x84.svg", "correta": 1 },
-              { "pergunta": "Qual é a área do retângulo que mede 15 m de base por 8,4 m de altura?", "alternativas": ["46,8 m²", "126 m²", "120 m²", "135 m²"], "imagem": "images/geometria/terreno_15x84.svg", "correta": 1 },
-              { "pergunta": "Observe o retângulo cinza: qual é o seu perímetro sabendo que a base mede 24 m e a altura mede 12,5 m?", "alternativas": ["36,5 m", "73 m", "300 m", "72 m"], "imagem": "images/geometria/terreno_24x125.svg", "correta": 1 },
-              { "pergunta": "Qual é a área do terreno retangular com base de 24 m e altura de 12,5 m?", "alternativas": ["73 m²", "300 m²", "280 m²", "320 m²"], "imagem": "images/geometria/terreno_24x125.svg", "correta": 1 },
-              { "pergunta": "Se um triângulo equilátero tem perímetro de 27 cm, quanto mede cada um dos seus lados?", "alternativas": ["7 cm", "8 cm", "9 cm", "10 cm"], "correta": 2 },
-              { "pergunta": "Uma sala quadrada tem lados medindo 4,2 m. Qual é o perímetro dessa sala?", "alternativas": ["8,4 m", "16,8 m", "17,64 m", "12,6 m"], "correta": 1 },
-              { "pergunta": "Quantos metros de arame são necessários para cercar com 3 voltas um terreno quadrado de 12 metros de lado?", "alternativas": ["48 m", "96 m", "144 m", "120 m"], "correta": 2 },
-              { "pergunta": "A área de uma folha retangular de 20 cm por 30 cm é de:", "alternativas": ["50 cm²", "100 cm²", "600 cm²", "500 cm²"], "correta": 2 },
-              { "pergunta": "Qual a unidade padrão mais usada para indicar a área de apartamentos e casas?", "alternativas": ["Metro (m)", "Metro cúbico (m³)", "Metro quadrado (m²)", "Centímetro (cm)"], "correta": 2 },
-              { "pergunta": "Um retângulo tem 18 cm de perímetro. Se a sua base mede 6 cm, quanto mede sua altura?", "alternativas": ["3 cm", "6 cm", "12 cm", "4 cm"], "correta": 0 },
-              { "pergunta": "Calcule o perímetro de um losango com lado de 8,5 cm:", "alternativas": ["17 cm", "34 cm", "28 cm", "42 cm"], "correta": 1 },
-              { "pergunta": "Uma piscina retangular mede 8 m de comprimento por 4 m de largura. Qual é a sua área?", "alternativas": ["24 m²", "32 m²", "64 m²", "16 m²"], "correta": 1 },
-              { "pergunta": "Se dobrarmos a medida dos lados de um quadrado de 3 cm, qual será o novo perímetro?", "alternativas": ["12 cm", "18 cm", "24 cm", "36 cm"], "correta": 2 },
-              { "pergunta": "Um tapete retangular tem 2,5 m de comprimento e 1,5 m de largura. Seu perímetro é de:", "alternativas": ["4 m", "8 m", "3,75 m", "6 m"], "correta": 1 },
-              { "pergunta": "Qual é a área do tapete retangular de 2,5 m por 1,5 m?", "alternativas": ["3,75 m²", "4 m²", "8 m²", "5 m²"], "correta": 0 },
-              { "pergunta": "Quantos azulejos quadrados de 1 m² cabem no piso de uma sala com 24 m² de área?", "alternativas": ["12", "24", "48", "6"], "correta": 1 },
-              { "pergunta": "O perímetro de um pentágono regular com lados de 7 cm é:", "alternativas": ["28 cm", "35 cm", "42 cm", "49 cm"], "correta": 1 },
-              { "pergunta": "Uma toalha de mesa quadrada tem perímetro de 4,8 m. Qual é a medida do lado dessa toalha?", "alternativas": ["1,2 m", "1,4 m", "1,6 m", "2,4 m"], "correta": 0 },
-              { "pergunta": "Calcule a área do campo de futebol que possui 100 m de comprimento por 70 m de largura:", "alternativas": ["340 m²", "700 m²", "7.000 m²", "14.000 m²"], "imagem": "images/geometria/campo_futebol.png", "correta": 2 },
-              { "pergunta": "Qual figura geométrica plana tem a área calculada pela fórmula Base × Altura?", "alternativas": ["Círculo", "Retângulo", "Triângulo", "Trapézio"], "correta": 1 },
-              { "pergunta": "Um jardim tem a forma de um triângulo com lados de 5 m, 7 m e 9 m. Seu perímetro é:", "alternativas": ["21 m", "22 m", "35 m", "18 m"], "correta": 0 },
-              { "pergunta": "Qual é o perímetro de um retângulo cuja base é 11 cm e a altura é 5 cm?", "alternativas": ["16 cm", "32 cm", "55 cm", "40 cm"], "correta": 1 },
-              { "pergunta": "Para colocar rodapé em um quarto retangular de 4 m por 3 m, descontando uma porta de 1 m, serão necessários quantos metros de rodapé?", "alternativas": ["14 m", "13 m", "12 m", "11 m"], "correta": 1 },
-              { "pergunta": "A área de um quadrado é de 49 m². Quanto mede cada um dos seus lados?", "alternativas": ["6 m", "7 m", "8 m", "14 m"], "correta": 1 },
-              { "pergunta": "Dois retângulos com mesma área sempre têm o mesmo perímetro?", "alternativas": ["Sim, sempre", "Não necessariamente", "Apenas se forem quadrados", "Sim, se a base for par"], "correta": 1 },
-              { "pergunta": "Observe a FIGURA A. Qual é a medida do seu perímetro total?", "alternativas": ["12 cm", "14 cm", "15 cm", "16 cm"], "imagem": "images/geometria/figura_a_degrau.png",  "correta": 1},
-              { "pergunta": "Qual é a área da FIGURA A em centímetros quadrados?", "alternativas": ["10 cm²", "11 cm²", "12 cm²", "13 cm²"], "imagem": "images/geometria/figura_a_degrau.png", "correta": 1},
-              { "pergunta": "Na FIGURA A, quanto mede o segmento horizontal superior que não possui cota indicada?", "alternativas": ["1,5 cm", "2 cm", "2,5 cm", "3 cm"], "imagem": "images/geometria/figura_a_degrau.png", "correta": 1}
+              {
+                "pergunta": "O que é o perímetro de uma figura plana?",
+                "alternativas": [
+                  "A medida da sua superfície interna",
+                  "A soma das medidas de todos os seus lados",
+                  "O espaço tridimensional que ela ocupa",
+                  "A multiplicação de todos os seus vértices"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o perímetro de um quadrado cujos lados medem 6 cm?",
+                "alternativas": ["12 cm", "24 cm", "36 cm", "18 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um campo de futebol tem 100 m de comprimento por 70 m de largura. Qual é o perímetro desse campo?",
+                "alternativas": ["170 m", "340 m", "7.000 m", "270 m"],
+                "imagem": "images/geometria/campo_futebol.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a área de um quadrado com lado de 5 metros?",
+                "alternativas": ["20 m²", "25 m²", "10 m²", "50 m²"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule a área de um retângulo de base 10 cm e altura 4 cm:",
+                "alternativas": ["14 cm²", "28 cm²", "40 cm²", "80 cm²"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Observe a figura: qual é o perímetro do terreno retangular com base de 15 m e altura de 8,4 m?",
+                "alternativas": ["23,4 m", "46,8 m", "126 m", "45,8 m"],
+                "imagem": "images/geometria/terreno_15x84.svg",
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a área do retângulo que mede 15 m de base por 8,4 m de altura?",
+                "alternativas": ["46,8 m²", "126 m²", "120 m²", "135 m²"],
+                "imagem": "images/geometria/terreno_15x84.svg",
+                "correta": 1
+              },
+              {
+                "pergunta": "Observe o retângulo cinza: qual é o seu perímetro sabendo que a base mede 24 m e a altura mede 12,5 m?",
+                "alternativas": ["36,5 m", "73 m", "300 m", "72 m"],
+                "imagem": "images/geometria/terreno_24x125.svg",
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a área do terreno retangular com base de 24 m e altura de 12,5 m?",
+                "alternativas": ["73 m²", "300 m²", "280 m²", "320 m²"],
+                "imagem": "images/geometria/terreno_24x125.svg",
+                "correta": 1
+              },
+              {
+                "pergunta": "Se um triângulo equilátero tem perímetro de 27 cm, quanto mede cada um dos seus lados?",
+                "alternativas": ["7 cm", "8 cm", "9 cm", "10 cm"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Uma sala quadrada tem lados medindo 4,2 m. Qual é o perímetro dessa sala?",
+                "alternativas": ["8,4 m", "16,8 m", "17,64 m", "12,6 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quantos metros de arame são necessários para cercar com 3 voltas um terreno quadrado de 12 metros de lado?",
+                "alternativas": ["48 m", "96 m", "144 m", "120 m"],
+                "correta": 2
+              },
+              {
+                "pergunta": "A área de uma folha retangular de 20 cm por 30 cm é de:",
+                "alternativas": ["50 cm²", "100 cm²", "600 cm²", "500 cm²"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual a unidade padrão mais usada para indicar a área de apartamentos e casas?",
+                "alternativas": [
+                  "Metro (m)",
+                  "Metro cúbico (m³)",
+                  "Metro quadrado (m²)",
+                  "Centímetro (cm)"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Um retângulo tem 18 cm de perímetro. Se a sua base mede 6 cm, quanto mede sua altura?",
+                "alternativas": ["3 cm", "6 cm", "12 cm", "4 cm"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Calcule o perímetro de um losango com lado de 8,5 cm:",
+                "alternativas": ["17 cm", "34 cm", "28 cm", "42 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma piscina retangular mede 8 m de comprimento por 4 m de largura. Qual é a sua área?",
+                "alternativas": ["24 m²", "32 m²", "64 m²", "16 m²"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Se dobrarmos a medida dos lados de um quadrado de 3 cm, qual será o novo perímetro?",
+                "alternativas": ["12 cm", "18 cm", "24 cm", "36 cm"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Um tapete retangular tem 2,5 m de comprimento e 1,5 m de largura. Seu perímetro é de:",
+                "alternativas": ["4 m", "8 m", "3,75 m", "6 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a área do tapete retangular de 2,5 m por 1,5 m?",
+                "alternativas": ["3,75 m²", "4 m²", "8 m²", "5 m²"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Quantos azulejos quadrados de 1 m² cabem no piso de uma sala com 24 m² de área?",
+                "alternativas": ["12", "24", "48", "6"],
+                "correta": 1
+              },
+              {
+                "pergunta": "O perímetro de um pentágono regular com lados de 7 cm é:",
+                "alternativas": ["28 cm", "35 cm", "42 cm", "49 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma toalha de mesa quadrada tem perímetro de 4,8 m. Qual é a medida do lado dessa toalha?",
+                "alternativas": ["1,2 m", "1,4 m", "1,6 m", "2,4 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Calcule a área do campo de futebol que possui 100 m de comprimento por 70 m de largura:",
+                "alternativas": ["340 m²", "700 m²", "7.000 m²", "14.000 m²"],
+                "imagem": "images/geometria/campo_futebol.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual figura geométrica plana tem a área calculada pela fórmula Base × Altura?",
+                "alternativas": [
+                  "Círculo",
+                  "Retângulo",
+                  "Triângulo",
+                  "Trapézio"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um jardim tem a forma de um triângulo com lados de 5 m, 7 m e 9 m. Seu perímetro é:",
+                "alternativas": ["21 m", "22 m", "35 m", "18 m"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual é o perímetro de um retângulo cuja base é 11 cm e a altura é 5 cm?",
+                "alternativas": ["16 cm", "32 cm", "55 cm", "40 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Para colocar rodapé em um quarto retangular de 4 m por 3 m, descontando uma porta de 1 m, serão necessários quantos metros de rodapé?",
+                "alternativas": ["14 m", "13 m", "12 m", "11 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "A área de um quadrado é de 49 m². Quanto mede cada um dos seus lados?",
+                "alternativas": ["6 m", "7 m", "8 m", "14 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Dois retângulos com mesma área sempre têm o mesmo perímetro?",
+                "alternativas": [
+                  "Sim, sempre",
+                  "Não necessariamente",
+                  "Apenas se forem quadrados",
+                  "Sim, se a base for par"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Observe a FIGURA A. Qual é a medida do seu perímetro total?",
+                "alternativas": ["12 cm", "14 cm", "15 cm", "16 cm"],
+                "imagem": "images/geometria/figura_a_degrau.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a área da FIGURA A em centímetros quadrados?",
+                "alternativas": ["10 cm²", "11 cm²", "12 cm²", "13 cm²"],
+                "imagem": "images/geometria/figura_a_degrau.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Na FIGURA A, quanto mede o segmento horizontal superior que não possui cota indicada?",
+                "alternativas": ["1,5 cm", "2 cm", "2,5 cm", "3 cm"],
+                "imagem": "images/geometria/figura_a_degrau.png",
+                "correta": 1
+              }
             ]
           },
           "nivel_4": {
@@ -1529,13 +2005,23 @@
               },
               {
                 "pergunta": "Qual figura desenhada na malha possui a MAIOR área?",
-                "alternativas": ["Figura D", "Figura G", "Figura F", "Figura B"],
+                "alternativas": [
+                  "Figura D",
+                  "Figura G",
+                  "Figura F",
+                  "Figura B"
+                ],
                 "imagem": "images/geometria/malha_20x20_figuras.png",
                 "correta": 2
               },
               {
                 "pergunta": "Qual figura desenhada na malha possui a MENOR área?",
-                "alternativas": ["Figura A", "Figura C", "Figura E", "Figura B"],
+                "alternativas": [
+                  "Figura A",
+                  "Figura C",
+                  "Figura E",
+                  "Figura B"
+                ],
                 "imagem": "images/geometria/malha_20x20_figuras.png",
                 "correta": 2
               },
@@ -1565,7 +2051,12 @@
               },
               {
                 "pergunta": "Qual figura possui perímetro com valor numérico MENOR que a sua área?",
-                "alternativas": ["Figura B (Perímetro 20 cm, Área 25 cm²)", "Figura E (Perímetro 26 cm, Área 17 cm²)", "Figura C (Perímetro 20 cm, Área 19 cm²)", "Figura G (Perímetro 36 cm, Área 40 cm²)"],
+                "alternativas": [
+                  "Figura B (Perímetro 20 cm, Área 25 cm²)",
+                  "Figura E (Perímetro 26 cm, Área 17 cm²)",
+                  "Figura C (Perímetro 20 cm, Área 19 cm²)",
+                  "Figura G (Perímetro 36 cm, Área 40 cm²)"
+                ],
                 "imagem": "images/geometria/malha_20x20_figuras.png",
                 "correta": 0
               },
@@ -1613,7 +2104,12 @@
               },
               {
                 "pergunta": "Colocando as áreas de C (19 cm²), A (24 cm²) e D (36 cm²) em ordem crescente:",
-                "alternativas": ["C < A < D", "A < C < D", "D < A < C", "C < D < A"],
+                "alternativas": [
+                  "C < A < D",
+                  "A < C < D",
+                  "D < A < C",
+                  "C < D < A"
+                ],
                 "imagem": "images/geometria/malha_20x20_figuras.png",
                 "correta": 0
               },
@@ -1628,41 +2124,234 @@
           "nivel_5": {
             "titulo": "Nível 5: Medidas de Volume, Capacidade e Desafios de Área",
             "questoes": [
-              { "pergunta": "Qual é a unidade padrão de medida de capacidade?", "alternativas": ["Metro", "Quilograma", "Litro", "Metro quadrado"], "correta": 2 },
-              { "pergunta": "Quantos mililitros (ml) equivalem a 1 litro (L)?", "alternativas": ["10 ml", "100 ml", "1.000 ml", "10.000 ml"], "correta": 2 },
-              { "pergunta": "Um cubo mágico com 1 cm de aresta tem qual volume?", "alternativas": ["1 cm", "1 cm²", "1 cm³", "3 cm³"], "correta": 2 },
-              { "pergunta": "Um bloco retangular tem 5 cm de comprimento, 4 cm de largura e 3 cm de altura. Qual é o seu volume?", "alternativas": ["12 cm³", "60 cm³", "30 cm³", "45 cm³"], "correta": 1 },
-              { "pergunta": "Quantos litros de água cabem em um reservatório com volume de 1 metro cúbico (1 m³)?", "alternativas": ["100 litros", "500 litros", "1.000 litros", "10.000 litros"], "correta": 2 },
-              { "pergunta": "Uma garrafa de refrigerante contém 2 litros. Quantos copos cheios de 250 ml podemos servir com ela?", "alternativas": ["4 copos", "6 copos", "8 copos", "10 copos"], "correta": 2 },
-              { "pergunta": "Quantos mililitros correspondem a 3,5 litros de suco?", "alternativas": ["350 ml", "3.500 ml", "35.000 ml", "35 ml"], "correta": 1 },
-              { "pergunta": "Um aquário com formato de paralelepípedo mede 40 cm de comprimento, 20 cm de largura e 30 cm de altura. Seu volume é de:", "alternativas": ["2.400 cm³", "24.000 cm³", "12.000 cm³", "90 cm³"], "correta": 1 },
-              { "pergunta": "Sabendo que 1.000 cm³ equivalem a 1 litro, qual a capacidade do aquário de 24.000 cm³?", "alternativas": ["2,4 litros", "24 litros", "240 litros", "0,24 litros"], "correta": 1 },
-              { "pergunta": "Qual é o volume de um cubo com aresta de 4 cm?", "alternativas": ["16 cm³", "48 cm³", "64 cm³", "12 cm³"], "correta": 2 },
-              { "pergunta": "Uma caixa d'água cúbica tem 2 metros de aresta em cada dimensão. Qual é o seu volume?", "alternativas": ["4 m³", "6 m³", "8 m³", "12 m³"], "correta": 2 },
-              { "pergunta": "Quantos litros de água cabem na caixa d'água de 8 m³?", "alternativas": ["800 litros", "8.000 litros", "80.000 litros", "4.000 litros"], "correta": 1 },
-              { "pergunta": "Em uma embalagem de xarope cabem 150 ml. Tomando 3 doses de 10 ml por dia, a embalagem dura:", "alternativas": ["5 dias", "10 dias", "15 dias", "20 dias"], "correta": 0 },
-              { "pergunta": "Uma piscina mede 10 m de comprimento, 5 m de largura e 2 m de profundidade. Qual o seu volume em m³?", "alternativas": ["50 m³", "100 m³", "150 m³", "200 m³"], "correta": 1 },
-              { "pergunta": "Qual a capacidade total em litros da piscina de 100 m³?", "alternativas": ["10.000 litros", "50.000 litros", "100.000 litros", "1.000.000 de litros"], "correta": 2 },
-              { "pergunta": "Quantos cubinhos de 1 cm³ são necessários para empilhar um bloco de dimensões 2 cm x 3 cm x 5 cm?", "alternativas": ["10 cubinhos", "25 cubinhos", "30 cubinhos", "15 cubinhos"], "correta": 2 },
-              { "pergunta": "Uma garrafa tem 750 ml de azeite. Quantos litros isso representa em número decimal?", "alternativas": ["7,5 L", "0,75 L", "0,075 L", "75 L"], "correta": 1 },
-              { "pergunta": "Um terreno retangular tem área de 450 m². Se o seu comprimento é de 30 metros, qual é a sua largura?", "alternativas": ["12 m", "15 m", "18 m", "20 m"], "correta": 1 },
-              { "pergunta": "O piso de uma garagem mede 6 m por 4 m. Quantas lajotas de 0,5 m² serão necessárias para pavimentar todo o piso?", "alternativas": ["24 lajotas", "36 lajotas", "48 lajotas", "50 lajotas"], "correta": 2 },
-              { "pergunta": "Um recipiente graduado tinha 300 ml de água. Ao mergulhar uma pedra, o nível subiu para 480 ml. Qual o volume da pedra?", "alternativas": ["180 cm³", "780 cm³", "280 cm³", "150 cm³"], "correta": 0 },
-              { "pergunta": "Qual é a área total das 6 faces de um cubo com aresta de 3 cm?", "alternativas": ["9 cm²", "27 cm²", "54 cm²", "36 cm²"], "correta": 2 },
-              { "pergunta": "Se 1 litro de tinta cobre 10 m² de parede, quantos litros serão necessários para pintar um muro de 25 m por 2 m?", "alternativas": ["4 litros", "5 litros", "6 litros", "7 litros"], "correta": 1 },
-              { "pergunta": "Uma lanchonete vendeu 8 jarras de suco de 1,5 litro cada. Quantos litros de suco foram vendidos ao todo?", "alternativas": ["10 L", "11 L", "12 L", "14 L"], "correta": 2 },
-              { "pergunta": "Quantos copos de 200 ml podem ser cheios com essa quantidade de 12 litros?", "alternativas": ["40 copos", "50 copos", "60 copos", "70 copos"], "correta": 2 },
-              { "pergunta": "O volume de um paralelepípedo com base de 16 m² e altura de 2,5 m é:", "alternativas": ["32 m³", "36 m³", "40 m³", "45 m³"], "correta": 2 },
-              { "pergunta": "Uma caixa cúbica tem volume de 27 cm³. Quanto mede a sua aresta?", "alternativas": ["2 cm", "3 cm", "4 cm", "9 cm"], "correta": 1 },
-              { "pergunta": "Calcule a soma de volumes: 1,5 L + 350 ml + 0,65 L =", "alternativas": ["2,4 L", "2,5 L", "2,6 L", "2,8 L"], "correta": 1 },
-              { "pergunta": "Um caminhão-pipa transporta 15 m³ de água. Em litros, essa carga equivale a:", "alternativas": ["1.500 L", "15.000 L", "150.000 L", "150 L"], "correta": 1 },
-              { "pergunta": "Em um balde com 8 litros de água colocou-se um vazamento constante de 200 ml por minuto. Em quantos minutos ele esvaziará?", "alternativas": ["30 min", "40 min", "50 min", "60 min"], "correta": 1 },
-              { "pergunta": "Qual é a diferença de volume entre um cubo de aresta 5 cm e outro de aresta 4 cm?", "alternativas": ["1 cm³", "25 cm³", "61 cm³", "50 cm³"], "correta": 2 },
-              { "pergunta": "Observe a FIGURA B. Qual é a medida do vão vertical interno entre os dois braços da figura?", "alternativas": ["0,5 cm", "1 cm", "1,5 cm", "2 cm"], "imagem": "images/geometria/figura_b_rebaixo.png", "correta": 1},
-              { "pergunta": "Qual é o perímetro total da FIGURA B percorrendo todo o seu contorno externo e interno?", "alternativas": ["22 cm", "24 cm", "25 cm", "26 cm"], "imagem": "images/geometria/figura_b_rebaixo.png", "correta": 2},
-              { "pergunta": "Calculando a área total da FIGURA B por decomposição em retângulos, obtemos:", "alternativas": ["17 cm²", "18 cm²", "18,5 cm²", "19,5 cm²"], "imagem": "images/geometria/figura_b_rebaixo.png", "correta": 2},
-              { "pergunta": "Comparando as duas figuras, qual é a diferença entre a área da FIGURA B (18,5 cm²) e da FIGURA A (11 cm²)?", "alternativas": ["6,5 cm²", "7 cm²", "7,5 cm²", "8,5 cm²"], "correta": 2},
-              { "pergunta": "A soma dos perímetros da FIGURA A (14 cm) e da FIGURA B (25 cm) é:", "alternativas": ["37 cm", "38 cm", "39 cm", "40 cm"], "correta": 2}
+              {
+                "pergunta": "Qual é a unidade padrão de medida de capacidade?",
+                "alternativas": [
+                  "Metro",
+                  "Quilograma",
+                  "Litro",
+                  "Metro quadrado"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Quantos mililitros (ml) equivalem a 1 litro (L)?",
+                "alternativas": ["10 ml", "100 ml", "1.000 ml", "10.000 ml"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Um cubo mágico com 1 cm de aresta tem qual volume?",
+                "alternativas": ["1 cm", "1 cm²", "1 cm³", "3 cm³"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Um bloco retangular tem 5 cm de comprimento, 4 cm de largura e 3 cm de altura. Qual é o seu volume?",
+                "alternativas": ["12 cm³", "60 cm³", "30 cm³", "45 cm³"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Quantos litros de água cabem em um reservatório com volume de 1 metro cúbico (1 m³)?",
+                "alternativas": [
+                  "100 litros",
+                  "500 litros",
+                  "1.000 litros",
+                  "10.000 litros"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Uma garrafa de refrigerante contém 2 litros. Quantos copos cheios de 250 ml podemos servir com ela?",
+                "alternativas": ["4 copos", "6 copos", "8 copos", "10 copos"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Quantos mililitros correspondem a 3,5 litros de suco?",
+                "alternativas": ["350 ml", "3.500 ml", "35.000 ml", "35 ml"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um aquário com formato de paralelepípedo mede 40 cm de comprimento, 20 cm de largura e 30 cm de altura. Seu volume é de:",
+                "alternativas": [
+                  "2.400 cm³",
+                  "24.000 cm³",
+                  "12.000 cm³",
+                  "90 cm³"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Sabendo que 1.000 cm³ equivalem a 1 litro, qual a capacidade do aquário de 24.000 cm³?",
+                "alternativas": [
+                  "2,4 litros",
+                  "24 litros",
+                  "240 litros",
+                  "0,24 litros"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o volume de um cubo com aresta de 4 cm?",
+                "alternativas": ["16 cm³", "48 cm³", "64 cm³", "12 cm³"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Uma caixa d'água cúbica tem 2 metros de aresta em cada dimensão. Qual é o seu volume?",
+                "alternativas": ["4 m³", "6 m³", "8 m³", "12 m³"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Quantos litros de água cabem na caixa d'água de 8 m³?",
+                "alternativas": [
+                  "800 litros",
+                  "8.000 litros",
+                  "80.000 litros",
+                  "4.000 litros"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Em uma embalagem de xarope cabem 150 ml. Tomando 3 doses de 10 ml por dia, a embalagem dura:",
+                "alternativas": ["5 dias", "10 dias", "15 dias", "20 dias"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Uma piscina mede 10 m de comprimento, 5 m de largura e 2 m de profundidade. Qual o seu volume em m³?",
+                "alternativas": ["50 m³", "100 m³", "150 m³", "200 m³"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual a capacidade total em litros da piscina de 100 m³?",
+                "alternativas": [
+                  "10.000 litros",
+                  "50.000 litros",
+                  "100.000 litros",
+                  "1.000.000 de litros"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Quantos cubinhos de 1 cm³ são necessários para empilhar um bloco de dimensões 2 cm x 3 cm x 5 cm?",
+                "alternativas": [
+                  "10 cubinhos",
+                  "25 cubinhos",
+                  "30 cubinhos",
+                  "15 cubinhos"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Uma garrafa tem 750 ml de azeite. Quantos litros isso representa em número decimal?",
+                "alternativas": ["7,5 L", "0,75 L", "0,075 L", "75 L"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um terreno retangular tem área de 450 m². Se o seu comprimento é de 30 metros, qual é a sua largura?",
+                "alternativas": ["12 m", "15 m", "18 m", "20 m"],
+                "correta": 1
+              },
+              {
+                "pergunta": "O piso de uma garagem mede 6 m por 4 m. Quantas lajotas de 0,5 m² serão necessárias para pavimentar todo o piso?",
+                "alternativas": [
+                  "24 lajotas",
+                  "36 lajotas",
+                  "48 lajotas",
+                  "50 lajotas"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Um recipiente graduado tinha 300 ml de água. Ao mergulhar uma pedra, o nível subiu para 480 ml. Qual o volume da pedra?",
+                "alternativas": ["180 cm³", "780 cm³", "280 cm³", "150 cm³"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual é a área total das 6 faces de um cubo com aresta de 3 cm?",
+                "alternativas": ["9 cm²", "27 cm²", "54 cm²", "36 cm²"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Se 1 litro de tinta cobre 10 m² de parede, quantos litros serão necessários para pintar um muro de 25 m por 2 m?",
+                "alternativas": [
+                  "4 litros",
+                  "5 litros",
+                  "6 litros",
+                  "7 litros"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Uma lanchonete vendeu 8 jarras de suco de 1,5 litro cada. Quantos litros de suco foram vendidos ao todo?",
+                "alternativas": ["10 L", "11 L", "12 L", "14 L"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Quantos copos de 200 ml podem ser cheios com essa quantidade de 12 litros?",
+                "alternativas": [
+                  "40 copos",
+                  "50 copos",
+                  "60 copos",
+                  "70 copos"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "O volume de um paralelepípedo com base de 16 m² e altura de 2,5 m é:",
+                "alternativas": ["32 m³", "36 m³", "40 m³", "45 m³"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Uma caixa cúbica tem volume de 27 cm³. Quanto mede a sua aresta?",
+                "alternativas": ["2 cm", "3 cm", "4 cm", "9 cm"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Calcule a soma de volumes: 1,5 L + 350 ml + 0,65 L =",
+                "alternativas": ["2,4 L", "2,5 L", "2,6 L", "2,8 L"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Um caminhão-pipa transporta 15 m³ de água. Em litros, essa carga equivale a:",
+                "alternativas": ["1.500 L", "15.000 L", "150.000 L", "150 L"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Em um balde com 8 litros de água colocou-se um vazamento constante de 200 ml por minuto. Em quantos minutos ele esvaziará?",
+                "alternativas": ["30 min", "40 min", "50 min", "60 min"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a diferença de volume entre um cubo de aresta 5 cm e outro de aresta 4 cm?",
+                "alternativas": ["1 cm³", "25 cm³", "61 cm³", "50 cm³"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Observe a FIGURA B. Qual é a medida do vão vertical interno entre os dois braços da figura?",
+                "alternativas": ["0,5 cm", "1 cm", "1,5 cm", "2 cm"],
+                "imagem": "images/geometria/figura_b_rebaixo.png",
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o perímetro total da FIGURA B percorrendo todo o seu contorno externo e interno?",
+                "alternativas": ["22 cm", "24 cm", "25 cm", "26 cm"],
+                "imagem": "images/geometria/figura_b_rebaixo.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Calculando a área total da FIGURA B por decomposição em retângulos, obtemos:",
+                "alternativas": ["17 cm²", "18 cm²", "18,5 cm²", "19,5 cm²"],
+                "imagem": "images/geometria/figura_b_rebaixo.png",
+                "correta": 2
+              },
+              {
+                "pergunta": "Comparando as duas figuras, qual é a diferença entre a área da FIGURA B (18,5 cm²) e da FIGURA A (11 cm²)?",
+                "alternativas": ["6,5 cm²", "7 cm²", "7,5 cm²", "8,5 cm²"],
+                "correta": 2
+              },
+              {
+                "pergunta": "A soma dos perímetros da FIGURA A (14 cm) e da FIGURA B (25 cm) é:",
+                "alternativas": ["37 cm", "38 cm", "39 cm", "40 cm"],
+                "correta": 2
+              }
             ]
           }
         }
@@ -2662,6 +3351,600 @@
                   "Dá problema no coração"
                 ],
                 "correta": 1
+              }
+            ]
+          }
+        }
+      },
+      "propriedades_materiais": {
+        "titulo": "Propriedades dos Materiais",
+        "novo": true,
+        "subtopicos": {
+          "propriedades_fisicas_gerais": {
+            "titulo": "Propriedades Físicas da Matéria",
+            "questoes": [
+              {
+                "pergunta": "Qual propriedade indica a capacidade de um material riscar outro sem ser riscado?",
+                "alternativas": [
+                  "Elasticidade",
+                  "Dureza",
+                  "Densidade",
+                  "Magnetismo"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o mineral natural de maior dureza conhecido na natureza?",
+                "alternativas": ["Talco", "Quartzo", "Ferro", "Diamante"],
+                "correta": 3
+              },
+              {
+                "pergunta": "O que explica o fato de uma rolha de cortiça boiar na água e uma chave de ferro afundar?",
+                "alternativas": [
+                  "A cortiça é mais densa que a água",
+                  "A cortiça é menos densa que a água, e o ferro é mais denso",
+                  "O ferro é mais elástico que a cortiça",
+                  "A água tem mais magnetismo que o ferro"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Como definimos a propriedade da densidade?",
+                "alternativas": [
+                  "A relação entre a massa e o volume de um corpo",
+                  "A velocidade com que o material esquenta",
+                  "A força magnética do material",
+                  "A capacidade de se dissolver em água"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "A solubilidade é a propriedade que indica a capacidade de uma substância:",
+                "alternativas": [
+                  "Pegar fogo rapidamente",
+                  "Ser riscada por metais",
+                  "Dissolver-se em um solvente (como a água)",
+                  "Atrair ímãs"
+                ],
+                "correta": 2
+              },
+              {
+                "pergunta": "Ao misturar sal de cozinha na água e mexer bem, dizemos que o sal é:",
+                "alternativas": [
+                  "Insolúvel",
+                  "Solúvel",
+                  "Magnético",
+                  "Isolante"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "O óleo de cozinha misturado com a água forma duas camadas e não se dissolve. O óleo é:",
+                "alternativas": [
+                  "Solúvel em água",
+                  "Insolúvel em água",
+                  "Mais denso que a água",
+                  "Um condutor térmico"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual propriedade permite que uma mola ou elástico volte à forma original após ser esticado?",
+                "alternativas": [
+                  "Dureza",
+                  "Elasticidade",
+                  "Magnetismo",
+                  "Densidade"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual dos seguintes objetos tem a elasticidade como sua característica principal de uso?",
+                "alternativas": [
+                  "Pneu e elástico de cabelo",
+                  "Prego de aço",
+                  "Copo de vidro",
+                  "Prato de cerâmica"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "O magnetismo é a propriedade de atração ou repulsão entre materiais ferrosos e:",
+                "alternativas": ["Madeiras", "Ímãs", "Plásticos", "Borrachas"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual metal abaixo é fortemente atraído por um ímã?",
+                "alternativas": ["Ferro", "Ouro", "Alumínio", "Cobre"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Por que as panelas de cozinha são feitas de metal, mas seus cabos costumam ser de madeira ou baquelite?",
+                "alternativas": [
+                  "O metal é isolante térmico e o cabo conduz calor",
+                  "O metal conduz bem o calor para cozinhar, e o cabo atua como isolante térmico para evitar queimaduras",
+                  "Para ficarem mais pesadas",
+                  "Porque a madeira esquenta mais rápido que o ferro"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Materiais que deixam o calor passar facilmente através deles são chamados de:",
+                "alternativas": [
+                  "Bons condutores térmicos",
+                  "Isolantes térmicos",
+                  "Materiais elásticos",
+                  "Insolúveis"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual dos seguintes materiais é o melhor isolante térmico para conservar gelo?",
+                "alternativas": ["Alumínio", "Cobre", "Isopor", "Ferro"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Por que os fios elétricos são feitos de cobre por dentro e cobertos por plástico por fora?",
+                "alternativas": [
+                  "O cobre conduz a eletricidade e o plástico é um isolante elétrico que nos protege de choques",
+                  "O plástico conduz a energia e o cobre dá firmeza ao fio",
+                  "O cobre serve apenas para deixar o fio mais barato",
+                  "O plástico conduz calor e impede que o cobre quebre"
+                ],
+                "correta": 0
+              }
+            ]
+          }
+        }
+      },
+      "eletricidade_energia": {
+        "titulo": "Eletricidade e Energia no Cotidiano",
+        "novo": true,
+        "subtopicos": {
+          "conceitos_e_circuitos": {
+            "titulo": "Conceitos de Eletricidade e Circuitos",
+            "questoes": [
+              {
+                "pergunta": "A palavra 'eletricidade' vem do termo grego 'elektron', que significa:",
+                "alternativas": ["Trovão", "Âmbar", "Raio", "Fogo"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual partícula subatômica com carga negativa se move gerando a corrente elétrica?",
+                "alternativas": ["Próton", "Nêutron", "Elétron", "Molécula"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Ao esfregar uma caneta de plástico no cabelo seco e aproximá-la de picotes de papel, eles são atraídos. Isso acontece por:",
+                "alternativas": [
+                  "Magnetismo natural",
+                  "Eletrização por atrito",
+                  "Condutibilidade térmica",
+                  "Fusão"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Para que uma lâmpada acenda, o circuito elétrico precisa estar:",
+                "alternativas": [
+                  "Aberto",
+                  "Fechado (completo)",
+                  "Quebrado",
+                  "Desconectado do gerador"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é a função do interruptor em uma instalação elétrica?",
+                "alternativas": [
+                  "Gerar eletricidade sozinho",
+                  "Abrir ou fechar a passagem da corrente elétrica",
+                  "Mudar a voltagem da casa",
+                  "Transformar choque em luz"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Pilhas e baterias são classificadas em um circuito como:",
+                "alternativas": [
+                  "Consumidores",
+                  "Geradores elétricos químicos",
+                  "Interruptores",
+                  "Isolantes"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual dos seguintes materiais é um BOM condutor de eletricidade?",
+                "alternativas": ["Borracha", "Vidro", "Cobre", "Madeira seca"],
+                "correta": 2
+              },
+              {
+                "pergunta": "Qual dos seguintes materiais é considerado um MAU condutor (isolante) de eletricidade?",
+                "alternativas": [
+                  "Borracha",
+                  "Água com sal",
+                  "Alumínio",
+                  "Prata"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Por que nunca devemos mexer em aparelhos elétricos com as mãos molhadas ou pés descalços no chão úmido?",
+                "alternativas": [
+                  "Porque a água pura resfria o aparelho",
+                  "Porque a água com sais presentes em nossa pele é boa condutora e aumenta muito o risco de choques graves",
+                  "Porque a água descarrega a rede elétrica",
+                  "Porque estraga o plástico do aparelho"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual transformação de energia ocorre em um secador de cabelo e em uma torradeira?",
+                "alternativas": [
+                  "Energia luminosa em energia mecânica",
+                  "Energia elétrica em energia térmica (calor)",
+                  "Energia nuclear em energia sonora",
+                  "Energia magnética em química"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Em um liquidificador e em um ventilador, a energia elétrica é transformada principalmente em:",
+                "alternativas": [
+                  "Energia térmica apenas",
+                  "Energia mecânica (movimento)",
+                  "Energia química",
+                  "Luz pura"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "O chuveiro elétrico aquece a água através da passagem de corrente por uma peça de metal chamada:",
+                "alternativas": [
+                  "Bateria",
+                  "Resistência elétrica",
+                  "Ímã",
+                  "Placa fotovoltaica"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "As lâmpadas modernas de LED são amplamente recomendadas nas casas porque:",
+                "alternativas": [
+                  "Consomem mais corrente que as antigas",
+                  "Transformam a energia elétrica em luz com muito mais eficiência e menos desperdício em calor",
+                  "Esquentam mais o ambiente",
+                  "Precisam de pilhas gigantes para funcionar"
+                ],
+                "correta": 1
+              }
+            ]
+          },
+          "fontes_e_usinas_eletricas": {
+            "titulo": "Geração de Energia e Tipos de Usinas",
+            "questoes": [
+              {
+                "pergunta": "O que caracteriza uma fonte de energia RENOVAVEL?",
+                "alternativas": [
+                  "Ela acaba rapidamente e polui o solo",
+                  "Provém de recursos naturais que se regeneram constantemente pela natureza",
+                  "Depende unicamente da queima de carvão",
+                  "Só pode ser utilizada uma única vez na história"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual das seguintes opções apresenta apenas fontes de energia RENOVÁVEIS?",
+                "alternativas": [
+                  "Carvão mineral e petróleo",
+                  "Solar, eólica e hidráulica (água)",
+                  "Gás natural e urânio",
+                  "Petróleo e energia nuclear"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "A maior parte da eletricidade consumida no Brasil é gerada em usinas:",
+                "alternativas": [
+                  "Termelétricas",
+                  "Hidrelétricas",
+                  "Termonucleares",
+                  "Eólicas"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Como as usinas hidrelétricas produzem energia elétrica?",
+                "alternativas": [
+                  "Queimando lenha em grandes caldeiras",
+                  "Pela força do fluxo da água que move turbinas conectadas a geradores",
+                  "Captando o calor das rochas profundas",
+                  "Usando a força do vento sobre os moinhos"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é um dos principais impactos ambientais negativos na construção de grandes usinas hidrelétricas?",
+                "alternativas": [
+                  "Grande emissão de fumaça preta",
+                  "Alagamento de grandes áreas com perda de vegetação e deslocamento de populações e animais",
+                  "Poluição por radiação atômica",
+                  "Esgotamento definitivo dos ventos locais"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "As usinas termelétricas produzem eletricidade principalmente através da:",
+                "alternativas": [
+                  "Queima de combustíveis como carvão, gás natural ou óleo para gerar vapor e girar turbinas",
+                  "Absorção de luz em painéis de vidro",
+                  "Força das marés do oceano",
+                  "Queda de água de barragens"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual é a principal desvantagem das usinas termelétricas movidas a combustíveis fósseis?",
+                "alternativas": [
+                  "Grande emissão de gases poluentes que agravam o efeito estufa",
+                  "Dependerem da chuva para funcionar",
+                  "Não funcionarem à noite",
+                  "Ocuparem áreas marinhas gigantescas"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "As usinas eólicas aproveitam qual recurso natural para produzir eletricidade?",
+                "alternativas": [
+                  "A luz solar direta",
+                  "A força dos ventos sobre aerogeradores",
+                  "O calor da terra",
+                  "A queima de biomassa"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é uma vantagem marcante da energia eólica e da energia solar fotovoltaica?",
+                "alternativas": [
+                  "São fontes limpas e não emitem gases poluentes durante a geração",
+                  "Funcionam com a mesma intensidade sob qualquer clima ou chuva forte",
+                  "Não ocupam nenhum espaço físico",
+                  "São combustíveis fósseis baratos"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "As usinas termonucleares utilizam qual elemento mineral como combustível em seus reatores?",
+                "alternativas": ["Ouro", "Urânio", "Ferro", "Cobre"],
+                "correta": 1
+              },
+              {
+                "pergunta": "Qual é o cuidado mais rigoroso exigido no funcionamento das usinas nucleares?",
+                "alternativas": [
+                  "Evitar que a água congele no verão",
+                  "O controle absoluto de segurança dos reatores e o armazenamento seguro do lixo atômico radioativo",
+                  "Impedir que os ventos derrubem a usina",
+                  "Trocar o óleo do motor diariamente"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "O petróleo, o carvão mineral e o gás natural são chamados de combustíveis fósseis e são considerados recursos:",
+                "alternativas": [
+                  "Renováveis",
+                  "Não renováveis",
+                  "Infinitos",
+                  "Inesgotáveis"
+                ],
+                "correta": 1
+              },
+              {
+                "pergunta": "Identifique as partes da Usina Hidrelétrica tocando na etiqueta e depois na caixa correspondente:",
+                "tipo": "rotular_imagem",
+                "imagem": "images/ciencias/usina_hidreletrica_lacunas.png",
+                "alvos": [
+                  {
+                    "id": "reservatorio",
+                    "resposta": "Reservatório",
+                    "top": "25.0%",
+                    "left": "2.0%",
+                    "width": "18.8%",
+                    "height": "7.0%"
+                  },
+                  {
+                    "id": "represa",
+                    "resposta": "Represa",
+                    "top": "4.2%",
+                    "left": "10.5%",
+                    "width": "15.0%",
+                    "height": "6.8%"
+                  },
+                  {
+                    "id": "crista",
+                    "resposta": "Crista",
+                    "top": "6.4%",
+                    "left": "28.0%",
+                    "width": "15.0%",
+                    "height": "6.8%"
+                  },
+                  {
+                    "id": "gerador",
+                    "resposta": "Casa de força, gerador e transformador",
+                    "top": "14.8%",
+                    "left": "36.2%",
+                    "width": "26.0%",
+                    "height": "17.0%"
+                  },
+                  {
+                    "id": "linha_transmissao",
+                    "resposta": "Linha de transmissão",
+                    "top": "22.2%",
+                    "left": "77.0%",
+                    "width": "20.5%",
+                    "height": "13.0%"
+                  },
+                  {
+                    "id": "porta",
+                    "resposta": "Porta",
+                    "top": "45.8%",
+                    "left": "26.8%",
+                    "width": "11.2%",
+                    "height": "7.2%"
+                  },
+                  {
+                    "id": "duto",
+                    "resposta": "Duto",
+                    "top": "81.0%",
+                    "left": "26.8%",
+                    "width": "15.0%",
+                    "height": "7.2%"
+                  },
+                  {
+                    "id": "turbina",
+                    "resposta": "Turbina",
+                    "top": "56.5%",
+                    "left": "40.3%",
+                    "width": "12.0%",
+                    "height": "6.5%"
+                  },
+                  {
+                    "id": "rio",
+                    "resposta": "Rio",
+                    "top": "72.4%",
+                    "left": "76.2%",
+                    "width": "12.5%",
+                    "height": "7.2%"
+                  }
+                ],
+                "etiquetas": [
+                  "Turbina",
+                  "Linha de transmissão",
+                  "Reservatório",
+                  "Represa",
+                  "Casa de força, gerador e transformador",
+                  "Porta",
+                  "Rio",
+                  "Duto",
+                  "Crista"
+                ]
+              },
+              {
+                "pergunta": "Associe cada tipo de usina à sua respectiva VANTAGEM tocando no card azul e depois no espaço correspondente:",
+                "tipo": "associacao_colunas",
+                "titulo_atividade": "Vantagens das Usinas",
+                "itens": [
+                  {
+                    "id": "termonuclear",
+                    "imagem": "images/ciencias/usina_termonuclear.png",
+                    "resposta": "Não emite gases poluentes na atmosfera."
+                  },
+                  {
+                    "id": "solar",
+                    "imagem": "images/ciencias/usina_solar.png",
+                    "resposta": "Utiliza luz solar (renovável) e pode ser instalada distante de centros urbanos."
+                  },
+                  {
+                    "id": "termeletrica",
+                    "imagem": "images/ciencias/usina_termeletrica.png",
+                    "resposta": "Pode ser construída em locais próximos às cidades."
+                  },
+                  {
+                    "id": "eolica",
+                    "imagem": "images/ciencias/usina_eolica.png",
+                    "resposta": "Utiliza o ar (recurso renovável) e não emite gases poluentes."
+                  },
+                  {
+                    "id": "hidreletrica",
+                    "imagem": "images/ciencias/usina_hidreletrica.png",
+                    "resposta": "Não emite gases poluentes e utiliza água (recurso renovável)."
+                  }
+                ],
+                "etiquetas": [
+                  "Pode ser construída em locais próximos às cidades.",
+                  "Não emite gases poluentes na atmosfera.",
+                  "Utiliza o ar (recurso renovável) e não emite gases poluentes.",
+                  "Não emite gases poluentes e utiliza água (recurso renovável).",
+                  "Utiliza luz solar (renovável) e pode ser instalada distante de centros urbanos."
+                ]
+              },
+              {
+                "pergunta": "Associe cada tipo de usina à sua respectiva DESVANTAGEM tocando no card azul e depois no espaço correspondente:",
+                "tipo": "associacao_colunas",
+                "titulo_atividade": "Desvantagens das Usinas",
+                "itens": [
+                  {
+                    "id": "termonuclear",
+                    "imagem": "images/ciencias/usina_termonuclear.png",
+                    "resposta": "Resíduos radioativos, risco de acidentes e usa urânio (não renovável)."
+                  },
+                  {
+                    "id": "solar",
+                    "imagem": "images/ciencias/usina_solar.png",
+                    "resposta": "Alto custo de instalação, baixo rendimento e depende do clima."
+                  },
+                  {
+                    "id": "termeletrica",
+                    "imagem": "images/ciencias/usina_termeletrica.png",
+                    "resposta": "Emissão de gases poluentes e uso de combustíveis fósseis."
+                  },
+                  {
+                    "id": "eolica",
+                    "imagem": "images/ciencias/usina_eolica.png",
+                    "resposta": "Poluição sonora e pode interferir em ondas de rádio e TV."
+                  },
+                  {
+                    "id": "hidreletrica",
+                    "imagem": "images/ciencias/usina_hidreletrica.png",
+                    "resposta": "Alagamento de grandes áreas e destruição da fauna e da flora."
+                  }
+                ],
+                "etiquetas": [
+                  "Alto custo de instalação, baixo rendimento e depende do clima.",
+                  "Alagamento de grandes áreas e destruição da fauna e da flora.",
+                  "Emissão de gases poluentes e uso de combustíveis fósseis.",
+                  "Resíduos radioativos, risco de acidentes e usa urânio (não renovável).",
+                  "Poluição sonora e pode interferir em ondas de rádio e TV."
+                ]
+              },
+              {
+                "pergunta": "Identifique o nome correto de cada usina tocando no card azul e depois no espaço correspondente:",
+                "tipo": "associacao_colunas",
+                "titulo_atividade": "Tipo de Usina",
+                "itens": [
+                  {
+                    "id": "termonuclear",
+                    "imagem": "images/ciencias/usina_termonuclear.png",
+                    "resposta": "Termonuclear"
+                  },
+                  {
+                    "id": "solar",
+                    "imagem": "images/ciencias/usina_solar.png",
+                    "resposta": "Solar"
+                  },
+                  {
+                    "id": "termeletrica",
+                    "imagem": "images/ciencias/usina_termeletrica.png",
+                    "resposta": "Termelétrica"
+                  },
+                  {
+                    "id": "eolica",
+                    "imagem": "images/ciencias/usina_eolica.png",
+                    "resposta": "Eólica"
+                  },
+                  {
+                    "id": "hidreletrica",
+                    "imagem": "images/ciencias/usina_hidreletrica.png",
+                    "resposta": "Hidrelétrica"
+                  }
+                ],
+                "etiquetas": [
+                  "Solar",
+                  "Termelétrica",
+                  "Eólica",
+                  "Hidrelétrica",
+                  "Termonuclear"
+                ]
               }
             ]
           }

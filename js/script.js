@@ -7,15 +7,20 @@ let score = 0;
 let currentReadingPages = [];
 let currentPageIndex = 0;
 
-// Histórico de navegação para permitir a função "Voltar"
+// Variáveis de Interação (Rotular Imagem e Associação de Colunas)
+let selectedLabel = null;
+let currentFilledAnswers = {};
+
+// Histórico de navegação
 let navigationStack = [];
+let currentSubtopicTitle = "";
 
 // Carregar dados do JSON
 fetch('js/questions.json')
     .then(response => response.json())
     .then(data => { 
         questionsData = data; 
-        showMainMenu(); // Inicia no menu principal após carregar
+        showMainMenu(); 
     })
     .catch(err => console.error("Erro ao carregar perguntas:", err));
 
@@ -50,11 +55,10 @@ function showSubtopics(category, subject) {
     renderButtons(subtopics, (stopicKey) => {
         const subtopicObj = subjectData.subtopicos[stopicKey];
         
-        // Verifica se o subtópico é do tipo LEITURA ou QUIZ
         if (subtopicObj.tipo === "leitura") {
             startReading(subtopicObj.paginas);
         } else {
-            startQuiz(subtopicObj.questoes); 
+            startQuiz(subtopicObj.questoes, subtopicObj.titulo); 
         }
     }, subjectData.subtopicos, 'titulo');
 }
@@ -69,8 +73,6 @@ function renderButtons(keys, callback, dataSource = null, labelKey = null) {
         btn.className = 'menu-card-btn';
 
         const label = (item && item[labelKey]) ? item[labelKey] : key.toUpperCase();
-        
-        // Verifica se o item possui a flag "novo"
         const badgeHtml = (item && item.novo) ? '<span class="badge-novo">NOVO</span>' : '';
 
         btn.innerHTML = `
@@ -102,10 +104,10 @@ function goBackMenu() {
     }
 }
 
-// --- 2. MODO LEITURA (NOVO) ---
+// --- 2. MODO LEITURA ---
 
 function startReading(paginas) {
-    currentReadingPages = paginas;
+    currentReadingPages = paginas || [];
     currentPageIndex = 0;
 
     document.getElementById('home-screen').classList.add('hidden');
@@ -118,7 +120,6 @@ function updateReadingPage() {
     const imgElement = document.getElementById('reading-image');
     imgElement.src = currentReadingPages[currentPageIndex];
     
-    // Controle dos botões
     document.getElementById('prev-page').disabled = (currentPageIndex === 0);
     document.getElementById('next-page').innerText = 
         (currentPageIndex === currentReadingPages.length - 1) ? "Finalizar" : "Próximo";
@@ -128,20 +129,27 @@ function changePage(direction) {
     currentPageIndex += direction;
 
     if (currentPageIndex >= currentReadingPages.length) {
-        confirmBackToMenu(); // Volta para o menu ao finalizar
+        confirmBackToMenu();
         return;
     }
     
     updateReadingPage();
-    window.scrollTo(0, 0); // Facilita a leitura voltando ao topo
+    window.scrollTo(0, 0);
 }
 
 // --- 3. LÓGICA DO QUIZ ---
 
-function startQuiz(questionsList) {
+// CORREÇÃO: Parâmetro subtopicTitle adicionado com fallback vazio
+function startQuiz(questionsList, subtopicTitle = "") {
+    if (!questionsList || questionsList.length === 0) {
+        alert("Este tópico ainda não possui questões cadastradas.");
+        return;
+    }
+
     currentQuestions = [...questionsList].sort(() => Math.random() - 0.5);
     currentIndex = 0;
     score = 0;
+    currentSubtopicTitle = subtopicTitle;
 
     document.getElementById('home-screen').classList.add('hidden');
     document.getElementById('quiz-screen').classList.remove('hidden');
@@ -169,6 +177,21 @@ function showQuestion() {
         quizScreen.insertBefore(imgElement, container);
     }
 
+    // TIPO 1: Rotular Imagem
+    if (q.tipo === "rotular_imagem") {
+        imgElement.style.display = 'none';
+        renderRotularImagem(q);
+        return;
+    }
+
+    // TIPO 2: Associação em Colunas
+    if (q.tipo === "associacao_colunas") {
+        imgElement.style.display = 'none';
+        renderAssociacaoColunas(q);
+        return;
+    }
+
+    // TIPO PADRÃO: Múltipla Escolha
     if (q.imagem) {
         imgElement.src = q.imagem;
         imgElement.style.display = 'block';
@@ -212,6 +235,193 @@ function checkAnswer(selected, correct) {
     nextContainer.classList.remove('hidden');
 }
 
+// --- 4. MECÂNICA: ROTULAR IMAGEM ---
+
+function renderRotularImagem(q) {
+    const container = document.getElementById('options-container');
+    selectedLabel = null;
+    currentFilledAnswers = {};
+
+    container.innerHTML = `
+        <div class="rotular-container">
+            <img src="${q.imagem}" class="rotular-img" alt="Diagrama para rotular">
+            ${q.alvos.map(alvo => `
+                <div class="rotular-target" id="target-${alvo.id}"
+                     style="top:${alvo.top}; left:${alvo.left}; width:${alvo.width}; height:${alvo.height};"
+                     onclick="onTargetClick('${alvo.id}')">
+                </div>
+            `).join('')}
+        </div>
+        <div class="rotular-bank">
+            ${q.etiquetas.map((txt, idx) => `
+                <button class="rotular-btn" id="label-btn-${idx}" onclick="onSelectLabel('${txt}', ${idx})">
+                    ${txt}
+                </button>
+            `).join('')}
+        </div>
+    `;
+}
+
+function onSelectLabel(texto, idx) {
+    selectedLabel = { texto, idx };
+    document.querySelectorAll('.rotular-btn, .coluna-btn').forEach(btn => btn.classList.remove('selected'));
+    const activeBtn = document.getElementById(`label-btn-${idx}`);
+    if (activeBtn) activeBtn.classList.add('selected');
+}
+
+function onTargetClick(targetId) {
+    if (!selectedLabel) return;
+
+    const targetEl = document.getElementById(`target-${targetId}`);
+
+    if (currentFilledAnswers[targetId]) {
+        const prevBtn = document.getElementById(`label-btn-${currentFilledAnswers[targetId].idx}`);
+        if (prevBtn) prevBtn.classList.remove('used');
+    }
+
+    targetEl.innerText = selectedLabel.texto;
+    targetEl.classList.add('filled');
+    currentFilledAnswers[targetId] = { texto: selectedLabel.texto, idx: selectedLabel.idx };
+
+    const usedBtn = document.getElementById(`label-btn-${selectedLabel.idx}`);
+    if (usedBtn) {
+        usedBtn.classList.add('used');
+        usedBtn.classList.remove('selected');
+    }
+    selectedLabel = null;
+
+    const currentQ = currentQuestions[currentIndex];
+    if (Object.keys(currentFilledAnswers).length === currentQ.alvos.length) {
+        validateRotularAnswers(currentQ);
+    }
+}
+
+function validateRotularAnswers(q) {
+    const feedback = document.getElementById('feedback');
+    const nextContainer = document.getElementById('next-container');
+    let acertos = 0;
+
+    q.alvos.forEach(alvo => {
+        const el = document.getElementById(`target-${alvo.id}`);
+        if (currentFilledAnswers[alvo.id] && currentFilledAnswers[alvo.id].texto === alvo.resposta) {
+            el.classList.add('correct');
+            acertos++;
+        } else {
+            el.classList.add('wrong');
+        }
+    });
+
+    if (acertos === q.alvos.length) {
+        score++;
+        feedback.innerText = "Excelente! Você identificou todas as partes corretamente!";
+        feedback.style.color = "green";
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#22cc11', '#55ff44', '#ffffff']
+        });
+    } else {
+        feedback.innerText = `Você acertou ${acertos} de ${q.alvos.length} partes. Revise os pontos marcados em vermelho!`;
+        feedback.style.color = "red";
+    }
+
+    nextContainer.classList.remove('hidden');
+}
+
+// --- 5. MECÂNICA: ASSOCIAÇÃO EM COLUNAS ---
+
+function renderAssociacaoColunas(q) {
+    const container = document.getElementById('options-container');
+    selectedLabel = null;
+    currentFilledAnswers = {};
+
+    container.innerHTML = `
+        <div class="colunas-wrapper">
+            ${q.titulo_atividade ? `<div class="colunas-title">${q.titulo_atividade}</div>` : ''}
+            <div class="colunas-grid">
+                ${q.itens.map(item => `
+                    <div class="coluna-linha">
+                        <img src="${item.imagem}" class="coluna-imagem" alt="${item.id}">
+                        <div class="coluna-alvo" id="col-target-${item.id}" onclick="onColunaTargetClick('${item.id}')">
+                            Toque aqui para preencher
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+            <div class="colunas-bank">
+                ${q.etiquetas.map((txt, idx) => `
+                    <button class="coluna-btn" id="label-btn-${idx}" onclick="onSelectLabel('${txt}', ${idx})">
+                        ${txt}
+                    </button>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
+
+function onColunaTargetClick(targetId) {
+    if (!selectedLabel) return;
+
+    const targetEl = document.getElementById(`col-target-${targetId}`);
+
+    if (currentFilledAnswers[targetId]) {
+        const prevBtn = document.getElementById(`label-btn-${currentFilledAnswers[targetId].idx}`);
+        if (prevBtn) prevBtn.classList.remove('used');
+    }
+
+    targetEl.innerText = selectedLabel.texto;
+    targetEl.classList.add('filled');
+    currentFilledAnswers[targetId] = { texto: selectedLabel.texto, idx: selectedLabel.idx };
+
+    const usedBtn = document.getElementById(`label-btn-${selectedLabel.idx}`);
+    if (usedBtn) {
+        usedBtn.classList.add('used');
+        usedBtn.classList.remove('selected');
+    }
+    selectedLabel = null;
+
+    const currentQ = currentQuestions[currentIndex];
+    if (Object.keys(currentFilledAnswers).length === currentQ.itens.length) {
+        validateColunaAnswers(currentQ);
+    }
+}
+
+function validateColunaAnswers(q) {
+    const feedback = document.getElementById('feedback');
+    const nextContainer = document.getElementById('next-container');
+    let acertos = 0;
+
+    q.itens.forEach(item => {
+        const el = document.getElementById(`col-target-${item.id}`);
+        if (currentFilledAnswers[item.id] && currentFilledAnswers[item.id].texto === item.resposta) {
+            el.classList.add('correct');
+            acertos++;
+        } else {
+            el.classList.add('wrong');
+        }
+    });
+
+    if (acertos === q.itens.length) {
+        score++;
+        feedback.innerText = "Excelente! Você associou todas as usinas corretamente!";
+        feedback.style.color = "green";
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#22cc11', '#55ff44', '#ffffff']
+        });
+    } else {
+        feedback.innerText = `Você acertou ${acertos} de ${q.itens.length} usinas. Tente memorizar as marcadas em vermelho!`;
+        feedback.style.color = "red";
+    }
+
+    nextContainer.classList.remove('hidden');
+}
+
+// --- 6. NAVEGAÇÃO E ENCERRAMENTO DO QUIZ ---
+
 function goToNextQuestion() {
     document.getElementById('next-container').classList.add('hidden');
     currentIndex++;
@@ -225,6 +435,11 @@ function goToNextQuestion() {
 function showResult() {
     document.getElementById('quiz-screen').classList.add('hidden');
     document.getElementById('result-screen').classList.remove('hidden');
+
+    const subtopicElement = document.getElementById('result-subtopic');
+    if (subtopicElement) {
+        subtopicElement.innerText = currentSubtopicTitle;
+    }
 
     const total = currentQuestions.length;
     const percent = (score / total) * 100;
@@ -247,16 +462,17 @@ function showResult() {
 }
 
 function confirmBackToMenu() {
-    // Esconde todas as telas de jogo/leitura e volta para a principal
     document.getElementById('quiz-screen').classList.add('hidden');
     document.getElementById('reading-screen').classList.add('hidden');
     document.getElementById('home-screen').classList.remove('hidden');
     
-    // Reseta estados
     currentQuestions = [];
     currentReadingPages = [];
     currentIndex = 0;
     score = 0;
+    selectedLabel = null;
+    currentFilledAnswers = {};
+
     document.getElementById('feedback').innerText = "";
     document.getElementById('next-container').classList.add('hidden');
 }

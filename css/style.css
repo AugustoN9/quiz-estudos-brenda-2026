@@ -61,6 +61,15 @@ body {
   color: #666;
 }
 
+.result-subtitle {
+  font-size: 1.15rem;
+  color: #1976d2;
+  font-weight: 700;
+  margin-top: -6px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
 #question-text {
     font-size: 1.1rem;
     line-height: 1.5; /* Dá mais espaço entre as linhas do texto */
@@ -162,6 +171,217 @@ footer {
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
+
+/* Container que mantém a imagem e os alvos perfeitamente alinhados */
+.rotular-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.rotular-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Alvo invisível/translúcido sobre a caixa cinza */
+.rotular-target {
+  position: absolute;
+  border: 2px dashed rgba(25, 118, 210, 0.5);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 1.1;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+/* Quando um card foi posicionado */
+.rotular-target.filled {
+  background-color: #e3f2fd;
+  border: 1.5px solid #1976d2;
+  color: #0d47a1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Feedback de acerto e erro */
+.rotular-target.correct {
+  background-color: #c8e6c9 !important;
+  border-color: #2e7d32 !important;
+  color: #1b5e20 !important;
+}
+
+.rotular-target.wrong {
+  background-color: #ffcdd2 !important;
+  border-color: #c62828 !important;
+  color: #b71c1c !important;
+}
+
+/* Banco de etiquetas abaixo da imagem */
+.rotular-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.rotular-btn {
+  background-color: #9cc2e5;
+  color: #0b1d3a;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.rotular-btn:hover {
+  filter: brightness(0.95);
+}
+
+.rotular-btn.selected {
+  background-color: #1565c0;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.rotular-btn.used {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Layout da Atividade de Associação de Colunas */
+.colunas-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 650px;
+  margin: 10px auto;
+  user-select: none;
+}
+
+.colunas-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.colunas-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.coluna-linha {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coluna-imagem {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #cbd5e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.coluna-alvo {
+  flex: 1;
+  min-height: 65px;
+  background-color: #ffccbc; /* tom laranja suave do mockup */
+  border: 2px dashed #ff8a65;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #3e2723;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.coluna-alvo.filled {
+  background-color: #e3f2fd;
+  border: 2px solid #1976d2;
+  color: #0d47a1;
+}
+
+.coluna-alvo.correct {
+  background-color: #c8e6c9 !important;
+  border: 2px solid #2e7d32 !important;
+  color: #1b5e20 !important;
+}
+
+.coluna-alvo.wrong {
+  background-color: #ffcdd2 !important;
+  border: 2px solid #c62828 !important;
+  color: #b71c1c !important;
+}
+
+/* Banco de etiquetas azuis abaixo das colunas */
+.colunas-bank {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.coluna-btn {
+  background-color: #90caf9;
+  color: #0d47a1;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.25;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: all 0.15s ease;
+}
+
+.coluna-btn:hover {
+  filter: brightness(0.96);
+}
+
+.coluna-btn.selected {
+  background-color: #1565c0;
+  color: #ffffff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.coluna-btn.used {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
 
 /* --- Media Query para Smartphones --- */
 @media (max-width: 480px) {
