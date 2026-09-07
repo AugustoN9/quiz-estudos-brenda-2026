@@ -29,7 +29,7 @@ body {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 20px auto; /* Centraliza e dá margem apenas embaixo */
+  margin: 0 auto 20px auto;
 }
 
 .quiz-header {
@@ -47,7 +47,7 @@ body {
   border: none;
   padding: 5px 12px;
   font-size: 0.8rem;
-  width: auto; /* Para não ocupar a largura toda como os outros botões */
+  width: auto;
   margin: 0;
 }
 
@@ -71,13 +71,13 @@ body {
 }
 
 #question-text {
-    font-size: 1.1rem;
-    line-height: 1.5; /* Dá mais espaço entre as linhas do texto */
-    text-align: left; /* Textos de interpretação ficam melhores alinhados à esquerda */
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-left: 4px solid #007bff; /* Dá um destaque de "caixa de texto" */
-    margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #007bff;
+  margin-bottom: 20px;
 }
 
 .skip-btn {
@@ -103,6 +103,7 @@ body {
 .hidden {
   display: none;
 }
+
 button {
   display: block;
   width: 100%;
@@ -113,9 +114,11 @@ button {
   border-radius: 4px;
   transition: 0.3s;
 }
+
 button:hover {
   background: #e2e2e2;
 }
+
 #star-rating {
   font-size: 2rem;
   color: #f1c40f;
@@ -144,10 +147,10 @@ button:hover {
   font-size: 1.1rem;
 }
 
-/* --- Imagens Responsivas --- */
+/* --- Imagens Responsivas do Quiz Padrão --- */
 #quiz-image {
   width: 100%;
-  height: auto; /* Mantém a proporção da foto do livro */
+  height: auto;
   object-fit: contain;
   margin-bottom: 15px;
 }
@@ -155,7 +158,7 @@ button:hover {
 footer {
   background-color: #333;
   color: white;
-  padding: 20px 10px;
+  padding: 20px 10px 35px 10px;
   text-align: center;
   font-size: 0.9rem;
   flex-shrink: 0;
@@ -163,8 +166,8 @@ footer {
 }
 
 .footer-content p {
-  margin: 5px 0; /* Espaçamento pequeno entre os parágrafos */
-  opacity: 0.8; /* Texto ligeiramente transparente para ficar mais discreto */
+  margin: 5px 0;
+  opacity: 0.8;
   text-align: center;
 }
 
@@ -286,62 +289,76 @@ footer {
   pointer-events: none;
 }
 
-/* Layout da Atividade de Associação de Colunas */
+/* ========================================================
+   LAYOUT DA ATIVIDADE DE ASSOCIAÇÃO DE COLUNAS (MOBILE READY)
+   ======================================================== */
 .colunas-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   width: 100%;
-  max-width: 650px;
-  margin: 10px auto;
+  max-width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
   user-select: none;
 }
 
 .colunas-title {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.05rem;
+  font-weight: 700;
   text-align: center;
   color: #1e293b;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .colunas-grid {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  width: 100%;
 }
 
 .coluna-linha {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Trava a imagem circular em tamanho fixo sem distorcer nem estourar no mobile */
 .coluna-imagem {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  border: 2px solid #cbd5e1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  width: 58px !important;
+  height: 58px !important;
+  min-width: 58px !important;
+  max-width: 58px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border: 2px solid #cbd5e1 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+  display: block !important;
+  margin: 0 !important;
 }
 
+/* Caixa receptora laranja/bege ao lado da usina */
 .coluna-alvo {
   flex: 1;
-  min-height: 65px;
-  background-color: #ffccbc; /* tom laranja suave do mockup */
-  border: 2px dashed #ff8a65;
-  border-radius: 12px;
+  min-height: 58px;
+  background-color: #ffe0b2;
+  border: 2px dashed #fb8c00;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
+  padding: 6px 10px;
   text-align: center;
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: #3e2723;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #5d4037;
   cursor: pointer;
+  box-sizing: border-box;
   transition: all 0.2s ease;
 }
 
@@ -363,26 +380,30 @@ footer {
   color: #b71c1c !important;
 }
 
-/* Banco de etiquetas azuis abaixo das colunas */
+/* Banco de botões azuis de texto */
 .colunas-bank {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 10px;
+  width: 100%;
+  margin-top: 6px;
+  box-sizing: border-box;
 }
 
 .coluna-btn {
-  background-color: #90caf9;
+  background-color: #bbdefb;
   color: #0d47a1;
-  border: none;
+  border: 1.5px solid #64b5f6;
   border-radius: 10px;
-  padding: 10px 14px;
-  font-size: 0.88rem;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
   text-align: left;
-  line-height: 1.25;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  line-height: 1.3;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
   transition: all 0.15s ease;
 }
 
@@ -392,16 +413,16 @@ footer {
 
 .coluna-btn.selected {
   background-color: #1565c0;
+  border-color: #0d47a1;
   color: #ffffff;
-  transform: scale(1.02);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .coluna-btn.used {
   opacity: 0.25;
   pointer-events: none;
 }
-
 
 /* --- Media Query para Smartphones --- */
 @media (max-width: 480px) {
@@ -413,33 +434,33 @@ footer {
   }
 
   button {
-    padding: 15px 10px; /* Botões maiores para facilitar o toque (touch) */
+    padding: 15px 10px;
     font-size: 1rem;
   }
 
   #quiz-container {
     padding: 15px;
-    border-radius: 0; /* Opcional: remove bordas arredondadas no celular */
-    box-shadow: none; /* Deixa o visual mais limpo em telas pequenas */
+    border-radius: 0;
+    box-shadow: none;
     margin: 10px auto;
   }
 
   footer {
-    padding: 15px 5px;
-    font-size: 0.8rem; /* Fonte menor ainda em celulares */
+    padding: 15px 5px 30px 5px; 
+    font-size: 0.8rem;
   }
 
   #exit-btn {
-    width: 100%; /* No celular o botão sair pode ser mais largo para clicar melhor */
+    width: 100%;
     padding: 12px;
   }
 
-  #quiz-screen img {
-    /* Adiciona um pequeno "recuo negativo" para a imagem tocar quase as bordas */
+  /* Aplica alargamento de ponta a ponta APENAS à imagem ilustrativa principal */
+  #quiz-image {
     margin-left: -10px;
     margin-right: -10px;
-    width: calc(100% + 20px);
-    max-width: calc(100% + 20px);
-    border-radius: 0; /* Opcional: remove bordas arredondadas no celular */
+    width: calc(100% + 20px) !important;
+    max-width: calc(100% + 20px) !important;
+    border-radius: 0;
   }
 }

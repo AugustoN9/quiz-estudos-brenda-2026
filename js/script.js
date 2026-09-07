@@ -3,6 +3,10 @@ let currentQuestions = [];
 let currentIndex = 0;
 let score = 0;
 
+// Limite de pulos por quiz
+const MAX_SKIPS = 3;
+let skipsLeft = MAX_SKIPS;
+
 // Variáveis para o Modo Leitura
 let currentReadingPages = [];
 let currentPageIndex = 0;
@@ -158,6 +162,7 @@ function startQuiz(questionsList, subtopicTitle = "") {
     currentQuestions = [...questionsList].sort(() => Math.random() - 0.5);
     currentIndex = 0;
     score = 0;
+    skipsLeft = MAX_SKIPS;
     currentSubtopicTitle = subtopicTitle;
 
     document.getElementById('home-screen').classList.add('hidden');
@@ -172,9 +177,16 @@ function showQuestion() {
     const quizScreen = document.getElementById('quiz-screen');
     const counter = document.getElementById('question-counter');
 
-    // Reseta visibilidade dos botões de controle
+    // Exibe o botão apenas se ainda houver pulos restantes; caso contrário, oculta
     const skipBtn = document.getElementById('skip-btn');
-    if (skipBtn) skipBtn.classList.remove('hidden');
+    if (skipBtn) {
+        if (skipsLeft > 0) {
+            skipBtn.classList.remove('hidden');
+            skipBtn.innerText = `Pular Pergunta (${skipsLeft} restantes) ↷`;
+        } else {
+            skipBtn.classList.add('hidden');
+        }
+    }
 
     const nextContainer = document.getElementById('next-container');
     if (nextContainer) nextContainer.classList.add('hidden');
@@ -365,9 +377,14 @@ function renderAssociacaoColunas(q) {
             <div class="colunas-grid">
                 ${q.itens.map(item => `
                     <div class="coluna-linha">
-                        <img src="${item.imagem}" class="coluna-imagem" alt="${item.id}">
+                        <img 
+                            src="${item.imagem}" 
+                            class="coluna-imagem" 
+                            alt="${item.id}"
+                            style="width: 58px !important; height: 58px !important; min-width: 58px !important; max-width: 58px !important; border-radius: 50% !important; object-fit: cover !important; flex-shrink: 0 !important; display: block;"
+                        >
                         <div class="coluna-alvo" id="col-target-${item.id}" onclick="onColunaTargetClick('${item.id}')">
-                            Toque aqui para preencher
+                            Toque para preencher
                         </div>
                     </div>
                 `).join('')}
@@ -397,10 +414,10 @@ function onColunaTargetClick(targetId) {
     targetEl.classList.add('filled');
     currentFilledAnswers[targetId] = { texto: selectedLabel.texto, idx: selectedLabel.idx };
 
-    const usedBtn = document.getElementById(`label-btn-${selectedLabel.idx}`);
-    if (usedBtn) {
-        usedBtn.classList.add('used');
-        usedBtn.classList.remove('selected');
+    const promptBtn = document.getElementById(`label-btn-${selectedLabel.idx}`);
+    if (promptBtn) {
+        promptBtn.classList.add('used');
+        promptBtn.classList.remove('selected');
     }
     selectedLabel = null;
 
@@ -459,6 +476,37 @@ function goToNextQuestion() {
 }
 
 function skipQuestion() {
+    const skipBtn = document.getElementById('skip-btn');
+
+    // 1. Bloqueia e garante botão escondido se já tiver esgotado
+    if (skipsLeft <= 0) {
+        if (skipBtn) skipBtn.classList.add('hidden');
+        return;
+    }
+
+    // 2. Decrementa o saldo de pulos
+    skipsLeft--;
+
+    // 3. Notifica o estudante com SweetAlert2
+    const mensagemAviso = skipsLeft === 1
+        ? 'Você ainda pode pular 1 pergunta.'
+        : (skipsLeft === 0 ? 'Você utilizou todos os seus 3 pulos!' : `Você ainda pode pular mais ${skipsLeft} perguntas.`);
+
+    if (typeof Swal !== "undefined") {
+        Swal.fire({
+            title: 'Pergunta pulada!',
+            text: mensagemAviso,
+            icon: 'info',
+            timer: 1500,
+            showConfirmButton: false
+        });
+    }
+
+    // 4. Esconde o botão imediatamente caso tenha chegado a zero
+    if (skipsLeft === 0 && skipBtn) {
+        skipBtn.classList.add('hidden');
+    }
+
     selectedLabel = null;
     currentFilledAnswers = {};
 
@@ -504,7 +552,6 @@ function showResult() {
 }
 
 function confirmBackToMenu() {
-    // Caso esteja no meio do quiz e não tenha terminado, solicita confirmação com SweetAlert2
     const quizScreen = document.getElementById('quiz-screen');
     const isQuizActive = quizScreen && !quizScreen.classList.contains('hidden');
 
@@ -538,6 +585,7 @@ function resetQuizAndGoHome() {
     currentReadingPages = [];
     currentIndex = 0;
     score = 0;
+    skipsLeft = MAX_SKIPS;
     selectedLabel = null;
     currentFilledAnswers = {};
 
