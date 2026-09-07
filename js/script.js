@@ -139,10 +139,19 @@ function changePage(direction) {
 
 // --- 3. LÓGICA DO QUIZ ---
 
-// CORREÇÃO: Parâmetro subtopicTitle adicionado com fallback vazio
 function startQuiz(questionsList, subtopicTitle = "") {
     if (!questionsList || questionsList.length === 0) {
-        alert("Este tópico ainda não possui questões cadastradas.");
+        if (typeof Swal !== "undefined") {
+            Swal.fire({
+                title: 'Em breve!',
+                text: 'Este tópico ainda não possui questões cadastradas.',
+                icon: 'info',
+                confirmButtonColor: '#1976d2',
+                confirmButtonText: 'Entendido'
+            });
+        } else {
+            alert("Este tópico ainda não possui questões cadastradas.");
+        }
         return;
     }
 
@@ -162,6 +171,13 @@ function showQuestion() {
     const container = document.getElementById('options-container');
     const quizScreen = document.getElementById('quiz-screen');
     const counter = document.getElementById('question-counter');
+
+    // Reseta visibilidade dos botões de controle
+    const skipBtn = document.getElementById('skip-btn');
+    if (skipBtn) skipBtn.classList.remove('hidden');
+
+    const nextContainer = document.getElementById('next-container');
+    if (nextContainer) nextContainer.classList.add('hidden');
 
     if (counter) {
         counter.innerText = `${currentIndex + 1} / ${currentQuestions.length}`;
@@ -215,6 +231,10 @@ function checkAnswer(selected, correct) {
     const feedback = document.getElementById('feedback');
     const nextContainer = document.getElementById('next-container');
     const optionsButtons = document.querySelectorAll('#options-container button');
+
+    // Oculta o botão de pular ao responder
+    const skipBtn = document.getElementById('skip-btn');
+    if (skipBtn) skipBtn.classList.add('hidden');
 
     optionsButtons.forEach(btn => btn.disabled = true);
 
@@ -299,6 +319,9 @@ function onTargetClick(targetId) {
 function validateRotularAnswers(q) {
     const feedback = document.getElementById('feedback');
     const nextContainer = document.getElementById('next-container');
+    const skipBtn = document.getElementById('skip-btn');
+    if (skipBtn) skipBtn.classList.add('hidden');
+
     let acertos = 0;
 
     q.alvos.forEach(alvo => {
@@ -390,6 +413,9 @@ function onColunaTargetClick(targetId) {
 function validateColunaAnswers(q) {
     const feedback = document.getElementById('feedback');
     const nextContainer = document.getElementById('next-container');
+    const skipBtn = document.getElementById('skip-btn');
+    if (skipBtn) skipBtn.classList.add('hidden');
+
     let acertos = 0;
 
     q.itens.forEach(item => {
@@ -420,10 +446,26 @@ function validateColunaAnswers(q) {
     nextContainer.classList.remove('hidden');
 }
 
-// --- 6. NAVEGAÇÃO E ENCERRAMENTO DO QUIZ ---
+// --- 6. NAVEGAÇÃO, ENCERRAMENTO E ALERTAS COM SWEETALERT2 ---
 
 function goToNextQuestion() {
     document.getElementById('next-container').classList.add('hidden');
+    currentIndex++;
+    if (currentIndex < currentQuestions.length) {
+        showQuestion();
+    } else {
+        showResult();
+    }
+}
+
+function skipQuestion() {
+    selectedLabel = null;
+    currentFilledAnswers = {};
+
+    const feedback = document.getElementById('feedback');
+    if (feedback) feedback.innerText = "";
+    document.getElementById('next-container').classList.add('hidden');
+
     currentIndex++;
     if (currentIndex < currentQuestions.length) {
         showQuestion();
@@ -462,6 +504,32 @@ function showResult() {
 }
 
 function confirmBackToMenu() {
+    // Caso esteja no meio do quiz e não tenha terminado, solicita confirmação com SweetAlert2
+    const quizScreen = document.getElementById('quiz-screen');
+    const isQuizActive = quizScreen && !quizScreen.classList.contains('hidden');
+
+    if (isQuizActive && typeof Swal !== "undefined") {
+        Swal.fire({
+            title: 'Voltar aos tópicos?',
+            text: 'O seu progresso nesta rodada será perdido.',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#1976d2',
+            cancelButtonColor: '#64748b',
+            confirmButtonText: 'Sim, voltar',
+            cancelButtonText: 'Continuar estudando'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                resetQuizAndGoHome();
+            }
+        });
+        return;
+    }
+
+    resetQuizAndGoHome();
+}
+
+function resetQuizAndGoHome() {
     document.getElementById('quiz-screen').classList.add('hidden');
     document.getElementById('reading-screen').classList.add('hidden');
     document.getElementById('home-screen').classList.remove('hidden');
@@ -478,7 +546,22 @@ function confirmBackToMenu() {
 }
 
 function confirmExit() {
-    if (confirm("Deseja mesmo encerrar? Seu progresso atual será mostrado no resultado final.")) {
+    if (typeof Swal !== "undefined") {
+        Swal.fire({
+            title: 'Deseja mesmo encerrar?',
+            text: 'Seu progresso atual será mostrado no resultado final.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#ef4444',
+            cancelButtonColor: '#64748b',
+            confirmButtonText: 'Sim, encerrar',
+            cancelButtonText: 'Continuar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                showResult();
+            }
+        });
+    } else if (confirm("Deseja mesmo encerrar? Seu progresso atual será mostrado no resultado final.")) {
         showResult();
     }
 }
