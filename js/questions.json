@@ -3618,6 +3618,83 @@
                   "Precisam de pilhas gigantes para funcionar"
                 ],
                 "correta": 1
+              },
+              {
+                "pergunta": "Analise as afirmações sobre circuitos elétricos:\n\n1. Um circuito elétrico simples é formado por uma pilha, um interruptor e uma lâmpada.\n2. A pilha não fornece energia; a lâmpada é a fonte geradora de energia para o circuito.\n3. O interruptor não atua como fonte geradora de energia, já que sua função é permitir ou interromper a passagem de corrente elétrica.\n4. A fonte de energia quando está corretamente ligada aos receptores, chamamos de circuito aberto, caso contrário ele é fechado.\n\nA sequência correta de Verdadeiro (V) ou Falso (F) é:",
+                "alternativas": [
+                  "V - F - V - F",
+                  "F - V - F - V",
+                  "V - F - V - V",
+                  "F - V - F - F"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Identifique os componentes do circuito elétrico tocando na etiqueta e depois na caixa correspondente:",
+                "tipo": "rotular_imagem",
+                "imagem": "images/ciencias/circuito_componentes_sem_texto.png",
+                "alvos": [
+                  {
+                    "id": "lampada",
+                    "resposta": "Lâmpada: Converte energia em luz e calor",
+                    "top": "14.2%",
+                    "left": "6.8%",
+                    "width": "18.8%",
+                    "height": "16.4%"
+                  },
+                  {
+                    "id": "interruptor",
+                    "resposta": "Interruptor: Abre ou fecha o circuito",
+                    "top": "4.8%",
+                    "left": "70.5%",
+                    "width": "23.2%",
+                    "height": "16.4%"
+                  },
+                  {
+                    "id": "fios",
+                    "resposta": "Fios condutores: Permitem a passagem da corrente",
+                    "top": "55.4%",
+                    "left": "6.8%",
+                    "width": "23.0%",
+                    "height": "16.4%"
+                  },
+                  {
+                    "id": "pilha",
+                    "resposta": "Pilha (bateria): Fornece a energia elétrica",
+                    "top": "77.5%",
+                    "left": "66.5%",
+                    "width": "27.2%",
+                    "height": "15.4%"
+                  }
+                ],
+                "etiquetas": [
+                  "Interruptor: Abre ou fecha o circuito",
+                  "Lâmpada: Converte energia em luz e calor",
+                  "Pilha (bateria): Fornece a energia elétrica",
+                  "Fios condutores: Permitem a passagem da corrente"
+                ]
+              },
+              {
+                "pergunta": "Com base na imagem comparativa entre circuito aberto e circuito fechado, por que a lâmpada da esquerda permanece apagada enquanto a da direita acende?",
+                "imagem": "images/ciencias/circuito_aberto_fechado.png",
+                "alternativas": [
+                  "No circuito aberto, a chave está levantada, interrompendo a continuidade do caminho por onde circulam os elétrons.",
+                  "No circuito aberto, a bateria descarrega instantaneamente porque não há fios suficientes.",
+                  "No circuito fechado, a corrente não consegue chegar até a lâmpada devido ao excesso de condutores.",
+                  "A lâmpada da esquerda está queimada, por isso o interruptor precisa ficar inclinado."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Analisando os esquemas técnicos com símbolos na parte inferior da imagem, como o interruptor é representado graficamente nos dois estados?",
+                "imagem": "images/ciencias/circuito_aberto_fechado.png",
+                "alternativas": [
+                  "No circuito aberto ele aparece como uma linha inclinada desconectada de um dos pontos; no fechado, a linha une os dois polos.",
+                  "Ele é desenhado como um círculo com filamento ondulado em ambos os casos.",
+                  "Ele é representado por traços paralelos com indicação de polo positivo e negativo.",
+                  "No circuito aberto ele forma uma linha contínua; no circuito fechado ele é retirado do esquema."
+                ],
+                "correta": 0
               }
             ]
           },

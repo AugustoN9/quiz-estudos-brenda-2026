@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   </head>
   <body>
     <div id="quiz-container">
+      <!-- Barra Superior de Acesso do Aluno -->
+      <div id="user-bar" class="user-bar">
+        <span id="user-status-text">Olá, Visitante!</span>
+        <div class="user-actions">
+          <button id="btn-open-login" class="btn-user-action" onclick="openLoginScreen()">Entrar</button>
+          <button id="btn-user-report" class="btn-user-action hidden" onclick="openReportScreen()">Meu Desempenho</button>
+          <button id="btn-change-password" class="btn-user-action btn-neutral hidden" onclick="promptChangePassword()">Alterar Senha</button>
+          <button id="btn-user-logout" class="btn-user-action btn-danger-soft hidden" onclick="logoutUser()">Sair</button>
+        </div>
+      </div>
+
+      <!-- TELA INICIAL (MENU) -->
       <section id="home-screen">
         <header class="menu-header">
           <img src="./images/logoQuiz.png" alt="Logo Quiz" id="logo-main" />
@@ -39,6 +52,64 @@
         </div>
       </section>
 
+      <!-- TELA DE LOGIN -->
+      <section id="login-screen" class="hidden">
+        <h2>Entrar no Quiz</h2>
+        <p class="form-desc">Digite seus dados para salvar seu progresso e ver seus relatórios.</p>
+
+        <div class="form-group">
+          <label for="login-whatsapp">Número de WhatsApp</label>
+          <input type="tel" id="login-whatsapp" placeholder="(51) 99999-9999" maxlength="15" />
+        </div>
+
+        <div class="form-group">
+          <label for="login-password">Senha de Acesso</label>
+          <input type="password" id="login-password" placeholder="Digite sua senha" />
+        </div>
+
+        <button class="btn-primary" onclick="handleLogin()">Acessar Conta</button>
+        <button class="btn-link" onclick="openRegisterScreen()">Não tem conta? Cadastre-se aqui</button>
+        <button class="btn-secondary" onclick="closeAuthScreens()">← Voltar ao Início</button>
+      </section>
+
+      <!-- TELA DE CADASTRO -->
+      <section id="register-screen" class="hidden">
+        <h2>Cadastro de Aluno</h2>
+        <p class="form-desc">Preencha os campos abaixo. Sua senha inicial será enviada pelo WhatsApp!</p>
+
+        <div class="form-group">
+          <label for="reg-name">Nome Completo</label>
+          <input type="text" id="reg-name" placeholder="Ex: Brenda Lopez" />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-dob">Data de Nascimento</label>
+          <input type="date" id="reg-dob" />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-whatsapp">Número de WhatsApp</label>
+          <input type="tel" id="reg-whatsapp" placeholder="(51) 99999-9999" maxlength="15" />
+        </div>
+
+        <div class="form-group-checkbox">
+          <label>
+            <input type="checkbox" id="reg-is-guardian" onchange="toggleGuardianField()" />
+            Este WhatsApp é de um responsável
+          </label>
+        </div>
+
+        <div id="guardian-name-wrapper" class="form-group hidden">
+          <label for="reg-guardian-name">Nome do Responsável</label>
+          <input type="text" id="reg-guardian-name" placeholder="Nome do pai ou mãe" />
+        </div>
+
+        <button class="btn-primary" onclick="handleRegister()">Concluir Cadastro</button>
+        <button class="btn-link" onclick="openLoginScreen()">Já possui conta? Faça login</button>
+        <button class="btn-secondary" onclick="closeAuthScreens()">← Voltar ao Início</button>
+      </section>
+
+      <!-- TELA DO QUIZ -->
       <section id="quiz-screen" class="hidden">
         <div class="quiz-header">
           <div id="question-counter"></div>
@@ -70,6 +141,7 @@
         </div>
       </section>
 
+      <!-- TELA DE LEITURA -->
       <section id="reading-screen" class="hidden">
         <div id="reading-container" style="width: 100%; text-align: center">
           <img
@@ -109,6 +181,7 @@
         </button>
       </section>
 
+      <!-- TELA DE RESULTADO -->
       <section id="result-screen" class="hidden">
         <h2>Resultado Final</h2>
         <h3 id="result-subtopic" class="result-subtitle"></h3>
@@ -129,5 +202,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/auth.js"></script>
   </body>
 </html>
