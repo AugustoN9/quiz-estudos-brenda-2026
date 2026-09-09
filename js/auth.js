@@ -35,7 +35,7 @@ function toggleGuardianField() {
     }
 }
 
-// --- 2. ATUALIZAÇÃO DA BARRA DE USUÁRIO ---
+// --- 2. ATUALIZAÇÃO DA BARRA DE USUÁRIO E MENU ---
 
 function updateUserBar() {
     const statusText = document.getElementById('user-status-text');
@@ -57,9 +57,13 @@ function updateUserBar() {
         if (btnChangePass) btnChangePass.classList.add('hidden');
         btnLogout.classList.add('hidden');
     }
+
+    if (typeof showMainMenu === 'function') {
+        showMainMenu();
+    }
 }
 
-// Nova função para alteração de senha
+// Alteração de senha
 async function promptChangePassword() {
     if (!currentUser) return;
 
@@ -136,6 +140,8 @@ async function promptChangePassword() {
 async function handleRegister() {
     const nome = document.getElementById('reg-name').value.trim();
     const dob = document.getElementById('reg-dob').value;
+    const anoElement = document.getElementById('reg-ano');
+    const anoEscolar = anoElement ? anoElement.value : '5_fundamental';
     const whatsapp = document.getElementById('reg-whatsapp').value.trim();
     const isGuardian = document.getElementById('reg-is-guardian').checked;
     const guardianName = document.getElementById('reg-guardian-name').value.trim();
@@ -160,19 +166,18 @@ async function handleRegister() {
         return;
     }
 
-    // Gera senha aleatória de 6 dígitos
     const senhaGerada = "BR" + Math.floor(1000 + Math.random() * 9000);
 
     const novoAluno = {
         nome,
         dob,
+        ano_escolar: anoEscolar,
         whatsapp,
         isGuardian,
         guardianName: isGuardian ? guardianName : null,
         senha: senhaGerada
     };
 
-    // Feedback visual de carregamento
     Swal.fire({
         title: 'Criando cadastro...',
         text: 'Salvando suas informações com segurança.',
@@ -198,8 +203,8 @@ async function handleRegister() {
         });
     } catch (err) {
         console.error("Erro no cadastro:", err);
-        const errorMsg = err.message && err.message.includes('unique') 
-            ? 'Este número de WhatsApp já possui uma conta cadastrada!' 
+        const errorMsg = err.message && err.message.includes('unique')
+            ? 'Este número de WhatsApp já possui uma conta cadastrada!'
             : 'Ocorreu um erro ao conectar ao servidor. Tente novamente.';
 
         Swal.fire({

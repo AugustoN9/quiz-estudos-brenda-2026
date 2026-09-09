@@ -15,54 +15,203 @@ let currentPageIndex = 0;
 let selectedLabel = null;
 let currentFilledAnswers = {};
 
-// Histórico de navegação
+// Histórico de navegação e contexto da sessão
 let navigationStack = [];
+let currentYearKey = "";
 let currentSubtopicTitle = "";
+let currentSubjectKey = "";
+let currentSubtopicKey = "";
 
-// Carregar dados do JSON
-fetch('js/questions.json')
-    .then(response => response.json())
-    .then(data => { 
-        questionsData = data; 
-        showMainMenu(); 
-    })
-    .catch(err => console.error("Erro ao carregar perguntas:", err));
+// Cache em memória para carregar sob demanda apenas os arquivos necessários
+const loadedQuestionsByYear = {};
 
-// --- 1. GESTÃO DE MENUS DINÂMICOS ---
+// Lista de Anos e Séries Suportados
+const anosDisponiveis = [
+    { key: "1_fundamental", label: "1º Ano Fundamental" },
+    { key: "2_fundamental", label: "2º Ano Fundamental" },
+    { key: "3_fundamental", label: "3º Ano Fundamental" },
+    { key: "4_fundamental", label: "4º Ano Fundamental" },
+    { key: "5_fundamental", label: "5º Ano Fundamental" },
+    { key: "6_fundamental", label: "6º Ano Fundamental" },
+    { key: "7_fundamental", label: "7º Ano Fundamental" },
+    { key: "8_fundamental", label: "8º Ano Fundamental" },
+    { key: "9_fundamental", label: "9º Ano Fundamental" },
+    { key: "1_medio", label: "1º Ano Ensino Médio" },
+    { key: "2_medio", label: "2º Ano Ensino Médio" },
+    { key: "3_medio", label: "3º Ano Ensino Médio" }
+];
+
+// Garante execução tanto no DOMContentLoaded quanto em carregamento direto
+if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", showMainMenu);
+} else {
+    showMainMenu();
+}
+
+// --- 1. GESTÃO DE MENUS DINÂMICOS (SELEÇÃO DE ANO, MATÉRIA E SUBTÓPICO) ---
 
 function showMainMenu() {
     navigationStack = [];
-    updateMenuDisplay("Escolha uma Matéria", "Selecione a matéria para estudar!", false);
+    currentYearKey = "";
+    updateMenuDisplay("Selecione o Ano Escolar", "Escolha a etapa de ensino para estudar!", false);
+
+    const container = document.getElementById('dynamic-menu');
+    if (!container) return;
     
-    const categories = Object.keys(questionsData);
-    renderButtons(categories, (cat) => showSubjects(cat), questionsData, 'titulo');
+    container.innerHTML = "";
+
+    // 1. Identifica o ano cadastrado do aluno (padrão: 5_fundamental se visitante)
+    const userYearKey = (typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar)
+        ? currentUser.ano_escolar
+        : '5_fundamental';
+
+    const mainYearObj = anosDisponiveis.find(a => a.key === userYearKey) || anosDisponiveis[4];
+
+    // 2. Card Principal de Destaque ("SEU ANO")
+    const mainBtn = document.createElement('button');
+    mainBtn.className = 'menu-card-btn';
+    mainBtn.style.border = '2px solid #86efac';
+    mainBtn.style.backgroundColor = '#f0fdf4';
+
+    const badgeText = (typeof currentUser !== 'undefined' && currentUser) ? 'SEU ANO' : 'RECOMENDADO';
+    mainBtn.innerHTML = `
+        <span class="btn-text" style="font-weight: 700; color: #15803d;">${mainYearObj.label}</span>
+        <span class="badge-novo" style="background-color: #bbf7d0; color: #14532d; font-size: 0.72rem; padding: 4px 8px; border-radius: 6px;">${badgeText}</span>
+    `;
+    mainBtn.onclick = () => handleYearSelection(mainYearObj.key);
+    container.appendChild(mainBtn);
+
+    // 3. Botão de Accordion ("Escolha um outro ano")
+    const accordionToggle = document.createElement('button');
+    accordionToggle.className = 'menu-card-btn';
+    accordionToggle.id = 'toggle-other-years';
+    accordionToggle.style.marginTop = '15px';
+    accordionToggle.style.backgroundColor = '#f8fafc';
+    accordionToggle.style.justifyContent = 'center';
+    accordionToggle.style.gap = '10px';
+
+    accordionToggle.innerHTML = `
+        <span id="accordion-icon" style="color: #eab308; font-size: 0.9rem; transition: transform 0.2s ease;">▼</span>
+        <span class="btn-text" style="color: #475569; font-size: 0.95rem;">Escolha um outro ano</span>
+    `;
+
+    // 4. Container colapsável com as outras séries
+    const otherYearsContainer = document.createElement('div');
+    otherYearsContainer.id = 'other-years-container';
+    otherYearsContainer.className = 'category-list hidden';
+    otherYearsContainer.style.marginTop = '10px';
+    otherYearsContainer.style.paddingLeft = '8px';
+    otherYearsContainer.style.borderLeft = '3px solid #e2e8f0';
+
+    const outrosAnos = anosDisponiveis.filter(a => a.key !== mainYearObj.key);
+    outrosAnos.forEach(ano => {
+        const btn = document.createElement('button');
+        btn.className = 'menu-card-btn';
+        btn.style.fontSize = '0.9rem';
+        btn.style.padding = '10px 14px';
+        btn.innerHTML = `<span class="btn-text">${ano.label}</span>`;
+        btn.onclick = () => handleYearSelection(ano.key);
+        otherYearsContainer.appendChild(btn);
+    });
+
+    // Ação de expandir/recolher
+    accordionToggle.onclick = () => {
+        const isHidden = otherYearsContainer.classList.toggle('hidden');
+        const icon = document.getElementById('accordion-icon');
+        if (icon) {
+            icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+    };
+
+    container.appendChild(accordionToggle);
+    container.appendChild(otherYearsContainer);
 }
 
-function showSubjects(category) {
-    navigationStack.push({ type: 'main' });
+async function handleYearSelection(selectedYear) {
+    if (typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar && currentUser.ano_escolar !== selectedYear) {
+        const confirmacao = await Swal.fire({
+            title: 'Ano diferente do seu!',
+            text: `Você está matriculado(a) no ${formatarAno(currentUser.ano_escolar)}. Deseja explorar os exercícios do ${formatarAno(selectedYear)} mesmo assim?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#1976d2',
+            cancelButtonColor: '#64748b',
+            confirmButtonText: 'Sim, explorar',
+            cancelButtonText: 'Voltar'
+        });
+
+        if (!confirmacao.isConfirmed) return;
+    }
+
+    const dadosAno = await loadYearQuestions(selectedYear);
+
+    if (!dadosAno) {
+        Swal.fire({
+            title: 'Conteúdo em Preparação',
+            text: `As questões do ${formatarAno(selectedYear)} ainda estão sendo elaboradas.`,
+            icon: 'info',
+            confirmButtonColor: '#1976d2',
+            confirmButtonText: 'Entendido'
+        });
+        return;
+    }
+
+    currentYearKey = selectedYear;
+    questionsData = dadosAno;
+    showSubjects(selectedYear);
+}
+
+async function loadYearQuestions(yearKey) {
+    if (loadedQuestionsByYear[yearKey]) {
+        return loadedQuestionsByYear[yearKey];
+    }
+
+    try {
+        const response = await fetch(`js/data/${yearKey}.json`);
+        if (!response.ok) return null;
+        const data = await response.json();
+        loadedQuestionsByYear[yearKey] = data;
+        return data;
+    } catch (err) {
+        console.warn(`Arquivo do ano ${yearKey} indisponível:`, err);
+        return null;
+    }
+}
+
+function showSubjects(yearKey) {
+    navigationStack.push({ type: 'years' });
+
+    updateMenuDisplay(`Matérias - ${formatarAno(yearKey)}`, "Escolha a matéria para começar:", true);
+
+    const categories = Object.keys(questionsData);
+    renderButtons(categories, (cat) => showSubjectUnits(cat), questionsData, 'titulo');
+}
+
+function showSubjectUnits(category) {
+    navigationStack.push({ type: 'subjects', yearKey: currentYearKey });
     const categoryData = questionsData[category];
-    
+
     updateMenuDisplay(categoryData.titulo, "Escolha uma unidade específica:", true);
-    
+
     const subjects = Object.keys(categoryData.materias);
     renderButtons(subjects, (sub) => showSubtopics(category, sub), categoryData.materias, 'titulo');
 }
 
 function showSubtopics(category, subject) {
-    navigationStack.push({ type: 'subject', category: category });
+    navigationStack.push({ type: 'units', category: category });
     const subjectData = questionsData[category].materias[subject];
-    
+
     updateMenuDisplay(subjectData.titulo, "Escolha o tópico para começar:", true);
-    
+
     const subtopics = Object.keys(subjectData.subtopicos);
-    
+
     renderButtons(subtopics, (stopicKey) => {
         const subtopicObj = subjectData.subtopicos[stopicKey];
-        
+
         if (subtopicObj.tipo === "leitura") {
             startReading(subtopicObj.paginas);
         } else {
-            startQuiz(subtopicObj.questoes, subtopicObj.titulo); 
+            startQuiz(subtopicObj.questoes, subtopicObj.titulo, category, stopicKey);
         }
     }, subjectData.subtopicos, 'titulo');
 }
@@ -101,11 +250,18 @@ function goBackMenu() {
     const lastState = navigationStack.pop();
     if (!lastState) return;
 
-    if (lastState.type === 'main') {
+    if (lastState.type === 'years') {
         showMainMenu();
-    } else if (lastState.type === 'subject') {
-        showSubjects(lastState.category);
+    } else if (lastState.type === 'subjects') {
+        showSubjects(lastState.yearKey);
+    } else if (lastState.type === 'units') {
+        showSubjectUnits(lastState.category);
     }
+}
+
+function formatarAno(key) {
+    const encontrado = anosDisponiveis.find(a => a.key === key);
+    return encontrado ? encontrado.label : key;
 }
 
 // --- 2. MODO LEITURA ---
@@ -116,14 +272,14 @@ function startReading(paginas) {
 
     document.getElementById('home-screen').classList.add('hidden');
     document.getElementById('reading-screen').classList.remove('hidden');
-    
+
     updateReadingPage();
 }
 
 function updateReadingPage() {
     const imgElement = document.getElementById('reading-image');
     imgElement.src = currentReadingPages[currentPageIndex];
-    
+
     document.getElementById('prev-page').disabled = (currentPageIndex === 0);
     document.getElementById('next-page').innerText = 
         (currentPageIndex === currentReadingPages.length - 1) ? "Finalizar" : "Próximo";
@@ -136,14 +292,14 @@ function changePage(direction) {
         confirmBackToMenu();
         return;
     }
-    
+
     updateReadingPage();
     window.scrollTo(0, 0);
 }
 
 // --- 3. LÓGICA DO QUIZ ---
 
-function startQuiz(questionsList, subtopicTitle = "") {
+function startQuiz(questionsList, subtopicTitle = "", subjectKey = "", subtopicKey = "") {
     if (!questionsList || questionsList.length === 0) {
         if (typeof Swal !== "undefined") {
             Swal.fire({
@@ -164,6 +320,8 @@ function startQuiz(questionsList, subtopicTitle = "") {
     score = 0;
     skipsLeft = MAX_SKIPS;
     currentSubtopicTitle = subtopicTitle;
+    currentSubjectKey = subjectKey;
+    currentSubtopicKey = subtopicKey;
 
     document.getElementById('home-screen').classList.add('hidden');
     document.getElementById('quiz-screen').classList.remove('hidden');
@@ -177,7 +335,6 @@ function showQuestion() {
     const quizScreen = document.getElementById('quiz-screen');
     const counter = document.getElementById('question-counter');
 
-    // Exibe o botão apenas se ainda houver pulos restantes; caso contrário, oculta
     const skipBtn = document.getElementById('skip-btn');
     if (skipBtn) {
         if (skipsLeft > 0) {
@@ -194,7 +351,7 @@ function showQuestion() {
     if (counter) {
         counter.innerText = `${currentIndex + 1} / ${currentQuestions.length}`;
     }
-    
+
     feedback.innerText = "";
     document.getElementById('question-text').innerText = q.pergunta;
 
@@ -205,21 +362,18 @@ function showQuestion() {
         quizScreen.insertBefore(imgElement, container);
     }
 
-    // TIPO 1: Rotular Imagem
     if (q.tipo === "rotular_imagem") {
         imgElement.style.display = 'none';
         renderRotularImagem(q);
         return;
     }
 
-    // TIPO 2: Associação em Colunas
     if (q.tipo === "associacao_colunas") {
         imgElement.style.display = 'none';
         renderAssociacaoColunas(q);
         return;
     }
 
-    // TIPO PADRÃO: Múltipla Escolha
     if (q.imagem) {
         imgElement.src = q.imagem;
         imgElement.style.display = 'block';
@@ -244,7 +398,6 @@ function checkAnswer(selected, correct) {
     const nextContainer = document.getElementById('next-container');
     const optionsButtons = document.querySelectorAll('#options-container button');
 
-    // Oculta o botão de pular ao responder
     const skipBtn = document.getElementById('skip-btn');
     if (skipBtn) skipBtn.classList.add('hidden');
 
@@ -478,16 +631,13 @@ function goToNextQuestion() {
 function skipQuestion() {
     const skipBtn = document.getElementById('skip-btn');
 
-    // 1. Bloqueia e garante botão escondido se já tiver esgotado
     if (skipsLeft <= 0) {
         if (skipBtn) skipBtn.classList.add('hidden');
         return;
     }
 
-    // 2. Decrementa o saldo de pulos
     skipsLeft--;
 
-    // 3. Notifica o estudante com SweetAlert2
     const mensagemAviso = skipsLeft === 1
         ? 'Você ainda pode pular 1 pergunta.'
         : (skipsLeft === 0 ? 'Você utilizou todos os seus 3 pulos!' : `Você ainda pode pular mais ${skipsLeft} perguntas.`);
@@ -502,7 +652,6 @@ function skipQuestion() {
         });
     }
 
-    // 4. Esconde o botão imediatamente caso tenha chegado a zero
     if (skipsLeft === 0 && skipBtn) {
         skipBtn.classList.add('hidden');
     }
@@ -532,14 +681,32 @@ function showResult() {
     }
 
     const total = currentQuestions.length;
-    const percent = (score / total) * 100;
-    document.getElementById('score-text').innerText = `Você acertou ${score} de ${total}!`;
+    const percent = Math.round((score / total) * 100);
+    document.getElementById('score-text').innerText = `Você acertou ${score} de ${total}! (${percent}%)`;
 
     const starsContainer = document.getElementById('star-rating');
     let stars = "";
     const starCount = Math.floor(percent / 20);
     for (let i = 0; i < 5; i++) stars += i < starCount ? "★" : "☆";
     starsContainer.innerText = stars;
+
+    if (typeof currentUser !== 'undefined' && currentUser && typeof dbSalvarHistoricoQuiz === 'function') {
+        const pulosGastos = MAX_SKIPS - skipsLeft;
+
+        const payload = {
+            aluno_id: currentUser.id,
+            materia: currentSubjectKey || 'ciencias',
+            subtopico: currentSubtopicKey || 'geral',
+            total_questoes: total,
+            acertos: score,
+            pulos_utilizados: pulosGastos,
+            aproveitamento_percentual: percent
+        };
+
+        dbSalvarHistoricoQuiz(payload)
+            .then(() => console.log("Resultado registrado no Supabase com sucesso."))
+            .catch(err => console.error("Erro ao registrar resultado no Supabase:", err));
+    }
 
     if (percent === 100) {
         const end = Date.now() + 3000;
@@ -580,7 +747,7 @@ function resetQuizAndGoHome() {
     document.getElementById('quiz-screen').classList.add('hidden');
     document.getElementById('reading-screen').classList.add('hidden');
     document.getElementById('home-screen').classList.remove('hidden');
-    
+
     currentQuestions = [];
     currentReadingPages = [];
     currentIndex = 0;

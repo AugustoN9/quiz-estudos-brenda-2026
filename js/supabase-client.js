@@ -16,6 +16,7 @@ async function dbCadastrarAluno(alunoData) {
         .insert([{
             nome: alunoData.nome,
             data_nascimento: alunoData.dob,
+            ano_escolar: alunoData.ano_escolar || '5_fundamental',
             whatsapp: alunoData.whatsapp,
             is_responsavel: alunoData.isGuardian,
             nome_responsavel: alunoData.guardianName,
