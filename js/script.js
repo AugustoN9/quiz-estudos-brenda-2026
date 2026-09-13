@@ -22,7 +22,11 @@ let currentSubtopicTitle = "";
 let currentSubjectKey = "";
 let currentSubtopicKey = "";
 
+<<<<<<< HEAD
 // Cache em memória para carregar sob demanda apenas os arquivos necessários
+=======
+// Cache em memória para carregamento sob demanda
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
 const loadedQuestionsByYear = {};
 
 // Lista de Anos e Séries Suportados
@@ -41,6 +45,7 @@ const anosDisponiveis = [
     { key: "3_medio", label: "3º Ano Ensino Médio" }
 ];
 
+<<<<<<< HEAD
 // Garante execução tanto no DOMContentLoaded quanto em carregamento direto
 if (document.readyState === 'loading') {
     document.addEventListener("DOMContentLoaded", showMainMenu);
@@ -49,6 +54,46 @@ if (document.readyState === 'loading') {
 }
 
 // --- 1. GESTÃO DE MENUS DINÂMICOS (SELEÇÃO DE ANO, MATÉRIA E SUBTÓPICO) ---
+=======
+// Inicialização segura
+if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", () => {
+        initTheme();
+        showMainMenu();
+    });
+} else {
+    initTheme();
+    showMainMenu();
+}
+
+// --- 0. GESTÃO DE TEMA CLARO / ESCURO (DARK MODE) ---
+
+function initTheme() {
+    const savedTheme = localStorage.getItem('quiz_theme') || 'light';
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        updateThemeButton(true);
+    } else {
+        document.body.classList.remove('dark-theme');
+        updateThemeButton(false);
+    }
+}
+
+function toggleTheme() {
+    const isDark = document.body.classList.toggle('dark-theme');
+    localStorage.setItem('quiz_theme', isDark ? 'dark' : 'light');
+    updateThemeButton(isDark);
+}
+
+function updateThemeButton(isDark) {
+    const btn = document.getElementById('btn-theme-toggle');
+    if (btn) {
+        btn.innerText = isDark ? '☀️' : '🌙';
+    }
+}
+
+// --- 1. GESTÃO DE MENUS DINÂMICOS (ANO, MATÉRIA, UNIDADE E SUBTÓPICO) ---
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
 
 function showMainMenu() {
     navigationStack = [];
@@ -57,16 +102,23 @@ function showMainMenu() {
 
     const container = document.getElementById('dynamic-menu');
     if (!container) return;
+<<<<<<< HEAD
     
     container.innerHTML = "";
 
     // 1. Identifica o ano cadastrado do aluno (padrão: 5_fundamental se visitante)
+=======
+    container.innerHTML = "";
+
+    // Identifica série cadastrada do estudante (padrão 5_fundamental)
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
     const userYearKey = (typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar)
         ? currentUser.ano_escolar
         : '5_fundamental';
 
     const mainYearObj = anosDisponiveis.find(a => a.key === userYearKey) || anosDisponiveis[4];
 
+<<<<<<< HEAD
     // 2. Card Principal de Destaque ("SEU ANO")
     const mainBtn = document.createElement('button');
     mainBtn.className = 'menu-card-btn';
@@ -77,44 +129,80 @@ function showMainMenu() {
     mainBtn.innerHTML = `
         <span class="btn-text" style="font-weight: 700; color: #15803d;">${mainYearObj.label}</span>
         <span class="badge-novo" style="background-color: #bbf7d0; color: #14532d; font-size: 0.72rem; padding: 4px 8px; border-radius: 6px;">${badgeText}</span>
+=======
+    // Card Principal em Destaque ("SEU ANO")
+    const mainBtn = document.createElement('button');
+    mainBtn.className = 'menu-card-btn';
+    mainBtn.style.border = '2px solid #86efac';
+    mainBtn.style.backgroundColor = document.body.classList.contains('dark-theme') ? '#14532d' : '#f0fdf4';
+
+    const badgeText = (typeof currentUser !== 'undefined' && currentUser) ? 'SEU ANO' : 'RECOMENDADO';
+    mainBtn.innerHTML = `
+        <span class="btn-text" style="font-weight: 700; color: #16a34a;">${mainYearObj.label}</span>
+        <span class="badge-novo" style="background-color: #bbf7d0; color: #14532d;">${badgeText}</span>
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
     `;
     mainBtn.onclick = () => handleYearSelection(mainYearObj.key);
     container.appendChild(mainBtn);
 
+<<<<<<< HEAD
     // 3. Botão de Accordion ("Escolha um outro ano")
+=======
+    // Accordion: Alternar outros anos
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
     const accordionToggle = document.createElement('button');
     accordionToggle.className = 'menu-card-btn';
     accordionToggle.id = 'toggle-other-years';
     accordionToggle.style.marginTop = '15px';
+<<<<<<< HEAD
     accordionToggle.style.backgroundColor = '#f8fafc';
+=======
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
     accordionToggle.style.justifyContent = 'center';
     accordionToggle.style.gap = '10px';
 
     accordionToggle.innerHTML = `
         <span id="accordion-icon" style="color: #eab308; font-size: 0.9rem; transition: transform 0.2s ease;">▼</span>
+<<<<<<< HEAD
         <span class="btn-text" style="color: #475569; font-size: 0.95rem;">Escolha um outro ano</span>
     `;
 
     // 4. Container colapsável com as outras séries
+=======
+        <span class="btn-text" style="font-size: 0.95rem;">Escolha um outro ano</span>
+    `;
+
+    // Bloco retrátil com as demais séries
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
     const otherYearsContainer = document.createElement('div');
     otherYearsContainer.id = 'other-years-container';
     otherYearsContainer.className = 'category-list hidden';
     otherYearsContainer.style.marginTop = '10px';
     otherYearsContainer.style.paddingLeft = '8px';
+<<<<<<< HEAD
     otherYearsContainer.style.borderLeft = '3px solid #e2e8f0';
+=======
+    otherYearsContainer.style.borderLeft = '3px solid #64748b';
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
 
     const outrosAnos = anosDisponiveis.filter(a => a.key !== mainYearObj.key);
     outrosAnos.forEach(ano => {
         const btn = document.createElement('button');
         btn.className = 'menu-card-btn';
         btn.style.fontSize = '0.9rem';
+<<<<<<< HEAD
         btn.style.padding = '10px 14px';
+=======
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
         btn.innerHTML = `<span class="btn-text">${ano.label}</span>`;
         btn.onclick = () => handleYearSelection(ano.key);
         otherYearsContainer.appendChild(btn);
     });
 
+<<<<<<< HEAD
     // Ação de expandir/recolher
+=======
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
     accordionToggle.onclick = () => {
         const isHidden = otherYearsContainer.classList.toggle('hidden');
         const icon = document.getElementById('accordion-icon');
@@ -131,7 +219,11 @@ async function handleYearSelection(selectedYear) {
     if (typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar && currentUser.ano_escolar !== selectedYear) {
         const confirmacao = await Swal.fire({
             title: 'Ano diferente do seu!',
+<<<<<<< HEAD
             text: `Você está matriculado(a) no ${formatarAno(currentUser.ano_escolar)}. Deseja explorar os exercícios do ${formatarAno(selectedYear)} mesmo assim?`,
+=======
+            text: `Você está cadastrado(a) no ${formatarAno(currentUser.ano_escolar)}. Deseja acessar os exercícios do ${formatarAno(selectedYear)} mesmo assim?`,
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#1976d2',
@@ -406,7 +498,7 @@ function checkAnswer(selected, correct) {
     if (selected === correct) {
         score++;
         feedback.innerText = "Parabéns você acertou!";
-        feedback.style.color = "green";
+        feedback.style.color = "#22c55e";
         confetti({
             particleCount: 150,
             spread: 70,
@@ -415,7 +507,7 @@ function checkAnswer(selected, correct) {
         });
     } else {
         feedback.innerText = "Estude mais e tente novamente!";
-        feedback.style.color = "red";
+        feedback.style.color = "#ef4444";
     }
     nextContainer.classList.remove('hidden');
 }
@@ -502,7 +594,7 @@ function validateRotularAnswers(q) {
     if (acertos === q.alvos.length) {
         score++;
         feedback.innerText = "Excelente! Você identificou todas as partes corretamente!";
-        feedback.style.color = "green";
+        feedback.style.color = "#22c55e";
         confetti({
             particleCount: 150,
             spread: 70,
@@ -511,7 +603,7 @@ function validateRotularAnswers(q) {
         });
     } else {
         feedback.innerText = `Você acertou ${acertos} de ${q.alvos.length} partes. Revise os pontos marcados em vermelho!`;
-        feedback.style.color = "red";
+        feedback.style.color = "#ef4444";
     }
 
     nextContainer.classList.remove('hidden');
@@ -601,7 +693,7 @@ function validateColunaAnswers(q) {
     if (acertos === q.itens.length) {
         score++;
         feedback.innerText = "Excelente! Você associou todas as usinas corretamente!";
-        feedback.style.color = "green";
+        feedback.style.color = "#22c55e";
         confetti({
             particleCount: 150,
             spread: 70,
@@ -610,13 +702,13 @@ function validateColunaAnswers(q) {
         });
     } else {
         feedback.innerText = `Você acertou ${acertos} de ${q.itens.length} usinas. Tente memorizar as marcadas em vermelho!`;
-        feedback.style.color = "red";
+        feedback.style.color = "#ef4444";
     }
 
     nextContainer.classList.remove('hidden');
 }
 
-// --- 6. NAVEGAÇÃO, ENCERRAMENTO E ALERTAS COM SWEETALERT2 ---
+// --- 6. NAVEGAÇÃO, ENCERRAMENTO E PERSISTÊNCIA ---
 
 function goToNextQuestion() {
     document.getElementById('next-container').classList.add('hidden');
@@ -690,12 +782,20 @@ function showResult() {
     for (let i = 0; i < 5; i++) stars += i < starCount ? "★" : "☆";
     starsContainer.innerText = stars;
 
+<<<<<<< HEAD
+=======
+    // Persistência no Supabase para alunos conectados
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
     if (typeof currentUser !== 'undefined' && currentUser && typeof dbSalvarHistoricoQuiz === 'function') {
         const pulosGastos = MAX_SKIPS - skipsLeft;
 
         const payload = {
             aluno_id: currentUser.id,
+<<<<<<< HEAD
             materia: currentSubjectKey || 'ciencias',
+=======
+            materia: currentSubjectKey || 'ingles',
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
             subtopico: currentSubtopicKey || 'geral',
             total_questoes: total,
             acertos: score,
@@ -704,8 +804,13 @@ function showResult() {
         };
 
         dbSalvarHistoricoQuiz(payload)
+<<<<<<< HEAD
             .then(() => console.log("Resultado registrado no Supabase com sucesso."))
             .catch(err => console.error("Erro ao registrar resultado no Supabase:", err));
+=======
+            .then(() => console.log("Resultado salvo no banco de dados."))
+            .catch(err => console.error("Erro ao salvar histórico:", err));
+>>>>>>> 7fe7e92 (feat: adiciona unidades 5 e 6 de ingles, questoes com tirinhas e tema escuro)
     }
 
     if (percent === 100) {
