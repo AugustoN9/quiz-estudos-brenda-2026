@@ -6093,5 +6093,665 @@
         }
       }
     }
+  },
+    "ingles": {
+    "titulo": "Língua Inglesa",
+    "materias": {
+      "units": {
+        "titulo": "Units 5 & 6",
+        "subtopicos": {
+          "unit_5_traveling": {
+            "titulo": "Unit 5: Traveling is Amazing",
+            "questoes": [
+              {
+                "pergunta": "Qual das opções descreve um lugar onde montamos barracas no meio da natureza?",
+                "alternativas": [
+                  "Camping site",
+                  "Apartment",
+                  "3-Star hotel",
+                  "Shopping mall"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete a frase: 'I live in a big _____, but on vacation I love to go to the countryside.'",
+                "alternativas": ["city", "tent", "pool", "inn"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual tipo de hospedagem menor e aconchegante é geralmente encontrada no campo ou pequenas cidades?",
+                "alternativas": [
+                  "Inn",
+                  "Apartment in the city",
+                  "Skyscraper",
+                  "Airport"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Ordene corretamente a pergunta: 'staying / Is / Clara / at / hotel / a / ?'",
+                "alternativas": [
+                  "Is Clara staying at a hotel?",
+                  "Clara is staying at a hotel?",
+                  "Is staying Clara at hotel a?",
+                  "At a hotel is Clara staying?"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Como responder afirmativamente à pergunta: 'Are they enjoying their vacation?'",
+                "alternativas": [
+                  "Yes, they are having fun.",
+                  "No, it isn't sunny.",
+                  "Yes, she is in the city.",
+                  "They doesn't like vacation."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Se alguém pergunta: 'Where are you traveling to with your family?', qual é a resposta adequada?",
+                "alternativas": [
+                  "We are traveling to a nice inn.",
+                  "Yes, it is raining at the beach.",
+                  "No, we don't watch TV.",
+                  "She plays the guitar."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete: 'When we travel, we like to sleep in a _____ in the middle of the forest.'",
+                "alternativas": [
+                  "camping site",
+                  "big downtown",
+                  "office",
+                  "subway"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual lugar corresponde à frase do site: 'Farm experience at the countryside, Brotas'?",
+                "alternativas": [
+                  "Farm",
+                  "Airport",
+                  "Subway",
+                  "Apartment in the city"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete com a forma negativa correta: 'Are you staying at a hotel? No, we _____.'",
+                "alternativas": ["aren't", "isn't", "don't", "not are"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete com o verbo auxiliar correto: '_____ Alice packing her bag right now?'",
+                "alternativas": ["Is", "Are", "Do", "Does"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual das opções representa uma dica essencial antes de qualquer viagem?",
+                "alternativas": [
+                  "Check the weather forecast before choosing your clothes.",
+                  "Pack all the toys you have in your house.",
+                  "Never wake up early on the day of the trip.",
+                  "Forget to make a list of what you need."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Como perguntar o que o professor está fazendo neste exato momento?",
+                "alternativas": [
+                  "What is your teacher doing?",
+                  "What your teacher do?",
+                  "What are your teacher doing?",
+                  "What does your teacher doing?"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete com a resposta correta: 'Are your parents working today? Yes, _____.'",
+                "alternativas": ["they are", "they do", "he is", "they work"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Em qual tipo de hospedagem encontramos '3-Star hotel at quiet beach, Maragogi'?",
+                "alternativas": ["Hotel", "Tent", "Farm", "Cabin"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual frase indica que Theo está olhando pela janela e vendo a cidade inteira?",
+                "alternativas": [
+                  "I'm looking out the window. I can see the whole city!",
+                  "I'm swimming in the pool with my cousins.",
+                  "I'm putting up the tent in the forest.",
+                  "I'm cooking dinner for my grandparents."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Sally's Vacation]\n'I'm staying at a small inn in the countryside. Every day when I wake up, the birds are singing. Then we have fresh food from the farm.'\n\nOnde Sally e sua família estão hospedados?",
+                "alternativas": [
+                  "At a small inn in the countryside.",
+                  "In an apartment in downtown Barcelona.",
+                  "At a camping site in Vancouver.",
+                  "In a big hotel by the sea."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Sally's Vacation]\n'I love feeding the hens and ducks! I sometimes ride my bike, it's really safe here, with no cars!'\n\nPor que andar de bicicleta é muito seguro onde Sally está?",
+                "alternativas": [
+                  "Because there are no cars.",
+                  "Because she is riding inside the inn.",
+                  "Because her friends from the city are there.",
+                  "Because the street has many traffic lights."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Sally's Vacation]\n'I miss my home and my friends in the city, but I'm really enjoying our vacation!'\n\nDe acordo com o trecho final, Sally está gostando das férias?",
+                "alternativas": [
+                  "Yes, she is really enjoying her vacation.",
+                  "No, she wants to go to school immediately.",
+                  "No, she dislikes the animals on the farm.",
+                  "Yes, but only when she is watching TV."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Travel Tips]\n'For a good vacation trip, remember to check the weather forecast, pack essential things only, and wake up early on the day of the trip.'\n\nO que o texto recomenda levar na mala?",
+                "alternativas": [
+                  "Essential things only.",
+                  "All the clothes you have in your closet.",
+                  "Video games and television sets.",
+                  "Only food from the farm."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Travel Tips]\n'Make a list of everything you need before packing your bag.'\n\nQual é a finalidade de fazer uma lista antes de viajar?",
+                "alternativas": [
+                  "To make sure you take everything you need.",
+                  "To send text messages to your friends.",
+                  "To practice your handwriting for school.",
+                  "To cancel the trip to the countryside."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'We are staying at an _____ in the _____, and sleeping in a small _____.'",
+                "alternativas": [
+                  "inn / countryside / room",
+                  "apartment / forest / tent",
+                  "hotel / farm / airplane",
+                  "ocean / city / car"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Before traveling to the _____, check the weather _____ and pack your _____.'",
+                "alternativas": [
+                  "beach / forecast / bag",
+                  "tent / car / food",
+                  "hotel / map / bike",
+                  "farm / phone / animals"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'They are _____ at a beautiful _____ hotel near the quiet _____.'",
+                "alternativas": [
+                  "staying / 3-star / beach",
+                  "looking / big / forest",
+                  "cooking / national / inn",
+                  "playing / apartment / city"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Dad and Noah are _____ up the _____ at the national park _____.'",
+                "alternativas": [
+                  "putting / tent / camping site",
+                  "packing / bag / inn",
+                  "looking / window / apartment",
+                  "eating / breakfast / hotel"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Sally wakes up early, the _____ are singing and she has fresh _____ from the _____.'",
+                "alternativas": [
+                  "birds / food / farm",
+                  "cars / bread / city",
+                  "ducks / milk / hotel",
+                  "children / water / pool"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Is Theo _____ at his _____? No, he is looking out the _____.'",
+                "alternativas": [
+                  "looking / phone / window",
+                  "talking / friend / street",
+                  "swimming / pool / door",
+                  "eating / breakfast / tent"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'I live in a big _____ with lots of cars, but I love the quiet _____ and green _____.'",
+                "alternativas": [
+                  "city / countryside / trees",
+                  "inn / beach / buildings",
+                  "hotel / forest / houses",
+                  "tent / farm / offices"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Are you _____ your bag? Yes, we are _____ for our _____ trip!'",
+                "alternativas": [
+                  "packing / leaving / vacation",
+                  "making / cooking / city",
+                  "putting / staying / farm",
+                  "taking / singing / school"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Bianca is at the _____ feeding the _____ and playing with little _____.'",
+                "alternativas": [
+                  "farm / hens / ducks",
+                  "beach / birds / cars",
+                  "hotel / horses / phones",
+                  "inn / dogs / books"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'On vacation, we like to _____ in the ocean and _____ our bikes on the _____.'",
+                "alternativas": [
+                  "swim / ride / beach",
+                  "dance / drive / city",
+                  "cook / play / pool",
+                  "sleep / feed / sky"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Na tirinha acima, em qual dia da semana se passa a cena?",
+                "imagem": "images/ingles/tirinha01.png",
+                "alternativas": [
+                  "Monday (segunda-feira)",
+                  "Sunday (domingo)",
+                  "Friday (sexta-feira)",
+                  "Wednesday (quarta-feira)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Por que Garfield diz que adora as manhãs de segunda-feira ('I love Monday mornings')?",
+                "imagem": "images/ingles/tirinha01.png",
+                "alternativas": [
+                  "Porque ele não precisa ir trabalhar ('I don't have to go to work').",
+                  "Porque é o dia em que ele come lasanha.",
+                  "Porque ele acorda cedo para passear.",
+                  "Porque ele vai para a escola encontrar os amigos."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Na tirinha acima, o que o som 'BRING!' representa no primeiro quadrinho?",
+                "imagem": "images/ingles/tirinha01.png",
+                "alternativas": [
+                  "O despertador tocando.",
+                  "A porta se abrindo.",
+                  "O telefone chamando.",
+                  "Um prato quebrando."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual é o significado da frase dita por Garfield no primeiro quadrinho: 'Oh, goody. It's Monday morning'?",
+                "imagem": "images/ingles/tirinha01.png",
+                "alternativas": [
+                  "Que bom. É manhã de segunda-feira.",
+                  "Que susto. O dia está frio.",
+                  "Muito ruim. O café acabou.",
+                  "Adeus. Vou voltar a dormir."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Na frase 'Because I don't have to go to work', a palavra 'work' significa:",
+                "imagem": "images/ingles/tirinha01.png",
+                "alternativas": ["Trabalhar", "Comer", "Brincar", "Viajar"],
+                "correta": 0
+              }
+            ]
+          },
+          "unit_6_free_time": {
+            "titulo": "Unit 6: Free Time Activities",
+            "questoes": [
+              {
+                "pergunta": "Qual atividade de lazer corresponde a 'enviar mensagens de texto pelo celular'?",
+                "alternativas": ["Text", "Cook", "Swim", "Dance"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual destas atividades é tipicamente praticada 'Outdoors' (ao ar livre)?",
+                "alternativas": [
+                  "Camping in the woods",
+                  "Watch TV on the sofa",
+                  "Play online video games",
+                  "Text friends in bed"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual destas atividades é considerada 'Indoors' (dentro de casa)?",
+                "alternativas": [
+                  "Play online games",
+                  "Swim in the ocean",
+                  "Play soccer in the park",
+                  "Ride a bike on the street"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete com a forma correta no Simple Present: 'In his free time, Aiden _____ the guitar.'",
+                "alternativas": ["plays", "play", "playing", "don't play"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete com a forma negativa correta: 'Chloe doesn't dance in her free time. She _____ TV.'",
+                "alternativas": ["watches", "watch", "watching", "don't watch"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Passe a frase 'He texts friends every day' para o sujeito 'They':",
+                "alternativas": [
+                  "They text friends every day.",
+                  "They texts friends every day.",
+                  "They doesn't text friends.",
+                  "They is texting friends."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual frase negativa está gramaticalmente CORRETA para a 3ª pessoa (He / She)?",
+                "alternativas": [
+                  "He doesn't swim in the ocean.",
+                  "He don't swim in the ocean.",
+                  "He doesn't swims in the ocean.",
+                  "He not swim in the ocean."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete: 'My aunt and I _____ when we are happy.' (Nós)",
+                "alternativas": ["dance", "dances", "dancing", "doesn't dance"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete: 'Benjamin _____ movies every weekend.' (He)",
+                "alternativas": ["watches", "watch", "watchs", "watching"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete a frase negativa: 'Kiara and her mom _____ breakfast on weekdays.' (They)",
+                "alternativas": [
+                  "don't cook",
+                  "doesn't cook",
+                  "not cooks",
+                  "doesn't cooks"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete com a forma adequada: 'My dog _____ in our swimming pool during hot days.'",
+                "alternativas": ["swims", "swim", "swiming", "doesn't swims"],
+                "correta": 0
+              },
+              {
+                "pergunta": "Transforme 'We dance tango on Fridays' substituindo o sujeito por 'She':",
+                "alternativas": [
+                  "She dances tango on Fridays.",
+                  "She dance tango on Fridays.",
+                  "She is dancing tango on Fridays.",
+                  "She don't dance tango on Fridays."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Complete a negativa no Simple Present: 'Dad and I _____ online games every day.' (We)",
+                "alternativas": [
+                  "don't play",
+                  "doesn't play",
+                  "not plays",
+                  "isn't play"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual frase está gramaticalmente correta para a 3ª pessoa do singular (She)?",
+                "alternativas": [
+                  "She doesn't cook on weekdays, but she cooks on weekends.",
+                  "She don't cook on weekdays, but she cook on weekends.",
+                  "She doesn't cooks on weekdays, but she cooks on weekends.",
+                  "She not cook on weekdays, but she cook on weekends."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual das opções representa uma atividade musical?",
+                "alternativas": [
+                  "Play the guitar",
+                  "Text friends",
+                  "Swim in the pool",
+                  "Cook breakfast"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Sundays at Grandma's]\n'Sundays in Grandma's house are a delight. My cousin and I swim in the pool. We don't play online. Grandma cooks a delicious lunch and we have ice cream.'\n\nO que o primo e o narrador fazem na piscina?",
+                "alternativas": [
+                  "They swim in the pool.",
+                  "They play online games with their phones.",
+                  "They dance with their grandpa.",
+                  "They wash the dishes."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Sundays at Grandma's]\n'Then we dance and listen to Grandpa as he plays the violin. We don't text during lunch. Grandma doesn't like phones at the table.'\n\nQual instrumento o vovô toca no domingo?",
+                "alternativas": ["Violin", "Guitar", "Piano", "Drums"],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Sundays at Grandma's]\n'So we talk and laugh at Grandpa's jokes and listen to Grandma's tales.'\n\nPor que eles não usam o celular durante o almoço na casa da vovó?",
+                "alternativas": [
+                  "Because Grandma doesn't like phones at the table.",
+                  "Because the phones have no battery left.",
+                  "Because they are playing video games in the bedroom.",
+                  "Because they are swimming in the lake."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Anna's Routine]\n'My name is Anna. I like to play basketball and text my friends in my free time. I don't play any musical instrument. My sister plays the guitar very well but she doesn't sing.'\n\nQual esporte Anna gosta de praticar em seu tempo livre?",
+                "alternativas": ["Basketball", "Ballet", "Tennis", "Swimming"],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXTO - Anna's Routine]\n'My sister plays the guitar very well but she doesn't sing. She dances on Tuesdays. My brother cooks delicious meals for us. We watch TV and listen to music together.'\n\nO que a irmã de Anna sabe fazer muito bem e o que ela NÃO faz?",
+                "alternativas": [
+                  "She plays the guitar, but she doesn't sing.",
+                  "She cooks meals, but she doesn't dance.",
+                  "She swims in the pool, but she doesn't play basketball.",
+                  "She watches TV, but she doesn't listen to music."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'In his free time, Aiden _____ the guitar, but he _____ like to _____ online games.'",
+                "alternativas": [
+                  "plays / doesn't / play",
+                  "play / don't / plays",
+                  "playing / not / playing",
+                  "played / isn't / play"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Abi and her mom _____ cook dinner; they prefer to _____ to music and _____ friends.'",
+                "alternativas": [
+                  "don't / listen / text",
+                  "doesn't / listening / texts",
+                  "not / listen / texting",
+                  "isn't / listens / text"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Noah and James _____ video games indoors, while their friends _____ in the swimming _____.'",
+                "alternativas": [
+                  "play / swim / pool",
+                  "plays / swims / park",
+                  "playing / swimming / lake",
+                  "watch / dance / beach"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'On Sundays, Grandpa plays the _____ and Grandma _____ a delicious _____ for us.'",
+                "alternativas": [
+                  "violin / cooks / lunch",
+                  "guitar / dance / breakfast",
+                  "games / swims / dinner",
+                  "TV / texts / ice cream"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Chloe _____ watch horror movies; she _____ comedies and _____ to pop music.'",
+                "alternativas": [
+                  "doesn't / watches / listens",
+                  "don't / watch / listen",
+                  "isn't / watching / listening",
+                  "not / watches / listen"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'My sister _____ the guitar very well, but she _____ sing or _____ ballet.'",
+                "alternativas": [
+                  "plays / doesn't / dance",
+                  "play / don't / dances",
+                  "playing / not / dancing",
+                  "plays / isn't / dance"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'We _____ play online games at school, but we _____ friends and _____ to our teacher.'",
+                "alternativas": [
+                  "don't / text / listen",
+                  "doesn't / texts / listens",
+                  "not / texting / listening",
+                  "aren't / text / listen"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Swimming in the ocean is an _____ activity, while watching TV is an _____ hobby.'",
+                "alternativas": [
+                  "outdoors / indoors",
+                  "indoors / outdoors",
+                  "easy / difficult",
+                  "expensive / quiet"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'Leo _____ his cousins every afternoon, and his brother _____ dinner for the whole _____.'",
+                "alternativas": [
+                  "texts / cooks / family",
+                  "text / cook / friends",
+                  "texting / cooking / house",
+                  "texts / don't cook / school"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Preencha as lacunas: 'At night, we _____ TV together, drink warm _____ and _____ stories with our parents.'",
+                "alternativas": [
+                  "watch / milk / share",
+                  "watches / tea / listens",
+                  "playing / chocolate / cook",
+                  "listen / water / dance"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Na tirinha acima, o que Jon afirma ter escrito para Liz no primeiro quadrinho?",
+                "imagem": "images/ingles/tirinha02.png",
+                "alternativas": [
+                  "Um poema ('I've written a poem for you').",
+                  "Uma carta de despedida.",
+                  "Uma música de aniversário.",
+                  "Um bilhete de desculpas."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "No segundo quadrinho da tirinha acima, qual instrução Jon dá para Liz ao ler o papel?",
+                "imagem": "images/ingles/tirinha02.png",
+                "alternativas": [
+                  "Ler devagar ('Read it slowly').",
+                  "Ler em voz alta e cantando.",
+                  "Ler o mais rápido que puder.",
+                  "Ler de olhos fechados."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "No último quadrinho da tirinha acima, o que Liz descobre que o papel realmente parece ser?",
+                "imagem": "images/ingles/tirinha02.png",
+                "alternativas": [
+                  "Uma lista de compras ('a shopping list').",
+                  "Um poema romântico verdadeiro.",
+                  "Uma receita de bolo de chocolate.",
+                  "Um mapa do tesouro."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Qual sentimento ou instrução final Jon adiciona antes de notar o engano ('And with feeling')?",
+                "imagem": "images/ingles/tirinha02.png",
+                "alternativas": [
+                  "E com sentimento.",
+                  "E com tristeza.",
+                  "E sem pressa.",
+                  "E com medo."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "Pela expressão facial do Garfield no último quadrinho da tirinha acima, qual é a reação dele?",
+                "imagem": "images/ingles/tirinha02.png",
+                "alternativas": [
+                  "Ele acha muito engraçado e ri da confusão do Jon.",
+                  "Ele fica com raiva porque queria comer.",
+                  "Ele chora de tristeza com a cena.",
+                  "Ele dorme de tédio na mesa."
+                ],
+                "correta": 0
+              }
+            ]
+          }
+        }
+      }
+    }
   }
 }
