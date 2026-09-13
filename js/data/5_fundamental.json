@@ -6379,7 +6379,7 @@
                 "correta": 0
               },
               {
-                "pergunta": "Na tirinha acima, em qual dia da semana se passa a cena?",
+                "pergunta": "Na tirinha, em qual dia da semana se passa a cena?",
                 "imagem": "images/ingles/tirinha01.png",
                 "alternativas": [
                   "Monday (segunda-feira)",
@@ -6401,7 +6401,7 @@
                 "correta": 0
               },
               {
-                "pergunta": "Na tirinha acima, o que o som 'BRING!' representa no primeiro quadrinho?",
+                "pergunta": "Na tirinha, o que o som 'BRING!' representa no primeiro quadrinho?",
                 "imagem": "images/ingles/tirinha01.png",
                 "alternativas": [
                   "O despertador tocando.",
@@ -6694,7 +6694,7 @@
                 "correta": 0
               },
               {
-                "pergunta": "Na tirinha acima, o que Jon afirma ter escrito para Liz no primeiro quadrinho?",
+                "pergunta": "Na tirinha, o que Jon afirma ter escrito para Liz no primeiro quadrinho?",
                 "imagem": "images/ingles/tirinha02.png",
                 "alternativas": [
                   "Um poema ('I've written a poem for you').",
@@ -6705,7 +6705,7 @@
                 "correta": 0
               },
               {
-                "pergunta": "No segundo quadrinho da tirinha acima, qual instrução Jon dá para Liz ao ler o papel?",
+                "pergunta": "No segundo quadrinho da tirinha abaixo, qual instrução Jon dá para Liz ao ler o papel?",
                 "imagem": "images/ingles/tirinha02.png",
                 "alternativas": [
                   "Ler devagar ('Read it slowly').",
@@ -6716,7 +6716,7 @@
                 "correta": 0
               },
               {
-                "pergunta": "No último quadrinho da tirinha acima, o que Liz descobre que o papel realmente parece ser?",
+                "pergunta": "No último quadrinho da tirinha abaixo, o que Liz descobre que o papel realmente parece ser?",
                 "imagem": "images/ingles/tirinha02.png",
                 "alternativas": [
                   "Uma lista de compras ('a shopping list').",
@@ -6738,7 +6738,7 @@
                 "correta": 0
               },
               {
-                "pergunta": "Pela expressão facial do Garfield no último quadrinho da tirinha acima, qual é a reação dele?",
+                "pergunta": "Pela expressão facial do Garfield no último quadrinho da tirinha abaixo, qual é a reação dele?",
                 "imagem": "images/ingles/tirinha02.png",
                 "alternativas": [
                   "Ele acha muito engraçado e ri da confusão do Jon.",
