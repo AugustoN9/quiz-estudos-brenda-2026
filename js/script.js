@@ -83,79 +83,127 @@ function updateThemeButton(isDark) {
 function showMainMenu() {
     navigationStack = [];
     currentYearKey = "";
-    updateMenuDisplay("Selecione o Ano Escolar", "Escolha a etapa de ensino para estudar!", false);
 
     const container = document.getElementById('dynamic-menu');
     if (!container) return;
     container.innerHTML = "";
 
-    // 1. Identifica a série cadastrada do estudante (padrão 5_fundamental se visitante)
-    let userYearKey = '5_fundamental';
-    if (typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar) {
-        userYearKey = currentUser.ano_escolar;
+    const isLogged = typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar;
+
+    // --- CENÁRIO 1: USUÁRIO AUTENTICADO (Card em Destaque + Accordion) ---
+    if (isLogged) {
+        updateMenuDisplay("Selecione o Ano Escolar", "Escolha a etapa de ensino para estudar!", false);
+
+        const userYearKey = currentUser.ano_escolar;
+        const mainYearObj = anosDisponiveis.find(a => a.key === userYearKey) || anosDisponiveis[4];
+
+        const mainBtn = document.createElement('button');
+        mainBtn.className = 'menu-card-btn';
+        mainBtn.style.border = '2px solid #86efac';
+        mainBtn.style.backgroundColor = document.body.classList.contains('dark-theme') ? '#14532d' : '#f0fdf4';
+
+        mainBtn.innerHTML = `
+            <span class="btn-text" style="font-weight: 700; color: #16a34a;">${mainYearObj.label}</span>
+            <span class="badge-novo" style="background-color: #bbf7d0; color: #14532d;">SEU ANO</span>
+        `;
+        mainBtn.onclick = () => handleYearSelection(mainYearObj.key);
+        container.appendChild(mainBtn);
+
+        const accordionToggle = document.createElement('button');
+        accordionToggle.className = 'menu-card-btn';
+        accordionToggle.id = 'toggle-other-years';
+        accordionToggle.style.marginTop = '15px';
+        accordionToggle.style.display = 'flex';
+        accordionToggle.style.alignItems = 'center';
+        accordionToggle.style.justifyContent = 'center';
+        accordionToggle.style.gap = '10px';
+
+        accordionToggle.innerHTML = `
+            <span id="accordion-icon" style="color: #eab308; font-size: 0.9rem; transition: transform 0.2s ease;">▼</span>
+            <span class="btn-text" style="font-size: 0.95rem; text-align: center; flex: unset;">Escolha um outro ano</span>
+        `;
+
+        const otherYearsContainer = document.createElement('div');
+        otherYearsContainer.id = 'other-years-container';
+        otherYearsContainer.className = 'category-list hidden';
+        otherYearsContainer.style.marginTop = '10px';
+        otherYearsContainer.style.paddingLeft = '8px';
+        otherYearsContainer.style.borderLeft = '3px solid #64748b';
+
+        const outrosAnos = anosDisponiveis.filter(a => a.key !== mainYearObj.key);
+        outrosAnos.forEach(ano => {
+            const btn = document.createElement('button');
+            btn.className = 'menu-card-btn';
+            btn.style.fontSize = '0.9rem';
+            btn.innerHTML = `<span class="btn-text">${ano.label}</span>`;
+            btn.onclick = () => handleYearSelection(ano.key);
+            otherYearsContainer.appendChild(btn);
+        });
+
+        accordionToggle.onclick = () => {
+            const isHidden = otherYearsContainer.classList.toggle('hidden');
+            const icon = document.getElementById('accordion-icon');
+            if (icon) {
+                icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+        };
+
+        container.appendChild(accordionToggle);
+        container.appendChild(otherYearsContainer);
+        return;
     }
 
-    const mainYearObj = anosDisponiveis.find(a => a.key === userYearKey) || anosDisponiveis[4];
+    // --- CENÁRIO 2: VISITANTE (Dois accordions: Fundamental e Médio) ---
+    updateMenuDisplay("Selecione o Ano Escolar", "Escolha o seu ano e comece a estudar!", false);
 
-    // 2. Card Principal em Destaque ("SEU ANO" ou "RECOMENDADO")
-    const mainBtn = document.createElement('button');
-    mainBtn.className = 'menu-card-btn';
-    mainBtn.style.border = '2px solid #86efac';
-    mainBtn.style.backgroundColor = document.body.classList.contains('dark-theme') ? '#14532d' : '#f0fdf4';
+    const fundamentalAnos = anosDisponiveis.filter(a => a.key.includes('fundamental'));
+    const medioAnos = anosDisponiveis.filter(a => a.key.includes('medio'));
 
-    const isLogged = typeof currentUser !== 'undefined' && currentUser;
-    const badgeText = isLogged ? 'SEU ANO' : 'RECOMENDADO';
+    function createSectionAccordion(title, anosList, defaultOpen = true) {
+        const toggleBtn = document.createElement('button');
+        toggleBtn.className = 'menu-card-btn';
+        toggleBtn.style.display = 'flex';
+        toggleBtn.style.alignItems = 'center';
+        toggleBtn.style.justifyContent = 'space-between';
+        toggleBtn.style.fontWeight = '700';
+        toggleBtn.style.marginTop = '12px';
 
-    mainBtn.innerHTML = `
-        <span class="btn-text" style="font-weight: 700; color: #16a34a;">${mainYearObj.label}</span>
-        <span class="badge-novo" style="background-color: #bbf7d0; color: #14532d;">${badgeText}</span>
-    `;
-    mainBtn.onclick = () => handleYearSelection(mainYearObj.key);
-    container.appendChild(mainBtn);
+        const arrowIcon = document.createElement('span');
+        arrowIcon.style.color = '#eab308';
+        arrowIcon.style.fontSize = '0.85rem';
+        arrowIcon.style.transition = 'transform 0.2s ease';
+        arrowIcon.style.transform = defaultOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+        arrowIcon.innerText = '▼';
 
-    // 3. Botão do Accordion para alternar outros anos
-    const accordionToggle = document.createElement('button');
-    accordionToggle.className = 'menu-card-btn';
-    accordionToggle.id = 'toggle-other-years';
-    accordionToggle.style.marginTop = '15px';
-    accordionToggle.style.display = 'flex';
-    accordionToggle.style.alignItems = 'center';
-    accordionToggle.style.justifyContent = 'center';
-    accordionToggle.style.gap = '10px';
+        toggleBtn.innerHTML = `<span class="btn-text" style="font-weight: 700;">${title}</span>`;
+        toggleBtn.appendChild(arrowIcon);
 
-    accordionToggle.innerHTML = `
-        <span id="accordion-icon" style="color: #eab308; font-size: 0.9rem; transition: transform 0.2s ease;">▼</span>
-        <span class="btn-text" style="font-size: 0.95rem; text-align: center; flex: unset;">Escolha um outro ano</span>
-    `;
+        const listContainer = document.createElement('div');
+        listContainer.className = defaultOpen ? 'category-list' : 'category-list hidden';
+        listContainer.style.marginTop = '8px';
+        listContainer.style.paddingLeft = '8px';
+        listContainer.style.borderLeft = '3px solid #64748b';
 
-    // 4. Container retrátil das demais séries
-    const otherYearsContainer = document.createElement('div');
-    otherYearsContainer.id = 'other-years-container';
-    otherYearsContainer.className = 'category-list hidden';
-    otherYearsContainer.style.marginTop = '10px';
-    otherYearsContainer.style.paddingLeft = '8px';
-    otherYearsContainer.style.borderLeft = '3px solid #64748b';
+        anosList.forEach(ano => {
+            const btn = document.createElement('button');
+            btn.className = 'menu-card-btn';
+            btn.style.fontSize = '0.9rem';
+            btn.innerHTML = `<span class="btn-text">${ano.label}</span>`;
+            btn.onclick = () => handleYearSelection(ano.key);
+            listContainer.appendChild(btn);
+        });
 
-    const outrosAnos = anosDisponiveis.filter(a => a.key !== mainYearObj.key);
-    outrosAnos.forEach(ano => {
-        const btn = document.createElement('button');
-        btn.className = 'menu-card-btn';
-        btn.style.fontSize = '0.9rem';
-        btn.innerHTML = `<span class="btn-text">${ano.label}</span>`;
-        btn.onclick = () => handleYearSelection(ano.key);
-        otherYearsContainer.appendChild(btn);
-    });
+        toggleBtn.onclick = () => {
+            const isHidden = listContainer.classList.toggle('hidden');
+            arrowIcon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+        };
 
-    accordionToggle.onclick = () => {
-        const isHidden = otherYearsContainer.classList.toggle('hidden');
-        const icon = document.getElementById('accordion-icon');
-        if (icon) {
-            icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
-        }
-    };
+        container.appendChild(toggleBtn);
+        container.appendChild(listContainer);
+    }
 
-    container.appendChild(accordionToggle);
-    container.appendChild(otherYearsContainer);
+    createSectionAccordion("Ensino Fundamental", fundamentalAnos, false);
+    createSectionAccordion("Ensino Médio", medioAnos, false);
 }
 
 async function handleYearSelection(selectedYear) {
