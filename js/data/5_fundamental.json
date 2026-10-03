@@ -5251,6 +5251,944 @@
             ]
           }
         }
+      },
+      "meio_ambiente_poluicao": {
+        "titulo": "Meio Ambiente e Poluição",
+        "novo": true,
+        "subtopicos": {
+          "nosso_meio_ambiente": {
+            "titulo": "Nosso Meio Ambiente",
+            "questoes": [
+              {
+                "pergunta": "[Equilíbrio Ecológico]\nO equilíbrio ecológico acontece quando os seres vivos (plantas, animais e microrganismos) e os elementos naturais (água, ar, solo e luz) convivem em perfeita harmonia.\n\nO que acontece quando uma espécie de animal desaparece de um ecossistema?",
+                "alternativas": [
+                  "O ecossistema sofre um desequilíbrio, afetando a cadeia alimentar e outras espécies.",
+                  "A natureza melhora imediatamente porque sobra mais espaço livre.",
+                  "Não ocorre nenhuma alteração, pois os outros animais ignoram o desaparecimento.",
+                  "Todas as plantas ao redor deixam de crescer no mesmo dia."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Ciclo da Água]\nA água do nosso planeta está em constante movimento. O calor do Sol aquece as águas de rios, lagos e oceanos, transformando a água líquida em vapor.\n\nComo se chama o processo em que a água líquida se transforma em vapor e sobe para a atmosfera?",
+                "imagem": "images/geografia/ciclo_da_agua.png",
+                "alternativas": [
+                  "Evaporação",
+                  "Precipitação",
+                  "Condensação",
+                  "Transpiração subterrânea"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Ciclo da Água]\nQuando o vapor de água sobe para as camadas mais frias da atmosfera, ele arrefece e forma minúsculas gotículas de água que dão origem às nuvens.\n\nQual é o nome dessa etapa em que o vapor se transforma novamente em gotículas líquidas?",
+                "imagem": "images/geografia/ciclo_da_agua.png",
+                "alternativas": [
+                  "Condensação",
+                  "Solidificação",
+                  "Infiltração",
+                  "Evaporação"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Ciclo da Água e Chuva]\nQuando as nuvens ficam muito pesadas e cheias de gotículas de água acumuladas, a água cai de volta sobre a superfície terrestre sob a forma de chuva.\n\nQual é o termo geográfico e científico dado à queda de água da atmosfera?",
+                "alternativas": [
+                  "Precipitação",
+                  "Infiltração profunda",
+                  "Transpiração",
+                  "Fusão"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Infiltração e Aquíferos]\nParte da água que cai com as chuvas penetra nas camadas superficiais da terra, alimentando as plantas e abastecendo os lençóis freáticos subterrâneosdelete.\n\nComo se chama a passagem da água da chuva para o interior do solo?",
+                "alternativas": [
+                  "Infiltração",
+                  "Evaporação",
+                  "Ebulição",
+                  "Erosão"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[A Importância dos Mananciais]\nOs mananciais são todas as fontes de água doce superficiais ou subterrâneas que podem ser aproveitadas para abastecer as cidades e comunidadesdelete.\n\nAssinale a opção que apresenta apenas exemplos de mananciaisdelete:",
+                "alternativas": [
+                  "Rios, lagos, represas e lençóis freáticosdelete.",
+                  "Águas do oceano e mares salgados.",
+                  "Piscinas tratadas e caixas de água residenciais.",
+                  "Esgoto canalizado e águas industriais."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Mata Ciliar e Proteção das Águas]\nA vegetação que nasce e cresce ao longo das margens dos rios funciona como os cílios dos nossos olhos, protegendo o leito das águas contra desmoronamentos de terra.\n\nQual é o nome dessa vegetação protetora das margens dos rios?",
+                "imagem": "images/geografia/mata_ciliar.png",
+                "alternativas": [
+                  "Mata Ciliar",
+                  "Floresta de Coníferas",
+                  "Vegetação Desértica",
+                  "Plantação de Eucalipto"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Assoreamento dos Rios]\nQuando as árvores das margens de um rio são desmatadas, a chuva arrasta a terra das margens diretamente para o fundo do leito do rio, tornando-o rasodelete.\n\nComo chamamos esse acúmulo de terra e sedimentos no fundo dos riosdelete?",
+                "alternativas": [
+                  "Assoreamentodelete",
+                  "Eutrofização",
+                  "Infiltração limpa",
+                  "Compostagem fluvial"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Tipos de Solo: Arenoso]\nO solo arenoso possui grãos maiores e bastante espaço entre eles, fazendo com que a água escorra com grande facilidade sem se fixar por muito tempo.\n\nPodemos afirmar que o solo arenoso é:",
+                "alternativas": [
+                  "Muito permeável, retendo pouca água e nutrientes.",
+                  "Muito impermeável, formando poças e lamas com facilidade.",
+                  "O mais rico em matéria orgânica para plantar verduras.",
+                  "Totalmente rochoso e sem porosidade."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Tipos de Solo: Argiloso]\nO solo argiloso é composto por partículas pequeninas e muito unidas. Quando chove, ele retém água facilmente e fica pegajoso e barrento.\n\nQual é a principal característica da argila presente nesse solo?",
+                "alternativas": [
+                  "Baixa permeabilidade, retendo muita água.",
+                  "Extrema secura, deixando a água passar instantaneamente.",
+                  "Incapacidade de reter humidade.",
+                  "Formação exclusiva a partir de restos plásticos."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Tipos de Solo: Humífero]\nO solo humífero (ou terra preta) contém grande quantidade de matéria orgânica decomposta, originada de folhas secas, frutos caídos e restos de organismos.\n\nPor que o solo humífero é considerado ideal para a agricultura?",
+                "alternativas": [
+                  "Porque é fértil, fofo e rico em nutrientes para as raízes.",
+                  "Porque é composto apenas por areia pura de praia.",
+                  "Porque não absorve água, evitando humidade nas folhas.",
+                  "Porque impede que qualquer semente germine."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Solo Calcário]\nO solo calcário possui elevada quantidade de pedras e derivados de cálcio, sendo comum em regiões secas.\n\nEm geral, esse tipo de solo é classificado como:",
+                "alternativas": [
+                  "Seco e pouco fértil para a maioria dos plantios comuns.",
+                  "Extremamente húmido e pantanoso o ano inteiro.",
+                  "O mais indicado para hortas domésticas de alface.",
+                  "Rico em húmus e adubo orgânico natural."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Importância da Agricultura]\nA agricultura é a atividade de cultivo da terra para produzir alimentos e matérias-primas vitais para a sobrevivência de humanos e animaisdelete.\n\nQual dos produtos abaixo vem diretamente da atividade agrícola?",
+                "alternativas": [
+                  "Feijão, arroz, legumes e frutas.",
+                  "Carvão mineral e chapas de aço.",
+                  "Plásticos e combustíveis sintéticosdelete.",
+                  "Cimento e tijolos de argamassa."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Curvas de Nível na Agricultura]\nEm terrenos inclinados e encostas de morros, plantar em linhas retas para baixo faz com que a enxurrada arraste os nutrientes do solodelete.\n\nQual técnica de plantio acompanha o relevo das encostas para conter a água e evitar a erosãodelete?",
+                "imagem": "images/geografia/curvas_de_nivel.png",
+                "alternativas": [
+                  "Curvas de nível (plantio em socalcos)delete",
+                  "Queimada rasa da encostadelete",
+                  "Desmatamento em linha retadelete",
+                  "Asfaltamento do terreno rural"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Rotação de Culturas]\nPlantar a mesma espécie vegetal na mesma área durante anos consecutivos desgasta determinados nutrientes do solo.\n\nO que é a rotação de culturas adotada pelos agricultores conscientes?",
+                "alternativas": [
+                  "Alternar diferentes espécies vegetais na mesma área ao longo do tempo.",
+                  "Girar os tratores em círculos durante a colheita mecânica.",
+                  "Plantar apenas uma semente por ano em toda a fazenda.",
+                  "Cobrir a terra com lonas plásticas para impedir o sol."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Adubação Orgânica]\nEm vez de utilizar grandes quantidades de produtos químicos industriais que contaminam os lençóis de água, muitos agricultores usam adubos biológicosdelete.\n\nO adubo orgânico é produzido principalmente a partir dedelete:",
+                "alternativas": [
+                  "Restos de vegetais decompostos, folhas e esterco animaldelete.",
+                  "Pedaços de vidro triturado e garrafas plásticasdelete.",
+                  "Óleo queimado de motor e tintas velhas.",
+                  "Metais pesados e pilhas desgastadasdelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Uso de Agrotóxicos]\nOs agrotóxicos e pesticidas são substâncias químicas aplicadas nas lavouras para eliminar pragas e insetosdelete.\n\nQual é o grande perigo ambiental associado ao uso excessivo de agrotóxicosdelete?",
+                "imagem": "images/geografia/pulverizacao_agrotoxico.png",
+                "alternativas": [
+                  "A chuva pode lavar essas substâncias, contaminando os rios e o solodelete.",
+                  "Eles fazem as plantas crescerem mais rápido sem gastar água.",
+                  "Eles purificam o ar de toda a região agrícoladelete.",
+                  "Eles transformam o solo arenoso em rocha sólida imediatamente."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Erosão do Solo]\nA erosão é o processo natural ou acelerado pelo ser humano de desgaste, transporte e deposição de terra e rochasdelete.\n\nO que deixa o solo mais desprotegido contra a erosão causada pelas chuvas fortesdelete?",
+                "alternativas": [
+                  "A retirada da cobertura vegetal e das árvores nativasdelete.",
+                  "A presença de uma floresta densa e preservada.",
+                  "O plantio de relva e plantas rasteiras nas encostas.",
+                  "A construção de cercas vivas ao redor da horta."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Polinização e Abelhas]\nAs abelhas e outros insetos transportam o pólen de flor em flor, permitindo a fecundação e o nascimento de frutos e sementes.\n\nPor que a preservação dos polinizadores é fundamental para o equilíbrio ecológico e a agricultura?",
+                "alternativas": [
+                  "Porque a maioria dos alimentos consumidos depende da polinização para se reproduzir.",
+                  "Porque as abelhas comem todas as pragas de gafanhotos das lavouras.",
+                  "Porque sem as abelhas as chuvas deixariam de cair no planeta.",
+                  "Porque o mel substitui a necessidade de água nos solos arenosos."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Minhoca: Engenheira do Solo]\nAs minhocas alimentam-se de restos orgânicos e cavam galerias no subsolo, produzindo o húmusdelete.\n\nDe que forma a atividade das minhocas ajuda a agricultura e o meio ambientedelete?",
+                "alternativas": [
+                  "Arejam o solo com os seus túneis e enriquecem a terra com nutrientes naturaisdelete.",
+                  "Secam completamente a humidade da terra para impedir lama.",
+                  "Destroem as raízes das plantas para que elas não cresçam demais.",
+                  "Consomem todos os grãos de areia transformando-os em pedras."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Camadas do Solo]\nAo cavar verticalmente a terra, é possível observar diferentes horizontes ou camadas: a matéria orgânica superficial, a terra mineral e a rocha-mãe.\n\nComo chamamos a rocha sólida que deu origem ao solo ao longo de milhares de anos?",
+                "alternativas": [
+                  "Rocha matriz (ou rocha-mãe)",
+                  "Rocha flutuante",
+                  "Camada plástica",
+                  "Sedimento orgânico superficial"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Transpiração Vegetal]\nNo ciclo da água, não são apenas os rios e lagos que libertam vapor. As árvores das grandes florestas também libertam vapor de água pelos poros das suas folhas.\n\nComo se chama a libertação de água pelas plantas na atmosfera?",
+                "alternativas": [
+                  "Evapotranspiração",
+                  "Floculação",
+                  "Decantação",
+                  "Infiltração subterrânea"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Rios Voadores]\nA Floresta Amazónica bombeia diariamente bilhões de litros de vapor de água para a atmosfera, que são transportados pelo vento para o Centro-Sul do Brasil e provocam chuvas.\n\nComo é conhecido esse grandioso fenómeno natural?",
+                "alternativas": [
+                  "Rios Voadores",
+                  "Tufões Tropicais",
+                  "Correntes Marítimas Secas",
+                  "Nuvens Poluidoras"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Desertificação]\nQuando um solo fértil perde toda a sua vegetação, sofre com queimadas e manejo inadequado sob clima árido, ele pode perder totalmente a capacidade de produzir vidadelete.\n\nQual é o nome desse grave processo de degradação da terra?",
+                "alternativas": [
+                  "Desertificação",
+                  "Oxigenação",
+                  "Filtração",
+                  "Reflorestamento"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Agricultura Sustentável]\nA agricultura sustentável busca produzir alimentos saudáveis respeitando os limites da natureza e conservando a terra para as futuras gerações.\n\nQual prática está alinhada à agricultura sustentável?",
+                "alternativas": [
+                  "Preservar nascentes, matas ciliares e usar adubos naturais.",
+                  "Despejar esgoto sem tratamento nos canais de irrigaçãodelete.",
+                  "Desmatar todas as matas vizinhas para ampliar o pastodelete.",
+                  "Queimar a vegetação após cada colheitadelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Água Doce no Mundo]\nA maior parte da água do planeta Terra é salgada e está nos oceanos. A água doce representa uma pequena fração, e a maioria dela está congelada nas calotas polares.\n\nDiante desse fato, qual atitude demonstra consciência ambiental?",
+                "alternativas": [
+                  "Economizar água doce nas tarefas diárias e evitar o desperdíciodelete.",
+                  "Deixar as torneiras abertas continuamente ao escovar os dentes.",
+                  "Lavar calçadas com mangueira todos os dias.",
+                  "Acreditar que a água limpa nunca poderá faltar."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Efeito da Queimada no Solo]\nAlguns agricultores ainda utilizam o fogo para limpar terrenos rapidamente antes do plantiodelete.\n\nPor que as queimadas são consideradas prejudiciais à fertilidade do solodelete?",
+                "alternativas": [
+                  "Porque o calor destrói microrganismos benéficos e nutrientes essenciaisdelete.",
+                  "Porque o fogo aumenta em excesso a humidade da terra.",
+                  "Porque as cinzas tornam o solo permeável demais como o vidro.",
+                  "Porque as chamas aceleram o crescimento de minhocas benéficasdelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Água Subterrânea e Poços]\nMuitas famílias no meio rural utilizam poços para captar água limpa de baixo da terra para beber e cozinhar.\n\nEssa água fica armazenada naturalmente em quais formações?",
+                "alternativas": [
+                  "Lençóis freáticos e aquíferos subterrâneosdelete.",
+                  "Nuvens baixas condensadas.",
+                  "Canos de esgoto pluvialdelete.",
+                  "Galerias de resíduos industriais."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Biodiversidade]\nA variedade de todas as formas de vida na Terra — desde pequenas bactérias até grandes árvores e animais — é chamada de biodiversidadedelete.\n\nPor que a biodiversidade é indispensável ao planeta?",
+                "alternativas": [
+                  "Porque cada ser vivo desempenha um papel essencial no equilíbrio do ecossistemadelete.",
+                  "Porque quanto mais espécies existirem, menos árvores serão necessárias.",
+                  "Porque os animais sobrevivem sem precisar de água ou oxigénio.",
+                  "Porque ela serve apenas para enfeitar as cidades turísticas."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Preservação das Florestas Nativas]\nAs árvores absorvem gás carbónico durante a fotossíntese e libertam oxigénio puro, além de manter a humidade do ar e segurar a terra com as suas raízesdelete.\n\nPreservar as matas nativas é fundamental para:",
+                "alternativas": [
+                  "Manter o equilíbrio climático, proteger as nascentes e conservar a fauna.",
+                  "Garantir que as cidades não tenham sombras em dias de verão.",
+                  "Aumentar o calor extremo e secar os rios da regiãodelete.",
+                  "Impedir a infiltração da água da chuva no subsolo."
+                ],
+                "correta": 0
+              }
+            ]
+          },
+          "perigo_da_poluicao": {
+            "titulo": "Perigo da Poluição",
+            "questoes": [
+              {
+                "pergunta": "[Poluição das Águas]\nO descarte de esgoto não tratado, lixo plástico e produtos químicos nos cursos de água causa a morte de peixes e impede o uso da água para consumo humanodelete.\n\nQual é uma das consequências diretas da contaminação das águas dos rios e praiasdelete?",
+                "imagem": "images/geografia/poluicao_rio_lixo.png",
+                "alternativas": [
+                  "Morte da fauna aquática e transmissão de doenças graves.",
+                  "Aumento da água potável disponível para as cidadesdelete.",
+                  "Crescimento saudável de corais marinhos.",
+                  "Purificação instantânea dos lençóis freáticosdelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição por Esgoto Doméstico]\nQuando casas e prédios não estão ligados a uma rede de saneamento básico, a água usada com fezes, sabão e gordura é lançada diretamente nos córregosdelete.\n\nComo chamamos o conjunto de canos e usinas que limpam essa água residual antes de devolvê-la aos riosdelete?",
+                "alternativas": [
+                  "Estação de Tratamento de Esgoto (ETE)delete",
+                  "Usina Termelétrica a Carvãodelete",
+                  "Aterro de Lixo Eletrónicodelete",
+                  "Estação de Transbordo de Metais"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Chorume nos Lixões]\nNos lixões a céu aberto, a matéria orgânica em decomposição mistura-se com a água da chuva e outros resíduos, produzindo um líquido escuro, fétido e muito tóxicodelete.\n\nQual é o nome desse líquido perigoso que pode infiltrar-se e contaminar o lençol freáticodelete?",
+                "alternativas": [
+                  "Chorumedelete",
+                  "Adubo líquido",
+                  "Lodo limpo",
+                  "Água potável mineral"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Derramamento de Petróleo]\nO petróleo é um combustível fóssil escuro e viscoso extraído em plataformas oceânicasdelete. Quando ocorrem vazamentos de navios ou poços, manchas de óleo cobrem a superfície do mardelete.\n\nPor que o óleo derramado no mar é letal para os animais aquáticos e aves marinhasdelete?",
+                "alternativas": [
+                  "Impede a passagem da luz solar, sufoca peixes e impregna as penas das aves impedindo o voodelete.",
+                  "Serve de alimento e faz com que os peixes se reproduzam sem controle.",
+                  "Aquece a água tornando o mar mais agradável para banhistas.",
+                  "Dissolve-se imediatamente na água sem deixar vestígios tóxicos."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição do Ar nas Cidades]\nAs chaminés de indústrias e os canos de escape de carros, camiões e autocarros libertam diariamente milhões de toneladas de gases tóxicos e fuligem na atmosferadelete.\n\nQuais problemas de saúde são frequentemente agravados pela poluição do ardelete?",
+                "imagem": "images/geografia/poluicao_ar_fabricas.png",
+                "alternativas": [
+                  "Doenças respiratórias como asma, bronquite, rinite e irritação nos olhos.",
+                  "Aumento da força dos músculos e da audição.",
+                  "Ossos mais resistentes e visão apurada.",
+                  "Cura de viroses e constipações comuns."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Chuva Ácida]\nGases poluentes libertados pela queima de carvão mineral e derivados do petróleo (como enxofre e óxidos de nitrogénio) combinam-se com o vapor de água nas nuvensdelete.\n\nEsse fenómeno gera precipitações com substâncias corrosivas conhecidas comodelete:",
+                "alternativas": [
+                  "Chuvas Ácidasdelete",
+                  "Orvalhos Doces",
+                  "Geadas Brancas",
+                  "Chuvas Minerais Naturais"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Efeito de Estufa e Aquecimento Global]\nO excesso de gases poluentes como o dióxido de carbono (CO2) cria uma camada na atmosfera que aprisiona calor excessivo próximo à superfície do planetadelete.\n\nQual é a principal consequência do aumento acelerado do efeito de estufadelete?",
+                "alternativas": [
+                  "Aumento da temperatura média global e alterações climáticas extremasdelete.",
+                  "Congelamento imediato de todos os mares tropicais.",
+                  "Fim completo das chuvas de verão no continente.",
+                  "Diminuição da incidência dos raios solares sobre as florestas."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Inversão Térmica]\nNos dias frios de inverno em grandes cidades com muito trânsito, uma camada de ar frio fica presa junto ao solo por uma camada de ar quente, impedindo que os poluentes se dispersem.\n\nComo chamamos esse fenómeno meteorológico que deixa o ar urbano muito cinzento e sufocante?",
+                "alternativas": [
+                  "Inversão Térmica",
+                  "Evaporação Forçada",
+                  "Tornado Pluvial",
+                  "Erosão Eólica"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição Sonora]\nO excesso de sons muito altos e contínuos provenientes de trânsito intenso, buzinas, obras com britadeiras e máquinas pesadas constitui poluição sonoradelete.\n\nO que a exposição contínua a níveis abusivos de barulho pode causar às pessoas?",
+                "alternativas": [
+                  "Stress, insónia, dores de cabeça e perda gradual da audição.",
+                  "Melhoria na concentração nos estudos escolares.",
+                  "Aumento da capacidade de respirar ar puro.",
+                  "Visão mais nítida em ambientes escuros."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição Sonora e a Fauna]\nA poluição sonora não afeta apenas os seres humanos; ela também atinge gravemente os animais que vivem em parques urbanos e florestas vizinhasdelete.\n\nDe que forma o barulho excessivo prejudica as aves e mamíferos?",
+                "alternativas": [
+                  "Dificulta a comunicação entre a espécie, afasta animais do seu habitat e perturba a reprodução.",
+                  "Ensina os animais a cantar canções de cidades.",
+                  "Ajuda as corujas a caçar melhor à luz do dia.",
+                  "Não causa impacto porque animais não escutam ruídos mecânicos."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição Luminosa]\nA proliferação excessiva de luzes artificiais potentes, letreiros luminosos e postes nas grandes cidades durante a noite gera a poluição luminosa.\n\nQual é um dos impactos diretos da poluição luminosa sobre a astronomia e a ciência?",
+                "alternativas": [
+                  "Impede a visualização nítida de estrelas, planetas e constelações no céu noturno.",
+                  "Faz os telescópios funcionarem com maior precisão e rapidez.",
+                  "Aumenta a escuridão do espaço exterior.",
+                  "Permite que o Sol brilhe durante as vinte e quatro horas do dia."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição Luminosa e Desorientação Animal]\nMuitos animais possuem hábitos noturnos e orientam-se pela luz suave da Lua e das estrelas, como filhotes de tartarugas marinhas e pássaros migratórios.\n\nO que acontece quando esses animais encontram iluminação artificial intensa nas orlas das praias?",
+                "alternativas": [
+                  "Ficam desorientados, seguem para a direção errada das avenidas e morrem atropelados ou predados.",
+                  "Aprendem a nadar mais rápido em direção ao oceano profundo.",
+                  "Constroem ninhos de metal nos postes de luz.",
+                  "Voltam a ser filhotes protegidos dentro dos ovos."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Perigo do Lixo Radioativo]\nO lixo radioativo (ou resíduo nuclear) é gerado principalmente por reatores de usinas nucleares e materiais médicos de radioterapia hospitalardelete.\n\nQual é a característica mais perigosa dos materiais radioativos?",
+                "alternativas": [
+                  "Emitem radiações invisíveis de alta energia que alteram as células vivas e provocam doenças graves.",
+                  "Cheiram como gás de cozinha e dissolvem-se em segundos na água da chuva.",
+                  "São facilmente comidos por minhocas no solo das hortasdelete.",
+                  "Viraram plástico comum se ficarem expostos ao ar livredelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Duração da Radiação]\nAlguns elementos químicos radioativos continuam a emitir partículas tóxicas durante centenas ou milhares de anos sem perder a atividade perigosa.\n\nPor causa dessa longa duração, como o lixo nuclear de alta atividade deve ser armazenado?",
+                "alternativas": [
+                  "Em recipientes blindados de chumbo e concreto, enterrados em depósitos subterrâneos ultra seguros.",
+                  "Em sacos plásticos vermelhos comuns de coleta seletiva na ruadelete.",
+                  "Lançado no fundo de rios para ser levado ao oceano com rapidezdelete.",
+                  "Queimado em fornos comuns para que a fumaça se espalhe no ardelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Acidente com Césio-137 em Goiânia]\nEm 1987, na cidade de Goiânia, a abertura indevida de uma cápsula de um aparelho de radioterapia abandonado liberou um pó azul brilhante altamente radioativo.\n\nEsse episódio histórico reforça a importância de:",
+                "alternativas": [
+                  "Identificar o símbolo internacional de radiação e nunca mexer em peças hospitalares abandonadas.",
+                  "Guardar pós coloridos desconhecidos dentro de casa para brincar.",
+                  "Vender peças médicas antigas em ferros-velhos de sucata.",
+                  "Lavar aparelhos eletrónicos com água de riodelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Símbolo de Perigo de Radiação]\nPara alertar sobre a presença de radioatividade perigosa, foi criado um símbolo internacional com um círculo central e três pás pretas sobre fundo amarelo ou magenta.\n\nAo avistar esse símbolo num contentor ou sala hospitalar, o que se deve fazer?",
+                "imagem": "images/geografia/simbolo_radioatividade.png",
+                "alternativas": [
+                  "Manter distância imediata e nunca abrir ou tocar no recipiente.",
+                  "Abrir a tampa para conferir se há brinquedos no interior.",
+                  "Deitar o conteúdo num contentor comum de papéisdelete.",
+                  "Lavar o frasco com água e detergente doméstico."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição Visual]\nA quantidade exagerada de cartazes publicitários, faixas, fios elétricos emaranhados e painéis luminosos nas cidades provoca a poluição visualdelete.\n\nQual é o impacto negativo da poluição visual no dia a dia urbanodelete?",
+                "alternativas": [
+                  "Provoca cansaço visual, stress e distrai motoristas no trânsito.",
+                  "Aumenta a quantidade de chuva ácida nos telhados das casasdelete.",
+                  "Faz as lâmpadas dos postes queimarem mais rápido.",
+                  "Deixa as calçadas escorregadias durante a caminhada."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição por Plásticos nos Oceanos]\nEstima-se que milhões de toneladas de sacolas plásticas, garrafas PET e canudinhos cheguem aos oceanos todos os anos pelos riosdelete.\n\nPor que as tartarugas marinhas muitas vezes ingerem sacolas plásticas flutuantesdelete?",
+                "alternativas": [
+                  "Porque confundem os sacos transparentes com águas-vivas, o seu alimento natural.",
+                  "Porque o plástico tem gosto de algas frescas marinhas.",
+                  "Porque as sacolas dissolvem-se como açúcar na boca dos répteis.",
+                  "Porque elas usam as sacolas para respirar debaixo de água."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Que São Microplásticos?]\nCom o passar dos anos, os objetos plásticos jogados na natureza sofrem a ação do sol e das ondas, fragmentando-se em pedacinhos minúsculos menores que cinco milímetros.\n\nEsses pedacinhos são conhecidos como:",
+                "alternativas": [
+                  "Microplásticos",
+                  "Minerais orgânicos",
+                  "Fibras vegetais",
+                  "Gotículas de chuva"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Microplásticos na Cadeia Alimentar]\nPor serem minúsculos, os microplásticos são engolidos por pequenos peixes e mariscos nos mares, que depois são comidos por peixes maiores e até por seres humanos.\n\nEsse processo é um exemplo de como a poluição:",
+                "alternativas": [
+                  "Retorna aos seres humanos através dos alimentos que consumimos.",
+                  "Desaparece magicamente ao entrar na água salgada.",
+                  "Ajuda os peixes a crescerem mais saudáveis e fortes.",
+                  "Melhora a qualidade das vitaminas presentes no pescado."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição do Solo por Metais Pesados]\nPilhas comuns, baterias de celular e lâmpadas fluorescentes contêm chumbo, mercúrio e cádmio, substâncias conhecidas como metais pesados.\n\nO que acontece quando esses materiais são jogados no lixo comum ou no quintal?",
+                "alternativas": [
+                  "Os metais pesados enferrujam, vazam e envenenam o solo e a água do subsolo.",
+                  "Eles transformam-se em adubo fértil para as árvores frutíferasdelete.",
+                  "Os componentes são comidos por minhocas sem qualquer danodelete.",
+                  "Eles evaporam para o céu como vapor de água limpo."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Poluição Térmica das Águas]\nAlgumas indústrias e usinas termelétricas utilizam a água de rios para arrefecer as suas caldeiras a vapor e depois devolvem essa água muito quente ao riodelete.\n\nComo o aumento súbito de temperatura da água prejudica a vida dos peixesdelete?",
+                "alternativas": [
+                  "A água mais quente retém menos oxigénio dissolvido, provocando o sufocamento dos peixes.",
+                  "Os peixes ficam muito ativos e começam a nadar com maior velocidade.",
+                  "A água morna impede a ocorrência de fungos e bactérias na naturezadelete.",
+                  "O rio congela imediatamente nas margens laterais."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Descarte Irregular de Entulhos]\nRestos de cimento, tijolos, caliças e pedras de reformas muitas vezes são descartados criminosamente nas margens de córregos e terrenos baldiosdelete.\n\nAlém de estragar a paisagem, esse descarte irregular provocadelete:",
+                "imagem": "images/geografia/descarte_entulho.png",
+                "alternativas": [
+                  "Entupimento de canais de drenagem, enchentes e abrigo para animais transmissores de doençasdelete.",
+                  "Melhoria na qualidade do trânsito dos pedestres nas calçadasdelete.",
+                  "Aumento da fertilidade da terra para plantio de hortaliças.",
+                  "Criação de parques florestais naturais para crianças."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Esmog Urbano - Smog]\nEm megalópoles, a mistura de fumaça emitida por automóveis e indústrias com a neblina natural cria uma névoa escura e espessa chamada 'smog'.\n\nEssa névoa poluente indica que:",
+                "alternativas": [
+                  "O ar está saturado de partículas poluentes e perigoso para respirar.",
+                  "A natureza está recuperando as suas florestas naquele bairrodelete.",
+                  "Choveu água pura mineral sem qualquer poeira.",
+                  "As pessoas devem praticar exercícios físicos intensos ao ar livre."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Queimada de Lixo Doméstico]\nAinda é comum que moradores em áreas sem coleta queimem plásticos e pneus no quintal para 'sumir' com os dejetos.\n\nPor que queimar lixo doméstico no quintal é perigoso e proibido por lei?",
+                "alternativas": [
+                  "Liberta fumaça com toxinas venenosas cancerígenas que afetam toda a vizinhança.",
+                  "Porque atrai insetos que adoram o cheiro da fumaça cinzenta.",
+                  "Porque o fogo limpa a camada de ozono com facilidade.",
+                  "Porque as cinzas plásticas se transformam em água pura potável."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Destino Incorreto de Óleo de Cozinha]\nQuando despejamos um litro de óleo usado de fritura na pia, ele percorre a canalização e chega aos rios e mares.\n\nQual é o grande perigo ambiental desse ato corriqueiro?",
+                "alternativas": [
+                  "O óleo não se mistura com a água, cria uma camada na superfície que impede a oxigenação e polui milhares de litros de água.",
+                  "O óleo alimenta os peixes filhotes com gorduras saudáveis.",
+                  "O óleo desentope a tubagem pública deixando a água mais transparente.",
+                  "O óleo transforma-se espontaneamente em sabão no fundo do rio."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Eutrofização das Lagoas]\nQuando grandes volumes de esgoto ou adubos agrícolas chegam a uma lagoa, a quantidade excessiva de nutrientes faz as algas proliferarem descontroladamentedelete.\n\nO que acontece quando essas algas morrem e apodrecem na água?",
+                "alternativas": [
+                  "Bactérias consomem todo o oxigénio da água na decomposição, matando os peixes por asfixia.",
+                  "A água fica cristalina e totalmente indicada para consumo humano.",
+                  "A lagoa enche-se de sal transformando-se num pequeno oceano.",
+                  "O fundo da lagoa torna-se ouro e prata maciça."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[A Camada de Ozono]\nA camada de gás ozono na alta atmosfera atua como um escudo protetor para o planeta Terra.\n\nQual é a principal função protetora da camada de ozono?",
+                "alternativas": [
+                  "Filtrar os raios ultravioleta (UV) emitidos pelo Sol, que podem causar queimaduras e cancro de pele.",
+                  "Impedir que as nuvens de chuva caiam sobre os continentes.",
+                  "Segurar os aviões de passageiros para que eles não caiam.",
+                  "Manter o calor dos fogões a gás dentro das residências."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Gases CFC e o Buraco no Ozono]\nNo século passado, geladeiras antigas e latas de aerossol usavam gases chamados Clorofluorcarbonetos (CFC), que subiam e destruíam as moléculas de ozono.\n\nCom a proibição desses gases por acordos mundiais, a camada de ozono passou a:",
+                "alternativas": [
+                  "Recuperar-se gradualmente ao longo das últimas décadas.",
+                  "Desaparecer por completo em todos os países do mundo.",
+                  "Cair sob a forma de neve ácida nos oceanos tropicais.",
+                  "Transformar o oxigénio em fumaça negra de chaminédelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Atitude Individual Contra a Poluição]\nPara reduzir os índices de poluição que sufocam as cidades e afetam o planeta, cidadãos conscientes adotam atitudes sustentáveis diáriasdelete.\n\nQual atitude contribui diretamente para diminuir a poluição do ar nas cidadesdelete?",
+                "alternativas": [
+                  "Utilizar transporte público, bicicleta ou caminhar a pé em trajetos curtosdelete.",
+                  "Usar o carro particular sozinho mesmo para ir à padaria na esquina.",
+                  "Comprar automóveis cada vez maiores e mais gastadores de combustível.",
+                  "Queimar folhas secas da calçada no final da tardedelete."
+                ],
+                "correta": 0
+              }
+            ]
+          },
+          "reciclagem_coleta_seletiva": {
+            "titulo": "Reciclagem e Coleta Seletiva",
+            "questoes": [
+              {
+                "pergunta": "[Regra Número Um da Reciclagem]\nDe acordo com os guias de reciclagem, para que os materiais recicláveis sejam aproveitados pelas indústrias, eles não podem estar misturados a resíduos orgânicosdelete.\n\nQual é a regra número um para que a reciclagem dê certodelete?",
+                "alternativas": [
+                  "Não misturar restos de comida com materiais recicláveisdelete.",
+                  "Queimar o papelão antes de colocar na lixeiradelete.",
+                  "Molhar os jornais com óleo de cozinha antes do descarte.",
+                  "Misturar baterias e celulares dentro das garrafas de refrigerantedelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[As Cores da Reciclagem: Lixeira Vermelha]\nA coleta seletiva utiliza cores padronizadas para facilitar o descarte e o encaminhamento correto dos resíduos industriaisdelete.\n\nQual material deve ser colocado no contentor de cor VERMELHAdelete?",
+                "imagem": "images/geografia/lixeira_vermelha_plastico.png",
+                "alternativas": [
+                  "Plásticos (garrafas PET, embalagens, tampinhas e sacolas plásticas).",
+                  "Vidros e espelhos quebrados.",
+                  "Jornais velhos e caixas de papelão.",
+                  "Latinhas de refrigerante e fios de cobre."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[As Cores da Reciclagem: Lixeira Azul]\nA lixeira de cor azul é destinada a materiais à base de celulose vegetaldelete.\n\nQuais itens devem ser depositados corretamente no contentor AZULdelete?",
+                "imagem": "images/geografia/lixeira_azul_papel.png",
+                "alternativas": [
+                  "Cadernos usados, caixas de papelão limpas, jornais e revistas.",
+                  "Canudos plásticos e garrafas de refrigerante vazias.",
+                  "Copos de vidro e frascos de molho de tomate.",
+                  "Cascas de banana e sobras de arroz."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[As Cores da Reciclagem: Lixeira Verde]\nOs vidros são materiais duradouros e 100% recicláveis.\n\nQue materiais devem ser descartados na lixeira VERDEdelete?",
+                "imagem": "images/geografia/lixeira_verde_vidro.png",
+                "alternativas": [
+                  "Garrafas, frascos e potes de vidro de conservadelete.",
+                  "Latas de alumínio e panelas de ferro amassadas.",
+                  "Embalagens plásticas de biscoito e sacolas de mercado.",
+                  "Caixas de ovos de papelão e envelopes de cartadelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[As Cores da Reciclagem: Lixeira Amarela]\nOs metais são fundidos em fornos industriais e transformam-se novamente em chapas novinhasdelete.\n\nO contentor AMARELO recebe quais itensdelete?",
+                "imagem": "images/geografia/lixeira_amarela_metal.png",
+                "alternativas": [
+                  "Latinhas de refrigerante de alumínio, latas de conserva e tampinhas de garrafadelete.",
+                  "Copos de vidro transparente e potes de geleiadelete.",
+                  "Garrafas de água mineral de plástico e baldes quebradosdelete.",
+                  "Livros escolares rasgados e cadernos velhosdelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[As Cores da Reciclagem: Lixeira Castanha/Marrom]\nRestos de comida, cascas de frutas e verduras, borras de café e folhas secas não devem ir para os contentores de lixo seco.\n\nQual é a cor da lixeira destinada aos resíduos ORGÂNICOS?",
+                "alternativas": [
+                  "Marrom (ou Castanho)",
+                  "Roxo brilhante",
+                  "Azul turquesadelete",
+                  "Dourado com listras pretas"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Limpeza das Embalagens Recicláveis]\nAo terminar o iogurte ou o molho de tomate, o que devemos fazer com a embalagem antes de descartá-la para a coleta seletivadelete?",
+                "alternativas": [
+                  "Passar uma água rápida para retirar o excesso de comida e deixar escorrerdelete.",
+                  "Encher a embalagem de terra e pedras para ficar mais pesada.",
+                  "Pintar a embalagem com tinta óleo impermeabilizante.",
+                  "Colocar resto de cascas de ovo podres dentro da garrafa."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Descarte Seguro de Vidro Partido]\nSe um copo de vidro ou prato se quebrar na cozinha da sua casa, como deve ser feito o descartedelete?",
+                "alternativas": [
+                  "Pedir ajuda a um adulto, enrolar os cacos em jornal ou colocá-los dentro de uma caixa para não ferir os coletoresdelete.",
+                  "Jogar os cacos soltos dentro de uma sacola plástica finadelete.",
+                  "Atirar o vidro quebrado diretamente pela janela no chão da rua.",
+                  "Enterrar os cacos num vaso de planta no quarto."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Que é Lixo Biodegradável?]\nNa história em quadrinhos do Tucano Ecologista, é explicado que nem todo lixo se comporta da mesma forma na natureza.\n\nO que define o lixo BIODEGRADÁVEL?",
+                "alternativas": [
+                  "Apresenta decomposição natural pela ação de bactérias e fungos, como cascas de frutas e restos de alimentos.",
+                  "É um material artificial que nunca se decompõe no meio ambiente.",
+                  "É composto unicamente por circuitos de computadores velhos.",
+                  "É um produto plástico criado a partir do petróleo bruto."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Que é Lixo Não Biodegradável?]\nAlguns materiais inventados pelo ser humano demoram centenas ou milhares de anos para sumir na natureza.\n\nQual dos seguintes itens é um exemplo de resíduo NÃO biodegradável?",
+                "alternativas": [
+                  "Garrafa plástica de refrigerante feita de petróleo.",
+                  "Casca de banana esquecida na horta.",
+                  "Folha de alface jogada no quintal.",
+                  "Pedaço de maçã comido na merenda."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Compostagem Doméstica e Escolar]\nA compostagem é a transformação de restos de cascas de vegetais, borras de café e folhas secas em adubo rico em nutrientes.\n\nQual é o principal produto final gerado pela compostagem bem-feita?",
+                "alternativas": [
+                  "Húmus orgânico fértil para enriquecer a terra das plantas.",
+                  "Chorume tóxico e radioativo com mau cheiro.",
+                  "Placas eletrónicas de computadores reciclados.",
+                  "Folhas de papel sulfite brancas."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O e-Lixo ou Lixo Eletrónico]\nTelemóveis estragados, pilhas, baterias, teclados e televisões velhas fazem parte do chamado e-Lixo.\n\nPor que o lixo eletrónico NÃO deve ser descartado com o lixo comum das residências?",
+                "imagem": "images/geografia/e_lixo_eletronico.png",
+                "alternativas": [
+                  "Porque contém substâncias tóxicas como chumbo e mercúrio que poluem o solo e a água.",
+                  "Porque as placas explodem espontaneamente com o calor da chuva.",
+                  "Porque as minhocas comem o teclado e morrem engasgadas.",
+                  "Porque ele vira adubo orgânico muito depressa nos sacos de lixo."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Logística Reversa]\nNa logística reversa, lojas e fabricantes de lâmpadas, pilhas, remédios e eletrónicos são responsáveis por receber de volta os produtos usados para dar-lhes um destino correto.\n\nQual atitude o consumidor deve tomar ao trocar as pilhas gastas de um controle remoto?",
+                "alternativas": [
+                  "Levar as pilhas usadas a um ponto de coleta especial em supermercados ou lojas.",
+                  "Jogar as pilhas no vaso sanitário e puxar a descarga com força.",
+                  "Enterrar as pilhas no jardim ao lado da horta de cenouras.",
+                  "Jogar as pilhas na lixeira azul de papéis do condomíniodelete."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Os 5 'Rs' da Sustentabilidade]\nA educação ambiental ensina que reciclar não é a única solução; existem outras ações fundamentais que começam com a letra Rdelete.\n\nQuais são os famosos 5 'Rs' da sustentabilidadedelete?",
+                "imagem": "images/geografia/cinco_rs_sustentabilidade.png",
+                "alternativas": [
+                  "Repensar, Recusar, Reduzir, Reutilizar e Reciclar.",
+                  "Romper, Rasgar, Riscar, Rolar e Recolher.",
+                  "Reclamar, Retirar, Roubar, Rastejar e Revender.",
+                  "Reabrir, Reaquecer, Repintar, Religar e Reacender."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Significado de REDUZIR]\nEntre as práticas conscientes, 'Reduzir' significa diminuir a quantidade de lixo e recursos naturais que consumimos.\n\nQual das alternativas demonstra o princípio de REDUZIR?",
+                "alternativas": [
+                  "Comprar apenas o essencial, dispensar embalagens desnecessárias e evitar desperdício.",
+                  "Comprar três brinquedos iguais toda semana para acumular em caixas.",
+                  "Usar cinco sacolas plásticas para carregar uma única maçã.",
+                  "Deixar luzes acesas em todos os cômodos vazios da casa à noite."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Significado de REUTILIZAR]\n'Reutilizar' consiste em dar uma nova utilidade a um objeto em vez de jogá-lo fora após o primeiro uso.\n\nQual ação representa a REUTILIZAÇÃO de um material?",
+                "alternativas": [
+                  "Usar potes de vidro de maionese higienizados para guardar temperos e botões.",
+                  "Levar uma lata de alumínio para ser derretida numa siderúrgica.",
+                  "Comprar pratos e copos descartáveis em todas as refeições.",
+                  "Jogar cadernos com páginas em branco diretamente no lixo."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Significado de RECUSAR]\n'Recusar' significa não aceitar produtos de empresas poluentes ou itens descartáveis de vida útil efêmera que geram montanhas de lixodelete.\n\nQual é um ótimo exemplo de RECUSAR?",
+                "alternativas": [
+                  "Recusar canudos e sacolinhas plásticas descartáveis, usando garrafa reutilizável.",
+                  "Recusar separar o lixo da sua casa para a coleta seletiva.",
+                  "Recusar água potável limpa em dias quentes de verão.",
+                  "Recusar doar roupas em bom estado que não servem mais."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Significado de REPENSAR]\n'Repensar' convida-nos a avaliar os nossos hábitos e necessidades antes de comprar por impulso ou moda passageiradelete.\n\nQual reflexão exemplifica o ato de REPENSAR antes de comprardelete?",
+                "alternativas": [
+                  "'Eu realmente preciso disso agora ou estou comprando apenas por influência da propaganda?'",
+                  "'Quantas coisas caras eu posso colocar no carrinho de compras hoje?'",
+                  "'Vou comprar tudo porque vi um anúncio colorido na televisão!'",
+                  "'Quanto mais lixo eu gerar, mais moderna será a minha casa.'"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Papel dos Catadores de Materiais Recicláveis]\nOs catadores e as cooperativas de reciclagem recolhem, separam e prensam toneladas de materiais descartados nas cidadesdelete.\n\nQual é o benefício social e ecológico do trabalho dos catadoresdelete?",
+                "alternativas": [
+                  "Geram renda para as suas famílias, reduzem o volume de lixo nos aterros e poupam matérias-primas da natureza.",
+                  "Aumentam a poluição nas calçadas das cidades.",
+                  "Impedem as fábricas de reaproveitar papel e metal.",
+                  "Destroem os contentores de coleta seletiva das escolas."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Tempo de Decomposição das Garrafas Plásticas]\nO plástico é feito a partir do petróleo e foi criado para ser extremamente resistentedelete.\n\nQuanto tempo uma garrafa PET comum pode demorar para se decompor na natureza se não for recicladadelete?",
+                "alternativas": [
+                  "Mais de 400 anos.",
+                  "Apenas duas semanas com chuva de verão.",
+                  "Três dias após ser aberta.",
+                  "Ela desaparece no solo em menos de um mês."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Tempo de Decomposição do Alumínio]\nAs latinhas de alumínio são leves e muito consumidas. Quando recicladas, economizam até 95% da energia elétrica necessária para produzir alumínio novo a partir da bauxita.\n\nNa natureza, quanto tempo uma lata de alumínio pode levar para se desgastardelete?",
+                "alternativas": [
+                  "De 100 a mais de 500 anos.",
+                  "Menos de vinte e quatro horas.",
+                  "Exatamente dez minutos debaixo de sol forte.",
+                  "Dois meses no fundo de um rio de água doce."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Tempo de Decomposição do Vidro]\nO vidro é feito a partir da areia fundida a temperaturas altíssimas e é impermeável ao tempodelete.\n\nQual é o tempo estimado de decomposição natural de uma garrafa de vidro jogada no ambientedelete?",
+                "alternativas": [
+                  "Tempo indeterminado (pode ultrapassar 4.000 anos).",
+                  "Apenas 6 meses no solo úmido.",
+                  "5 anos se ficar exposta ao vento.",
+                  "Dissolve-se na primeira chuva forte da estação."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Aterro Sanitário x Lixão a Céu Aberto]\nAo contrário dos lixões ilegais, um Aterro Sanitário é uma obra de engenharia projetada para proteger o meio ambientedelete.\n\nO que torna o Aterro Sanitário seguro para o solo e as águasdelete?",
+                "imagem": "images/geografia/aterro_sanitario.png",
+                "alternativas": [
+                  "O fundo é forrado com mantas impermeáveis, com canalização para tratar o chorume e captar os gases.",
+                  "O lixo é atirado diretamente num rio para navegar até ao mar.",
+                  "O lixo fica espalhado à vista de todos na beira da estrada sem cobertura.",
+                  "Não há qualquer controle e urubus e ratos circulam livremente."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Economia de Recursos Naturais]\nQuando reciclamos papéis velhos para fabricar papel novo, geramos grandes benefícios para o meio ambientedelete.\n\nO que é poupado na natureza ao reciclar papeldelete?",
+                "alternativas": [
+                  "Árvores deixam de ser derrubadas e economiza-se muita água e energia.",
+                  "Aumenta-se o corte de florestas nativas centenárias.",
+                  "Gasta-se muito mais petróleo bruto do subsolo.",
+                  "Secam-se todas as nascentes de água doce."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Papéis que NÃO Devem ir para a Reciclagem]\nNem todo papel pode ser reciclado na lixeira azul. Papéis com gordura ou produtos químicos impedem o processo de aproveitamento nas fábricasdelete.\n\nQual dos seguintes papéis NÃO pode ser reciclado com os papéis secosdelete?",
+                "alternativas": [
+                  "Papel higiênico usado, guardanapo engordurado e fita adesiva.",
+                  "Folhas de caderno usadas sem graxa.",
+                  "Caixas de papelão secas e limpas de encomendas.",
+                  "Jornais e revistas antigas sem humidade."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Ecobags e Sacolas de Tecido]\nUma forma prática de evitar as sacolas plásticas descartáveis no supermercado é carregar sacolas reutilizáveis de tecido ou lonadelete.\n\nEssas sacolas duráveis são conhecidas popularmente como:",
+                "alternativas": [
+                  "Ecobags",
+                  "Bolsas fósseis",
+                  "Embalagens térmicas descartáveis",
+                  "Sacos de lixo radioativo"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Símbolo das Três Setas Verdes da Reciclagem]\nVocê já deve ter reparado num triângulo formado por três setas que apontam continuamente umas para as outras em produtos e embalagensdelete.\n\nO que esse símbolo internacional (Fita de Möbius) representadelete?",
+                "imagem": "images/geografia/simbolo_reciclagem.png",
+                "alternativas": [
+                  "O ciclo contínuo da reciclagem e da reutilização de materiais.",
+                  "Que o produto é perigoso e vai explodir se for tocado.",
+                  "Que a embalagem deve ser jogada no esgoto doméstico.",
+                  "Que o item deve ser queimado numa fogueira ao ar livre."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[O Que Fazer com Medicamentos Vencidos?]\nComprimidos, xaropes e pomadas que passaram da data de validade não devem ser jogados no vaso sanitário nem no lixo comum.\n\nQual é o destino seguro para medicamentos vencidos?",
+                "alternativas": [
+                  "Entregá-los em pontos de coleta específicos de farmácias e postos de saúde.",
+                  "Despejar os remédios na pia da cozinha com água corrente.",
+                  "Enterrar os frascos na horta para servir de adubo.",
+                  "Queimar os comprimidos na churrasqueira do quintal."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Economia Circular]\nA Economia Circular propõe um modelo em que os produtos são pensados para durar, ser consertados e, no fim da vida útil, virar peças de novos produtos, acabando com a ideia de lixodelete.\n\nEsse modelo sustentável contrapõe-se a qual prática prejudicialdelete?",
+                "alternativas": [
+                  "À cultura do consumismo descartável de 'extrair, fabricar, usar e jogar fora'.",
+                  "Ao cuidado e respeito pelas águas e florestas nativas.",
+                  "À separação correta de resíduos na coleta seletiva.",
+                  "Ao uso de materiais biodegradáveis que viram adubo."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Ser um Herói do Meio Ambiente]\nCuidar do nosso planeta Terra começa com atitudes simples nas nossas casas, escolas e bairros todos os diasdelete.\n\nComo cada aluno do 5º ano pode ajudar o meio ambiente no seu dia a diadelete?",
+                "alternativas": [
+                  "Separar o lixo reciclável, fechar a torneira, economizar energia e valorizar a natureza.",
+                  "Jogar papéis de doces no chão das praças e praias.",
+                  "Deixar luzes e televisões ligadas sem ninguém assistindo.",
+                  "Pedir sacolas plásticas novas para carregar cada caneta."
+                ],
+                "correta": 0
+              }
+            ]
+          }
+        }
       }
     }
   },
