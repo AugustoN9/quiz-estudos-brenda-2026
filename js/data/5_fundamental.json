@@ -2355,6 +2355,104 @@
             ]
           }
         }
+      },
+      "transformacao_comprimento": {
+        "titulo": "Transformação de Medidas de Comprimento",
+        "questoes": [
+          {
+            "pergunta": "[Unidade Fundamental e Múltiplos]\nA unidade fundamental de medida de comprimento no Sistema Internacional é o metro (m). As unidades maiores que o metro são os seus múltiplos: decâmetro (dam), hectómetro (hm) e quilómetro (km).\n\nQuantos metros equivalem exatamente a 1 hectómetro (hm)?",
+            "alternativas": ["100 m", "10 m", "1.000 m", "0,01 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Submúltiplos do Metro]\nOs submúltiplos correspondem a fracções do metro para medir extensões menores: decímetro (dm = 0,1 m), centímetro (cm = 0,01 m) e milímetro (mm = 0,001 m).\n\nQual é a relação correcta entre o metro e o milímetro?",
+            "alternativas": [
+              "1 metro equivale a 1.000 milímetros.",
+              "1 metro equivale a 100 milímetros.",
+              "1 metro equivale a 10 milímetros.",
+              "1 metro equivale a 0,001 milímetros."
+            ],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Quadro Posicional: Leitura por Extenso]\nNa escrita de medidas de comprimento, lê-se primeiro a parte inteira acompanhada da sua unidade e, a seguir, a parte decimal acompanhada da denominação da última ordem escrita.\n\nComo se lê correctamente a medida 3,65 km no quadro posicional?",
+            "imagem": "images/matematica/tabela_conversao_medidas.png",
+            "alternativas": [
+              "Três quilómetros e sessenta e cinco decâmetros.",
+              "Três quilómetros e sessenta e cinco metros.",
+              "Trinta e seis quilómetros e cinco metros.",
+              "Três metros e sessenta e cinco centímetros."
+            ],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Leitura com Zero na Parte Inteira]\nQuando a parte inteira da medida é zero, lemos apenas a parte decimal acompanhada do nome da última ordem atingida na tabela[cite: 183].\n\nQual é a leitura por extenso da medida 0,472 m registada no quadro de ordens?",
+            "imagem": "images/matematica/tabela_conversao_medidas.png",
+            "alternativas": [
+              "Quatrocentos e setenta e dois milímetros.",
+              "Quatrocentos e setenta e dois centímetros.",
+              "Quarenta e sete decímetros e dois metros.",
+              "Zero metros e quatrocentos decímetros."
+            ],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Regra Prática: Unidade Superior para Inferior]\nPara transformar uma unidade de comprimento numa unidade imediatamente inferior (para a direita na tabela), multiplica-se por 10, deslocando a vírgula uma casa decimal para a direita e completando com zeros quando necessário[cite: 184].\n\nAo converter 7,3 km para metros (três ordens à direita: hm, dam, m), obtemos:",
+            "alternativas": ["7.300 m", "730 m", "73.000 m", "0,0073 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Conversão: dam para cm]\nNa tabela (km - hm - dam - m - dm - cm - mm), para passar de decâmetros (dam) para centímetros (cm), avançamos 3 casas para a direita, ou seja, multiplicamos por 1.000[cite: 183, 184, 185].\n\nQual é o valor de 43,4 dam expresso em centímetros (cm)?",
+            "alternativas": ["43.400 cm", "4.340 cm", "434 cm", "0,434 cm"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Conversão: hm para m]\nPara transformar hectómetros em metros, deslocamo-nos duas casas para a direita no quadro de ordens (multiplicando por 100)[cite: 183, 185].\n\nTransformando 0,062 hm em metros (m), encontramos:",
+            "alternativas": ["6,2 m", "62 m", "0,62 m", "620 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Regra Prática: Unidade Inferior para Superior]\nPara converter uma unidade de comprimento numa unidade imediatamente superior (para a esquerda na tabela), divide-se por 10, deslocando a vírgula uma casa para a esquerda e acrescentando zeros se necessário[cite: 185].\n\nAo converter 6,4 dm para metros (m), qual é o resultado?",
+            "alternativas": ["0,64 m", "64 m", "0,064 m", "640 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Conversão: m para km]\nO metro é uma unidade inferior ao quilómetro. Para passar de metros para quilómetros, andamos 3 ordens para a esquerda na tabela (dam, hm, km), o que significa dividir por 1.000[cite: 183, 185].\n\nUma distância de 2.694 metros corresponde a quantos quilómetros?",
+            "alternativas": ["2,694 km", "26,94 km", "0,2694 km", "269,4 km"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Conversão: cm para m]\nComo 1 metro possui 100 centímetros, para transformar centímetros em metros basta deslocar a vírgula duas ordens decimais para a esquerda (dividir por 100)[cite: 183, 185].\n\nQual é a representação em metros de 8,2 cm?",
+            "alternativas": ["0,082 m", "0,82 m", "82 m", "0,0082 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Preenchimento do Quadro em Metros]\nAo registar a medida 32,15 dam no quadro posicional e ler o valor em metros, a vírgula desloca-se uma ordem para a direita, posicionando-se após o 1[cite: 185].\n\nQuanto vale 32,15 dam em metros?",
+            "imagem": "images/matematica/tabela_conversao_medidas.png",
+            "alternativas": ["321,5 m", "3.215 m", "32,15 m", "3,215 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Operações com Medidas de Comprimento]\nPara somar ou subtrair medidas de comprimento expressas em unidades diferentes, devemos primeiro convertê-las para a mesma unidade e manter vírgula debaixo de vírgula[cite: 151, 186].\n\nCalcule a soma: 18,95 m + 6 m + 0,43 m =",
+            "alternativas": ["25,38 m", "24,95 m", "25,00 m", "26,38 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Multiplicação de Medida Decimal]\nUma peça de fita mede 4,328 metros. Se comprarmos 3 peças idênticas, qual será o comprimento total obtido[cite: 186]?",
+            "alternativas": ["12,984 m", "12,96 m", "13,00 m", "12,684 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Problema: Percurso em Quilómetros e Metros]\nA distância total que um motociclista precisa de percorrer é de 6,57 km. Ele já percorreu 3,8 km[cite: 187]. Sabendo que 1 km = 1.000 m, quantos metros ainda lhe faltam percorrer[cite: 183, 187]?",
+            "alternativas": ["2.770 m", "2.700 m", "3.200 m", "277 m"],
+            "correta": 0
+          },
+          {
+            "pergunta": "[Problema: Estrada e Metros Restantes]\nDe uma estrada com extensão total de 565 km, André já percorreu 347 km[cite: 187]. Quantos metros faltam para completar o percurso[cite: 187]?",
+            "alternativas": ["218.000 m", "21.800 m", "2.180 m", "218 m"],
+            "correta": 0
+          }
+        ]
       }
     }
   },
