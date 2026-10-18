@@ -7687,6 +7687,376 @@
                 "correta": 0
               }
             ]
+          },
+          "review_abilities_green_routine": {
+            "titulo": "Review: Abilities, Green Habits & Composting",
+            "novo": true,
+            "questoes": [
+              {
+                "pergunta": "[Clues & Definitions]\nWhich activity matches this description:\n'You use your voice and sometimes a microphone to make music.'",
+                "alternativas": [
+                  "Sing",
+                  "Juggle",
+                  "Jump rope",
+                  "Climb trees"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Clues & Definitions]\nWhich activity matches this description:\n'You throw balls or objects into the air and keep them moving.'",
+                "alternativas": [
+                  "Juggle",
+                  "Sing",
+                  "Ride a horse",
+                  "Do magic tricks"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Clues & Definitions]\nWhich activity matches this description:\n'You jump over a rope that swings under your feet.'",
+                "alternativas": [
+                  "Jump rope",
+                  "Slackline",
+                  "Climb trees",
+                  "Juggle"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Clues & Definitions]\nWhich activity matches this description:\n'You use a hat, cards, or a special kit to surprise people.'",
+                "alternativas": [
+                  "Do magic tricks",
+                  "Sing",
+                  "Ride a horse",
+                  "Jump rope"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Clues & Definitions]\nWhich activity matches this description:\n'You use your hands and feet to go up on a tree in the park.'",
+                "alternativas": [
+                  "Climb trees",
+                  "Juggle",
+                  "Slackline",
+                  "Ride a horse"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Clues & Definitions]\nWhich activity matches this description:\n'You sit on an animal and control it while it walks or runs.'",
+                "alternativas": [
+                  "Ride a horse",
+                  "Climb trees",
+                  "Do magic tricks",
+                  "Jump rope"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Unscramble the question]\nReorganize the words to form a correct question with 'Can':\nyou / can / slackline / ?",
+                "alternativas": [
+                  "Can you slackline?",
+                  "You can slackline?",
+                  "Can slackline you?",
+                  "Slackline can you?"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Unscramble the question]\nReorganize the words to form a correct question with 'Can':\nyour / friend / can / juggle / best / ?",
+                "alternativas": [
+                  "Can your best friend juggle?",
+                  "Your best friend can juggle?",
+                  "Can juggle your best friend?",
+                  "Best friend can your juggle?"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Unscramble the question]\nReorganize the words to form a correct question with 'Can':\nbike / a / ride / father / can / your / ?",
+                "alternativas": [
+                  "Can your father ride a bike?",
+                  "Your father can ride a bike?",
+                  "Can ride a bike your father?",
+                  "Can your bike ride a father?"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Green Actions]\nComplete the sentence:\n'Don't leave the tap running while brushing your teeth, or you will _____.'",
+                "alternativas": [
+                  "waste water",
+                  "reuse water",
+                  "sort the trash",
+                  "pick up garbage"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Green Actions]\nComplete the sentence:\n'To protect the park, we should always _____ from the grass.'",
+                "alternativas": [
+                  "pick up garbage",
+                  "litter",
+                  "waste water",
+                  "reuse water"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Green Actions]\nComplete the sentence:\n'At home, we _____ into paper, plastic, glass, and metal.'",
+                "alternativas": [
+                  "sort the trash",
+                  "litter",
+                  "waste water",
+                  "pick up garbage"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Green Actions]\nComplete the sentence:\n'It is bad for the environment to _____ on the streets!'",
+                "alternativas": [
+                  "litter",
+                  "pick up garbage",
+                  "sort the trash",
+                  "reuse water"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Green Actions]\nComplete the sentence:\n'My family uses rain water to _____ and wash the yard.'",
+                "alternativas": [
+                  "reuse water",
+                  "waste water",
+                  "litter",
+                  "pick up garbage"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Composting - Green vs. Brown Materials]\nAccording to the composting guide, 'Brown Materials' are dry, dark, and rich in carbon. Which of the following is a Brown Material?",
+                "alternativas": [
+                  "Dry leaves, newspaper, and sawdust",
+                  "Fruit and vegetable scraps",
+                  "Coffee grounds",
+                  "Fresh teabags"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Composting - Green vs. Brown Materials]\nAccording to the text, 'Green Materials' are wet, fresh, and rich in nitrogen. Which of the following is a Green Material?",
+                "alternativas": [
+                  "Fruit and vegetable scraps, eggshells, and coffee grounds",
+                  "Branches and dry sawdust",
+                  "Straw",
+                  "Dry leaves and old newspaper"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Composting Categorization]\nIn which category does 'Straw' belong in a compost bin?",
+                "alternativas": [
+                  "Brown Materials (rich in carbon)",
+                  "Green Materials (rich in nitrogen)",
+                  "Non-compostable plastic",
+                  "Hazardous electronic waste"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Composting Categorization]\nIn which category do 'Teabags and Coffee grounds' belong?",
+                "alternativas": [
+                  "Green Materials (rich in nitrogen)",
+                  "Brown Materials (rich in carbon)",
+                  "Recyclable metal",
+                  "Inorganic dry waste"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Simple Present - Questions]\nComplete with the correct auxiliary and verb in the Simple Present:\n'_____ your sister _____ (reuse) plastic bottles at home?'",
+                "alternativas": [
+                  "Does / reuse",
+                  "Do / reuses",
+                  "Is / reusing",
+                  "Does / reuses"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Simple Present - Negative Form]\nComplete with the correct negative form of the verb:\n'Paul and Mark _____ (not / pick up) garbage after the picnic.'",
+                "alternativas": [
+                  "don't pick up",
+                  "doesn't pick up",
+                  "not pick up",
+                  "aren't picking"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Simple Present - Affirmative Form]\nComplete the sentence with the correct verb form:\n'My parents _____ (sort) the trash every week.'",
+                "alternativas": [
+                  "sort",
+                  "sorts",
+                  "sorting",
+                  "does sort"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Simple Present - Questions]\nComplete the question:\n'_____ you _____ (waste) water when you wash your hands?'",
+                "alternativas": [
+                  "Do / waste",
+                  "Does / waste",
+                  "Do / wastes",
+                  "Are / waste"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Simple Present - Negative Form]\nComplete the sentence with the correct negative form for the 3rd person singular:\n'Sarah _____ (not / litter) in the park.'",
+                "alternativas": [
+                  "doesn't litter",
+                  "don't litter",
+                  "not litters",
+                  "isn't litter"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Reading Comprehension - Lucas's Routine]\nRead the text:\n'Hi! My name is Lucas. I am 10 years old. In my free time, I love to ride a bike and jump rope with my friends, but I can't slackline yet...'\n\nIs the sentence 'Lucas can slackline very well' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "False (F)",
+                  "True (T)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Reading Comprehension - Lucas's Routine]\nAccording to the text:\n'In my free time, I love to ride a bike and jump rope with my friends...'\n\nIs the statement 'Lucas likes to ride a bike in his free time' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "True (T)",
+                  "False (F)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Reading Comprehension - Lucas's Routine]\nAccording to the text:\n'At home, my family works together to help the Earth. We sort the trash and use reusable shopping bags at the supermarket...'\n\nIs the statement 'Lucas's family uses reusable bags at the supermarket' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "True (T)",
+                  "False (F)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[Reading Comprehension - Lucas's Routine]\nAccording to the text:\n'We put brown materials like dry leaves and newspaper, and green materials like coffee grounds and fruit scraps to make compost.'\n\nIs the statement 'Coffee grounds and fruit scraps are brown materials' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "False (F)",
+                  "True (T)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 1 - Lucas's Green Routine]\n'Hi! My name is Lucas. I am 10 years old. In my free time, I love to ride a bike and jump rope with my friends, but I can't slackline yet. At home, my family works together to help the Earth. We sort the trash and use reusable shopping bags at the supermarket. We also have a compost bin in our garden! We put brown materials like dry leaves and newspaper, and green materials like coffee grounds and fruit scraps to make compost.'\n\nIs the sentence 'Lucas can slackline very well' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "False (F)",
+                  "True (T)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 1 - Lucas's Green Routine]\n'Hi! My name is Lucas. I am 10 years old. In my free time, I love to ride a bike and jump rope with my friends, but I can't slackline yet. At home, my family works together to help the Earth. We sort the trash and use reusable shopping bags at the supermarket. We also have a compost bin in our garden! We put brown materials like dry leaves and newspaper, and green materials like coffee grounds and fruit scraps to make compost.'\n\nIs the statement 'Lucas likes to ride a bike in his free time' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "True (T)",
+                  "False (F)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 1 - Lucas's Green Routine]\n'Hi! My name is Lucas. I am 10 years old. In my free time, I love to ride a bike and jump rope with my friends, but I can't slackline yet. At home, my family works together to help the Earth. We sort the trash and use reusable shopping bags at the supermarket. We also have a compost bin in our garden! We put brown materials like dry leaves and newspaper, and green materials like coffee grounds and fruit scraps to make compost.'\n\nIs the statement 'Lucas's family uses reusable bags at the supermarket' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "True (T)",
+                  "False (F)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 1 - Lucas's Green Routine]\n'Hi! My name is Lucas. I am 10 years old. In my free time, I love to ride a bike and jump rope with my friends, but I can't slackline yet. At home, my family works together to help the Earth. We sort the trash and use reusable shopping bags at the supermarket. We also have a compost bin in our garden! We put brown materials like dry leaves and newspaper, and green materials like coffee grounds and fruit scraps to make compost.'\n\nIs the statement 'Coffee grounds and fruit scraps are brown materials' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "False (F)",
+                  "True (T)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 2 - Emma's Eco School Day]\n'Hello! I am Emma and I am 10. In my free time, I can juggle three balls, but I cannot do magic tricks. At my school, we learn to care for nature every day. We never litter on the playground, and we pick up garbage when we see it on the grass. We also turn off the tap to avoid wasting water after washing our hands. My teacher says that small green actions make our school and our planet much cleaner!'\n\nIs the sentence 'Emma can do magic tricks very easily' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "False (F)",
+                  "True (T)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 2 - Emma's Eco School Day]\n'Hello! I am Emma and I am 10. In my free time, I can juggle three balls, but I cannot do magic tricks. At my school, we learn to care for nature every day. We never litter on the playground, and we pick up garbage when we see it on the grass. We also turn off the tap to avoid wasting water after washing our hands. My teacher says that small green actions make our school and our planet much cleaner!'\n\nIs the statement 'Emma and her friends pick up garbage from the grass' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "True (T)",
+                  "False (F)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 2 - Emma's Eco School Day]\n'Hello! I am Emma and I am 10. In my free time, I can juggle three balls, but I cannot do magic tricks. At my school, we learn to care for nature every day. We never litter on the playground, and we pick up garbage when we see it on the grass. We also turn off the tap to avoid wasting water after washing our hands. My teacher says that small green actions make our school and our planet much cleaner!'\n\nAccording to the text, what does Emma do to avoid wasting water?",
+                "alternativas": [
+                  "She turns off the tap after washing her hands.",
+                  "She washes her hands with rainwater only.",
+                  "She drinks all the water from the school tap.",
+                  "She never washes her hands at school."
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 2 - Emma's Eco School Day]\n'Hello! I am Emma and I am 10. In my free time, I can juggle three balls, but I cannot do magic tricks. At my school, we learn to care for nature every day. We never litter on the playground, and we pick up garbage when we see it on the grass. We also turn off the tap to avoid wasting water after washing our hands. My teacher says that small green actions make our school and our planet much cleaner!'\n\nIs the statement 'The students litter on the school playground' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "False (F)",
+                  "True (T)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 3 - Oliver's Backyard Compost]\n'My name is Oliver. On weekends, I love to climb trees and sing songs in the yard, but I cannot ride a horse. My grandpa and I have a big compost bin next to our garden. Every morning, we collect brown materials like straw and dry branches. Then, we add green materials such as eggshells, teabags, and banana peels. In a few months, this mixture turns into dark, rich soil that helps our flowers and vegetables grow healthy!'\n\nIs the statement 'Oliver can ride a horse on weekends' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "False (F)",
+                  "True (T)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 3 - Oliver's Backyard Compost]\n'My name is Oliver. On weekends, I love to climb trees and sing songs in the yard, but I cannot ride a horse. My grandpa and I have a big compost bin next to our garden. Every morning, we collect brown materials like straw and dry branches. Then, we add green materials such as eggshells, teabags, and banana peels. In a few months, this mixture turns into dark, rich soil that helps our flowers and vegetables grow healthy!'\n\nAccording to the text, which items do Oliver and his grandpa collect as brown materials?",
+                "alternativas": [
+                  "Straw and dry branches",
+                  "Eggshells and banana peels",
+                  "Plastic bottles and cups",
+                  "Fresh teabags and fruit scraps"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 3 - Oliver's Backyard Compost]\n'My name is Oliver. On weekends, I love to climb trees and sing songs in the yard, but I cannot ride a horse. My grandpa and I have a big compost bin next to our garden. Every morning, we collect brown materials like straw and dry branches. Then, we add green materials such as eggshells, teabags, and banana peels. In a few months, this mixture turns into dark, rich soil that helps our flowers and vegetables grow healthy!'\n\nIs the statement 'Eggshells and teabags are used as green materials' TRUE (T) or FALSE (F)?",
+                "alternativas": [
+                  "True (T)",
+                  "False (F)"
+                ],
+                "correta": 0
+              },
+              {
+                "pergunta": "[TEXT 3 - Oliver's Backyard Compost]\n'My name is Oliver. On weekends, I love to climb trees and sing songs in the yard, but I cannot ride a horse. My grandpa and I have a big compost bin next to our garden. Every morning, we collect brown materials like straw and dry branches. Then, we add green materials such as eggshells, teabags, and banana peels. In a few months, this mixture turns into dark, rich soil that helps our flowers and vegetables grow healthy!'\n\nWhat happens to the green and brown mixture after a few months?",
+                "alternativas": [
+                  "It turns into dark, rich soil that nourishes plants.",
+                  "It becomes toxic garbage that harms the yard.",
+                  "It disappears completely without leaving any trace.",
+                  "It turns into dry plastic bottles."
+                ],
+                "correta": 0
+              }
+            ]
           }
         }
       }
