@@ -33,12 +33,13 @@ const topicLabels = {
     'decimais_nivel_4': 'Decimais: Cotidiano e Medidas',
     'decimais_nivel_5': 'Decimais: Multiplicação e Divisão',
 
-    // Matemática - Grandezas e Medidas (quando gravado como nivel_X)
+    // Matemática - Grandezas e Medidas
     'medidas_nivel_1': 'Medidas: Unidades de Comprimento',
     'medidas_nivel_2': 'Medidas: Problemas com Comprimento',
     'medidas_nivel_3': 'Medidas: Perímetro e Área',
     'medidas_nivel_4': 'Medidas: Malha Quadriculada',
     'medidas_nivel_5': 'Medidas: Volume e Capacidade',
+    'transformacao_comprimento': 'Transformação de Medidas de Comprimento',
     'nivel_1': 'Nível 1: Introdução e Conceitos',
     'nivel_2': 'Nível 2: Problemas e Operações',
     'nivel_3': 'Nível 3: Perímetro e Área',
@@ -75,6 +76,9 @@ const topicLabels = {
     'migracoes_populacao': 'Migrações da População',
     'distribuicao_por_faixa_etaria': 'Faixa Etária e Pirâmide',
     'populacao_trabalho_brasil': 'População e Trabalho (PEA)',
+    'nosso_meio_ambiente': 'Nosso Meio Ambiente',
+    'perigo_da_poluicao': 'Perigo da Poluição',
+    'reciclagem_coleta_seletiva': 'Reciclagem e Coleta Seletiva',
 
     // História
     'historia_anterior_escrita': 'História Anterior à Escrita',
@@ -87,7 +91,10 @@ const topicLabels = {
     // Língua Inglesa
     'telling_time': 'Telling Time (Que horas são?)',
     'daily_activities': 'Daily Activities (Rotina)',
-    'hobbies_sports': 'Sports & Free Time (Lazer)'
+    'hobbies_sports': 'Sports & Free Time (Lazer)',
+    'unit_5_traveling': 'Unit 5: Traveling is Amazing',
+    'unit_6_free_time': 'Unit 6: Free Time Activities',
+    'review_abilities_green_routine': 'Review: Abilities, Green Habits & Composting'
 };
 
 // 1. Abrir a tela de relatório e carregar dados
