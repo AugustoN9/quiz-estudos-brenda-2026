@@ -22,7 +22,7 @@ let currentSubtopicTitle = "";
 let currentSubjectKey = "";
 let currentSubtopicKey = "";
 
-// Cache em memória para carregar sob demanda apenas os arquivos necessários
+// Cache em memória para carregamento sob demanda
 const loadedQuestionsByYear = {};
 
 // Lista de Anos e Séries Suportados
@@ -41,97 +41,176 @@ const anosDisponiveis = [
     { key: "3_medio", label: "3º Ano Ensino Médio" }
 ];
 
-// Garante execução tanto no DOMContentLoaded quanto em carregamento direto
+// Inicialização segura
 if (document.readyState === 'loading') {
-    document.addEventListener("DOMContentLoaded", showMainMenu);
+    document.addEventListener("DOMContentLoaded", () => {
+        initTheme();
+        showMainMenu();
+    });
 } else {
+    initTheme();
     showMainMenu();
 }
 
-// --- 1. GESTÃO DE MENUS DINÂMICOS (SELEÇÃO DE ANO, MATÉRIA E SUBTÓPICO) ---
+// --- 0. GESTÃO DE TEMA CLARO / ESCURO (DARK MODE) ---
+
+function initTheme() {
+    const savedTheme = localStorage.getItem('quiz_theme') || 'light';
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        updateThemeButton(true);
+    } else {
+        document.body.classList.remove('dark-theme');
+        updateThemeButton(false);
+    }
+}
+
+function toggleTheme() {
+    const isDark = document.body.classList.toggle('dark-theme');
+    localStorage.setItem('quiz_theme', isDark ? 'dark' : 'light');
+    updateThemeButton(isDark);
+}
+
+function updateThemeButton(isDark) {
+    const btn = document.getElementById('btn-theme-toggle');
+    if (btn) {
+        btn.innerText = isDark ? '☀️' : '🌙';
+    }
+}
+
+// --- 1. GESTÃO DE MENUS DINÂMICOS (ANO, MATÉRIA, UNIDADE E SUBTÓPICO) ---
 
 function showMainMenu() {
     navigationStack = [];
     currentYearKey = "";
-    updateMenuDisplay("Selecione o Ano Escolar", "Escolha a etapa de ensino para estudar!", false);
 
     const container = document.getElementById('dynamic-menu');
     if (!container) return;
-    
     container.innerHTML = "";
 
-    // 1. Identifica o ano cadastrado do aluno (padrão: 5_fundamental se visitante)
-    const userYearKey = (typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar)
-        ? currentUser.ano_escolar
-        : '5_fundamental';
+    const isLogged = typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar;
 
-    const mainYearObj = anosDisponiveis.find(a => a.key === userYearKey) || anosDisponiveis[4];
+    // --- CENÁRIO 1: USUÁRIO AUTENTICADO (Card em Destaque + Accordion) ---
+    if (isLogged) {
+        updateMenuDisplay("Selecione o Ano Escolar", "Escolha a etapa de ensino para estudar!", false);
 
-    // 2. Card Principal de Destaque ("SEU ANO")
-    const mainBtn = document.createElement('button');
-    mainBtn.className = 'menu-card-btn';
-    mainBtn.style.border = '2px solid #86efac';
-    mainBtn.style.backgroundColor = '#f0fdf4';
+        const userYearKey = currentUser.ano_escolar;
+        const mainYearObj = anosDisponiveis.find(a => a.key === userYearKey) || anosDisponiveis[4];
 
-    const badgeText = (typeof currentUser !== 'undefined' && currentUser) ? 'SEU ANO' : 'RECOMENDADO';
-    mainBtn.innerHTML = `
-        <span class="btn-text" style="font-weight: 700; color: #15803d;">${mainYearObj.label}</span>
-        <span class="badge-novo" style="background-color: #bbf7d0; color: #14532d; font-size: 0.72rem; padding: 4px 8px; border-radius: 6px;">${badgeText}</span>
-    `;
-    mainBtn.onclick = () => handleYearSelection(mainYearObj.key);
-    container.appendChild(mainBtn);
+        const mainBtn = document.createElement('button');
+        mainBtn.className = 'menu-card-btn';
+        mainBtn.style.border = '2px solid #86efac';
+        mainBtn.style.backgroundColor = document.body.classList.contains('dark-theme') ? '#14532d' : '#f0fdf4';
 
-    // 3. Botão de Accordion ("Escolha um outro ano")
-    const accordionToggle = document.createElement('button');
-    accordionToggle.className = 'menu-card-btn';
-    accordionToggle.id = 'toggle-other-years';
-    accordionToggle.style.marginTop = '15px';
-    accordionToggle.style.backgroundColor = '#f8fafc';
-    accordionToggle.style.justifyContent = 'center';
-    accordionToggle.style.gap = '10px';
+        mainBtn.innerHTML = `
+            <span class="btn-text" style="font-weight: 700; color: #16a34a;">${mainYearObj.label}</span>
+            <span class="badge-novo" style="background-color: #bbf7d0; color: #14532d;">SEU ANO</span>
+        `;
+        mainBtn.onclick = () => handleYearSelection(mainYearObj.key);
+        container.appendChild(mainBtn);
 
-    accordionToggle.innerHTML = `
-        <span id="accordion-icon" style="color: #eab308; font-size: 0.9rem; transition: transform 0.2s ease;">▼</span>
-        <span class="btn-text" style="color: #475569; font-size: 0.95rem;">Escolha um outro ano</span>
-    `;
+        const accordionToggle = document.createElement('button');
+        accordionToggle.className = 'menu-card-btn';
+        accordionToggle.id = 'toggle-other-years';
+        accordionToggle.style.marginTop = '15px';
+        accordionToggle.style.display = 'flex';
+        accordionToggle.style.alignItems = 'center';
+        accordionToggle.style.justifyContent = 'center';
+        accordionToggle.style.gap = '10px';
 
-    // 4. Container colapsável com as outras séries
-    const otherYearsContainer = document.createElement('div');
-    otherYearsContainer.id = 'other-years-container';
-    otherYearsContainer.className = 'category-list hidden';
-    otherYearsContainer.style.marginTop = '10px';
-    otherYearsContainer.style.paddingLeft = '8px';
-    otherYearsContainer.style.borderLeft = '3px solid #e2e8f0';
+        accordionToggle.innerHTML = `
+            <span id="accordion-icon" style="color: #eab308; font-size: 0.9rem; transition: transform 0.2s ease;">▼</span>
+            <span class="btn-text" style="font-size: 0.95rem; text-align: center; flex: unset;">Escolha um outro ano</span>
+        `;
 
-    const outrosAnos = anosDisponiveis.filter(a => a.key !== mainYearObj.key);
-    outrosAnos.forEach(ano => {
-        const btn = document.createElement('button');
-        btn.className = 'menu-card-btn';
-        btn.style.fontSize = '0.9rem';
-        btn.style.padding = '10px 14px';
-        btn.innerHTML = `<span class="btn-text">${ano.label}</span>`;
-        btn.onclick = () => handleYearSelection(ano.key);
-        otherYearsContainer.appendChild(btn);
-    });
+        const otherYearsContainer = document.createElement('div');
+        otherYearsContainer.id = 'other-years-container';
+        otherYearsContainer.className = 'category-list hidden';
+        otherYearsContainer.style.marginTop = '10px';
+        otherYearsContainer.style.paddingLeft = '8px';
+        otherYearsContainer.style.borderLeft = '3px solid #64748b';
 
-    // Ação de expandir/recolher
-    accordionToggle.onclick = () => {
-        const isHidden = otherYearsContainer.classList.toggle('hidden');
-        const icon = document.getElementById('accordion-icon');
-        if (icon) {
-            icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
-        }
-    };
+        const outrosAnos = anosDisponiveis.filter(a => a.key !== mainYearObj.key);
+        outrosAnos.forEach(ano => {
+            const btn = document.createElement('button');
+            btn.className = 'menu-card-btn';
+            btn.style.fontSize = '0.9rem';
+            btn.innerHTML = `<span class="btn-text">${ano.label}</span>`;
+            btn.onclick = () => handleYearSelection(ano.key);
+            otherYearsContainer.appendChild(btn);
+        });
 
-    container.appendChild(accordionToggle);
-    container.appendChild(otherYearsContainer);
+        accordionToggle.onclick = () => {
+            const isHidden = otherYearsContainer.classList.toggle('hidden');
+            const icon = document.getElementById('accordion-icon');
+            if (icon) {
+                icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+        };
+
+        container.appendChild(accordionToggle);
+        container.appendChild(otherYearsContainer);
+        return;
+    }
+
+    // --- CENÁRIO 2: VISITANTE (Dois accordions: Fundamental e Médio) ---
+    updateMenuDisplay("Selecione o Ano Escolar", "Escolha o seu ano e comece a estudar!", false);
+
+    const fundamentalAnos = anosDisponiveis.filter(a => a.key.includes('fundamental'));
+    const medioAnos = anosDisponiveis.filter(a => a.key.includes('medio'));
+
+    function createSectionAccordion(title, anosList, defaultOpen = true) {
+        const toggleBtn = document.createElement('button');
+        toggleBtn.className = 'menu-card-btn';
+        toggleBtn.style.display = 'flex';
+        toggleBtn.style.alignItems = 'center';
+        toggleBtn.style.justifyContent = 'space-between';
+        toggleBtn.style.fontWeight = '700';
+        toggleBtn.style.marginTop = '12px';
+
+        const arrowIcon = document.createElement('span');
+        arrowIcon.style.color = '#eab308';
+        arrowIcon.style.fontSize = '0.85rem';
+        arrowIcon.style.transition = 'transform 0.2s ease';
+        arrowIcon.style.transform = defaultOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+        arrowIcon.innerText = '▼';
+
+        toggleBtn.innerHTML = `<span class="btn-text" style="font-weight: 700;">${title}</span>`;
+        toggleBtn.appendChild(arrowIcon);
+
+        const listContainer = document.createElement('div');
+        listContainer.className = defaultOpen ? 'category-list' : 'category-list hidden';
+        listContainer.style.marginTop = '8px';
+        listContainer.style.paddingLeft = '8px';
+        listContainer.style.borderLeft = '3px solid #64748b';
+
+        anosList.forEach(ano => {
+            const btn = document.createElement('button');
+            btn.className = 'menu-card-btn';
+            btn.style.fontSize = '0.9rem';
+            btn.innerHTML = `<span class="btn-text">${ano.label}</span>`;
+            btn.onclick = () => handleYearSelection(ano.key);
+            listContainer.appendChild(btn);
+        });
+
+        toggleBtn.onclick = () => {
+            const isHidden = listContainer.classList.toggle('hidden');
+            arrowIcon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+        };
+
+        container.appendChild(toggleBtn);
+        container.appendChild(listContainer);
+    }
+
+    createSectionAccordion("Ensino Fundamental", fundamentalAnos, false);
+    createSectionAccordion("Ensino Médio", medioAnos, false);
 }
 
 async function handleYearSelection(selectedYear) {
     if (typeof currentUser !== 'undefined' && currentUser && currentUser.ano_escolar && currentUser.ano_escolar !== selectedYear) {
         const confirmacao = await Swal.fire({
             title: 'Ano diferente do seu!',
-            text: `Você está matriculado(a) no ${formatarAno(currentUser.ano_escolar)}. Deseja explorar os exercícios do ${formatarAno(selectedYear)} mesmo assim?`,
+            text: `Você está cadastrado(a) no ${formatarAno(currentUser.ano_escolar)}. Deseja acessar os exercícios do ${formatarAno(selectedYear)} mesmo assim?`,
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#1976d2',
@@ -406,7 +485,7 @@ function checkAnswer(selected, correct) {
     if (selected === correct) {
         score++;
         feedback.innerText = "Parabéns você acertou!";
-        feedback.style.color = "green";
+        feedback.style.color = "#22c55e";
         confetti({
             particleCount: 150,
             spread: 70,
@@ -415,7 +494,7 @@ function checkAnswer(selected, correct) {
         });
     } else {
         feedback.innerText = "Estude mais e tente novamente!";
-        feedback.style.color = "red";
+        feedback.style.color = "#ef4444";
     }
     nextContainer.classList.remove('hidden');
 }
@@ -502,7 +581,7 @@ function validateRotularAnswers(q) {
     if (acertos === q.alvos.length) {
         score++;
         feedback.innerText = "Excelente! Você identificou todas as partes corretamente!";
-        feedback.style.color = "green";
+        feedback.style.color = "#22c55e";
         confetti({
             particleCount: 150,
             spread: 70,
@@ -511,7 +590,7 @@ function validateRotularAnswers(q) {
         });
     } else {
         feedback.innerText = `Você acertou ${acertos} de ${q.alvos.length} partes. Revise os pontos marcados em vermelho!`;
-        feedback.style.color = "red";
+        feedback.style.color = "#ef4444";
     }
 
     nextContainer.classList.remove('hidden');
@@ -601,7 +680,7 @@ function validateColunaAnswers(q) {
     if (acertos === q.itens.length) {
         score++;
         feedback.innerText = "Excelente! Você associou todas as usinas corretamente!";
-        feedback.style.color = "green";
+        feedback.style.color = "#22c55e";
         confetti({
             particleCount: 150,
             spread: 70,
@@ -610,13 +689,13 @@ function validateColunaAnswers(q) {
         });
     } else {
         feedback.innerText = `Você acertou ${acertos} de ${q.itens.length} usinas. Tente memorizar as marcadas em vermelho!`;
-        feedback.style.color = "red";
+        feedback.style.color = "#ef4444";
     }
 
     nextContainer.classList.remove('hidden');
 }
 
-// --- 6. NAVEGAÇÃO, ENCERRAMENTO E ALERTAS COM SWEETALERT2 ---
+// --- 6. NAVEGAÇÃO, ENCERRAMENTO E PERSISTÊNCIA ---
 
 function goToNextQuestion() {
     document.getElementById('next-container').classList.add('hidden');
@@ -695,7 +774,7 @@ function showResult() {
 
         const payload = {
             aluno_id: currentUser.id,
-            materia: currentSubjectKey || 'ciencias',
+            materia: currentSubjectKey || 'ingles',
             subtopico: currentSubtopicKey || 'geral',
             total_questoes: total,
             acertos: score,
@@ -705,7 +784,7 @@ function showResult() {
 
         dbSalvarHistoricoQuiz(payload)
             .then(() => console.log("Resultado registrado no Supabase com sucesso."))
-            .catch(err => console.error("Erro ao registrar resultado no Supabase:", err));
+            .catch(err => console.error("Erro ao salvar histórico:", err));
     }
 
     if (percent === 100) {

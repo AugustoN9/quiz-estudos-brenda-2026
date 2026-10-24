@@ -4,12 +4,11 @@ body {
   padding: 0; 
   display: flex;
   flex-direction: column;
-  /* Centraliza horizontalmente */
   align-items: center; 
-  /* Centraliza verticalmente se o conteúdo for menor que a tela */
   justify-content: flex-start; 
   min-height: 100vh;
   background: #f4f4f9;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 #quiz-container {
@@ -17,12 +16,13 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 90%; /* Ocupa 90% da largura em telas pequenas */
-  max-width: 500px; /* Não ultrapassa 500px em telas grandes */
+  width: 90%;
+  max-width: 500px;
   text-align: center;
   box-sizing: border-box;
-  margin: 40px auto; /* Margem automática nas laterais centraliza o bloco */
+  margin: 40px auto;
   flex: 1 0 auto;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 #quiz-container img {
@@ -114,7 +114,7 @@ button {
   cursor: pointer;
   border: 1px solid #ddd;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: 0.25s ease;
 }
 
 button:hover {
@@ -142,19 +142,22 @@ button:hover {
   transform: scale(0.98);
 }
 
-/* Garante que o feedback tenha um respiro visual */
 #feedback {
   font-weight: bold;
   margin: 15px 0;
   font-size: 1.1rem;
 }
 
-/* --- Imagens Responsivas do Quiz Padrão --- */
+/* --- Imagens do Quiz e Tirinhas --- */
 #quiz-image {
   width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 footer {
@@ -173,32 +176,45 @@ footer {
   text-align: center;
 }
 
-/* Garante posicionamento relativo no botão */
+/* --- Botões do Menu e Responsividade --- */
 .menu-card-btn {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 12px 16px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  padding: 12px 16px !important;
+  width: 100% !important;
+  min-height: 48px !important;
+  box-sizing: border-box !important;
 }
 
-/* Selo NOVO azul claro com texto em negrito */
+.menu-card-btn .btn-text {
+  flex: 1 1 auto !important;
+  text-align: left !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  line-height: 1.3 !important;
+}
+
 .badge-novo {
-  position: absolute;
-  right: 18px;
+  position: static !important;
+  flex-shrink: 0 !important;
+  margin-left: auto !important;
+  white-space: nowrap !important;
   background-color: #9cc2e5;
   color: #0b1d3a;
-  font-size: 0.72rem;
+  font-size: 0.72rem !important;
   font-weight: 900;
   letter-spacing: 0.8px;
-  padding: 3px 12px;
-  border-radius: 4px;
+  padding: 4px 10px !important;
+  border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 /* ========================================================
-   ATIVIDADES DE ROTULAR IMAGEM (ALVOS SOBRE IMAGEM)
+   ROTULAR IMAGEM (ALVOS SOBRE IMAGEM)
    ======================================================== */
 .rotular-container,
 .rotular-imagem-container {
@@ -217,7 +233,6 @@ footer {
   border-radius: 8px;
 }
 
-/* Área do alvo vazia */
 .rotular-target,
 .alvo-rotulo,
 .label-target-box {
@@ -239,7 +254,6 @@ footer {
   transition: all 0.2s ease !important;
 }
 
-/* Quando preenchido com resposta */
 .rotular-target.filled,
 .alvo-rotulo.correto,
 .alvo-rotulo.filled,
@@ -250,7 +264,6 @@ footer {
   box-shadow: 0 2px 5px rgba(2, 132, 199, 0.2) !important;
 }
 
-/* Feedback de acerto e erro */
 .rotular-target.correct,
 .alvo-rotulo.correct {
   background-color: #c8e6c9 !important;
@@ -265,7 +278,6 @@ footer {
   color: #b71c1c !important;
 }
 
-/* Banco de etiquetas abaixo da imagem */
 .rotular-bank {
   display: flex;
   flex-wrap: wrap;
@@ -304,7 +316,7 @@ footer {
 }
 
 /* ========================================================
-   LAYOUT DA ATIVIDADE DE ASSOCIAÇÃO DE COLUNAS
+   ASSOCIAÇÃO EM COLUNAS
    ======================================================== */
 .colunas-wrapper {
   display: flex;
@@ -436,7 +448,7 @@ footer {
 }
 
 /* ========================================================
-   BARRA DE USUÁRIO & TELAS DE AUTENTICAÇÃO
+   BARRA DE USUÁRIO & AUTENTICAÇÃO
    ======================================================== */
 .user-bar {
   display: flex;
@@ -504,17 +516,20 @@ footer {
   color: #475569;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
   padding: 10px 12px;
   font-size: 0.95rem;
   border: 1.5px solid #cbd5e1;
   border-radius: 8px;
+  background-color: white;
   box-sizing: border-box;
   outline: none;
   transition: border-color 0.2s;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group select:focus {
   border-color: #1976d2;
 }
 
@@ -539,7 +554,6 @@ footer {
   cursor: pointer;
 }
 
-/* Botões utilitários */
 .btn-primary {
   background-color: #1976d2;
   color: white;
@@ -573,6 +587,103 @@ footer {
   color: #0d47a1;
 }
 
+/* ========================================================
+   TEMA ESCURO (DARK MODE)
+   ======================================================== */
+body.dark-theme {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark-theme #quiz-container {
+  background-color: #1e293b;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+  color: #f8fafc;
+}
+
+body.dark-theme #menu-subtitle,
+body.dark-theme .form-desc,
+body.dark-theme #question-counter {
+  color: #94a3b8;
+}
+
+body.dark-theme .user-bar {
+  background-color: #0f172a;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+body.dark-theme .btn-user-action.btn-neutral {
+  background-color: #334155;
+  color: #f1f5f9;
+}
+
+body.dark-theme .btn-user-action.btn-neutral:hover {
+  background-color: #475569;
+}
+
+body.dark-theme button.menu-card-btn,
+body.dark-theme #options-container button,
+body.dark-theme .btn-secondary {
+  background-color: #334155;
+  color: #f8fafc;
+  border-color: #475569;
+}
+
+body.dark-theme button.menu-card-btn:hover,
+body.dark-theme #options-container button:hover,
+body.dark-theme .btn-secondary:hover {
+  background-color: #475569;
+}
+
+body.dark-theme #question-text {
+  background-color: #0f172a;
+  border-left-color: #38bdf8;
+  color: #f8fafc;
+}
+
+body.dark-theme #next-btn {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+}
+
+body.dark-theme #next-btn:hover {
+  background-color: #0369a1;
+}
+
+body.dark-theme .form-group label {
+  color: #cbd5e1;
+}
+
+body.dark-theme .form-group input,
+body.dark-theme .form-group select {
+  background-color: #0f172a;
+  color: #f8fafc;
+  border-color: #475569;
+}
+
+body.dark-theme footer {
+  background-color: #0b1120;
+  border-top: 1px solid #1e293b;
+}
+
+body.dark-theme .report-kpi-card {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+
+body.dark-theme .report-alert-box {
+  background-color: #422006 !important;
+  border-color: #854d0e !important;
+  color: #fef08a !important;
+}
+
 /* --- Media Query para Smartphones --- */
 @media (max-width: 480px) {
   h1 {
@@ -583,8 +694,8 @@ footer {
   }
 
   button {
-    padding: 15px 10px;
-    font-size: 1rem;
+    padding: 14px 10px;
+    font-size: 0.95rem;
   }
 
   #quiz-container {
@@ -605,10 +716,9 @@ footer {
   }
 
   #quiz-image {
-    margin-left: -10px;
-    margin-right: -10px;
-    width: calc(100% + 20px) !important;
-    max-width: calc(100% + 20px) !important;
-    border-radius: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto 12px auto;
+    border-radius: 6px;
   }
 }

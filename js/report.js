@@ -1,7 +1,50 @@
 // --- LÓGICA DO DASHBOARD "MEU DESEMPENHO" ---
 
-// Dicionário para exibir nomes amigáveis na interface
+// Dicionário para exibição amigável dos nomes das Matérias
+const subjectLabels = {
+    'matematica': 'Matemática',
+    'ciencias': 'Ciências',
+    'portugues': 'Língua Portuguesa',
+    'geografia': 'Geografia',
+    'historia': 'História',
+    'historia_2': 'História 2 (Lacunas)',
+    'ingles': 'Língua Inglesa'
+};
+
+// Dicionário completo de tópicos amigáveis
 const topicLabels = {
+    // Matemática - Os Números e Operações
+    'sistema_numeracao_decimal': 'Sistema de Numeração Decimal',
+    'ordens_e_classes': 'Ordens e Classes',
+    'comparacao': 'Comparação de Números',
+    'arredondamento': 'Arredondamento',
+    'adicao_numeros_naturais': 'Adição de Naturais',
+    'propriedades_adicao': 'Propriedades da Adição',
+    'subtracao_numeros_naturais': 'Subtração de Naturais',
+    'operacao_inversa': 'Operação Inversa',
+    'expressoes_numericas': 'Expressões Numéricas',
+    'poliedros_e_nao_poliedros': 'Poliedros e Não Poliedros',
+    'prismas_e_piramides': 'Prismas e Pirâmides',
+
+    // Matemática - Números Decimais
+    'decimais_nivel_1': 'Decimais: Frações e Ordens',
+    'decimais_nivel_2': 'Decimais: Decomposição e Comparação',
+    'decimais_nivel_3': 'Decimais: Operações com Frações',
+    'decimais_nivel_4': 'Decimais: Cotidiano e Medidas',
+    'decimais_nivel_5': 'Decimais: Multiplicação e Divisão',
+
+    // Matemática - Grandezas e Medidas (quando gravado como nivel_X)
+    'medidas_nivel_1': 'Medidas: Unidades de Comprimento',
+    'medidas_nivel_2': 'Medidas: Problemas com Comprimento',
+    'medidas_nivel_3': 'Medidas: Perímetro e Área',
+    'medidas_nivel_4': 'Medidas: Malha Quadriculada',
+    'medidas_nivel_5': 'Medidas: Volume e Capacidade',
+    'nivel_1': 'Nível 1: Introdução e Conceitos',
+    'nivel_2': 'Nível 2: Problemas e Operações',
+    'nivel_3': 'Nível 3: Perímetro e Área',
+    'nivel_4': 'Nível 4: Malhas e Figuras Planas',
+    'nivel_5': 'Nível 5: Volume e Desafios',
+
     // Ciências
     'os_alimentos': 'Os Alimentos',
     'alimentos_saudavel': 'Alimentos Saudáveis',
@@ -15,7 +58,36 @@ const topicLabels = {
     'saude_sistema_cardiovascular': 'Saúde Cardiovascular',
     'propriedades_fisicas_gerais': 'Propriedades dos Materiais',
     'conceitos_e_circuitos': 'Circuitos Elétricos',
-    'fontes_e_usinas_eletricas': 'Usinas e Geração de Energia'
+    'fontes_e_usinas_eletricas': 'Usinas e Geração de Energia',
+
+    // Língua Portuguesa
+    'generos_narrativos': 'Contos, Fábulas e Mitos',
+    'generos_jornalisticos': 'Notícias e Reportagens',
+    'classes_palavras': 'Classes de Palavras',
+    'pontuacao_acentuacao': 'Pontuação e Acentuação',
+
+    // Geografia
+    'diversidade_povo_brasileiro': 'Diversidade do Povo Brasileiro',
+    'povos_indigenas_quilombolas': 'Indígenas e Quilombolas',
+    'crescimento_populacao_brasileira': 'Crescimento da População',
+    'populacao_total_brasil': 'População Total do Brasil',
+    'territorio_brasileiro_ocupacao': 'Território e Ocupação',
+    'migracoes_populacao': 'Migrações da População',
+    'distribuicao_por_faixa_etaria': 'Faixa Etária e Pirâmide',
+    'populacao_trabalho_brasil': 'População e Trabalho (PEA)',
+
+    // História
+    'historia_anterior_escrita': 'História Anterior à Escrita',
+    'surgimento_primeiras_cidades': 'Surgimento das Primeiras Cidades',
+    'cidadania_direitos_humanos': 'Cidadania e Direitos Humanos',
+    'grandes_navegacoes_encontro_povos': 'Grandes Navegações e Povos',
+    'completar_cap4': 'Cidadania e Direitos (Lacunas)',
+    'completar_cap5': 'Navegações e Encontros (Lacunas)',
+
+    // Língua Inglesa
+    'telling_time': 'Telling Time (Que horas são?)',
+    'daily_activities': 'Daily Activities (Rotina)',
+    'hobbies_sports': 'Sports & Free Time (Lazer)'
 };
 
 // 1. Abrir a tela de relatório e carregar dados
@@ -30,17 +102,15 @@ async function openReportScreen() {
         return;
     }
 
-    // Esconde as outras telas e exibe o relatório
     document.getElementById('home-screen').classList.add('hidden');
     if (document.getElementById('login-screen')) document.getElementById('login-screen').classList.add('hidden');
     if (document.getElementById('register-screen')) document.getElementById('register-screen').classList.add('hidden');
     if (document.getElementById('quiz-screen')) document.getElementById('quiz-screen').classList.add('hidden');
     if (document.getElementById('result-screen')) document.getElementById('result-screen').classList.add('hidden');
-    
+
     const reportScreen = document.getElementById('report-screen');
     reportScreen.classList.remove('hidden');
 
-    // Carregamento visual
     const listContainer = document.getElementById('report-topics-list');
     listContainer.innerHTML = '<p style="color: #64748b; font-size: 0.9rem;">Carregando seus resultados...</p>';
 
@@ -59,7 +129,7 @@ function closeReportScreen() {
     document.getElementById('home-screen').classList.remove('hidden');
 }
 
-// 3. Processar cálculos e montar os elementos no DOM
+// 3. Processar cálculos e agrupar por Matéria > Tópico
 function renderReportData(historico) {
     const listContainer = document.getElementById('report-topics-list');
     const kpiCount = document.getElementById('kpi-quizzes-count');
@@ -77,7 +147,6 @@ function renderReportData(historico) {
         return;
     }
 
-    // KPIs Gerais
     const totalQuizzes = historico.length;
     const somaTotal = historico.reduce((acc, curr) => acc + Number(curr.aproveitamento_percentual), 0);
     const mediaGeral = Math.round(somaTotal / totalQuizzes);
@@ -85,49 +154,85 @@ function renderReportData(historico) {
     kpiCount.innerText = totalQuizzes;
     kpiAvg.innerText = `${mediaGeral}%`;
 
-    // Agrupamento por subtópico
-    const agrupado = {};
+    // Agrupamento multinível: materia -> subtopico
+    const materiasAgrupadas = {};
+
     historico.forEach(item => {
-        const sub = item.subtopico;
-        if (!agrupado[sub]) {
-            agrupado[sub] = {
+        const matKey = item.materia || 'outros';
+        const subKey = item.subtopico || 'geral';
+
+        if (!materiasAgrupadas[matKey]) {
+            materiasAgrupadas[matKey] = {};
+        }
+
+        if (!materiasAgrupadas[matKey][subKey]) {
+            materiasAgrupadas[matKey][subKey] = {
                 tentativas: 0,
-                somaPercentual: 0,
-                materia: item.materia
+                somaPercentual: 0
             };
         }
-        agrupado[sub].tentativas += 1;
-        agrupado[sub].somaPercentual += Number(item.aproveitamento_percentual);
+
+        materiasAgrupadas[matKey][subKey].tentativas += 1;
+        materiasAgrupadas[matKey][subKey].somaPercentual += Number(item.aproveitamento_percentual);
     });
 
     const topicosAbaixo70 = [];
 
-    // Renderiza cada linha de tópico
-    Object.keys(agrupado).forEach(subKey => {
-        const item = agrupado[subKey];
-        const mediaTopico = Math.round(item.somaPercentual / item.tentativas);
-        const nomeLegivel = topicLabels[subKey] || subKey.replace(/_/g, ' ');
-        const isBomDesempenho = mediaTopico >= 70;
+    // Renderiza organizado por seções de Matéria
+    Object.keys(materiasAgrupadas).forEach(matKey => {
+        const nomeMateria = subjectLabels[matKey] || matKey.toUpperCase();
+        const subtopicos = materiasAgrupadas[matKey];
 
-        if (!isBomDesempenho) {
-            topicosAbaixo70.push(nomeLegivel);
-        }
+        const section = document.createElement('div');
+        section.className = 'report-subject-group';
+        section.style.marginBottom = '20px';
+        section.style.textAlign = 'left';
 
-        const row = document.createElement('div');
-        row.className = 'report-topic-row';
-        row.innerHTML = `
-            <div class="topic-header">
-                <span>${nomeLegivel} <small style="font-size: 0.72rem; color: #64748b;">(${item.tentativas}x feito)</small></span>
-                <span style="font-weight: 700; color: ${isBomDesempenho ? '#16a34a' : '#dc2626'};">${mediaTopico}%</span>
-            </div>
-            <div class="progress-track">
-                <div class="progress-bar ${isBomDesempenho ? 'progress-green' : 'progress-red'}" style="width: ${mediaTopico}%;"></div>
+        // Cabeçalho da Matéria
+        section.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 8px; margin: 14px 0 8px 0; border-bottom: 1.5px solid #cbd5e1; padding-bottom: 4px;">
+                <span style="font-size: 0.8rem; background: #e0f2fe; color: #0369a1; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Matéria</span>
+                <strong style="font-size: 1rem; color: #1e293b;">${nomeMateria}</strong>
             </div>
         `;
-        listContainer.appendChild(row);
+
+        Object.keys(subtopicos).forEach(subKey => {
+            const item = subtopicos[subKey];
+            const mediaTopico = Math.round(item.somaPercentual / item.tentativas);
+            const nomeTopico = topicLabels[subKey] || subKey.replace(/_/g, ' ');
+            const isBomDesempenho = mediaTopico >= 70;
+
+            if (!isBomDesempenho) {
+                topicosAbaixo70.push(`${nomeTopico} (${nomeMateria})`);
+            }
+
+            const row = document.createElement('div');
+            row.className = 'report-topic-row';
+            row.style.background = '#f8fafc';
+            row.style.border = '1px solid #e2e8f0';
+            row.style.borderRadius = '8px';
+            row.style.padding = '10px 12px';
+            row.style.marginBottom = '8px';
+
+            row.innerHTML = `
+                <div class="topic-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <span style="font-weight: 600; font-size: 0.9rem; color: #334155;">
+                        ${nomeTopico} 
+                        <small style="font-size: 0.72rem; color: #64748b; font-weight: normal;">(${item.tentativas}x feito)</small>
+                    </span>
+                    <span style="font-weight: 800; font-size: 0.95rem; color: ${isBomDesempenho ? '#16a34a' : '#dc2626'};">${mediaTopico}%</span>
+                </div>
+                <div class="progress-track" style="width: 100%; height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden;">
+                    <div class="progress-bar ${isBomDesempenho ? 'progress-green' : 'progress-red'}" style="width: ${mediaTopico}%; height: 100%; background: ${isBomDesempenho ? '#22c55e' : '#ef4444'}; border-radius: 4px; transition: width 0.4s ease;"></div>
+                </div>
+            `;
+            section.appendChild(row);
+        });
+
+        listContainer.appendChild(section);
     });
 
-    // Bloco de recomendações pedagógicas de estudo
+    // Dicas de Estudos
     if (topicosAbaixo70.length > 0) {
         boxRec.classList.remove('hidden');
         txtRec.innerHTML = `Vale a pena revisar com calma os seguintes temas onde seu aproveitamento ficou abaixo de 70%: <b>${topicosAbaixo70.join(', ')}</b>. Refazer as questões vai te ajudar a fixar melhor!`;

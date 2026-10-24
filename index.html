@@ -19,6 +19,14 @@
         <span id="user-status-text">Olá, Visitante!</span>
         <div class="user-actions">
           <button
+            id="btn-theme-toggle"
+            class="btn-user-action btn-neutral"
+            onclick="toggleTheme()"
+            title="Alternar Tema Claro/Escuro"
+          >
+            🌙
+          </button>
+          <button
             id="btn-open-login"
             class="btn-user-action"
             onclick="openLoginScreen()"
@@ -135,7 +143,7 @@
 
         <div class="form-group">
           <label for="reg-ano">Ano / Série Escolar</label>
-          <select id="reg-ano" style="padding: 10px 12px; font-size: 0.95rem; border: 1.5px solid #cbd5e1; border-radius: 8px; background: white; outline: none;">
+          <select id="reg-ano">
             <optgroup label="Ensino Fundamental I">
               <option value="1_fundamental">1º Ano Fundamental</option>
               <option value="2_fundamental">2º Ano Fundamental</option>
